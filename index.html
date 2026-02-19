@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="assets/logo-hdb.png" type="image/png">
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar">
@@ -53,7 +55,7 @@
       </div>
       <div class="card stat-card fade-in delay-4">
         <div class="stat-value" id="avgCPR">—</div>
-        <div class="stat-label">CPR Promedio</div>
+        <div class="stat-label">Resultados (Leads + Msgs)</div>
       </div>
     </div>
 
@@ -61,14 +63,9 @@
     <div class="flex items-center justify-between mb-1">
       <div class="tabs" id="reportTabs">
         <button class="tab active" data-filter="all">Todos</button>
-        <button class="tab" data-filter="impulsar">🟢 Impulsar</button>
-        <button class="tab" data-filter="mantener">🟡 Mantener</button>
-        <button class="tab" data-filter="pausar">🔴 Pausar</button>
-      </div>
-      <div>
-        <select class="form-select" id="reportSelect" style="width:auto;min-width:200px;">
-          <option value="latest">Último reporte</option>
-        </select>
+        <button class="tab" data-filter="verde">🟢 Bien</button>
+        <button class="tab" data-filter="amarillo">🟡 Revisar</button>
+        <button class="tab" data-filter="rojo">🔴 Atención</button>
       </div>
     </div>
 
@@ -81,37 +78,10 @@
     </div>
 
     <!-- AI Advice Section -->
-    <div class="card mt-2 fade-in" id="adviceCard" style="display:none;">
-      <div class="card-header">
-        <h3>🤖 Análisis de Gemini AI</h3>
-        <span class="badge badge-green">Actualizado</span>
-      </div>
-      <div id="adviceContent" style="line-height:1.8;color:var(--text-secondary);"></div>
-    </div>
+    <div id="aiAdvice" class="mt-2 fade-in"></div>
 
     <!-- Report History -->
-    <div class="card mt-2">
-      <div class="card-header">
-        <h3>📅 Historial de Reportes</h3>
-      </div>
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>Fecha</th>
-              <th>Campañas Analizadas</th>
-              <th>Impulsar</th>
-              <th>Mantener</th>
-              <th>Pausar</th>
-              <th>Gasto Total</th>
-            </tr>
-          </thead>
-          <tbody id="historyBody">
-            <tr><td colspan="6" class="text-center" style="color:var(--text-muted);">Sin historial aún. Los reportes se generan L/Mi/V a las 7AM.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <div class="card mt-2" id="reportHistory"></div>
 
     <!-- Contact Bar -->
     <div class="contact-bar mt-2">
@@ -125,11 +95,13 @@
         <img src="assets/logo-hdb.png" alt="Haciendas del Bosque">
         <img src="assets/logo-hu.png" alt="Hogares Unión">
       </div>
-      <p class="footer-text">HDB Marketing Hub — Herramienta interna de marketing digital<br>Haciendas del Bosque, Tecámac, Estado de México</p>
+      <p class="footer-text">HDB Marketing Hub — Herramienta interna de marketing digital<br>Haciendas del Bosque,
+        Tecámac, Estado de México</p>
     </footer>
   </div>
 
   <script src="js/app.js"></script>
   <script src="js/dashboard.js"></script>
 </body>
+
 </html>
