@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Plusvalía — HDB Marketing Hub</title>
+    <meta name="description"
+        content="Calcula la plusvalía estimada de tu propiedad en Haciendas del Bosque, Tecámac, con datos del Índice SHF y Banxico.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/logo-hdb.svg" type="image/svg+xml">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-brand">
+                <img src="assets/logo-hdb.svg" alt="Haciendas del Bosque">
+                <div class="brand-divider"></div>
+                <img src="assets/logo-hu.svg" alt="Hogares Unión">
+                <span class="brand-text">Marketing Hub</span>
+            </div>
+            <button class="navbar-toggle" id="navToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-nav" id="navMenu">
+                <li><a href="index.html">📊 Dashboard</a></li>
+                <li><a href="creativos.html">✍️ Creativos</a></li>
+                <li><a href="calculadora.html" class="active">📈 Plusvalía</a></li>
+                <li><a href="galeria.html">🏠 Galería</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="app-container page-content">
+        <!-- Header -->
+        <div class="section-header fade-in">
+            <h1>📈 Calculadora de Plusvalía</h1>
+            <p>Proyección de valor de tu propiedad en Tecámac con datos reales del Índice SHF y Banxico</p>
+        </div>
+
+        <div class="grid grid-2">
+            <!-- Calculator Form -->
+            <div class="card fade-in delay-1">
+                <h3 class="card-title mb-1">Ingresa los datos</h3>
+
+                <div class="form-group">
+                    <label class="form-label">Tipo de propiedad</label>
+                    <select class="form-select" id="propertyType">
+                        <option value="depa">Departamento</option>
+                        <option value="casa">Casa</option>
+                        <option value="casa-plus">Casa Plus</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Precio actual (MXN)</label>
+                    <input type="number" class="form-input" id="currentPrice" placeholder="Ej: 850000" value="850000">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Escenario de proyección</label>
+                    <select class="form-select" id="scenario">
+                        <option value="conservador">Conservador — Inflación Banxico (3.5% anual)</option>
+                        <option value="moderado" selected>Moderado — Promedio SHF Zona (5.2% anual)</option>
+                        <option value="optimista">Optimista — Plusvalía Tecámac (6.5% anual)</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-primary w-full mt-1" id="calcBtn">
+                    📊 Calcular Plusvalía
+                </button>
+
+                <!-- Quick Select Models -->
+                <div class="mt-2">
+                    <p class="form-label">Selección rápida por modelo:</p>
+                    <div class="flex gap-1" style="flex-wrap:wrap;">
+                        <button class="btn btn-outline" onclick="selectModel(850000, 'depa')">Depto $850K</button>
+                        <button class="btn btn-outline" onclick="selectModel(980000, 'casa')">Casa $980K</button>
+                        <button class="btn btn-outline" onclick="selectModel(1150000, 'casa-plus')">Casa+
+                            $1.15M</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Result Card -->
+            <div class="fade-in delay-2">
+                <div class="calc-result mb-1">
+                    <p class="calc-result-label">Valor estimado en <span id="resultYears">5</span> años</p>
+                    <div class="calc-result-value" id="resultValue">$0</div>
+                    <p class="calc-result-label" style="margin-top:8px;">Ganancia estimada: <strong id="resultGain"
+                            style="color:var(--green);">$0</strong></p>
+                </div>
+
+                <!-- Motivational message -->
+                <div class="card" id="motivationalCard">
+                    <p style="font-size:0.95rem;line-height:1.7;color:var(--text-secondary);" id="motivationalText">
+                        Ingresa un precio y haz clic en "Calcular Plusvalía" para ver la proyección.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chart -->
+        <div class="card mt-2 fade-in delay-3">
+            <h3 class="card-title mb-1">📉 Proyección 1-5 Años</h3>
+            <div class="calc-chart-container">
+                <canvas id="projectionChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Projection Table -->
+        <div class="card mt-2 fade-in delay-4">
+            <h3 class="card-title mb-1">📋 Detalle por Año</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Año</th>
+                            <th>Conservador (3.5%)</th>
+                            <th>Moderado (5.2%)</th>
+                            <th>Optimista (6.5%)</th>
+                            <th>Ganancia (Moderado)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="projectionBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Historical Data Card -->
+        <div class="card mt-2 fade-in">
+            <h3 class="card-title mb-1">📚 Datos Históricos Reales — Tecámac</h3>
+            <div class="grid grid-2">
+                <div>
+                    <h4 style="color:var(--blue-light);margin-bottom:var(--space-sm);">Índice SHF — Plusvalía Anual</h4>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Año</th>
+                                    <th>Crecimiento</th>
+                                </tr>
+                            </thead>
+                            <tbody id="shfTable"></tbody>
+                        </table>
+                    </div>
+                    <p style="font-size:0.75rem;color:var(--text-muted);margin-top:8px;">Fuente: Sociedad Hipotecaria
+                        Federal (SHF)</p>
+                </div>
+                <div>
+                    <h4 style="color:var(--red-primary);margin-bottom:var(--space-sm);">Banxico — Inflación Anual</h4>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Año</th>
+                                    <th>Tasa</th>
+                                </tr>
+                            </thead>
+                            <tbody id="inflacionTable"></tbody>
+                        </table>
+                    </div>
+                    <p style="font-size:0.75rem;color:var(--text-muted);margin-top:8px;">Fuente: Banco de México / INEGI
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-logos">
+                <img src="assets/logo-hdb.svg" alt="Haciendas del Bosque">
+                <img src="assets/logo-hu.svg" alt="Hogares Unión">
+            </div>
+            <p class="footer-text">HDB Marketing Hub — Herramienta interna de marketing digital<br>Haciendas del Bosque,
+                Tecámac, Estado de México</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+
+</html>

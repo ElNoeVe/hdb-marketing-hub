@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Modelos — HDB Marketing Hub</title>
+    <meta name="description"
+        content="Explora los modelos de casas y departamentos disponibles en Haciendas del Bosque, Tecámac.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/logo-hdb.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-brand">
+                <img src="assets/logo-hdb.svg" alt="Haciendas del Bosque">
+                <div class="brand-divider"></div>
+                <img src="assets/logo-hu.svg" alt="Hogares Unión">
+                <span class="brand-text">Marketing Hub</span>
+            </div>
+            <button class="navbar-toggle" id="navToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-nav" id="navMenu">
+                <li><a href="index.html">📊 Dashboard</a></li>
+                <li><a href="creativos.html">✍️ Creativos</a></li>
+                <li><a href="calculadora.html">📈 Plusvalía</a></li>
+                <li><a href="galeria.html" class="active">🏠 Galería</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="app-container page-content">
+        <!-- Header -->
+        <div class="section-header fade-in">
+            <h1>🏠 Galería de Modelos</h1>
+            <p>Conoce los modelos disponibles en Haciendas del Bosque, Tecámac</p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="tabs mb-1 fade-in">
+            <button class="tab active" data-filter="all">Todos</button>
+            <button class="tab" data-filter="Departamento">Departamentos</button>
+            <button class="tab" data-filter="Casa">Casas</button>
+        </div>
+
+        <!-- Model Cards Grid -->
+        <div class="gallery-grid" id="modelGrid">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p>Cargando modelos...</p>
+            </div>
+        </div>
+
+        <!-- Amenities Section -->
+        <div class="card mt-2 fade-in">
+            <h3 class="card-title mb-1">🌟 Amenidades del Fraccionamiento</h3>
+            <div class="grid grid-4" id="amenitiesGrid"></div>
+        </div>
+
+        <!-- Nearby Places -->
+        <div class="card mt-2 fade-in">
+            <h3 class="card-title mb-1">📍 Lugares Cercanos</h3>
+            <div class="grid grid-3" id="nearbyGrid"></div>
+        </div>
+
+        <!-- Map -->
+        <div class="card mt-2 fade-in">
+            <h3 class="card-title mb-1">🗺️ Ubicación</h3>
+            <div style="border-radius:var(--radius-md);overflow:hidden;aspect-ratio:16/9;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.5!2d-98.97!3d19.70!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f3a2e7c75555%3A0x1234567890abcdef!2sFraccionamiento%20Hacienda%20del%20Bosque%2C%20Tec%C3%A1mac%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Contact Bar -->
+        <div class="contact-bar mt-2">
+            <a href="https://wa.me/525537494034" target="_blank">📱 WhatsApp: 55 3749 4034</a>
+            <a href="mailto:n.gutierrez.hernandez@hogaresunion.mx">✉️ n.gutierrez.hernandez@hogaresunion.mx</a>
+            <a href="https://www.google.com/maps/search/Haciendas+del+Bosque+Tecamac" target="_blank">📍 Cómo llegar</a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-logos">
+                <img src="assets/logo-hdb.svg" alt="Haciendas del Bosque">
+                <img src="assets/logo-hu.svg" alt="Hogares Unión">
+            </div>
+            <p class="footer-text">HDB Marketing Hub — Herramienta interna de marketing digital<br>Haciendas del Bosque,
+                Tecámac, Estado de México</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/galeria.js"></script>
+</body>
+
+</html>

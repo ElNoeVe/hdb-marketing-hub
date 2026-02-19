@@ -1,0 +1,50 @@
+{
+    "fecha": "2026-02-19T07:00:00-06:00",
+    "fecha_legible": "miércoles, 19 de febrero de 2026",
+    "resumen": {
+        "impresiones": 1547,
+        "clics": 4,
+        "gasto": 42.39,
+        "cpr": 10.60,
+        "ctr": 0.26
+    },
+    "consejo_general": "Tus campañas actuales tienen un CTR bajo (0.26%). Esto puede deberse a que las creatividades ya llevan tiempo sin renovarse. Recomiendo: 1) Aumentar presupuesto en la campaña de imágenes que tiene mejor CTR. 2) Pausar temporalmente el video de inversión y crear uno nuevo enfocado en testimoniales. 3) Renovar las imágenes usando fotos reales del desarrollo. 4) Probar un anuncio orientado exclusivamente a Tizayuca y Pachuca donde el costo por resultado puede ser menor.",
+    "campanas": [
+        {
+            "nombre": "Campaña Imágenes — Hogar Familiar",
+            "id": "camp_001",
+            "estado": "ACTIVE",
+            "dias_activa": 7,
+            "presupuesto_diario": 50,
+            "metricas": {
+                "impresiones": 823,
+                "clics": 3,
+                "gasto": 22.50,
+                "ctr": 0.36,
+                "cpr": 7.50,
+                "alcance": 612,
+                "frecuencia": 1.34
+            },
+            "recomendacion": "impulsar",
+            "consejo": "Buen CTR relativo (0.36%). Recomiendo aumentar presupuesto a $75/día para maximizar resultados. Considerar duplicar el anuncio con diferentes imágenes para test A/B."
+        },
+        {
+            "nombre": "Campaña Videos — Inversión",
+            "id": "camp_002",
+            "estado": "ACTIVE",
+            "dias_activa": 5,
+            "presupuesto_diario": 50,
+            "metricas": {
+                "impresiones": 724,
+                "clics": 1,
+                "gasto": 19.89,
+                "ctr": 0.14,
+                "cpr": 19.89,
+                "alcance": 589,
+                "frecuencia": 1.23
+            },
+            "recomendacion": "mantener",
+            "consejo": "CTR bajo pero la campaña todavía está en fase de aprendizaje (5 días). Esperar al día 7 para evaluar. Si no mejora, reducir presupuesto a $30/día e invertir la diferencia en la campaña de imágenes."
+        }
+    ]
+}

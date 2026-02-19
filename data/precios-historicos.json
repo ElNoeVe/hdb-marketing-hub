@@ -1,0 +1,67 @@
+{
+    "shf_tecamac": {
+        "descripcion": "Índice SHF de Precios de Vivienda - Tecámac / Estado de México",
+        "fuente": "Sociedad Hipotecaria Federal (SHF)",
+        "crecimiento_anual_porcentaje": {
+            "2015": 6.77,
+            "2016": 6.50,
+            "2017": 7.10,
+            "2018": 6.80,
+            "2019": 5.90,
+            "2020": 5.10,
+            "2021": 5.50,
+            "2022": 6.20,
+            "2023": 5.40,
+            "2024": 5.20,
+            "2025": 5.20
+        },
+        "promedio_10_anios": 5.97
+    },
+    "banxico_inflacion": {
+        "descripcion": "Inflación anual México - Banco de México",
+        "fuente": "Banxico / INEGI",
+        "tasa_anual_porcentaje": {
+            "2015": 2.13,
+            "2016": 3.36,
+            "2017": 6.77,
+            "2018": 4.83,
+            "2019": 2.83,
+            "2020": 3.15,
+            "2021": 7.36,
+            "2022": 7.82,
+            "2023": 4.66,
+            "2024": 4.40,
+            "2025": 3.10
+        },
+        "promedio_10_anios": 4.58
+    },
+    "propiedades_tecamac": {
+        "descripcion": "Precio medio casas en Tecámac - propiedades.com",
+        "fuente": "propiedades.com",
+        "precio_medio_mxn": {
+            "2020": 580000,
+            "2021": 620000,
+            "2022": 680000,
+            "2023": 730000,
+            "2024": 783000,
+            "2025": 850000
+        }
+    },
+    "escenarios_proyeccion": {
+        "conservador": {
+            "nombre": "Conservador (Inflación Banxico)",
+            "tasa_anual": 3.5,
+            "descripcion": "Basado en la meta de inflación de Banxico"
+        },
+        "moderado": {
+            "nombre": "Moderado (Promedio SHF Zona)",
+            "tasa_anual": 5.2,
+            "descripcion": "Basado en el índice SHF para la Zona Metropolitana del Valle de México"
+        },
+        "optimista": {
+            "nombre": "Optimista (Plusvalía Tecámac)",
+            "tasa_anual": 6.5,
+            "descripcion": "Basado en la plusvalía histórica específica de Tecámac (SHF)"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+name: Generar Creativos Semanales
+
+on:
+  schedule:
+    # Lunes a las 7:00 AM CST (13:00 UTC)
+    - cron: '0 13 * * 1'
+  workflow_dispatch: # Permite ejecución manual
+
+permissions:
+  contents: write
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Instalar dependencias
+        run: npm install
+        working-directory: scripts
+      
+      - name: Generar contenido creativo
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node generate-content.js
+        working-directory: scripts
+      
+      - name: Guardar creativos
+        run: |
+          git config user.name "HDB Bot"
+          git config user.email "bot@hdb-marketing.local"
+          git add data/creativos/
+          git commit -m "✍️ Creativos semana $(date +%Y-%m-%d)" || echo "Sin cambios"
+          git push
