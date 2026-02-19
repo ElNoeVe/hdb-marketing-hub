@@ -2,7 +2,7 @@
 // galeria.js — Gallery with Carousel, Fullscreen & Maps
 // ===================================
 
-const ORIGIN_COORDS = '19.6284,-98.9686'; // Haciendas del Bosque entrance
+const ORIGIN_PLACE = 'Fraccionamiento+Haciendas+del+Bosque,+Ojo+de+Agua,+Tecámac,+Estado+de+México';
 
 document.addEventListener('DOMContentLoaded', async () => {
   const data = await loadGalleryData();
@@ -281,13 +281,8 @@ function renderNearbyCategories(cercania) {
     if (container && items) {
       container.innerHTML = items.map(item => {
         // Google Maps directions from development entrance to destination
-        let mapsUrl;
-        if (item.coords) {
-          mapsUrl = `https://www.google.com/maps/dir/${ORIGIN_COORDS}/${item.coords}`;
-        } else {
-          const mapsQuery = encodeURIComponent(item.nombre + ', Tecámac, Estado de México');
-          mapsUrl = `https://www.google.com/maps/dir/${ORIGIN_COORDS}/${mapsQuery}`;
-        }
+        const destName = encodeURIComponent(item.nombre + (item.direccion ? ', ' + item.direccion : ', Tecámac, Estado de México'));
+        const mapsUrl = `https://www.google.com/maps/dir/${ORIGIN_PLACE}/${destName}`;
         return `
         <div class="amenity-item" style="flex-direction:column;align-items:flex-start;gap:4px;">
           <div style="display:flex;align-items:center;gap:8px;">
