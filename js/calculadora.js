@@ -36,9 +36,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 async function loadJSON(url) {
     try {
         const res = await fetch(url);
-        return await res.json();
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        console.log('✅ Datos cargados correctamente:', url);
+        return data;
     } catch (e) {
-        console.error('Error loading data:', e);
+        console.error('❌ Error loading data:', e);
+        // Show error to user
+        const motiv = document.getElementById('motivationalText');
+        if (motiv) {
+            motiv.innerHTML = `
+                <strong style="color:var(--red-primary);">⚠️ Error al cargar datos</strong><br><br>
+                No se pudieron cargar los datos históricos. Esto suele pasar si abres el archivo directamente.<br><br>
+                <strong>Solución:</strong> Abre una terminal en la carpeta del proyecto y ejecuta:<br>
+                <code style="background:rgba(0,0,0,0.3);padding:4px 8px;border-radius:4px;">python -m http.server 8080</code><br><br>
+                Luego abre: <a href="http://localhost:8080/calculadora.html" style="color:var(--blue-light);">http://localhost:8080/calculadora.html</a>
+            `;
+        }
         return null;
     }
 }
