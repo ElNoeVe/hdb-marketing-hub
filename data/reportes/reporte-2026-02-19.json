@@ -1,142 +1,88 @@
 {
-    "fecha_generacion": "2026-02-19T08:00:00.000Z",
-    "periodo": "Últimos 30 días",
-    "total_campanas": 2,
-    "total_anuncios": 5,
+    "fecha_generacion": "2026-02-19T07:00:00.000Z",
+    "periodo": "Últimos 30 días (20 ene - 18 feb 2026)",
+    "total_campanas": 1,
+    "total_anuncios": 3,
     "resumen": {
-        "gasto_total": 3250.00,
-        "impresiones_totales": 45200,
-        "clics_totales": 1850,
-        "leads_totales": 42,
-        "mensajes_totales": 28
+        "gasto_total": 328.93,
+        "impresiones_totales": 11933,
+        "clics_totales": 0,
+        "leads_totales": 0,
+        "mensajes_totales": 10
     },
     "campanas": [
         {
-            "id": "1",
-            "nombre": "Haciendas del Bosque — Mensajes WhatsApp",
+            "id": "campaign_1",
+            "nombre": "Campaña Haciendas del Bosque",
             "estado": "ACTIVE",
             "objetivo": "MESSAGES",
-            "semaforo": "verde",
-            "metricas": {
-                "impresiones": 28500,
-                "clics": 1200,
-                "gasto": 2100.00,
-                "cpc": 1.75,
-                "cpm": 73.68,
-                "ctr": 4.21,
-                "alcance": 18500,
-                "frecuencia": 1.54,
-                "leads": 0,
-                "mensajes": 28,
-                "link_clicks": 980,
-                "costo_por_resultado": 75.00
-            },
-            "anuncios": [
-                {
-                    "id": "ad1",
-                    "nombre": "Video Recorrido Casa Esmeralda",
-                    "estado": "ACTIVE",
-                    "metricas": {
-                        "impresiones": 15200,
-                        "clics": 720,
-                        "gasto": 1180.00,
-                        "cpc": 1.64,
-                        "ctr": 4.74,
-                        "alcance": 10200,
-                        "leads": 0,
-                        "mensajes": 18,
-                        "costo_por_resultado": 65.56
-                    }
-                },
-                {
-                    "id": "ad2",
-                    "nombre": "Carrusel Modelos Disponibles",
-                    "estado": "ACTIVE",
-                    "metricas": {
-                        "impresiones": 8300,
-                        "clics": 320,
-                        "gasto": 580.00,
-                        "cpc": 1.81,
-                        "ctr": 3.86,
-                        "alcance": 5600,
-                        "leads": 0,
-                        "mensajes": 7,
-                        "costo_por_resultado": 82.86
-                    }
-                },
-                {
-                    "id": "ad3",
-                    "nombre": "Imagen Promo Apartado $10K",
-                    "estado": "PAUSED",
-                    "metricas": {
-                        "impresiones": 5000,
-                        "clics": 160,
-                        "gasto": 340.00,
-                        "cpc": 2.13,
-                        "ctr": 3.20,
-                        "alcance": 2700,
-                        "leads": 0,
-                        "mensajes": 3,
-                        "costo_por_resultado": 113.33
-                    }
-                }
-            ]
-        },
-        {
-            "id": "2",
-            "nombre": "HDB — Leads Formulario",
-            "estado": "ACTIVE",
-            "objetivo": "LEAD_GENERATION",
+            "presupuesto_diario": 50.00,
             "semaforo": "amarillo",
             "metricas": {
-                "impresiones": 16700,
-                "clics": 650,
-                "gasto": 1150.00,
-                "cpc": 1.77,
-                "cpm": 68.86,
-                "ctr": 3.89,
-                "alcance": 12300,
-                "frecuencia": 1.36,
-                "leads": 42,
-                "mensajes": 0,
-                "link_clicks": 520,
-                "costo_por_resultado": 27.38
+                "impresiones": 11933,
+                "clics": 0,
+                "gasto": 328.93,
+                "cpc": 0,
+                "cpm": 27.57,
+                "ctr": 0,
+                "alcance": 8233,
+                "frecuencia": 1.45,
+                "leads": 0,
+                "mensajes": 10,
+                "link_clicks": 0,
+                "costo_por_resultado": 32.89
             },
             "anuncios": [
                 {
-                    "id": "ad4",
-                    "nombre": "Lead Form — Desde $1M",
+                    "id": "ad_fachada01",
+                    "nombre": "Fachada01",
                     "estado": "ACTIVE",
                     "metricas": {
-                        "impresiones": 10200,
-                        "clics": 420,
-                        "gasto": 720.00,
-                        "cpc": 1.71,
-                        "ctr": 4.12,
-                        "alcance": 7800,
-                        "leads": 30,
+                        "impresiones": 0,
+                        "clics": 0,
+                        "gasto": 0,
+                        "cpc": 0,
+                        "ctr": 0,
+                        "alcance": 0,
+                        "leads": 0,
                         "mensajes": 0,
-                        "costo_por_resultado": 24.00
+                        "costo_por_resultado": 0
                     }
                 },
                 {
-                    "id": "ad5",
-                    "nombre": "Lead Form — Casa Propia Tecámac",
+                    "id": "ad_fachada02",
+                    "nombre": "Fachada02",
                     "estado": "ACTIVE",
                     "metricas": {
-                        "impresiones": 6500,
-                        "clics": 230,
-                        "gasto": 430.00,
-                        "cpc": 1.87,
-                        "ctr": 3.54,
-                        "alcance": 4500,
-                        "leads": 12,
+                        "impresiones": 0,
+                        "clics": 0,
+                        "gasto": 0,
+                        "cpc": 0,
+                        "ctr": 0,
+                        "alcance": 0,
+                        "leads": 0,
                         "mensajes": 0,
-                        "costo_por_resultado": 35.83
+                        "costo_por_resultado": 0
+                    }
+                },
+                {
+                    "id": "ad_fachada03",
+                    "nombre": "Fachada03",
+                    "estado": "ACTIVE",
+                    "metricas": {
+                        "impresiones": 11933,
+                        "clics": 0,
+                        "gasto": 328.93,
+                        "cpc": 0,
+                        "ctr": 0,
+                        "alcance": 8233,
+                        "leads": 0,
+                        "mensajes": 10,
+                        "costo_por_resultado": 32.89
                     }
                 }
             ]
         }
     ],
-    "analisis_ia": "**Resumen Ejecutivo:** Las campañas de Haciendas del Bosque muestran buen rendimiento general. La campaña de WhatsApp tiene CTR superior a 4%, mientras que la de leads genera formularios a $27 MXN promedio.\n\n**Recomendaciones:**\n1. 🟢 Escalar el anuncio \"Video Recorrido Casa Esmeralda\" — tiene el mejor CPR ($65.56)\n2. 🟡 Pausar \"Imagen Promo Apartado $10K\" — CPR alto ($113) vs los otros anuncios\n3. 🔵 Crear variante del \"Lead Form — Desde $1M\" que tiene el mejor costo por lead ($24)\n\n*Estos son datos de ejemplo. Configura tu Access Token de Facebook como GitHub Secret para ver datos reales.*"
+    "analisis_ia": "**Resumen Ejecutivo:** La campaña de Haciendas del Bosque tiene 1 campaña activa con objetivo de mensajes. De los 3 anuncios, solo Fachada03 está generando resultados con 10 conversaciones a $32.89 CPR. Los otros 2 anuncios no tienen entrega.\n\n**Análisis por anuncio:**\n- 🟢 **Fachada03** — El único anuncio con resultados: 11,933 impresiones, 8,233 alcance, 10 conversaciones a $32.89 por conversación. CPR aceptable para sector inmobiliario.\n- 🔴 **Fachada01 y Fachada02** — Sin impresiones ni gasto. Posiblemente están en fase de aprendizaje o tienen problemas de configuración.\n\n**Recomendaciones:**\n1. 🟡 Revisar por qué Fachada01 y Fachada02 no tienen entrega — verificar que estén aprobados por Meta y que el presupuesto del conjunto de anuncios permita distribuir entre los 3\n2. 🟢 Fachada03 tiene buen alcance (8,233) con CPR de $32.89 — considerar aumentar presupuesto de ese anuncio\n3. 🔵 Crear variantes de Fachada03 para hacer pruebas A/B y bajar el CPR\n4. ⚠️ El presupuesto diario de $50 se concentra en 1 solo anuncio — considerar separar en conjuntos de anuncios individuales"
 }
