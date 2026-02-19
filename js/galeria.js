@@ -1,5 +1,5 @@
 // ===================================
-// galeria.js — Property Gallery
+// galeria.js — Property Gallery with Image Carousel
 // ===================================
 
 let modelosData = null;
@@ -37,6 +37,52 @@ function formatCurrency(n) {
   return new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', maximumFractionDigits: 0 }).format(n);
 }
 
+// === Image Carousel Logic ===
+function initCarousel(cardEl) {
+  const imgs = cardEl.querySelectorAll('.carousel-img');
+  const counter = cardEl.querySelector('.carousel-counter');
+  const prevBtn = cardEl.querySelector('.carousel-prev');
+  const nextBtn = cardEl.querySelector('.carousel-next');
+  let current = 0;
+
+  function show(idx) {
+    imgs.forEach((img, i) => {
+      img.style.display = i === idx ? 'block' : 'none';
+    });
+    if (counter) counter.textContent = `${idx + 1} / ${imgs.length}`;
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    current = (current - 1 + imgs.length) % imgs.length;
+    show(current);
+  });
+
+  if (nextBtn) nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    current = (current + 1) % imgs.length;
+    show(current);
+  });
+
+  // Swipe support for mobile
+  let touchStartX = 0;
+  const wrapper = cardEl.querySelector('.carousel-wrapper');
+  if (wrapper) {
+    wrapper.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    wrapper.addEventListener('touchend', (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        current = diff > 0
+          ? (current + 1) % imgs.length
+          : (current - 1 + imgs.length) % imgs.length;
+        show(current);
+      }
+    });
+  }
+
+  show(0);
+}
+
 function renderModels(models, filter = 'all') {
   const grid = document.getElementById('modelGrid');
 
@@ -54,38 +100,38 @@ function renderModels(models, filter = 'all') {
   }
 
   grid.innerHTML = filtered.map((model, i) => {
-    const gradients = [
-      'linear-gradient(135deg, #1B5FAA 0%, #3A7FCC 100%)',
-      'linear-gradient(135deg, #0E3D6E 0%, #1B5FAA 100%)',
-      'linear-gradient(135deg, #2a5298 0%, #1e3c72 100%)',
-      'linear-gradient(135deg, #E31837 0%, #FF3B5C 100%)',
-      'linear-gradient(135deg, #8B0000 0%, #E31837 100%)'
-    ];
-
     const features = model.caracteristicas.map(c => `<span>✅ ${c}</span>`).join('');
-
-    // Availability badge
     const availBadge = model.disponible
       ? '<span class="badge badge-green">✅ Disponible</span>'
       : '<span class="badge badge-red">❌ No disponible</span>';
 
-    // Image or gradient
     const hasImages = model.imagenes && model.imagenes.length > 0;
-    const imageSection = hasImages
-      ? `<img src="${model.imagenes[0]}" alt="${model.nombre}" style="width:100%;height:200px;object-fit:cover;">`
-      : `<div style="width:100%;height:200px;background:${gradients[i % 5]};display:flex;align-items:center;justify-content:center;color:white;position:relative;">
-          <div style="text-align:center;">
-            <div style="font-size:3rem;">${model.tipo === 'Departamento' ? '🏢' : '🏡'}</div>
-            <div style="font-size:1rem;margin-top:8px;font-weight:700;">${model.nombre}</div>
-            <div style="font-size:0.8rem;margin-top:4px;opacity:0.8;">${model.superficie_m2} m²</div>
-          </div>
-        </div>`;
 
-    // Baños display  
-    const banosText = model.banos % 1 === 0 ? model.banos : model.banos;
+    let imageSection;
+    if (hasImages) {
+      const imagesHTML = model.imagenes.map((src, idx) =>
+        `<img src="${src}" alt="${model.nombre} - Foto ${idx + 1}" class="carousel-img" style="${idx > 0 ? 'display:none;' : ''}width:100%;height:220px;object-fit:cover;">`
+      ).join('');
+
+      imageSection = `
+        <div class="carousel-wrapper" style="position:relative;overflow:hidden;border-radius:var(--radius-lg) var(--radius-lg) 0 0;">
+          ${imagesHTML}
+          ${model.imagenes.length > 1 ? `
+            <button class="carousel-prev" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);color:white;border:none;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;">‹</button>
+            <button class="carousel-next" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);color:white;border:none;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;">›</button>
+            <span class="carousel-counter" style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.7);color:white;padding:2px 8px;border-radius:12px;font-size:0.7rem;">1 / ${model.imagenes.length}</span>
+          ` : ''}
+        </div>`;
+    } else {
+      const gradients = ['linear-gradient(135deg, #1B5FAA 0%, #3A7FCC 100%)', 'linear-gradient(135deg, #0E3D6E 0%, #1B5FAA 100%)', 'linear-gradient(135deg, #E31837 0%, #FF3B5C 100%)'];
+      imageSection = `<div style="width:100%;height:220px;background:${gradients[i % 3]};display:flex;align-items:center;justify-content:center;color:white;border-radius:var(--radius-lg) var(--radius-lg) 0 0;">
+        <div style="text-align:center;"><div style="font-size:3rem;">${model.tipo === 'Departamento' ? '🏢' : '🏡'}</div><div style="font-size:0.8rem;margin-top:8px;opacity:0.8;">${model.superficie_m2} m²</div></div></div>`;
+    }
+
+    const banosText = model.banos;
 
     return `
-      <div class="gallery-card fade-in delay-${(i % 4) + 1}" data-type="${model.tipo}" style="${!model.disponible ? 'opacity:0.7;' : ''}">
+      <div class="gallery-card fade-in delay-${(i % 4) + 1}" data-type="${model.tipo}" data-model-id="${model.id}" style="${!model.disponible ? 'opacity:0.75;' : ''}">
         ${imageSection}
         
         <div class="gallery-card-body">
@@ -132,14 +178,24 @@ function renderModels(models, filter = 'all') {
         </div>
       </div>`;
   }).join('');
+
+  // Initialize carousels
+  document.querySelectorAll('.gallery-card').forEach(card => {
+    if (card.querySelector('.carousel-wrapper')) {
+      initCarousel(card);
+    }
+  });
 }
 
 function renderAmenities(amenidades) {
   const grid = document.getElementById('amenitiesGrid');
   grid.innerHTML = amenidades.map(a => `
-    <div class="amenity-item">
-      <span class="amenity-icon">${a.icon}</span>
-      <span>${a.nombre}</span>
+    <div class="amenity-item" style="${a.imagen ? 'flex-direction:column;' : ''}">
+      ${a.imagen ? `<img src="${a.imagen}" alt="${a.nombre}" style="width:100%;height:120px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:8px;">` : ''}
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span class="amenity-icon">${a.icon}</span>
+        <span style="font-size:0.85rem;">${a.nombre}</span>
+      </div>
     </div>
   `).join('');
 }
