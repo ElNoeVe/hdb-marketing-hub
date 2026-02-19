@@ -1,101 +1,111 @@
 // ===================================
-// galeria.js — Property Gallery with Image Carousel
+// galeria.js — Gallery with Carousel, Fullscreen & Maps
 // ===================================
 
-let modelosData = null;
+const ORIGIN_COORDS = '19.6284,-98.9686'; // Haciendas del Bosque entrance
 
 document.addEventListener('DOMContentLoaded', async () => {
-  modelosData = await loadModelos();
-  if (modelosData) {
-    renderModels(modelosData.modelos);
-    renderAmenities(modelosData.amenidades);
-    renderNearbyCategories(modelosData.cercania);
-  }
+  const data = await loadGalleryData();
+  if (!data) return;
+
+  renderModels(data.modelos);
+  renderAmenities(data.amenidades);
+  renderNearbyCategories(data.cercania);
 
   // Setup filter tabs
-  document.querySelectorAll('.tabs .tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      document.querySelectorAll('.tabs .tab').forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      const filter = tab.getAttribute('data-filter');
-      renderModels(modelosData.modelos, filter);
-    });
+  setupTabs('.tabs', (filter) => {
+    renderModels(data.modelos, filter);
   });
+
+  // Create fullscreen overlay (once)
+  createFullscreenOverlay();
 });
 
-async function loadModelos() {
+async function loadGalleryData() {
   try {
     const res = await fetch('data/modelos.json');
     return await res.json();
   } catch (e) {
-    console.error('Error loading models:', e);
+    console.error('Error loading gallery data:', e);
     return null;
   }
 }
 
-function formatCurrency(n) {
-  return new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', maximumFractionDigits: 0 }).format(n);
-}
+// =====================
+// FULLSCREEN IMAGE VIEWER
+// =====================
+function createFullscreenOverlay() {
+  const overlay = document.createElement('div');
+  overlay.id = 'fullscreenOverlay';
+  overlay.innerHTML = `
+    <div class="fs-backdrop" onclick="closeFullscreen()"></div>
+    <button class="fs-close" onclick="closeFullscreen()">✕</button>
+    <button class="fs-prev" onclick="fsNavigate(-1)">‹</button>
+    <button class="fs-next" onclick="fsNavigate(1)">›</button>
+    <img class="fs-image" id="fsImage" src="" alt="Imagen en pantalla completa">
+    <div class="fs-counter" id="fsCounter"></div>
+  `;
+  document.body.appendChild(overlay);
 
-// === Image Carousel Logic ===
-function initCarousel(cardEl) {
-  const imgs = cardEl.querySelectorAll('.carousel-img');
-  const counter = cardEl.querySelector('.carousel-counter');
-  const prevBtn = cardEl.querySelector('.carousel-prev');
-  const nextBtn = cardEl.querySelector('.carousel-next');
-  let current = 0;
-
-  function show(idx) {
-    imgs.forEach((img, i) => {
-      img.style.display = i === idx ? 'block' : 'none';
-    });
-    if (counter) counter.textContent = `${idx + 1} / ${imgs.length}`;
-  }
-
-  if (prevBtn) prevBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    current = (current - 1 + imgs.length) % imgs.length;
-    show(current);
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (!overlay.classList.contains('fs-active')) return;
+    if (e.key === 'Escape') closeFullscreen();
+    if (e.key === 'ArrowLeft') fsNavigate(-1);
+    if (e.key === 'ArrowRight') fsNavigate(1);
   });
 
-  if (nextBtn) nextBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    current = (current + 1) % imgs.length;
-    show(current);
+  // Swipe support for fullscreen
+  let fsTouchStartX = 0;
+  overlay.addEventListener('touchstart', (e) => { fsTouchStartX = e.touches[0].clientX; });
+  overlay.addEventListener('touchend', (e) => {
+    const diff = fsTouchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) fsNavigate(diff > 0 ? 1 : -1);
   });
-
-  // Swipe support for mobile
-  let touchStartX = 0;
-  const wrapper = cardEl.querySelector('.carousel-wrapper');
-  if (wrapper) {
-    wrapper.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
-    wrapper.addEventListener('touchend', (e) => {
-      const diff = touchStartX - e.changedTouches[0].clientX;
-      if (Math.abs(diff) > 50) {
-        current = diff > 0
-          ? (current + 1) % imgs.length
-          : (current - 1 + imgs.length) % imgs.length;
-        show(current);
-      }
-    });
-  }
-
-  show(0);
 }
 
-function renderModels(models, filter = 'all') {
+let fsImages = [];
+let fsCurrentIndex = 0;
+
+function openFullscreen(images, startIndex) {
+  fsImages = images;
+  fsCurrentIndex = startIndex || 0;
+  const overlay = document.getElementById('fullscreenOverlay');
+  overlay.classList.add('fs-active');
+  document.body.style.overflow = 'hidden';
+  updateFullscreenImage();
+}
+
+function closeFullscreen() {
+  document.getElementById('fullscreenOverlay').classList.remove('fs-active');
+  document.body.style.overflow = '';
+}
+
+function fsNavigate(direction) {
+  fsCurrentIndex = (fsCurrentIndex + direction + fsImages.length) % fsImages.length;
+  updateFullscreenImage();
+}
+
+function updateFullscreenImage() {
+  const img = document.getElementById('fsImage');
+  const counter = document.getElementById('fsCounter');
+  const src = fsImages[fsCurrentIndex];
+  const encodedSrc = src.split('/').map(s => encodeURIComponent(s)).join('/');
+  img.src = encodedSrc;
+  counter.textContent = `${fsCurrentIndex + 1} / ${fsImages.length}`;
+}
+
+// =====================
+// MODEL CARDS
+// =====================
+function renderModels(modelos, filter = 'all') {
   const grid = document.getElementById('modelGrid');
-
   const filtered = filter === 'all'
-    ? models
-    : models.filter(m => m.tipo === filter);
+    ? modelos
+    : modelos.filter(m => m.tipo.toLowerCase() === filter.toLowerCase());
 
   if (filtered.length === 0) {
-    grid.innerHTML = `
-      <div class="empty-state">
-        <div class="empty-state-icon">🏠</div>
-        <p class="empty-state-text">No hay modelos en esta categoría.</p>
-      </div>`;
+    grid.innerHTML = `<div class="empty-state"><div class="empty-state-icon">🏠</div><p class="empty-state-text">No hay modelos de este tipo.</p></div>`;
     return;
   }
 
@@ -110,9 +120,11 @@ function renderModels(models, filter = 'all') {
     let imageSection;
     if (hasImages) {
       const imagesHTML = model.imagenes.map((src, idx) => {
-        // Encode path segments to handle spaces and special chars in filenames
         const encodedSrc = src.split('/').map(segment => encodeURIComponent(segment)).join('/');
-        return `<img src="${encodedSrc}" alt="${model.nombre} - Foto ${idx + 1}" class="carousel-img" style="${idx > 0 ? 'display:none;' : ''}width:100%;height:220px;object-fit:cover;" onerror="this.style.display='none'">`;
+        return `<img src="${encodedSrc}" alt="${model.nombre} - Foto ${idx + 1}" class="carousel-img" 
+          style="${idx > 0 ? 'display:none;' : ''}width:100%;height:220px;object-fit:cover;cursor:pointer;" 
+          onclick="openFullscreen(${JSON.stringify(model.imagenes).replace(/"/g, '&quot;')}, ${idx})"
+          onerror="this.style.display='none'">`;
       }).join('');
 
       imageSection = `
@@ -122,6 +134,7 @@ function renderModels(models, filter = 'all') {
             <button class="carousel-prev" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);color:white;border:none;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;">‹</button>
             <button class="carousel-next" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);color:white;border:none;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;">›</button>
             <span class="carousel-counter" style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.7);color:white;padding:2px 8px;border-radius:12px;font-size:0.7rem;">1 / ${model.imagenes.length}</span>
+            <span class="carousel-fullscreen" onclick="openFullscreen(${JSON.stringify(model.imagenes).replace(/"/g, '&quot;')}, 0)" style="position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,0.7);color:white;padding:2px 8px;border-radius:12px;font-size:0.7rem;cursor:pointer;">🔍 Ver completa</span>
           ` : ''}
         </div>`;
     } else {
@@ -189,13 +202,58 @@ function renderModels(models, filter = 'all') {
   });
 }
 
+// =====================
+// CAROUSEL
+// =====================
+function initCarousel(card) {
+  const images = card.querySelectorAll('.carousel-img');
+  const prevBtn = card.querySelector('.carousel-prev');
+  const nextBtn = card.querySelector('.carousel-next');
+  const counter = card.querySelector('.carousel-counter');
+  if (images.length <= 1) return;
+
+  let currentIndex = 0;
+
+  function showImage(idx) {
+    images.forEach((img, i) => img.style.display = i === idx ? 'block' : 'none');
+    if (counter) counter.textContent = `${idx + 1} / ${images.length}`;
+    currentIndex = idx;
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showImage((currentIndex - 1 + images.length) % images.length);
+  });
+  if (nextBtn) nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showImage((currentIndex + 1) % images.length);
+  });
+
+  // Swipe support
+  let touchStartX = 0;
+  const wrapper = card.querySelector('.carousel-wrapper');
+  wrapper.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; });
+  wrapper.addEventListener('touchend', (e) => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      showImage(diff > 0
+        ? (currentIndex + 1) % images.length
+        : (currentIndex - 1 + images.length) % images.length);
+    }
+  });
+}
+
+// =====================
+// AMENITIES
+// =====================
 function renderAmenities(amenidades) {
   const grid = document.getElementById('amenitiesGrid');
   grid.innerHTML = amenidades.map(a => {
     const encodedImg = a.imagen ? a.imagen.split('/').map(s => encodeURIComponent(s)).join('/') : '';
     return `
     <div class="amenity-item" style="${a.imagen ? 'flex-direction:column;' : ''}">
-      ${a.imagen ? `<img src="${encodedImg}" alt="${a.nombre}" style="width:100%;height:120px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:8px;" onerror="this.style.display='none'">` : ''}
+      ${a.imagen ? `<img src="${encodedImg}" alt="${a.nombre}" style="width:100%;height:120px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:8px;cursor:pointer;" 
+        onclick="openFullscreen(['${a.imagen}'], 0)" onerror="this.style.display='none'">` : ''}
       <div style="display:flex;align-items:center;gap:8px;">
         <span class="amenity-icon">${a.icon}</span>
         <span style="font-size:0.85rem;">${a.nombre}</span>
@@ -204,6 +262,9 @@ function renderAmenities(amenidades) {
   }).join('');
 }
 
+// =====================
+// NEARBY PLACES (Google Maps Directions)
+// =====================
 function renderNearbyCategories(cercania) {
   const categories = [
     { key: 'hospitales', containerId: 'nearbyHospitales' },
@@ -219,8 +280,14 @@ function renderNearbyCategories(cercania) {
 
     if (container && items) {
       container.innerHTML = items.map(item => {
-        const mapsQuery = encodeURIComponent(item.nombre + (item.direccion ? ', ' + item.direccion : ', Tecámac, Estado de México'));
-        const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+        // Google Maps directions from development entrance to destination
+        let mapsUrl;
+        if (item.coords) {
+          mapsUrl = `https://www.google.com/maps/dir/${ORIGIN_COORDS}/${item.coords}`;
+        } else {
+          const mapsQuery = encodeURIComponent(item.nombre + ', Tecámac, Estado de México');
+          mapsUrl = `https://www.google.com/maps/dir/${ORIGIN_COORDS}/${mapsQuery}`;
+        }
         return `
         <div class="amenity-item" style="flex-direction:column;align-items:flex-start;gap:4px;">
           <div style="display:flex;align-items:center;gap:8px;">
@@ -230,7 +297,7 @@ function renderNearbyCategories(cercania) {
             </a>
           </div>
           <div style="font-size:0.75rem;color:var(--text-muted);padding-left:28px;">
-            ⏱️ ~${item.distancia}${item.direccion ? ' • 📍 ' + item.direccion : ''}${item.descripcion ? ' • ' + item.descripcion : ''}
+            🚗 ~${item.distancia} en auto${item.direccion ? ' • 📍 ' + item.direccion : ''}${item.descripcion ? ' • ' + item.descripcion : ''}
           </div>
         </div>`;
       }).join('');
