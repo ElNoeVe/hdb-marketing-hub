@@ -12,100 +12,163 @@
     },
     "modelos": [
         {
-            "id": "modelo-a",
-            "nombre": "Modelo A — Departamento",
+            "id": "depa-pino-plus",
+            "nombre": "Depa Pino Plus",
             "tipo": "Departamento",
-            "precio": 850000,
-            "superficie_m2": 48,
+            "precio": 1000000,
+            "gastos_adicionales": "Escrituración",
+            "superficie_m2": 59,
             "recamaras": 2,
             "banos": 1,
             "estacionamiento": 1,
             "niveles": 1,
-            "descripcion": "Departamento ideal para parejas jóvenes o familias pequeñas, con distribución inteligente y acabados de calidad.",
+            "disponible": false,
+            "apartado": 10000,
+            "plan_pagos": 5000,
+            "descripcion": "Departamento de 2 recámaras con excelente distribución, acabados de calidad y todos los beneficios del fraccionamiento. Actualmente NO disponible.",
             "imagenes": [],
             "caracteristicas": [
-                "Sala-comedor",
-                "Cocina integral",
-                "2 recámaras",
-                "1 baño completo",
-                "Patio de servicio"
-            ]
-        },
-        {
-            "id": "modelo-b",
-            "nombre": "Modelo B — Casa",
-            "tipo": "Casa",
-            "precio": 980000,
-            "superficie_m2": 62,
-            "recamaras": 2,
-            "banos": 1,
-            "estacionamiento": 1,
-            "niveles": 2,
-            "descripcion": "Casa de dos niveles con espacio para crecer, perfecta para familias que buscan su primer hogar.",
-            "imagenes": [],
-            "caracteristicas": [
-                "Sala-comedor",
-                "Cocina",
-                "2 recámaras",
-                "1 baño completo",
-                "Patio trasero",
+                "Sala, comedor y cocina",
+                "Cocina integral incluida",
+                "Cuarto de servicio con boiler y lavadero",
+                "Clóset, persianas y accesorios de baño",
+                "Cancel de vidrio templado en el baño",
                 "Cajón de estacionamiento"
             ]
         },
         {
-            "id": "modelo-c",
-            "nombre": "Modelo C — Casa Plus",
-            "tipo": "Casa",
+            "id": "depa-pino-premium-2r",
+            "nombre": "Depa Pino Premium 2R",
+            "tipo": "Departamento",
             "precio": 1150000,
-            "superficie_m2": 78,
+            "gastos_adicionales": "Escrituración",
+            "superficie_m2": 59,
+            "recamaras": 2,
+            "banos": 1,
+            "estacionamiento": 1,
+            "niveles": 1,
+            "disponible": true,
+            "apartado": 10000,
+            "plan_pagos": 5000,
+            "descripcion": "Departamento premium de 2 recámaras con acabados superiores y distribución inteligente. ¡Disponible!",
+            "imagenes": [],
+            "caracteristicas": [
+                "Sala, comedor y cocina",
+                "Cocina integral incluida",
+                "Cuarto de servicio con boiler y lavadero",
+                "Clóset, persianas y accesorios de baño",
+                "Cancel de vidrio templado en el baño",
+                "Cajón de estacionamiento"
+            ]
+        },
+        {
+            "id": "depa-pino-premium-3r",
+            "nombre": "Depa Pino Premium 3R",
+            "tipo": "Departamento",
+            "precio": 1200000,
+            "gastos_adicionales": "Escrituración",
+            "superficie_m2": 64,
             "recamaras": 3,
             "banos": 2,
             "estacionamiento": 1,
-            "niveles": 2,
-            "descripcion": "Casa de dos niveles con 3 recámaras, ideal para familias de 4-6 integrantes que necesitan más espacio.",
+            "niveles": 1,
+            "disponible": true,
+            "apartado": 10000,
+            "plan_pagos": 5000,
+            "descripcion": "Departamento premium de 3 recámaras y 2 baños, ideal para familias que necesitan más espacio. ¡Disponible!",
             "imagenes": [],
             "caracteristicas": [
-                "Sala-comedor amplio",
-                "Cocina integral",
-                "3 recámaras",
-                "2 baños completos",
-                "Patio de servicio",
+                "Sala, comedor y cocina",
+                "Cocina integral incluida",
+                "Cuarto de servicio con boiler y lavadero",
+                "Clóset, persianas y accesorios de baño",
+                "Cancel de vidrio templado en el baño",
+                "Cajón de estacionamiento"
+            ]
+        },
+        {
+            "id": "casa-esmeralda",
+            "nombre": "Casa Esmeralda",
+            "tipo": "Casa",
+            "precio": 1336000,
+            "gastos_adicionales": "Escrituración + Agua",
+            "superficie_m2": 74,
+            "recamaras": 3,
+            "banos": 2.5,
+            "estacionamiento": 1,
+            "niveles": 2,
+            "disponible": true,
+            "apartado": 10000,
+            "plan_pagos": 5000,
+            "descripcion": "Casa de 2 niveles con 3 recámaras y 2.5 baños, perfecta para familias que buscan espacio y comodidad. ¡Disponible!",
+            "imagenes": [],
+            "caracteristicas": [
+                "Sala, comedor y cocina",
+                "Cocina integral incluida",
+                "Cuarto de servicio con boiler y lavadero",
+                "Clóset, persianas y accesorios de baño",
+                "Cancel de vidrio templado en el baño",
+                "Cajón de estacionamiento"
+            ]
+        },
+        {
+            "id": "casa-citrino",
+            "nombre": "Casa Citrino",
+            "tipo": "Casa",
+            "precio": 1850000,
+            "gastos_adicionales": "Escrituración",
+            "superficie_m2": 122,
+            "recamaras": 3,
+            "banos": 2.5,
+            "estacionamiento": 1,
+            "niveles": 2,
+            "disponible": false,
+            "apartado": 10000,
+            "plan_pagos": 5000,
+            "descripcion": "La casa más amplia del desarrollo con 122 m², 3 recámaras y 2.5 baños. Espacio premium para familias grandes. Actualmente NO disponible.",
+            "imagenes": [],
+            "caracteristicas": [
+                "Sala, comedor y cocina",
+                "Cocina integral incluida",
+                "Cuarto de servicio con boiler y lavadero",
+                "Clóset, persianas y accesorios de baño",
+                "Cancel de vidrio templado en el baño",
                 "Cajón de estacionamiento"
             ]
         }
     ],
     "amenidades": [
         {
-            "icon": "🏊",
-            "nombre": "Alberca"
+            "icon": "🍽️",
+            "nombre": "Sala, comedor y cocina"
         },
         {
-            "icon": "🌳",
-            "nombre": "Áreas verdes"
+            "icon": "🧺",
+            "nombre": "Cuarto de servicio con boiler y lavadero"
         },
         {
-            "icon": "🛝",
-            "nombre": "Juegos infantiles"
+            "icon": "🍳",
+            "nombre": "Cocina integral incluida"
         },
         {
-            "icon": "🏃",
-            "nombre": "Área deportiva"
+            "icon": "🪟",
+            "nombre": "Clóset, persianas y accesorios de baño"
+        },
+        {
+            "icon": "🚿",
+            "nombre": "Cancel de vidrio templado en el baño"
         },
         {
             "icon": "🚗",
-            "nombre": "Estacionamiento"
+            "nombre": "Cajón de estacionamiento"
         },
         {
-            "icon": "🏪",
-            "nombre": "Locales comerciales"
+            "icon": "🛝",
+            "nombre": "Juegos infantiles, asador y área familiar"
         },
         {
-            "icon": "🔒",
-            "nombre": "Acceso controlado"
-        },
-        {
-            "icon": "🏥",
-            "nombre": "Caseta de vigilancia"
+            "icon": "🏫",
+            "nombre": "Escuelas dentro del desarrollo"
         }
     ],
     "cercania": {
