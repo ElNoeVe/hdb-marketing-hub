@@ -1,50 +1,142 @@
 {
-    "fecha": "2026-02-19T07:00:00-06:00",
-    "fecha_legible": "miércoles, 19 de febrero de 2026",
+    "fecha_generacion": "2026-02-19T08:00:00.000Z",
+    "periodo": "Últimos 30 días",
+    "total_campanas": 2,
+    "total_anuncios": 5,
     "resumen": {
-        "impresiones": 1547,
-        "clics": 4,
-        "gasto": 42.39,
-        "cpr": 10.60,
-        "ctr": 0.26
+        "gasto_total": 3250.00,
+        "impresiones_totales": 45200,
+        "clics_totales": 1850,
+        "leads_totales": 42,
+        "mensajes_totales": 28
     },
-    "consejo_general": "Tus campañas actuales tienen un CTR bajo (0.26%). Esto puede deberse a que las creatividades ya llevan tiempo sin renovarse. Recomiendo: 1) Aumentar presupuesto en la campaña de imágenes que tiene mejor CTR. 2) Pausar temporalmente el video de inversión y crear uno nuevo enfocado en testimoniales. 3) Renovar las imágenes usando fotos reales del desarrollo. 4) Probar un anuncio orientado exclusivamente a Tizayuca y Pachuca donde el costo por resultado puede ser menor.",
     "campanas": [
         {
-            "nombre": "Campaña Imágenes — Hogar Familiar",
-            "id": "camp_001",
+            "id": "1",
+            "nombre": "Haciendas del Bosque — Mensajes WhatsApp",
             "estado": "ACTIVE",
-            "dias_activa": 7,
-            "presupuesto_diario": 50,
+            "objetivo": "MESSAGES",
+            "semaforo": "verde",
             "metricas": {
-                "impresiones": 823,
-                "clics": 3,
-                "gasto": 22.50,
-                "ctr": 0.36,
-                "cpr": 7.50,
-                "alcance": 612,
-                "frecuencia": 1.34
+                "impresiones": 28500,
+                "clics": 1200,
+                "gasto": 2100.00,
+                "cpc": 1.75,
+                "cpm": 73.68,
+                "ctr": 4.21,
+                "alcance": 18500,
+                "frecuencia": 1.54,
+                "leads": 0,
+                "mensajes": 28,
+                "link_clicks": 980,
+                "costo_por_resultado": 75.00
             },
-            "recomendacion": "impulsar",
-            "consejo": "Buen CTR relativo (0.36%). Recomiendo aumentar presupuesto a $75/día para maximizar resultados. Considerar duplicar el anuncio con diferentes imágenes para test A/B."
+            "anuncios": [
+                {
+                    "id": "ad1",
+                    "nombre": "Video Recorrido Casa Esmeralda",
+                    "estado": "ACTIVE",
+                    "metricas": {
+                        "impresiones": 15200,
+                        "clics": 720,
+                        "gasto": 1180.00,
+                        "cpc": 1.64,
+                        "ctr": 4.74,
+                        "alcance": 10200,
+                        "leads": 0,
+                        "mensajes": 18,
+                        "costo_por_resultado": 65.56
+                    }
+                },
+                {
+                    "id": "ad2",
+                    "nombre": "Carrusel Modelos Disponibles",
+                    "estado": "ACTIVE",
+                    "metricas": {
+                        "impresiones": 8300,
+                        "clics": 320,
+                        "gasto": 580.00,
+                        "cpc": 1.81,
+                        "ctr": 3.86,
+                        "alcance": 5600,
+                        "leads": 0,
+                        "mensajes": 7,
+                        "costo_por_resultado": 82.86
+                    }
+                },
+                {
+                    "id": "ad3",
+                    "nombre": "Imagen Promo Apartado $10K",
+                    "estado": "PAUSED",
+                    "metricas": {
+                        "impresiones": 5000,
+                        "clics": 160,
+                        "gasto": 340.00,
+                        "cpc": 2.13,
+                        "ctr": 3.20,
+                        "alcance": 2700,
+                        "leads": 0,
+                        "mensajes": 3,
+                        "costo_por_resultado": 113.33
+                    }
+                }
+            ]
         },
         {
-            "nombre": "Campaña Videos — Inversión",
-            "id": "camp_002",
+            "id": "2",
+            "nombre": "HDB — Leads Formulario",
             "estado": "ACTIVE",
-            "dias_activa": 5,
-            "presupuesto_diario": 50,
+            "objetivo": "LEAD_GENERATION",
+            "semaforo": "amarillo",
             "metricas": {
-                "impresiones": 724,
-                "clics": 1,
-                "gasto": 19.89,
-                "ctr": 0.14,
-                "cpr": 19.89,
-                "alcance": 589,
-                "frecuencia": 1.23
+                "impresiones": 16700,
+                "clics": 650,
+                "gasto": 1150.00,
+                "cpc": 1.77,
+                "cpm": 68.86,
+                "ctr": 3.89,
+                "alcance": 12300,
+                "frecuencia": 1.36,
+                "leads": 42,
+                "mensajes": 0,
+                "link_clicks": 520,
+                "costo_por_resultado": 27.38
             },
-            "recomendacion": "mantener",
-            "consejo": "CTR bajo pero la campaña todavía está en fase de aprendizaje (5 días). Esperar al día 7 para evaluar. Si no mejora, reducir presupuesto a $30/día e invertir la diferencia en la campaña de imágenes."
+            "anuncios": [
+                {
+                    "id": "ad4",
+                    "nombre": "Lead Form — Desde $1M",
+                    "estado": "ACTIVE",
+                    "metricas": {
+                        "impresiones": 10200,
+                        "clics": 420,
+                        "gasto": 720.00,
+                        "cpc": 1.71,
+                        "ctr": 4.12,
+                        "alcance": 7800,
+                        "leads": 30,
+                        "mensajes": 0,
+                        "costo_por_resultado": 24.00
+                    }
+                },
+                {
+                    "id": "ad5",
+                    "nombre": "Lead Form — Casa Propia Tecámac",
+                    "estado": "ACTIVE",
+                    "metricas": {
+                        "impresiones": 6500,
+                        "clics": 230,
+                        "gasto": 430.00,
+                        "cpc": 1.87,
+                        "ctr": 3.54,
+                        "alcance": 4500,
+                        "leads": 12,
+                        "mensajes": 0,
+                        "costo_por_resultado": 35.83
+                    }
+                }
+            ]
         }
-    ]
+    ],
+    "analisis_ia": "**Resumen Ejecutivo:** Las campañas de Haciendas del Bosque muestran buen rendimiento general. La campaña de WhatsApp tiene CTR superior a 4%, mientras que la de leads genera formularios a $27 MXN promedio.\n\n**Recomendaciones:**\n1. 🟢 Escalar el anuncio \"Video Recorrido Casa Esmeralda\" — tiene el mejor CPR ($65.56)\n2. 🟡 Pausar \"Imagen Promo Apartado $10K\" — CPR alto ($113) vs los otros anuncios\n3. 🔵 Crear variante del \"Lead Form — Desde $1M\" que tiene el mejor costo por lead ($24)\n\n*Estos son datos de ejemplo. Configura tu Access Token de Facebook como GitHub Secret para ver datos reales.*"
 }
