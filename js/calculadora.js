@@ -9,6 +9,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     preciosData = await loadJSON('data/precios-historicos.json');
     if (preciosData) {
         renderHistoricalTables();
+
+        // Check if a price was set from gallery page
+        const savedPrice = localStorage.getItem('calcPrice');
+        if (savedPrice) {
+            document.getElementById('currentPrice').value = savedPrice;
+            // Select matching dropdown option
+            const select = document.getElementById('propertyType');
+            for (let opt of select.options) {
+                if (opt.value === savedPrice) {
+                    opt.selected = true;
+                    break;
+                }
+            }
+            localStorage.removeItem('calcPrice');
+        }
+
         calculate(); // Auto calculate on load
     }
 
@@ -27,9 +43,23 @@ async function loadJSON(url) {
     }
 }
 
-function selectModel(price, type) {
+function selectModelFromDropdown() {
+    const select = document.getElementById('propertyType');
+    const price = select.value;
     document.getElementById('currentPrice').value = price;
-    document.getElementById('propertyType').value = type;
+    calculate();
+}
+
+function selectModel(price) {
+    document.getElementById('currentPrice').value = price;
+    // Update dropdown to match
+    const select = document.getElementById('propertyType');
+    for (let opt of select.options) {
+        if (opt.value === String(price)) {
+            opt.selected = true;
+            break;
+        }
+    }
     calculate();
 }
 
