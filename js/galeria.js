@@ -109,9 +109,11 @@ function renderModels(models, filter = 'all') {
 
     let imageSection;
     if (hasImages) {
-      const imagesHTML = model.imagenes.map((src, idx) =>
-        `<img src="${src}" alt="${model.nombre} - Foto ${idx + 1}" class="carousel-img" style="${idx > 0 ? 'display:none;' : ''}width:100%;height:220px;object-fit:cover;">`
-      ).join('');
+      const imagesHTML = model.imagenes.map((src, idx) => {
+        // Encode path segments to handle spaces and special chars in filenames
+        const encodedSrc = src.split('/').map(segment => encodeURIComponent(segment)).join('/');
+        return `<img src="${encodedSrc}" alt="${model.nombre} - Foto ${idx + 1}" class="carousel-img" style="${idx > 0 ? 'display:none;' : ''}width:100%;height:220px;object-fit:cover;" onerror="this.style.display='none'">`;
+      }).join('');
 
       imageSection = `
         <div class="carousel-wrapper" style="position:relative;overflow:hidden;border-radius:var(--radius-lg) var(--radius-lg) 0 0;">
@@ -189,15 +191,17 @@ function renderModels(models, filter = 'all') {
 
 function renderAmenities(amenidades) {
   const grid = document.getElementById('amenitiesGrid');
-  grid.innerHTML = amenidades.map(a => `
+  grid.innerHTML = amenidades.map(a => {
+    const encodedImg = a.imagen ? a.imagen.split('/').map(s => encodeURIComponent(s)).join('/') : '';
+    return `
     <div class="amenity-item" style="${a.imagen ? 'flex-direction:column;' : ''}">
-      ${a.imagen ? `<img src="${a.imagen}" alt="${a.nombre}" style="width:100%;height:120px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:8px;">` : ''}
+      ${a.imagen ? `<img src="${encodedImg}" alt="${a.nombre}" style="width:100%;height:120px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:8px;" onerror="this.style.display='none'">` : ''}
       <div style="display:flex;align-items:center;gap:8px;">
         <span class="amenity-icon">${a.icon}</span>
         <span style="font-size:0.85rem;">${a.nombre}</span>
       </div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 }
 
 function renderNearbyCategories(cercania) {
@@ -214,17 +218,22 @@ function renderNearbyCategories(cercania) {
     const items = cercania[cat.key];
 
     if (container && items) {
-      container.innerHTML = items.map(item => `
+      container.innerHTML = items.map(item => {
+        const mapsQuery = encodeURIComponent(item.nombre + (item.direccion ? ', ' + item.direccion : ', Tecámac, Estado de México'));
+        const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+        return `
         <div class="amenity-item" style="flex-direction:column;align-items:flex-start;gap:4px;">
           <div style="display:flex;align-items:center;gap:8px;">
             <span class="amenity-icon">${item.icon}</span>
-            <strong style="font-size:0.85rem;">${item.nombre}</strong>
+            <a href="${mapsUrl}" target="_blank" style="font-size:0.85rem;font-weight:700;color:var(--text-primary);text-decoration:none;" onmouseover="this.style.color='var(--blue-light)'" onmouseout="this.style.color='var(--text-primary)'">
+              ${item.nombre} 🔗
+            </a>
           </div>
           <div style="font-size:0.75rem;color:var(--text-muted);padding-left:28px;">
             ⏱️ ~${item.distancia}${item.direccion ? ' • 📍 ' + item.direccion : ''}${item.descripcion ? ' • ' + item.descripcion : ''}
           </div>
-        </div>
-      `).join('');
+        </div>`;
+      }).join('');
     }
   });
 }
