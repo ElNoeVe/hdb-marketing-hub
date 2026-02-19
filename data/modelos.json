@@ -2,8 +2,8 @@
     "desarrollo": {
         "nombre": "Haciendas del Bosque",
         "desarrollador": "Hogares Unión",
-        "ubicacion": "Tecámac, Estado de México",
-        "descripcion": "Fraccionamiento residencial ubicado estratégicamente cerca del Aeropuerto Internacional Felipe Ángeles (AIFA), sobre la carretera México-Pachuca.",
+        "ubicacion": "Ojo de Agua, Tecámac, Estado de México",
+        "descripcion": "Fraccionamiento residencial ubicado estratégicamente sobre la carretera México-Pachuca, cerca del Aeropuerto Internacional Felipe Ángeles (AIFA).",
         "contacto": {
             "telefono": "5537494034",
             "email": "n.gutierrez.hernandez@hogaresunion.mx",
@@ -22,7 +22,7 @@
             "estacionamiento": 1,
             "niveles": 1,
             "descripcion": "Departamento ideal para parejas jóvenes o familias pequeñas, con distribución inteligente y acabados de calidad.",
-            "imagenes_drive": [],
+            "imagenes": [],
             "caracteristicas": [
                 "Sala-comedor",
                 "Cocina integral",
@@ -42,7 +42,7 @@
             "estacionamiento": 1,
             "niveles": 2,
             "descripcion": "Casa de dos niveles con espacio para crecer, perfecta para familias que buscan su primer hogar.",
-            "imagenes_drive": [],
+            "imagenes": [],
             "caracteristicas": [
                 "Sala-comedor",
                 "Cocina",
@@ -63,7 +63,7 @@
             "estacionamiento": 1,
             "niveles": 2,
             "descripcion": "Casa de dos niveles con 3 recámaras, ideal para familias de 4-6 integrantes que necesitan más espacio.",
-            "imagenes_drive": [],
+            "imagenes": [],
             "caracteristicas": [
                 "Sala-comedor amplio",
                 "Cocina integral",
@@ -108,56 +108,190 @@
             "nombre": "Caseta de vigilancia"
         }
     ],
-    "cercania": [
-        {
-            "icon": "🏥",
-            "nombre": "Hospital IMSS 200",
-            "distancia": "15 min"
-        },
-        {
-            "icon": "🏥",
-            "nombre": "Hospital Polanco Tecámac",
-            "distancia": "8 min"
-        },
-        {
-            "icon": "🎓",
-            "nombre": "CECyTEM Tecámac",
-            "distancia": "10 min"
-        },
-        {
-            "icon": "🎓",
-            "nombre": "Universidad Politécnica Tecámac",
-            "distancia": "7 min"
-        },
-        {
-            "icon": "🛒",
-            "nombre": "Tecámac Power Center",
-            "distancia": "10 min"
-        },
-        {
-            "icon": "🛒",
-            "nombre": "Macroplaza Los Héroes",
-            "distancia": "12 min"
-        },
-        {
-            "icon": "✈️",
-            "nombre": "Aeropuerto AIFA",
-            "distancia": "20 min"
-        },
-        {
-            "icon": "🚌",
-            "nombre": "Mexibús Tecámac",
-            "distancia": "5 min"
-        },
-        {
-            "icon": "🛣️",
-            "nombre": "Carretera México-Pachuca",
-            "distancia": "5 min"
-        },
-        {
-            "icon": "🛣️",
-            "nombre": "Circuito Exterior Mexiquense",
-            "distancia": "10 min"
-        }
-    ]
+    "cercania": {
+        "hospitales": [
+            {
+                "icon": "🏥",
+                "nombre": "Hospital General Regional No. 200 IMSS",
+                "distancia": "10 min",
+                "direccion": "Carretera Federal México-Pachuca KM 42"
+            },
+            {
+                "icon": "🏥",
+                "nombre": "Hospital Polanco Tecámac",
+                "distancia": "8 min",
+                "direccion": "Ojo de Agua, Tecámac"
+            },
+            {
+                "icon": "🏥",
+                "nombre": "Hospitales Antara — Unidad Tecámac",
+                "distancia": "12 min",
+                "direccion": "Tecámac"
+            },
+            {
+                "icon": "🏥",
+                "nombre": "Clínica ISSSTE Héroes Tecámac",
+                "distancia": "15 min",
+                "direccion": "Los Héroes Tecámac"
+            },
+            {
+                "icon": "🏥",
+                "nombre": "Clínica ISSSTE Juana Belén Gutiérrez Chávez",
+                "distancia": "18 min",
+                "direccion": "Santo Tomás Chiconautla"
+            },
+            {
+                "icon": "🏥",
+                "nombre": "Centro Médico Nuevo Mundo",
+                "distancia": "10 min",
+                "direccion": "Tecámac"
+            },
+            {
+                "icon": "🏥",
+                "nombre": "Médica de Especialidades Tecámac (MET)",
+                "distancia": "12 min",
+                "direccion": "Tecámac"
+            }
+        ],
+        "plazas_comerciales": [
+            {
+                "icon": "🛒",
+                "nombre": "Multiplaza Ojo de Agua",
+                "distancia": "5 min",
+                "direccion": "Ave. Santa Cruz Ojo de Agua No. 88"
+            },
+            {
+                "icon": "🛒",
+                "nombre": "Tecámac Power Center",
+                "distancia": "10 min",
+                "direccion": "Tecámac"
+            },
+            {
+                "icon": "🛒",
+                "nombre": "Pabellón Tecámac",
+                "distancia": "12 min",
+                "direccion": "Tecámac"
+            },
+            {
+                "icon": "🛒",
+                "nombre": "Sam's Club Tecámac",
+                "distancia": "10 min",
+                "direccion": "Tecámac"
+            },
+            {
+                "icon": "🛒",
+                "nombre": "Chedraui Tecámac",
+                "distancia": "10 min",
+                "direccion": "Tecámac"
+            },
+            {
+                "icon": "🛒",
+                "nombre": "Plaza Patio Tecámac",
+                "distancia": "14 min",
+                "direccion": "Tecámac"
+            },
+            {
+                "icon": "🛒",
+                "nombre": "Macroplaza Los Héroes",
+                "distancia": "15 min",
+                "direccion": "Los Héroes Tecámac"
+            }
+        ],
+        "escuelas": [
+            {
+                "icon": "🎓",
+                "nombre": "CECyTEM Tecámac",
+                "distancia": "10 min",
+                "direccion": "Tecámac"
+            },
+            {
+                "icon": "🎓",
+                "nombre": "Innova Schools Ojo de Agua",
+                "distancia": "7 min",
+                "direccion": "Ojo de Agua, Tecámac"
+            },
+            {
+                "icon": "🎓",
+                "nombre": "Secundaria General Hacienda del Bosque",
+                "distancia": "2 min",
+                "direccion": "Dentro del fraccionamiento"
+            },
+            {
+                "icon": "🎓",
+                "nombre": "Colegio Vallarta",
+                "distancia": "8 min",
+                "direccion": "Ojo de Agua (preescolar a preparatoria)"
+            },
+            {
+                "icon": "🎓",
+                "nombre": "Liceo México Americano",
+                "distancia": "10 min",
+                "direccion": "Ojo de Agua"
+            }
+        ],
+        "universidades": [
+            {
+                "icon": "🎓",
+                "nombre": "Universidad Politécnica de Tecámac (UPT)",
+                "distancia": "7 min",
+                "direccion": "Tecámac"
+            },
+            {
+                "icon": "🎓",
+                "nombre": "Universidad Von Newman",
+                "distancia": "10 min",
+                "direccion": "Ojo de Agua, Tecámac"
+            },
+            {
+                "icon": "🎓",
+                "nombre": "Universidad Mexiquense del Bicentenario (UMB) — Campus Tecámac",
+                "distancia": "15 min",
+                "direccion": "Los Héroes Tecámac"
+            },
+            {
+                "icon": "🎓",
+                "nombre": "Centro de Estudios Superiores Felipe Villanueva — Plantel Ojo de Agua",
+                "distancia": "8 min",
+                "direccion": "Ojo de Agua"
+            }
+        ],
+        "accesos_viales": [
+            {
+                "icon": "🛣️",
+                "nombre": "Carretera Libre México-Pachuca",
+                "distancia": "2 min",
+                "descripcion": "Acceso directo desde el desarrollo"
+            },
+            {
+                "icon": "🛣️",
+                "nombre": "Autopista México-Pachuca (cuota)",
+                "distancia": "5 min",
+                "descripcion": "Caseta Ojo de Agua"
+            },
+            {
+                "icon": "🛣️",
+                "nombre": "Circuito Exterior Mexiquense",
+                "distancia": "10 min",
+                "descripcion": "Conexión AIFA, Querétaro, Puebla"
+            },
+            {
+                "icon": "🛣️",
+                "nombre": "Libramiento Tultepec-AIFA-Pirámides",
+                "distancia": "10 min",
+                "descripcion": "Conecta Tecámac, AIFA, Autopista México-Querétaro y Av. Morelos San Cristóbal"
+            },
+            {
+                "icon": "✈️",
+                "nombre": "Aeropuerto Internacional Felipe Ángeles (AIFA)",
+                "distancia": "20 min",
+                "descripcion": "Acceso vía libramiento o carretera libre"
+            },
+            {
+                "icon": "🚌",
+                "nombre": "Estación Mexibús Línea 1 — Ojo de Agua",
+                "distancia": "5 min",
+                "descripcion": "Ruta Ciudad Azteca ↔ Ojo de Agua ↔ AIFA"
+            }
+        ]
+    }
 }
