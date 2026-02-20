@@ -40,7 +40,14 @@ async function loadLatestReport() {
           console.log('✅ Reporte cargado:', url);
           return await res.json();
         }
-      } catch { }
+      } catch (e) {
+        console.warn(`Could not fetch ${url}, fallback to local data if available`);
+      }
+    }
+
+    // Fallback: Check for global data (local file view)
+    if (window.StartData && window.StartData.reportes) {
+      return window.StartData.reportes;
     }
 
     console.warn('⚠️ No se encontró reporte reciente, usando datos de ejemplo');

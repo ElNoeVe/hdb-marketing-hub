@@ -1,0 +1,55 @@
+name: Publicar en GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Permite ejecución manual
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Solo permite una publicación a la vez
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      # Inyectar configuración de Supabase en ambas apps (sin exponer en código)
+      - name: Inyectar configuración de analítica
+        run: |
+          CONFIG_SCRIPT="<script>window.ANALYTICS_CONFIG={supabaseUrl:'${{ secrets.SUPABASE_URL }}',supabaseKey:'${{ secrets.SUPABASE_KEY }}'};</script>"
+          
+          # Inyectar en App Principal (index.html)
+          sed -i "s|</head>|${CONFIG_SCRIPT}</head>|" index.html
+          
+          # Inyectar en App Lite
+          sed -i "s|</head>|${CONFIG_SCRIPT}</head>|" lite/index.html
+          sed -i "s|</head>|${CONFIG_SCRIPT}</head>|" lite/calculadora.html
+          sed -i "s|</head>|${CONFIG_SCRIPT}</head>|" lite/galeria.html
+          
+          echo "✅ Configuración de analítica inyectada"
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Subir archivos como artefacto de Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

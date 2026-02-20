@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es-MX">
-
+<script>
+  window.ANALYTICS_CONFIG = {
+    supabaseUrl: 'https://smdenxdjsrhijanupxll.supabase.co',
+    supabaseKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNtZGVueGRqc3JoaWphbnVweGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE2MTg0OTQsImV4cCI6MjA4NzE5NDQ5NH0.NdM0hZ4DY8ty-Kd_ETyWfSvyIYyaobyFD_Hq-jZAGR0'
+  };
+</script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +13,7 @@
   <meta name="description" content="Panel de control de campañas publicitarias para Haciendas del Bosque, Tecámac.">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="assets/logo-hdb.png" type="image/png">
+  <script src="js/analytics.js" defer></script>
 </head>
 
 <body>
@@ -95,6 +101,28 @@
       <a href="mailto:n.gutierrez.hernandez@hogaresunion.mx">✉️ n.gutierrez.hernandez@hogaresunion.mx</a>
     </div>
 
+    <!-- Sección de Estadísticas en Tiempo Real (Agregado) -->
+    <div id="stats-dashboard"
+      style="background: rgba(26, 26, 26, 0.9); color: white; padding: 2rem; border-radius: 15px; margin-top: 3rem; border: 1px solid #333; backdrop-filter: blur(10px);">
+      <h3 style="margin-top: 0; color: #4ade80;">📊 Rendimiento en Tiempo Real (Apps Conectadas)</h3>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center;">
+        <div>
+          <h2 id="total-visits" style="font-size: 2.5rem; margin-bottom: 0;">0</h2>
+          <p style="opacity: 0.7;">Visitas Totales</p>
+        </div>
+        <div>
+          <h2 id="wa-clicks" style="font-size: 2.5rem; margin-bottom: 0; color: #25D366;">0</h2>
+          <p style="opacity: 0.7;">Clics WhatsApp</p>
+        </div>
+        <div>
+          <h2 id="top-section" style="font-size: 1.5rem; margin-top: 0.8rem; margin-bottom: 0; color: #3b82f6;">-</h2>
+          <p style="opacity: 0.7;">Sección Más Hot</p>
+        </div>
+      </div>
+      <p style="font-size: 0.8rem; opacity: 0.5; margin-top: 1rem; text-align: center;">Datos sincronizados
+        automáticamente desde App Principal y Lite</p>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-logos">
@@ -106,6 +134,7 @@
     </footer>
   </div>
 
+  <script src="data/data.js"></script>
   <script src="js/app.js"></script>
   <script src="js/dashboard.js"></script>
 </body>

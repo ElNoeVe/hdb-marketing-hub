@@ -41,6 +41,10 @@ async function loadJSON(url) {
         console.log('✅ Datos cargados correctamente:', url);
         return data;
     } catch (e) {
+        console.warn('⚠️ Fetch failed (likely CORS), trying fallback data...');
+        if (window.StartData && window.StartData.precios) {
+            return window.StartData.precios;
+        }
         console.error('❌ Error loading data:', e);
         // Show error to user
         const motiv = document.getElementById('motivationalText');

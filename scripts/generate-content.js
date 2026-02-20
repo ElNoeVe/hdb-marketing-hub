@@ -243,6 +243,18 @@ async function saveContent(content) {
     const filepath = path.join(dir, `creativos-${date}.json`);
     fs.writeFileSync(filepath, JSON.stringify(content, null, 2), 'utf-8');
     console.log(`📁 JSON guardado en: ${filepath}`);
+
+    // Update data/data.js for local viewing (fallback)
+    try {
+        const dataJsPath = path.join(PROJECT_ROOT, 'data', 'data.js');
+        if (fs.existsSync(dataJsPath)) {
+            const appendContent = `\n\n// Auto-generated update ${new Date().toISOString()}\nif(window.StartData) window.StartData.creativos = ${JSON.stringify(content, null, 4)};\n`;
+            fs.appendFileSync(dataJsPath, appendContent);
+            console.log(`✅ data/data.js actualizado para visualización local.`);
+        }
+    } catch (e) {
+        console.warn('Could not update data.js', e);
+    }
 }
 
 main();

@@ -24,8 +24,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 async function loadGalleryData() {
   try {
     const res = await fetch('data/modelos.json');
+    if (!res.ok) throw new Error('Network response was not ok');
     return await res.json();
   } catch (e) {
+    console.warn('⚠️ Fetch failed (likely CORS), trying fallback data...');
+    if (window.StartData && window.StartData.modelos) {
+      return window.StartData.modelos;
+    }
     console.error('Error loading gallery data:', e);
     return null;
   }

@@ -56,9 +56,22 @@ async function loadCreativeData(filename) {
         const data = await response.json();
         renderCampaign(data);
     } catch (error) {
+        console.warn('⚠️ Fetch failed (likely CORS), trying fallback data...');
+        // Fallback: Check for global data from data.js
+        if (window.StartData && window.StartData.creativos) {
+            // Check if the loaded data matches the requested date or just use what we have
+            const data = window.StartData.creativos;
+            renderCampaign(data);
+
+            // Update selector to show it's loaded from fallback
+            const select = document.getElementById('weekSelect');
+            if (select) select.innerHTML = `<option value="fallback" selected>${data.semana || 'Datos Locales'} (Offline)</option>`;
+            return;
+        }
+
         console.error(error);
         // Fallback or error message
-        document.getElementById('imageAdsContainer').innerHTML = `<div class="error-state">❌ No se pudo cargar el archivo: ${filename}<br><small>Asegúrate de haber ejecutado: node scripts/generate-content.js</small></div>`;
+        document.getElementById('imageAdsContainer').innerHTML = `<div class="error-state">❌ No se pudo cargar el archivo: ${filename}<br><small>Si estás viendo esto localmente (file://), necesitas ejecutar 'node scripts/generate-content.js' para actualizar el archivo de datos local.</small></div>`;
     }
 }
 

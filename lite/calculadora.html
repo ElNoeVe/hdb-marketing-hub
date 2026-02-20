@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Plusvalía (Lite) — HDB</title>
+    <meta name="description" content="Calcula la plusvalía estimada de tu propiedad.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../assets/logo-hdb.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="../js/analytics.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar Lite -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-brand">
+                <img src="../assets/logo-hdb.png" alt="Haciendas del Bosque">
+                <div class="brand-divider"></div>
+                <img src="../assets/logo-hu.png" alt="Hogares Unión">
+                <span class="brand-text">Marketing Hub</span>
+            </div>
+            <ul class="navbar-nav" id="navMenu">
+                <li><a href="calculadora.html" class="active">📈 Plusvalía</a></li>
+                <li><a href="galeria.html">🏠 Galería</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="app-container page-content">
+        <!-- Header -->
+        <div class="section-header fade-in">
+            <h1>📈 Calculadora de Plusvalía</h1>
+            <p>Proyección de valor de tu propiedad en Tecámac</p>
+        </div>
+
+        <div class="grid grid-2">
+            <!-- Calculator Form -->
+            <div class="card fade-in delay-1">
+                <h3 class="card-title mb-1">Ingresa los datos</h3>
+                <div class="form-group">
+                    <label class="form-label">Modelo de propiedad</label>
+                    <select class="form-select" id="propertyType" onchange="selectModelFromDropdown()">
+                        <option value="1000000" data-tipo="Departamento">🏢 Depa Pino Plus — $1,000,000</option>
+                        <option value="1150000" data-tipo="Departamento" selected>🏢 Depa Pino Premium 2R — $1,150,000
+                        </option>
+                        <option value="1200000" data-tipo="Departamento">🏢 Depa Pino Premium 3R — $1,200,000</option>
+                        <option value="1336000" data-tipo="Casa">🏡 Casa Esmeralda — $1,336,000</option>
+                        <option value="1850000" data-tipo="Casa">🏡 Casa Citrino — $1,850,000</option>
+                    </select>
+                </div>
+                <!-- ... Resto del contenido igual que el original pero con rutas ajustadas si es necesario ... -->
+                <div class="form-group">
+                    <label class="form-label">Precio actual (MXN)</label>
+                    <input type="number" class="form-input" id="currentPrice" value="1150000">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Escenario</label>
+                    <select class="form-select" id="scenario">
+                        <option value="conservador">Conservador (3.5%)</option>
+                        <option value="moderado" selected>Moderado (5.2%)</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary w-full mt-1" id="calcBtn">📊 Calcular</button>
+            </div>
+
+            <div class="fade-in delay-2">
+                <div class="calc-result mb-1">
+                    <p class="calc-result-label">Valor en 5 años</p>
+                    <div class="calc-result-value" id="resultValue">$0</div>
+                </div>
+                <div class="card" id="motivationalCard">
+                    <p id="motivationalText">Datos basados en el Índice SHF.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-2 fade-in delay-3">
+            <div class="calc-chart-container">
+                <canvas id="projectionChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Contact Bar -->
+        <div class="contact-bar mt-2">
+            <a href="https://wa.me/525537494034" target="_blank" class="btn-whatsapp">WhatsApp: 55 3749 4034</a>
+        </div>
+
+        <footer class="footer">
+            <p class="footer-text">HDB Marketing Hub — Versión Lite</p>
+        </footer>
+    </div>
+
+    <!-- Scripts con rutas ../ -->
+    <script src="../data/data.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/calculadora.js"></script>
+</body>
+
+</html>
