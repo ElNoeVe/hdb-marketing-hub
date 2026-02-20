@@ -24,34 +24,46 @@ document.addEventListener('DOMContentLoaded', async () => {
   createFullscreenOverlay();
 });
 
+// Prefix all asset paths in gallery data with BASE_PATH (for subfolder deployments)
+function prefixPaths(data) {
+  if (!BASE_PATH || !data) return data;
+  if (data.modelos) {
+    data.modelos = data.modelos.map(m => ({
+      ...m,
+      imagenes: (m.imagenes || []).map(img =>
+        img.startsWith('http') || img.startsWith('/') ? img : BASE_PATH + img
+      )
+    }));
+  }
+  if (data.amenidades) {
+    data.amenidades = data.amenidades.map(a => ({
+      ...a,
+      imagen: a.imagen && !a.imagen.startsWith('http') && !a.imagen.startsWith('/')
+        ? BASE_PATH + a.imagen
+        : a.imagen
+    }));
+  }
+  return data;
+}
+
 async function loadGalleryData() {
   try {
     const res = await fetch(BASE_PATH + 'data/modelos.json');
     if (!res.ok) throw new Error('Network response was not ok');
-    return await res.json();
+    const data = await res.json();
+    return prefixPaths(data);
   } catch (e) {
     console.warn('⚠️ Fetch failed (likely CORS), trying fallback data...');
     if (window.StartData && window.StartData.modelos) {
-      // Prefix all image paths in fallback data with BASE_PATH
-      const data = window.StartData.modelos;
-      if (BASE_PATH && data.modelos) {
-        data.modelos = data.modelos.map(m => ({
-          ...m,
-          imagenes: (m.imagenes || []).map(img => BASE_PATH + img)
-        }));
-      }
-      if (BASE_PATH && data.amenidades) {
-        data.amenidades = data.amenidades.map(a => ({
-          ...a,
-          imagen: a.imagen ? BASE_PATH + a.imagen : a.imagen
-        }));
-      }
-      return data;
+      // Deep clone to avoid mutating the shared object across calls
+      const data = JSON.parse(JSON.stringify(window.StartData.modelos));
+      return prefixPaths(data);
     }
     console.error('Error loading gallery data:', e);
     return null;
   }
 }
+
 
 // =====================
 // FULLSCREEN IMAGE VIEWER
