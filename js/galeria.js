@@ -2,6 +2,9 @@
 // galeria.js — Gallery with Carousel, Fullscreen & Maps
 // ===================================
 
+// Support for subfolder deployments (e.g. /lite/). Set window.BASE_PATH = '../' before loading this script.
+const BASE_PATH = (typeof window.BASE_PATH !== 'undefined') ? window.BASE_PATH : '';
+
 const ORIGIN_PLACE = 'Paseo+del+Bosque,+Fraccionamiento+haciendas+del+bosque,+Tecámac,+Estado+de+México';
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -23,13 +26,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadGalleryData() {
   try {
-    const res = await fetch('data/modelos.json');
+    const res = await fetch(BASE_PATH + 'data/modelos.json');
     if (!res.ok) throw new Error('Network response was not ok');
     return await res.json();
   } catch (e) {
     console.warn('⚠️ Fetch failed (likely CORS), trying fallback data...');
     if (window.StartData && window.StartData.modelos) {
-      return window.StartData.modelos;
+      // Prefix all image paths in fallback data with BASE_PATH
+      const data = window.StartData.modelos;
+      if (BASE_PATH && data.modelos) {
+        data.modelos = data.modelos.map(m => ({
+          ...m,
+          imagenes: (m.imagenes || []).map(img => BASE_PATH + img)
+        }));
+      }
+      if (BASE_PATH && data.amenidades) {
+        data.amenidades = data.amenidades.map(a => ({
+          ...a,
+          imagen: a.imagen ? BASE_PATH + a.imagen : a.imagen
+        }));
+      }
+      return data;
     }
     console.error('Error loading gallery data:', e);
     return null;
