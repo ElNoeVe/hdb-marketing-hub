@@ -1,88 +1,141 @@
 /**
  * generate-content.js
  * Script ejecutado por GitHub Actions cada Lunes a las 7AM CST
- * 
- * Genera con Gemini AI:
- * - 3 anuncios de imagen (copy, hashtags, prompt)
- * - 2 anuncios de video (copy, guión, prompt, hashtags)
- * - Segmentación recomendada
  */
 
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const PROJECT_ROOT = path.resolve(__dirname, '..');
 
 async function main() {
-    console.log('✍️ Generando contenido creativo semanal...');
+    console.log('✍️  Generando contenido creativo semanal...');
 
     if (!GEMINI_API_KEY) {
-        console.error('❌ Falta GEMINI_API_KEY en GitHub Secrets.');
+        console.error('❌ Falta GEMINI_API_KEY en las variables de entorno.');
         process.exit(1);
     }
 
     try {
-        const content = await generateWithGemini();
+        const referenceImages = getReferenceImages();
+        const content = await generateCampaignContent(referenceImages);
+
+        console.log('🎨 Generando imágenes con IA...');
+        await generateImagesForCampaign(content);
+
         await saveContent(content);
-        console.log('✅ Creativos generados y guardados exitosamente');
+        console.log('✅ Creativos y assets generados exitosamente');
     } catch (error) {
         console.error('❌ Error:', error.message);
         process.exit(1);
     }
 }
 
-async function generateWithGemini() {
-    const prompt = `Eres un copywriter experto en marketing inmobiliario digital en México. Genera contenido creativo semanal para "Haciendas del Bosque", un desarrollo de vivienda de interés social-medio de Hogares Unión ubicado en Tecámac, Estado de México.
+function getReferenceImages() {
+    // Correct path relative to project root
+    const dir = path.join(PROJECT_ROOT, 'assets', 'modelos', 'REFERENCIAS');
+    console.log(`📂 Buscando referencias en: ${dir}`);
 
-DATOS DEL DESARROLLO:
-- Departamentos desde $850,000 MXN
-- Casas desde $980,000 MXN  
-- Casas Plus desde $1,150,000 MXN
-- Amenidades: alberca, áreas verdes, juegos infantiles, acceso controlado, área deportiva
-- Cercanías: Hospital IMSS 200 (15 min), Hospital Polanco Tecámac (8 min), CECyTEM (10 min), Universidad Politécnica Tecámac (7 min), Tecámac Power Center (10 min), AIFA (20 min), Mexibús (5 min)
-- Accesos: Carretera México-Pachuca, Circuito Exterior Mexiquense
-- Contacto: 📲 5537494034 | ✉️ n.gutierrez.hernandez@hogaresunion.mx
-- Créditos aceptados: INFONAVIT, FOVISSSTE, Bancario, Cofinanciamiento
-
-PÚBLICO OBJETIVO:
-- Edad: 25-55 años
-- Familias de 2-6 integrantes, hijos 0-18 años
-- Ingresos bajos a medios
-- Municipios: Tecámac, Zumpango, Tizayuca, Pachuca, Tonanitla, Nextlalpan, Jaltenco
-- Intereses: inversión inmobiliaria, primera vivienda, crédito INFONAVIT
-
-DATO DE PLUSVALÍA: Las propiedades en Tecámac han mantenido un crecimiento de 5-7% anual según el Índice SHF.
-
-GENERA EN FORMATO JSON (sin markdown):
-{
-  "semana": "Fecha de la semana",
-  "campana_imagenes": [
-    {
-      "titulo": "Nombre del anuncio",
-      "copy": "Texto del copy con emojis, máximo 300 caracteres en la primera línea visible",
-      "hashtags": "10 hashtags relevantes separados por espacio",
-      "prompt_imagen": "Prompt detallado para generar imagen fotorrealista con DALL-E/ChatGPT. Debe describir la escena, colores, ángulo, iluminación. NO incluir texto en la imagen."
+    if (!fs.existsSync(dir)) {
+        console.warn(`⚠️ No se encontró la carpeta de referencias: ${dir}`);
+        return [];
     }
-  ],
-  "campana_videos": [
-    {
-      "titulo": "Nombre del video",
-      "copy": "Copy para el anuncio de video",
-      "guion": "Guión detallado por escenas con timestamps [0-5s], [5-10s] etc. Máximo 20 segundos.",
-      "prompt_video": "Prompt para generar clip con IA (Grok/Sora). Describir cada escena visual sin texto.",
-      "hashtags": "10 hashtags relevantes"
+
+    const files = fs.readdirSync(dir).filter(file => /\.(jpg|jpeg|png|webp)$/i.test(file));
+    const images = [];
+
+    for (const file of files) {
+        const filePath = path.join(dir, file);
+        const data = fs.readFileSync(filePath);
+        images.push({
+            inlineData: {
+                data: data.toString('base64'),
+                mimeType: getMimeType(file)
+            }
+        });
     }
-  ]
+    console.log(`📸 Se cargaron ${images.length} imágenes de referencia.`);
+    return images;
 }
 
-REGLAS:
-- Genera 3 anuncios de imagen con enfoques DIFERENTES (emocional, inversión, ubicación)
-- Genera 2 videos con enfoques DIFERENTES (tour, testimonial/estilo de vida)
-- Los copys deben ser persuasivos, usar emojis y incluir llamado a la acción
-- Los prompts de imagen deben ser ultra-detallados y fotorrealistas
-- Los guiones de video deben ser exactamente 20 segundos
-- Varía el tono: urgencia, emoción, datos, aspiracional
-- SIEMPRE incluir precio y contacto en los copys`;
+function getMimeType(filename) {
+    const ext = path.extname(filename).toLowerCase();
+    if (ext === '.png') return 'image/png';
+    if (ext === '.webp') return 'image/webp';
+    return 'image/jpeg';
+}
+
+async function generateCampaignContent(referenceImages) {
+    const promptText = `
+Eres un estratega experto en marketing inmobiliario digital en México.
+Tu objetivo es generar una campaña semanal para "Haciendas del Bosque" (Tecámac, Edo. Méx) basada en 3 enfoques específicos.
+
+CONTEXTO DEL PROYECTO:
+- Departamentos desde $850,000 | Casas desde $980,000 | Casas Plus desde $1,150,000
+- Estilo visual esperado: Moderno, familiar, cálido, pero accesible.
+- Usa las imágenes adjuntas como REFERENCIA ESTRICTA para el estilo visual de las nuevas imágenes que vamos a generar.
+
+ESTRUCTURA DE LA CAMPAÑA (Salida JSON):
+
+1.  **ANUNCIO TÉCNICO (Segmento: Solteros/Parejas 25-40 años):**
+    -   Enfoque: Características, amenidades, precio.
+    -   Tono: Racional, directo, "Smart Choice".
+    -   Imagen: Render fotorrealista de un espacio optimizado (ej. sala-comedor).
+
+2.  **ANUNCIO SENTIMENTAL (Segmento: Familias 25-55 años):**
+    -   Enfoque: Puntos de dolor (espacio, privacidad, seguridad para hijos).
+    -   Tono: Emotivo, protector, aspiracional.
+    -   Imagen: Escena familiar cálida en el desarrollo (ej. jugando en áreas verdes o cenando).
+
+3.  **ANUNCIO EDUCATIVO/VIRAL (Atracción Masiva - Carrusel):**
+    -   Objetivo: 50+ leads/semana. Confianza en procesos (Infonavit, escrituración rápida).
+    -   Tono: Servicial, experto, "te llevamos de la mano".
+    -   Formato: 3 imágenes secuenciales para carrusel.
+
+4.  **VIDEO STORYTELLING (15-20s):**
+    -   Narrativa: Historia de éxito "Dejar de rentar e Invertir".
+    -   No generes el video, solo el GUION y el PROMPT para generarlo.
+
+FORMATO JSON ESPERADO:
+{
+  "semana": "YYYY-MM-DD",
+  "anuncio_tecnico": {
+    "titulo": "...",
+    "copy": "...",
+    "hashtags": ["..."],
+    "prompt_imagen": "Prompt detallado para Imagen 3..."
+  },
+  "anuncio_sentimental": {
+    "titulo": "...",
+    "copy": "...",
+    "hashtags": ["..."],
+    "prompt_imagen": "..."
+  },
+  "anuncio_educativo": {
+    "titulo": "...",
+    "copy_post": "...",
+    "slides": [
+      { "titulo": "Slide 1", "texto": "...", "prompt_imagen": "..." },
+      { "titulo": "Slide 2", "texto": "...", "prompt_imagen": "..." },
+      { "titulo": "Slide 3", "texto": "...", "prompt_imagen": "..." }
+    ],
+    "hashtags": ["..."]
+  },
+  "anuncio_video": {
+    "titulo": "...",
+    "copy": "...",
+    "guion_tecnico": "...",
+    "prompt_video_ia": "..."
+  }
+}
+`;
+
+    // Combine text prompt with images
+    const parts = [{ text: promptText }, ...referenceImages];
 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
 
@@ -90,33 +143,98 @@ REGLAS:
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
+            contents: [{ parts }],
             generationConfig: {
-                temperature: 0.8,
-                maxOutputTokens: 4096
+                temperature: 0.7,
+                response_mime_type: "application/json"
             }
         })
     });
 
     const data = await res.json();
+    if (data.error) throw new Error(data.error.message);
 
-    if (data.error) {
-        throw new Error(`Gemini API Error: ${data.error.message}`);
+    const jsonString = data.candidates[0].content.parts[0].text;
+    return JSON.parse(jsonString);
+}
+
+async function generateImagesForCampaign(content) {
+    const today = new Date().toISOString().split('T')[0];
+    // Define output directory relative to project root
+    const outputDir = path.join(PROJECT_ROOT, 'assets', 'generated', today);
+
+    if (!fs.existsSync(outputDir)) {
+        fs.mkdirSync(outputDir, { recursive: true });
     }
 
-    const text = data.candidates[0].content.parts[0].text;
-    const jsonMatch = text.match(/\{[\s\S]*\}/);
+    // Process prompts
+    const tasks = [];
 
-    if (!jsonMatch) {
-        throw new Error('Gemini no devolvió JSON válido');
+    // Técnico
+    if (content.anuncio_tecnico?.prompt_imagen) {
+        tasks.push(generateImage(content.anuncio_tecnico.prompt_imagen, path.join(outputDir, 'tecnico.png')));
+    }
+    // Sentimental
+    if (content.anuncio_sentimental?.prompt_imagen) {
+        tasks.push(generateImage(content.anuncio_sentimental.prompt_imagen, path.join(outputDir, 'sentimental.png')));
+    }
+    // Educativo (Slides)
+    if (content.anuncio_educativo?.slides) {
+        content.anuncio_educativo.slides.forEach((slide, i) => {
+            if (slide.prompt_imagen) {
+                tasks.push(generateImage(slide.prompt_imagen, path.join(outputDir, `educativo_slide_${i + 1}.png`)));
+            }
+        });
     }
 
-    return JSON.parse(jsonMatch[0]);
+    await Promise.all(tasks);
+}
+
+async function generateImage(prompt, outputPath) {
+    console.log(`🎨 Generando: ${path.basename(outputPath)}...`);
+
+    // Using Imagen 3 endpoint
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-001:predict?key=${GEMINI_API_KEY}`;
+
+    const payload = {
+        instances: [{ prompt }],
+        parameters: {
+            sampleCount: 1,
+            aspectRatio: "1:1" // Cuadrado para feed
+        }
+    };
+
+    try {
+        const res = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) {
+            const err = await res.json();
+            console.error(`⚠️ Error generando imagen (${path.basename(outputPath)}): ${err.error?.message || res.statusText}`);
+            return;
+        }
+
+        const data = await res.json();
+        const base64Image = data.predictions?.[0]?.bytesBase64Encoded;
+
+        if (base64Image) {
+            fs.writeFileSync(outputPath, base64Image, 'base64');
+            console.log(`✅ Imagen guardada: ${outputPath}`);
+        } else {
+            console.warn(`⚠️ No se recibió imagen para: ${path.basename(outputPath)}`);
+        }
+
+    } catch (e) {
+        console.error(`❌ Excepción al generar imagen: ${e.message}`);
+    }
 }
 
 async function saveContent(content) {
     const date = new Date().toISOString().split('T')[0];
-    const dir = path.join('..', 'data', 'creativos');
+    const dir = path.join(PROJECT_ROOT, 'data', 'creativos');
 
     if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
@@ -124,7 +242,7 @@ async function saveContent(content) {
 
     const filepath = path.join(dir, `creativos-${date}.json`);
     fs.writeFileSync(filepath, JSON.stringify(content, null, 2), 'utf-8');
-    console.log(`📁 Guardado en: ${filepath}`);
+    console.log(`📁 JSON guardado en: ${filepath}`);
 }
 
 main();

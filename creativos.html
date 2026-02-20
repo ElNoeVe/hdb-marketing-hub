@@ -33,266 +33,91 @@
         </div>
     </nav>
 
+    <!-- Estrategia de Contenidos -->
+    <div class="card fade-in" style="margin-top: 40px; border-left: 5px solid var(--purple);">
+        <div class="card-header">
+            <h3>📅 Plan de Trabajo Semanal</h3>
+            <span class="badge" style="background:var(--purple);">Estrategia</span>
+        </div>
+        <p>Sigue esta guía para publicar el contenido generado y maximizar resultados.</p>
+
+        <div class="grid grid-3" style="gap: 20px; margin-top: 20px;">
+            <!-- Martes -->
+            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                <h4 style="color:var(--blue-light); margin-bottom: 5px;">🎥 MARTES (Video)</h4>
+                <p style="font-size: 0.9em; margin-bottom: 10px;">Objetivo: <strong>Visual / Lifestyle</strong></p>
+                <ul style="font-size: 0.85em; padding-left: 20px; color: #ccc;">
+                    <li><strong>Fuente:</strong> Generado Lunes 7:00 AM.</li>
+                    <li><strong>Publicar:</strong> Martes a las 11:00 AM.</li>
+                    <li><strong>Formato:</strong> Reel, TikTok o Historia.</li>
+                </ul>
+            </div>
+
+            <!-- Jueves -->
+            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                <h4 style="color:var(--green); margin-bottom: 5px;">🤝 JUEVES (Conexión)</h4>
+                <p style="font-size: 0.9em; margin-bottom: 10px;">Objetivo: <strong>Empatía / Educativo</strong></p>
+                <ul style="font-size: 0.85em; padding-left: 20px; color: #ccc;">
+                    <li><strong>Fuente:</strong> Generado Jueves 7:00 AM.</li>
+                    <li><strong>Publicar:</strong> Jueves a las 6:00 PM.</li>
+                    <li><strong>Formato:</strong> Carrusel o Imagen Emotiva.</li>
+                </ul>
+            </div>
+
+            <!-- Sábado -->
+            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                <h4 style="color:var(--orange); margin-bottom: 5px;">🚀 SÁBADO (Venta)</h4>
+                <p style="font-size: 0.9em; margin-bottom: 10px;">Objetivo: <strong>Cierre Técnico / Citas</strong></p>
+                <ul style="font-size: 0.85em; padding-left: 20px; color: #ccc;">
+                    <li><strong>Fuente:</strong> Generado Jueves 1:00 PM.</li>
+                    <li><strong>Publicar:</strong> Sábado a las 10:00 AM.</li>
+                    <li><strong>Formato:</strong> Ficha Técnica o Promoción.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="app-container page-content">
         <!-- Header -->
         <div class="section-header fade-in">
             <h1>✍️ Generador de Creativos</h1>
-            <p>Copys, hashtags y prompts generados automáticamente cada lunes a las 7:00 AM</p>
+            <p>Copys, hashtags y prompts generados automáticamente de Lunes a Viernes (7:00 AM y 2:00 PM)</p>
         </div>
 
         <!-- Week Selector -->
         <div class="flex items-center justify-between mb-1 fade-in">
             <div class="tabs" id="creativeTabs">
-                <button class="tab active" data-type="imagenes">🖼️ Campaña Imágenes (3 anuncios)</button>
-                <button class="tab" data-type="videos">🎬 Campaña Videos (2 anuncios)</button>
+                <button class="tab active" data-type="imagenes">🖼️ Campaña Imágenes</button>
+                <button class="tab" data-type="videos">🎬 Campaña Videos</button>
                 <button class="tab" data-type="segmentacion">🎯 Segmentación</button>
             </div>
             <select class="form-select" id="weekSelect" style="width:auto;min-width:200px;">
-                <option value="latest">Esta semana</option>
+                <option value="latest">Cargando fechas...</option>
             </select>
         </div>
 
         <!-- Image Campaign Section -->
         <div id="section-imagenes">
             <div class="section-header">
-                <h2>🖼️ Campaña de Imágenes — 3 Anuncios</h2>
-                <p>Cada anuncio incluye copy, hashtags y prompt para generar la imagen con IA</p>
+                <h2>🖼️ Campaña de Imágenes (3 Enfoques)</h2>
+                <p>Anuncios diseñados para diferentes segmentos: Técnico, Sentimental y Educativo.</p>
             </div>
 
             <div id="imageAdsContainer">
-                <!-- Ad 1 -->
-                <div class="card mb-1 fade-in delay-1">
-                    <div class="card-header">
-                        <h3>Anuncio 1 — Hogar para tu familia</h3>
-                        <span class="badge badge-green">Listo</span>
-                    </div>
-
-                    <h4 style="color:var(--blue-light);margin-bottom:8px;">📝 Copy</h4>
-                    <div class="copy-block">
-                        <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                        <pre id="copy1">🏡 Tu hogar propio en Tecámac desde $850,000
-
-¡Deja de pagar renta! En Haciendas del Bosque encontrarás casas y departamentos diseñados para tu familia, con amenidades increíbles y la mejor ubicación.
-
-✅ A 8 min del Hospital Polanco
-✅ A 10 min del Tecámac Power Center
-✅ Cerca del AIFA
-✅ Créditos INFONAVIT, FOVISSSTE y bancarios
-
-📲 Agenda tu visita hoy: 55 3749 4034
-📧 n.gutierrez.hernandez@hogaresunion.mx</pre>
-                    </div>
-
-                    <h4 style="color:var(--blue-light);margin-bottom:8px;">🏷️ Hashtags</h4>
-                    <div class="copy-block">
-                        <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                        <pre
-                            id="hashtags1">#HaciendasDelBosque #CasasEnTecamac #DepartamentosEnTecamac #HogaresUnion #TuPrimeraCasa #CreditoInfonavit #ViviendasTecamac #InvierteEnBienesRaices #CasasNuevas #FamiliaPrimero</pre>
-                    </div>
-
-                    <h4 style="color:var(--blue-light);margin-bottom:8px;">🎨 Prompt para imagen (ChatGPT / DALL-E)</h4>
-                    <div class="copy-block">
-                        <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                        <pre
-                            id="prompt1">Genera una imagen fotorrealista de una familia mexicana joven (pareja de 30 años con un niño de 5 años) frente a una casa moderna de dos niveles color beige con detalles en azul. El cielo es azul claro, hay áreas verdes bien cuidadas al fondo. La familia se ve feliz y esperanzada. Estilo: fotografía profesional de bienes raíces, luz natural cálida, ángulo ligeramente bajo para hacer la casa más imponente. No incluir texto en la imagen.</pre>
-                    </div>
-                </div>
-
-                <!-- Ad 2 -->
-                <div class="card mb-1 fade-in delay-2">
-                    <div class="card-header">
-                        <h3>Anuncio 2 — Inversión inteligente</h3>
-                        <span class="badge badge-green">Listo</span>
-                    </div>
-
-                    <h4 style="color:var(--blue-light);margin-bottom:8px;">📝 Copy</h4>
-                    <div class="copy-block">
-                        <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                        <pre id="copy2">📈 ¿Sabías que las propiedades en Tecámac aumentan más del 5% anual?
-
-Invierte en tu futuro. En Haciendas del Bosque tu patrimonio crece cada año mientras tú vives con todas las comodidades:
-
-🏊 Alberca
-🌳 Áreas verdes
-🛝 Juegos infantiles
-🔒 Acceso controlado
-
-Desde $850,000 MXN con financiamiento.
-
-📲 Más info: 55 3749 4034</pre>
-                    </div>
-
-                    <h4 style="color:var(--blue-light);margin-bottom:8px;">🏷️ Hashtags</h4>
-                    <div class="copy-block">
-                        <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                        <pre
-                            id="hashtags2">#InversionInmobiliaria #Plusvalia #CasasEnTecamac #HaciendasDelBosque #PatrimonioFamiliar #BienesRaicesMexico #CasasConAlberca #ViviendaNueva #HogaresUnion #InvierteHoy</pre>
-                    </div>
-
-                    <h4 style="color:var(--blue-light);margin-bottom:8px;">🎨 Prompt para imagen (ChatGPT / DALL-E)</h4>
-                    <div class="copy-block">
-                        <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                        <pre
-                            id="prompt2">Genera una imagen fotorrealista de una alberca comunitaria moderna rodeada de áreas verdes con palmeras y bancas. Al fondo un conjunto de departamentos modernos de 3 niveles en color beige y azul. Cielo despejado al atardecer con tonos naranja. Algunas personas disfrutando la alberca. Estilo: fotografía de marketing inmobiliario premium, colores vibrantes, alta resolución. No incluir texto en la imagen.</pre>
-                    </div>
-                </div>
-
-                <!-- Ad 3 -->
-                <div class="card mb-1 fade-in delay-3">
-                    <div class="card-header">
-                        <h3>Anuncio 3 — Ubicación privilegiada</h3>
-                        <span class="badge badge-green">Listo</span>
-                    </div>
-
-                    <h4 style="color:var(--blue-light);margin-bottom:8px;">📝 Copy</h4>
-                    <div class="copy-block">
-                        <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                        <pre id="copy3">📍 La ubicación que estabas buscando
-
-Haciendas del Bosque está a solo:
-🏥 8 min del Hospital Polanco
-🎓 7 min de la Universidad Politécnica
-🛒 10 min del Tecámac Power Center
-✈️ 20 min del nuevo AIFA
-🛣️ Sobre carretera México-Pachuca
-
-Todo lo que tu familia necesita, ¡a unos minutos de distancia!
-
-Casas desde $980,000 | Deptos desde $850,000
-
-📲 55 3749 4034
-📧 n.gutierrez.hernandez@hogaresunion.mx</pre>
-                    </div>
-
-                    <h4 style="color:var(--blue-light);margin-bottom:8px;">🏷️ Hashtags</h4>
-                    <div class="copy-block">
-                        <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                        <pre
-                            id="hashtags3">#UbicacionPrivilegiada #Tecamac #AIFA #HaciendasDelBosque #CasasCercaDelAIFA #HogaresUnion #ViveCercaDeTodo #CasasNuevasTecamac #DepartamentosTecamac #MexicoPachuca</pre>
-                    </div>
-
-                    <h4 style="color:var(--blue-light);margin-bottom:8px;">🎨 Prompt para imagen (ChatGPT / DALL-E)</h4>
-                    <div class="copy-block">
-                        <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                        <pre
-                            id="prompt3">Genera una vista aérea fotorrealista de un fraccionamiento residencial moderno en México con casas de colores claros organizadas en calles limpias, rodeado de áreas verdes y una avenida principal. Al fondo se ve una autopista y más allá un aeropuerto moderno. Cielo azul con algunas nubes blancas. Estilo: fotografía con dron, marketing inmobiliario, alta definición, colores naturales. No incluir texto en la imagen.</pre>
-                    </div>
-                </div>
+                <!-- Content injected via JS -->
+                <div class="loading-state">Cargando creativos...</div>
             </div>
         </div>
 
         <!-- Video Campaign Section -->
         <div id="section-videos" class="hidden">
             <div class="section-header">
-                <h2>🎬 Campaña de Videos — 2 Anuncios</h2>
-                <p>Videos cortos de máximo 20 segundos con texto narrativo superpuesto</p>
+                <h2>🎬 Estrategia de Video Storytelling</h2>
+                <p>Guiones y Prompts para generar contenido viral en Reels/TikTok</p>
             </div>
 
-            <!-- Video 1 -->
-            <div class="card mb-1 fade-in">
-                <div class="card-header">
-                    <h3>Video 1 — Tour del fraccionamiento (20 seg)</h3>
-                    <span class="badge badge-green">Listo</span>
-                </div>
-
-                <h4 style="color:var(--blue-light);margin-bottom:8px;">📝 Copy del anuncio</h4>
-                <div class="copy-block">
-                    <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                    <pre>🏡 Descubre Haciendas del Bosque en Tecámac
-
-Tu hogar propio con alberca, áreas verdes y la mejor ubicación. Desde $850,000 con créditos INFONAVIT y bancarios.
-
-📲 Agenda tu visita: 55 3749 4034</pre>
-                </div>
-
-                <h4 style="color:var(--blue-light);margin-bottom:8px;">🎬 Guión del video (20 seg)</h4>
-                <div class="copy-block">
-                    <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                    <pre>🎬 GUIÓN — VIDEO 1 (20 segundos)
-
-[0-3 seg] Toma: Entrada del fraccionamiento con caseta de vigilancia
-Texto en pantalla: "HACIENDAS DEL BOSQUE"
-Subtexto: "Tu nuevo hogar en Tecámac"
-
-[3-8 seg] Toma: Paneo lento por la alberca y áreas verdes
-Texto: "AMENIDADES DE PRIMER NIVEL"
-Subtexto: "Alberca • Áreas verdes • Juegos infantiles"
-
-[8-14 seg] Toma: Interior de la casa modelo, sala y cocina
-Texto: "DESDE $850,000 MXN"
-Subtexto: "Crédito INFONAVIT y Bancario"
-
-[14-20 seg] Toma: Familia en la entrada de su casa, sonriendo
-Texto: "AGENDA TU VISITA HOY"
-Logo HDB + Logo Hogares Unión
-Subtexto: "📲 55 3749 4034"</pre>
-                </div>
-
-                <h4 style="color:var(--blue-light);margin-bottom:8px;">🤖 Prompt para clip IA (Grok/Sora)</h4>
-                <div class="copy-block">
-                    <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                    <pre>Genera un video corto de 20 segundos estilo tour inmobiliario. La cámara se mueve suavemente: primero muestra la entrada de un fraccionamiento residencial moderno en México con caseta de vigilancia, luego paneo hacia una alberca comunitaria rodeada de palmeras y áreas verdes, después interior de una casa moderna con sala luminosa y cocina integral blanca, y finaliza con una familia mexicana joven sonriendo frente a su nueva casa. Estilo cinematográfico, luz natural cálida, movimientos de cámara suaves tipo gimbal. Sin texto sobreimpreso, eso se agrega después.</pre>
-                </div>
-
-                <h4 style="color:var(--blue-light);margin-bottom:8px;">🏷️ Hashtags</h4>
-                <div class="copy-block">
-                    <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                    <pre>#HaciendasDelBosque #TourInmobiliario #CasasEnTecamac #HogaresUnion #TuNuevoHogar #FraccionamientoConAlberca #CasasDeCredito #VideoInmobiliario #ViveMejor #TecamacHogar</pre>
-                </div>
-            </div>
-
-            <!-- Video 2 -->
-            <div class="card mb-1 fade-in">
-                <div class="card-header">
-                    <h3>Video 2 — Testimonial / Estilo de vida (20 seg)</h3>
-                    <span class="badge badge-green">Listo</span>
-                </div>
-
-                <h4 style="color:var(--blue-light);margin-bottom:8px;">📝 Copy del anuncio</h4>
-                <div class="copy-block">
-                    <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                    <pre>💪 El mejor momento para invertir es AHORA
-
-Las propiedades en Tecámac aumentan más del 5% cada año. No esperes a que suba más.
-
-🏠 Casas y departamentos desde $850,000
-📈 Tu patrimonio crece cada día
-
-📲 Informes: 55 3749 4034</pre>
-                </div>
-
-                <h4 style="color:var(--blue-light);margin-bottom:8px;">🎬 Guión del video (20 seg)</h4>
-                <div class="copy-block">
-                    <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                    <pre>🎬 GUIÓN — VIDEO 2 (20 segundos)
-
-[0-4 seg] Toma: Persona joven mirando su teléfono preocupada (pagando renta)
-Texto en pantalla: "¿SIGUES PAGANDO RENTA?"
-
-[4-9 seg] Toma: La misma persona recibe llaves de su casa nueva
-Texto: "INVIERTE EN TU PATRIMONIO"
-
-[9-15 seg] Toma: Gráfica animada de plusvalía subiendo (+5.2% anual)
-Texto: "TU PROPIEDAD SUBE DE VALOR CADA AÑO"
-Subtexto: "Fuente: Índice SHF"
-
-[15-20 seg] Toma: Familia disfrutando en áreas verdes del fraccionamiento
-Texto: "HACIENDAS DEL BOSQUE"
-Logo HDB + Logo Hogares Unión
-Subtexto: "Desde $850,000 • 📲 55 3749 4034"</pre>
-                </div>
-
-                <h4 style="color:var(--blue-light);margin-bottom:8px;">🤖 Prompt para clip IA (Grok/Sora)</h4>
-                <div class="copy-block">
-                    <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                    <pre>Genera un video emocional de 20 segundos. Escena 1: Un joven mexicano mira preocupado su teléfono mientras está en un departamento rentado oscuro. Escena 2: El mismo joven recibe un juego de llaves mientras sonríe frente a una casa nueva moderna. Escena 3: Transición a una gráfica simple subiendo que muestra crecimiento de inversión. Escena 4: La familia del joven (esposa y un niño) juegan felices en un área verde con juegos infantiles. Tonos cálidos y esperanzadores, estilo cinematográfico, movimiento de cámara suave. Sin texto sobreimpreso.</pre>
-                </div>
-
-                <h4 style="color:var(--blue-light);margin-bottom:8px;">🏷️ Hashtags</h4>
-                <div class="copy-block">
-                    <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
-                    <pre>#DejaDeRentar #InvierteHoy #Plusvalia #HaciendasDelBosque #TecamacCrece #CasasPropias #PatrimonioFamiliar #HogaresUnion #BienesRaicesMexico #PrimeraCasa</pre>
-                </div>
+            <div id="videoAdsContainer">
+                <!-- Content injected via JS -->
             </div>
         </div>
 
@@ -300,9 +125,9 @@ Subtexto: "Desde $850,000 • 📲 55 3749 4034"</pre>
         <div id="section-segmentacion" class="hidden">
             <div class="section-header">
                 <h2>🎯 Segmentación Recomendada</h2>
-                <p>Configuración sugerida para ambas campañas en Facebook Ads Manager</p>
+                <p>Configuración sugerida para Facebook Ads Manager</p>
             </div>
-
+            <!-- Static content for now, or injected via JS if dynamic -->
             <div class="grid grid-2">
                 <div class="card fade-in">
                     <h3 class="card-title mb-1">👥 Público Objetivo</h3>
@@ -318,101 +143,8 @@ Subtexto: "Desde $850,000 • 📲 55 3749 4034"</pre>
                                     <td>Todos</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Estado civil</strong></td>
-                                    <td>Solteros, en pareja, casados</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Hijos</strong></td>
-                                    <td>0 - 18 años de edad</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Familia</strong></td>
-                                    <td>2 a 6 integrantes</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Ingresos</strong></td>
-                                    <td>Bajos a medios</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="card fade-in">
-                    <h3 class="card-title mb-1">📍 Ubicaciones</h3>
-                    <div class="table-wrapper">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>📌 Tecámac, Estado de México</td>
-                                </tr>
-                                <tr>
-                                    <td>📌 Zumpango, Estado de México</td>
-                                </tr>
-                                <tr>
-                                    <td>📌 Tizayuca, Hidalgo</td>
-                                </tr>
-                                <tr>
-                                    <td>📌 Pachuca, Hidalgo</td>
-                                </tr>
-                                <tr>
-                                    <td>📌 Tonanitla, Estado de México</td>
-                                </tr>
-                                <tr>
-                                    <td>📌 Nextlalpan, Estado de México</td>
-                                </tr>
-                                <tr>
-                                    <td>📌 Jaltenco, Estado de México</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="card fade-in">
-                    <h3 class="card-title mb-1">🎯 Intereses</h3>
-                    <div style="display:flex;flex-wrap:wrap;gap:8px;">
-                        <span class="badge badge-green">Inversión inmobiliaria</span>
-                        <span class="badge badge-green">Bienes raíces</span>
-                        <span class="badge badge-green">Crédito INFONAVIT</span>
-                        <span class="badge badge-green">Crédito FOVISSSTE</span>
-                        <span class="badge badge-green">Compra de casa</span>
-                        <span class="badge badge-green">Primera vivienda</span>
-                        <span class="badge badge-green">Vivienda sustentable</span>
-                        <span class="badge badge-green">Ahorro e inversión</span>
-                        <span class="badge badge-green">Familia</span>
-                        <span class="badge badge-green">Decoración del hogar</span>
-                    </div>
-                </div>
-
-                <div class="card fade-in">
-                    <h3 class="card-title mb-1">💰 Presupuesto</h3>
-                    <div class="table-wrapper">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Por anuncio</strong></td>
-                                    <td>$50 MXN / día</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Campaña imágenes (3 anuncios)</strong></td>
-                                    <td>$150 MXN / día</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Campaña videos (2 anuncios)</strong></td>
-                                    <td>$100 MXN / día</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Total diario</strong></td>
-                                    <td><strong>$250 MXN / día</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Total semanal</strong></td>
-                                    <td><strong>$1,750 MXN</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Total mensual estimado</strong></td>
-                                    <td><strong>$7,500 MXN</strong></td>
+                                    <td><strong>Intereses</strong></td>
+                                    <td>Bienes raíces, Inversión, Familia, Infonavit</td>
                                 </tr>
                             </tbody>
                         </table>

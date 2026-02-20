@@ -2,7 +2,7 @@
 // galeria.js — Gallery with Carousel, Fullscreen & Maps
 // ===================================
 
-const ORIGIN_PLACE = 'Fraccionamiento+Haciendas+del+Bosque,+Ojo+de+Agua,+Tecámac,+Estado+de+México';
+const ORIGIN_PLACE = 'Paseo+del+Bosque,+Fraccionamiento+haciendas+del+bosque,+Tecámac,+Estado+de+México';
 
 document.addEventListener('DOMContentLoaded', async () => {
   const data = await loadGalleryData();
@@ -182,8 +182,9 @@ function renderModels(modelos, filter = 'all') {
           
           <div style="margin-top:var(--space-md);display:flex;gap:var(--space-sm);">
             <a href="https://wa.me/525537494034?text=Hola, me interesa el modelo ${encodeURIComponent(model.nombre)} de Haciendas del Bosque" 
-               target="_blank" class="btn btn-primary" style="flex:1;font-size:0.8rem;">
-              📱 WhatsApp
+               target="_blank" class="btn btn-primary" style="flex:1;font-size:0.8rem; display:flex; align-items:center; justify-content:center; gap:8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.029.566 1.936.84 2.806.84 3.181 0 5.767-2.586 5.767-5.766.001-3.18-2.585-5.766-5.767-5.766zm9.93 5.766c0-5.476-4.455-9.931-9.931-9.931-5.476 0-9.931 4.455-9.931 9.931 0 1.968.578 3.633 1.549 5.06l-1.616 5.895 6.046-1.584c1.375.831 2.977 1.306 4.352 1.306 5.476 0 9.931-4.455 9.931-9.931z"/></svg>
+              WhatsApp
             </a>
             <a href="calculadora.html" class="btn btn-outline" style="flex:1;font-size:0.8rem;"
                onclick="localStorage.setItem('calcPrice', ${model.precio})">

@@ -6,7 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('navToggle');
   const menu = document.getElementById('navMenu');
-  
+
   if (toggle && menu) {
     toggle.addEventListener('click', () => {
       menu.classList.toggle('open');
@@ -21,7 +21,7 @@ function copyText(btn) {
   const block = btn.closest('.copy-block');
   const pre = block.querySelector('pre');
   const text = pre.textContent;
-  
+
   navigator.clipboard.writeText(text).then(() => {
     btn.textContent = '✅ Copiado';
     btn.classList.add('copied');
@@ -48,6 +48,7 @@ function copyText(btn) {
 
 // Format currency
 function formatCurrency(amount) {
+  if (typeof amount === 'string') return amount;
   return new Intl.NumberFormat('es-MX', {
     style: 'currency',
     currency: 'MXN',
@@ -65,7 +66,7 @@ function formatNumber(num) {
 function setupTabs(tabContainerSelector, callback) {
   const container = document.querySelector(tabContainerSelector);
   if (!container) return;
-  
+
   const tabs = container.querySelectorAll('.tab');
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {

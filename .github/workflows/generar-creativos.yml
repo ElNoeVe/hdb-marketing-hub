@@ -2,8 +2,9 @@ name: Generar Creativos Semanales
 
 on:
   schedule:
-    # Lunes a las 7:00 AM CST (13:00 UTC)
-    - cron: '0 13 * * 1'
+    # Lunes 7:00 AM, Jueves 7:00 AM y 1:00 PM CST (13:00 y 19:00 UTC)
+    - cron: '0 13 * * 1,4'
+    - cron: '0 19 * * 4'
   workflow_dispatch: # Permite ejecución manual
 
 permissions:
@@ -34,6 +35,6 @@ jobs:
         run: |
           git config user.name "HDB Bot"
           git config user.email "bot@hdb-marketing.local"
-          git add data/creativos/
+          git add data/creativos/ assets/generated/
           git commit -m "✍️ Creativos semana $(date +%Y-%m-%d)" || echo "Sin cambios"
           git push

@@ -29,19 +29,18 @@
             "niveles": 1,
             "disponible": false,
             "apartado": 10000,
-            "plan_pagos": 5000,
+            "plan_pagos": "No Aplica",
             "descripcion": "Departamento de 2 recámaras con excelente distribución, acabados de calidad y todos los beneficios del fraccionamiento. Actualmente NO disponible.",
             "imagenes": [
                 "assets/modelos/Depa Pino Premium 2R/Casas y departamentos en venta Tecámac - Estado de México - Hacienda del Bosque un desarrollo de Hogares Unión.webp",
                 "assets/modelos/Depa Pino Premium 2R/Plano del modelo Pino - Departamento en Tecámac Estado de México.webp"
             ],
             "caracteristicas": [
-                "Sala, comedor y cocina",
-                "Cocina integral incluida",
-                "Cuarto de servicio con boiler y lavadero",
-                "Clóset, persianas y accesorios de baño",
-                "Cancel de vidrio templado en el baño",
-                "Cajón de estacionamiento"
+                "Cajón de Estacionamiento",
+                "Cuarto de Servicio con Boiler y Lavadero",
+                "Cocina Integral (según promoción)",
+                "Closet incluído (según promoción)",
+                "Baño Equipado (según promoción)"
             ]
         },
         {
@@ -57,7 +56,7 @@
             "niveles": 1,
             "disponible": true,
             "apartado": 10000,
-            "plan_pagos": 5000,
+            "plan_pagos": "No Aplica",
             "descripcion": "Departamento premium de 2 recámaras con acabados superiores y distribución inteligente. ¡Disponible!",
             "imagenes": [
                 "assets/modelos/Depa Pino Premium 2R/Casas y departamentos en venta Tecámac - Estado de México - Hacienda del Bosque un desarrollo de Hogares Unión.webp",
@@ -72,12 +71,11 @@
                 "assets/modelos/Depa Pino Premium 2R/Plano del modelo Pino - Departamento en Tecámac Estado de México.webp"
             ],
             "caracteristicas": [
-                "Sala, comedor y cocina",
-                "Cocina integral incluida",
-                "Cuarto de servicio con boiler y lavadero",
-                "Clóset, persianas y accesorios de baño",
-                "Cancel de vidrio templado en el baño",
-                "Cajón de estacionamiento"
+                "Cajón de Estacionamiento",
+                "Cuarto de Servicio con Boiler y Lavadero",
+                "Cocina Integral (según promoción)",
+                "Closet incluído (según promoción)",
+                "Baño Equipado (según promoción)"
             ]
         },
         {
@@ -108,12 +106,11 @@
                 "assets/modelos/Depa Pino Premium 3R/Plano del modelo Pino - Departamento en Tecámac Estado de México.webp"
             ],
             "caracteristicas": [
-                "Sala, comedor y cocina",
-                "Cocina integral incluida",
-                "Cuarto de servicio con boiler y lavadero",
-                "Clóset, persianas y accesorios de baño",
-                "Cancel de vidrio templado en el baño",
-                "Cajón de estacionamiento"
+                "Cajón de Estacionamiento",
+                "Cuarto de Servicio con Boiler y Lavadero",
+                "Cocina Integral (según promoción)",
+                "Closet incluído (según promoción)",
+                "Baño Equipado (según promoción)"
             ]
         },
         {
@@ -147,12 +144,11 @@
                 "assets/modelos/CASA ESMERALDA/WhatsApp Image 2026-02-18 at 20.01.22.jpeg"
             ],
             "caracteristicas": [
-                "Sala, comedor y cocina",
-                "Cocina integral incluida",
-                "Cuarto de servicio con boiler y lavadero",
-                "Clóset, persianas y accesorios de baño",
-                "Cancel de vidrio templado en el baño",
-                "Cajón de estacionamiento"
+                "Cajón de Estacionamiento",
+                "Cuarto de Servicio con Boiler y Lavadero",
+                "Cocina Integral (según promoción)",
+                "Closet incluído (según promoción)",
+                "Baño Equipado (según promoción)"
             ]
         },
         {
@@ -187,82 +183,69 @@
                 "assets/modelos/CASA CITRINO/Citrino-Nivel 2.webp"
             ],
             "caracteristicas": [
-                "Sala, comedor y cocina",
-                "Cocina integral incluida",
-                "Cuarto de servicio con boiler y lavadero",
-                "Clóset, persianas y accesorios de baño",
-                "Cancel de vidrio templado en el baño",
-                "Cajón de estacionamiento"
+                "Cajón de Estacionamiento",
+                "Cuarto de Servicio con Boiler y Lavadero",
+                "Cocina Integral (según promoción)",
+                "Closet incluído (según promoción)",
+                "Baño Equipado (según promoción)"
             ]
         }
     ],
     "amenidades": [
         {
-            "icon": "🍽️",
-            "nombre": "Sala, comedor y cocina",
-            "imagen": "assets/modelos/AMENIDADES/WhatsApp Image 2026-02-18 at 20.03.072.jpeg"
+            "icon": "🛝",
+            "nombre": "Area recreativa infantil",
+            "imagen": "assets/modelos/AMENIDADES/Area recreativa infantil.webp"
+        },
+        {
+            "icon": "🚿",
+            "nombre": "Baño equipado (según promoción)",
+            "imagen": "assets/modelos/AMENIDADES/Baño equipado (según promoción).webp"
+        },
+        {
+            "icon": "🏀",
+            "nombre": "Canchas deportivas",
+            "imagen": "assets/modelos/AMENIDADES/Canchas deportivas.webp"
+        },
+        {
+            "icon": "🪟",
+            "nombre": "Closet (según promoción)",
+            "imagen": "assets/modelos/AMENIDADES/Closet (según promoción).jpeg"
+        },
+        {
+            "icon": "🍳",
+            "nombre": "Cocina Integral (según promoción)",
+            "imagen": "assets/modelos/AMENIDADES/Cocina Integral (según promoción).jpeg"
         },
         {
             "icon": "🧺",
             "nombre": "Cuarto de servicio con boiler y lavadero",
-            "imagen": "assets/modelos/AMENIDADES/WhatsApp Image 2026-02-18 at 20.01.031.jpeg"
-        },
-        {
-            "icon": "🍳",
-            "nombre": "Cocina integral incluida"
-        },
-        {
-            "icon": "🪟",
-            "nombre": "Clóset, persianas y accesorios de baño",
-            "imagen": "assets/modelos/AMENIDADES/baño de casa en venta Tecámac Estado de México - Citrino.webp"
-        },
-        {
-            "icon": "🚿",
-            "nombre": "Cancel de vidrio templado en el baño"
-        },
-        {
-            "icon": "🚗",
-            "nombre": "Cajón de estacionamiento"
-        },
-        {
-            "icon": "🛝",
-            "nombre": "Juegos infantiles, asador y área familiar",
-            "imagen": "assets/modelos/AMENIDADES/ciudad-natura-juegos-infantiles-1.webp"
-        },
-        {
-            "icon": "🏀",
-            "nombre": "Cancha deportiva",
-            "imagen": "assets/modelos/AMENIDADES/Cancha deportiva Puebla Cuautlancingo.webp"
+            "imagen": "assets/modelos/AMENIDADES/Cuarto de servicio con boiler y lavadero.webp"
         },
         {
             "icon": "🏫",
-            "nombre": "Escuelas dentro del desarrollo",
-            "imagen": "assets/modelos/AMENIDADES/escuela.PNG"
+            "nombre": "Escuelas al interior",
+            "imagen": "assets/modelos/AMENIDADES/Escuelas al interior.PNG"
         },
         {
-            "icon": "🏡",
-            "nombre": "Patio y áreas exteriores",
-            "imagen": "assets/modelos/AMENIDADES/Patio de casa en venta Tecámac Estado de México - Esmeralda.webp"
+            "icon": "🍖",
+            "nombre": "Espacios recreativos con asador",
+            "imagen": "assets/modelos/AMENIDADES/Espacios recreativos con asador.jpeg"
+        },
+        {
+            "icon": "🚗",
+            "nombre": "Lugar de Estacionamiento",
+            "imagen": "assets/modelos/AMENIDADES/Lugar de Estacionamiento.jpeg"
         },
         {
             "icon": "🗺️",
-            "nombre": "Plano del fraccionamiento",
-            "imagen": "assets/modelos/AMENIDADES/Plano Haciendas del Bosque.webp"
+            "nombre": "Plano del Desarrollo",
+            "imagen": "assets/modelos/AMENIDADES/Plano del Desarrollo.webp"
         },
         {
-            "icon": "🌳",
-            "nombre": "Áreas verdes y convivencia",
-            "imagen": "assets/modelos/AMENIDADES/558972649_24422796147416457_7493770988054539986_n.jpg"
-        },
-        {
-            "icon": "📸",
-            "nombre": "Vista general del desarrollo",
-            "imagen": "assets/modelos/AMENIDADES/WhatsApp Image 2026-02-18 at 20.01.162.jpeg"
-        },
-        {
-            "icon": "🏠",
-            "nombre": "Fachada y exteriores",
-            "imagen": "assets/modelos/AMENIDADES/WhatsApp Image 2026-02-18 at 20.01.22.jpeg"
+            "icon": "🍽️",
+            "nombre": "Sala Comedor",
+            "imagen": "assets/modelos/AMENIDADES/Sala  Comedor.jpg"
         }
     ],
     "cercania": {
