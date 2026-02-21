@@ -329,9 +329,7 @@ function renderNearbyCategories(cercania) {
               ${item.nombre} 🔗
             </a>
           </div>
-          <div style="font-size:0.75rem;color:var(--text-muted);padding-left:28px;">
-            🚗 ~${item.distancia} en auto${item.direccion ? ' • 📍 ' + item.direccion : ''}${item.descripcion ? ' • ' + item.descripcion : ''}
-          </div>
+          ${(item.direccion || item.descripcion) ? `<div style="font-size:0.75rem;color:var(--text-muted);padding-left:28px;">📍 ${item.direccion || item.descripcion}</div>` : ''}
         </div>`;
       }).join('');
     }
