@@ -261,7 +261,7 @@ window.StartData = {
                 {
                     "icon": "🏥",
                     "nombre": "Hospital General Regional No. 200 IMSS",
-                    "distancia": "15 min",
+                    "distancia": "10 min",
                     "direccion": "Carretera Federal México-Pachuca KM 42",
                     "coords": "19.6505,-98.9497"
                 },
@@ -312,7 +312,7 @@ window.StartData = {
                 {
                     "icon": "🛒",
                     "nombre": "Multiplaza Ojo de Agua",
-                    "distancia": "6 min",
+                    "distancia": "12 min",
                     "direccion": "Ave. Santa Cruz Ojo de Agua No. 88",
                     "coords": "19.6330,-98.9612"
                 },

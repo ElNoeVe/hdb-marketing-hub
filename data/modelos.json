@@ -253,7 +253,7 @@
             {
                 "icon": "🏥",
                 "nombre": "Hospital General Regional No. 200 IMSS",
-                "distancia": "15 min",
+                "distancia": "10 min",
                 "direccion": "Carretera Federal México-Pachuca KM 42",
                 "coords": "19.6505,-98.9497"
             },
@@ -304,7 +304,7 @@
             {
                 "icon": "🛒",
                 "nombre": "Multiplaza Ojo de Agua",
-                "distancia": "6 min",
+                "distancia": "12 min",
                 "direccion": "Ave. Santa Cruz Ojo de Agua No. 88",
                 "coords": "19.6330,-98.9612"
             },
@@ -450,14 +450,14 @@
             {
                 "icon": "✈️",
                 "nombre": "Aeropuerto Internacional Felipe Ángeles (AIFA)",
-                "distancia": "25 min",
+                "distancia": "15 min",
                 "descripcion": "Acceso vía libramiento o carretera libre",
                 "coords": "19.7381,-99.0721"
             },
             {
                 "icon": "🚌",
                 "nombre": "Estación Mexibús Línea 1 — Ojo de Agua",
-                "distancia": "7 min",
+                "distancia": "15 min",
                 "descripcion": "Ruta Ciudad Azteca ↔ Ojo de Agua ↔ AIFA",
                 "coords": "19.6335,-98.9580"
             }

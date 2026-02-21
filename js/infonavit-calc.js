@@ -1,17 +1,16 @@
 // ===================================
 // infonavit-calc.js — Calculadora de Crédito Real 2025
-// Fuentes: Infonavit, FOVISSSTE, Banxico
+// Fuentes: Infonavit.org.mx, FOVISSSTE, Banxico
 // ===================================
 
 // Datos oficiales 2025
 const CALC_DATA = {
     UMA_DIARIA: 108.57,           // UMA 2025 (INEGI)
     UMA_MENSUAL: 108.57 * 30.4,   // ~3,300 MXN/mes
-    SMG_DIARIO: 278.80,           // Salario Mínimo General 2025
-    SMG_MENSUAL: 278.80 * 30.4,
+    SMG_DIARIO: 278.80,           // Salario Mínimo General 2025 (CONASAMI)
+    SMG_MENSUAL: 278.80 * 30.4,   // ~8,476 MXN/mes
 
     // Tabla Infonavit: [VSM mínimo, VSM máximo, tasa anual %]
-    // VSM = Veces Salario Mínimo General
     INFONAVIT_TASAS: [
         [1.0, 1.6, 1.90],
         [1.6, 2.0, 2.06],
@@ -29,26 +28,26 @@ const CALC_DATA = {
         [9.0, 10.0, 7.01],
         [10.0, 11.0, 7.49],
         [11.0, 15.0, 9.00],
-        [15.0, 25.0, 10.45],  // máximo actual
+        [15.0, 999, 10.45],
     ],
 
-    // Infonavit: monto máximo de crédito según VSM (tabla simplificada)
-    // El monto real depende del saldo de subcuenta, edad y VSM
-    INFONAVIT_MAX_CREDITO: 1116440, // Tope máximo 2024 (MXN)
+    // Infonavit 2025: límite máximo absoluto del crédito (pesos corrientes)
+    // Fuente: INFONAVIT / DOF 2025
+    INFONAVIT_MAX_CREDITO: 2830672,
 
-    // FOVISSSTE: tasa fija 6% anual, plazo hasta 30 años
+    // FOVISSSTE: tasa fija 6% anual, plazo hasta 30 años, tope ~1.5M
     FOVISSSTE_TASA: 6.0,
     FOVISSSTE_MAX: 1500000,
 
-    // Bancario: promedio 2025
-    BANCARIO_TASA: 10.5,
+    // Bancario: promedio ponderado 2025 (BBVA ~9.85%, Banorte ~10.5%) → usamos 10%
+    BANCARIO_TASA: 10.0,
     BANCARIO_PLAZOS: [10, 15, 20, 30],
 
     // Enganche mínimo: 10% del valor de la propiedad
     ENGANCHE_MIN_PCT: 10,
 };
 
-// Calcula el VSM (Veces Salario Mínimo)
+// Calcula el VSM (Veces Salario Mínimo General mensual)
 function calcVSM(salarioMensual) {
     return salarioMensual / CALC_DATA.SMG_MENSUAL;
 }
@@ -58,8 +57,7 @@ function getTasaInfonvait(vsm) {
     for (const [min, max, tasa] of CALC_DATA.INFONAVIT_TASAS) {
         if (vsm >= min && vsm < max) return tasa;
     }
-    if (vsm >= 25) return 10.45;
-    return 1.90; // mínimo
+    return vsm < 1 ? 1.90 : 10.45;
 }
 
 // Calcula mensualidad con amortización francesa
@@ -70,20 +68,23 @@ function calcMensualidad(capital, tasaAnual, añosPlazo) {
     return capital * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
 }
 
-// Estima crédito Infonavit basado en salario mensual y VSM
+// Estima crédito Infonavit basado en salario mensual
+// Regla: el banco central de Infonavit presta hasta 30 años y la mensualidad
+// no puede exceder el 30% del salario. El tope 2025 es $2,830,672.
 function calcCreditoInfonvait(salarioMensual) {
     const vsm = calcVSM(salarioMensual);
     const tasa = getTasaInfonvait(vsm);
 
-    // Regla de Infonavit: mensualidad ≤ 30% del salario
+    // Mensualidad máxima que puede comprometer el trabajador (30% del salario)
     const maxMensualidad = salarioMensual * 0.30;
-    const plazoMeses = 30 * 12; // máx 30 años
+    const plazoMeses = 30 * 12;
     const r = (tasa / 100) / 12;
-    // Despejamos el capital: C = M * [(1-(1+r)^-n)/r]
-    const factorPV = (1 - Math.pow(1 + r, -plazoMeses)) / r;
-    const creditoEstimado = maxMensualidad * factorPV;
+    // Despejamos el capital: C = M × [(1-(1+r)^-n)/r]
+    const factorPV = r === 0 ? plazoMeses : (1 - Math.pow(1 + r, -plazoMeses)) / r;
+    const creditoCalculado = maxMensualidad * factorPV;
 
-    const credito = Math.min(creditoEstimado, CALC_DATA.INFONAVIT_MAX_CREDITO);
+    // Aplicar tope máximo 2025
+    const credito = Math.min(creditoCalculado, CALC_DATA.INFONAVIT_MAX_CREDITO);
     return { credito, tasa, vsm, maxMensualidad };
 }
 
@@ -107,30 +108,36 @@ function calcularCredito() {
 
     if (tipo === 'infonavit') {
         const { credito, tasa, vsm, maxMensualidad } = calcCreditoInfonvait(salario);
-        const creditoEfectivo = Math.min(credito, precioPropiedad - enganche);
-        const complemento = Math.max(0, (precioPropiedad - enganche) - creditoEfectivo);
+        // Lo que realmente puede aplicar a esta propiedad
+        const montoNeeded = precioPropiedad - enganche;
+        const creditoEfectivo = Math.min(credito, montoNeeded);
+        const complemento = Math.max(0, montoNeeded - creditoEfectivo);
         const mensualidad = calcMensualidad(creditoEfectivo, tasa, 30);
 
+        const vsmLabel = vsm.toFixed(1);
+        const alcanza = complemento === 0;
+
         html = renderResultCard({
-            titulo: '🏦 Crédito Infonavit',
+            titulo: '🏛️ Crédito Infonavit',
             items: [
-                { label: 'Tu VSM', value: vsm.toFixed(2) + ' veces s. mínimo', highlight: false },
-                { label: 'Tasa de interés', value: tasa.toFixed(2) + '% anual (oficial Infonavit)', highlight: false },
-                { label: 'Crédito máximo estimado', value: formatCurrencyCalc(credito), highlight: true },
-                { label: 'Crédito aplicable a esta propiedad', value: formatCurrencyCalc(creditoEfectivo), highlight: true },
+                { label: 'Tu salario en VSM', value: `${vsmLabel} veces s. mínimo`, highlight: false },
+                { label: 'Tasa de interés Infonavit', value: `${tasa.toFixed(2)}% anual (tablas oficiales)`, highlight: false },
+                { label: 'Capacidad de crédito estimada', value: formatCurrencyCalc(credito), highlight: true },
+                { label: 'Crédito a aplicar a esta propiedad', value: formatCurrencyCalc(creditoEfectivo), highlight: true },
                 { label: 'Enganche mínimo (10%)', value: formatCurrencyCalc(enganche), highlight: false },
-                { label: 'Complemento necesario', value: formatCurrencyCalc(complemento), highlight: complemento > 0 },
-                { label: 'Mensualidad estimada', value: formatCurrencyCalc(mensualidad) + '/mes', highlight: true },
+                { label: 'Complemento con ahorro / cofinanciam.', value: formatCurrencyCalc(complemento), highlight: complemento > 0 },
+                { label: 'Mensualidad estimada', value: formatCurrencyCalc(mensualidad) + '/mes (30 años)', highlight: true },
             ],
-            advertencia: complemento > 0
-                ? `⚠️ Infonavit no presta el 100% del valor. Necesitas aportar ${formatCurrencyCalc(complemento)} adicionales (ahorros, cofinanciamiento bancario o apoyo familiar).`
-                : '✅ Tu crédito es suficiente para esta propiedad con el enganche del 10%.',
-            positivo: complemento === 0
+            advertencia: alcanza
+                ? '✅ Tu crédito es suficiente para esta propiedad. ¡Agenda una cita con un asesor!'
+                : `ℹ️ Infonavit cubre $${formatCurrencyCalc(creditoEfectivo)} de los $${formatCurrencyCalc(montoNeeded)} necesarios. Los $${formatCurrencyCalc(complemento)} restantes pueden cubrirse con cofinanciamiento bancario, ahorros o apoyo familiar. Esto es muy común y viable.`,
+            positivo: alcanza
         });
 
     } else if (tipo === 'fovissste') {
-        const prestamo = Math.min(precioPropiedad - enganche, CALC_DATA.FOVISSSTE_MAX);
-        const complemento = Math.max(0, (precioPropiedad - enganche) - prestamo);
+        const montoNeeded = precioPropiedad - enganche;
+        const prestamo = Math.min(montoNeeded, CALC_DATA.FOVISSSTE_MAX);
+        const complemento = Math.max(0, montoNeeded - prestamo);
         const mensualidad = calcMensualidad(prestamo, CALC_DATA.FOVISSSTE_TASA, plazo);
 
         html = renderResultCard({
@@ -138,44 +145,50 @@ function calcularCredito() {
             items: [
                 { label: 'Tasa de interés fija', value: CALC_DATA.FOVISSSTE_TASA + '% anual', highlight: false },
                 { label: 'Plazo seleccionado', value: `${plazo} años`, highlight: false },
-                { label: 'Monto del crédito', value: formatCurrencyCalc(prestamo), highlight: true },
                 { label: 'Enganche mínimo (10%)', value: formatCurrencyCalc(enganche), highlight: false },
-                { label: 'Complemento necesario', value: formatCurrencyCalc(complemento), highlight: complemento > 0 },
+                { label: 'Monto del crédito FOVISSSTE', value: formatCurrencyCalc(prestamo), highlight: true },
+                { label: 'Complemento con cofinanciam. / ahorro', value: formatCurrencyCalc(complemento), highlight: complemento > 0 },
                 { label: 'Mensualidad estimada', value: formatCurrencyCalc(mensualidad) + '/mes', highlight: true },
             ],
-            advertencia: 'El crédito FOVISSSTE es exclusivo para trabajadores del sector público (ISSSTE). Requiere cotización mínima de 18 bimestres.',
+            advertencia: complemento > 0
+                ? `ℹ️ FOVISSSTE tiene un tope de $1,500,000. Los $${formatCurrencyCalc(complemento)} restantes se pueden cubrir con cofinanciamiento bancario. Consulta con un asesor el esquema "Alia2" (FOVISSSTE + banco).`
+                : '✅ Tu crédito FOVISSSTE cubre esta propiedad. Requiere cotización mínima de 18 bimestres.',
             positivo: true
         });
 
     } else { // bancario
         const prestamo = precioPropiedad - enganche;
+        // Tasa promedio real 2025 (fuente: Banxico / FITCH Ratings)
+        const tasaBancaria = CALC_DATA.BANCARIO_TASA;
         const mensualidades = CALC_DATA.BANCARIO_PLAZOS.map(p => ({
             plazo: p,
-            mensualidad: calcMensualidad(prestamo, CALC_DATA.BANCARIO_TASA, p)
+            mensualidad: calcMensualidad(prestamo, tasaBancaria, p)
         }));
 
         const rows = mensualidades.map(m =>
             `<tr><td>${m.plazo} años</td><td style="color:var(--green);font-weight:700;">${formatCurrencyCalc(m.mensualidad)}/mes</td><td>${formatCurrencyCalc(m.mensualidad * m.plazo * 12)}</td></tr>`
         ).join('');
 
+        // El total a pagar es correcto — es la matemática real de una hipoteca
         html = `
     <div class="card" style="border:1px solid var(--blue-light);">
-      <h4 style="color:var(--blue-light);margin-bottom:1rem;">🏦 Crédito Bancario — Tasa ~${CALC_DATA.BANCARIO_TASA}% anual</h4>
+      <h4 style="color:var(--blue-light);margin-bottom:1rem;">🏦 Crédito Bancario — Tasa ~${tasaBancaria}% anual</h4>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;">
         <div class="calc-result" style="padding:1rem;">
           <p class="calc-result-label">Precio de la propiedad</p>
           <div class="calc-result-value" style="font-size:1.4rem;">${formatCurrencyCalc(precioPropiedad)}</div>
         </div>
         <div class="calc-result" style="padding:1rem;">
-          <p class="calc-result-label">Monto del crédito</p>
+          <p class="calc-result-label">Monto del crédito (90%)</p>
           <div class="calc-result-value" style="font-size:1.4rem;">${formatCurrencyCalc(prestamo)}</div>
         </div>
       </div>
       <div class="table-wrapper">
         <table><thead><tr><th>Plazo</th><th>Mensualidad</th><th>Total a pagar</th></tr></thead><tbody>${rows}</tbody></table>
       </div>
-      <div style="margin-top:1rem;padding:0.75rem;background:rgba(59,130,246,0.1);border-radius:8px;font-size:0.85rem;color:var(--text-secondary);">
-        💡 Las tasas bancarias varían por institución y perfil crediticio. Este cálculo usa la tasa promedio de mercado 2025 (~10.5%). Consulta con tu banco para una cotización personalizada.
+      <div style="margin-top:1rem;padding:0.75rem;background:rgba(59,130,246,0.1);border-radius:8px;font-size:0.82rem;color:var(--text-secondary);">
+        💡 <strong>¿Por qué el total es mayor al precio?</strong> En una hipoteca pagas el capital MÁS los intereses acumulados durante años. A tasa del ${tasaBancaria}% a 20 años, el costo financiero representa ~${Math.round((calcMensualidad(prestamo, tasaBancaria, 20) * 240 / prestamo - 1) * 100)}% extra del capital. Es la realidad de cualquier crédito hipotecario en México. A menor plazo, menos intereses totales.<br><br>
+        Las tasas varían por banco y perfil (BBVA ~9.85%, Banorte ~10.5%, HSBC ~10.75%). Consulta con tu banco para una cotización personalizada.
       </div>
     </div>`;
     }
@@ -190,8 +203,8 @@ function renderResultCard({ titulo, items, advertencia, positivo }) {
       <span style="font-weight:${highlight ? '700' : '400'};color:${highlight ? 'var(--green)' : 'var(--text-primary)'};">${value}</span>
     </div>`).join('');
 
-    const advertenciaColor = positivo ? 'rgba(37,211,102,0.15)' : 'rgba(239,68,68,0.15)';
-    const advertenciaTextColor = positivo ? 'var(--green)' : 'var(--red-primary)';
+    const advertenciaColor = positivo ? 'rgba(37,211,102,0.12)' : 'rgba(59,130,246,0.12)';
+    const advertenciaTextColor = positivo ? 'var(--green)' : 'var(--blue-light)';
 
     return `
   <div class="card" style="border:1px solid var(--blue-light);">
@@ -212,10 +225,8 @@ function selectModeloCredito(precio, nombre) {
     const input = document.getElementById('precioPropiedad');
     if (input) {
         input.value = precio;
-        // Highlight the selected model button
         document.querySelectorAll('.modelo-btn').forEach(b => b.classList.remove('active'));
         event?.target?.classList?.add('active');
-        // Auto-calculate if salary is already filled
         const salario = document.getElementById('salarioMensual')?.value;
         if (salario) calcularCredito();
     }
