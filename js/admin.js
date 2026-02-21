@@ -51,15 +51,45 @@ const AdminPanel = {
     },
 
     async loadPanel() {
+        const container = document.getElementById('admin-content');
+        if (!this.sb) {
+            if (container) container.innerHTML = '<p style="color:var(--red-primary);">❌ ANALYTICS_CONFIG no está definido. Verifica que index.html tenga la URL y clave de Supabase.</p>';
+            return;
+        }
         try {
             const res = await fetch(`${this.sb.url}/rest/v1/disponibilidad?select=*&order=nombre_modelo.asc`, {
                 headers: { apikey: this.sb.key, Authorization: `Bearer ${this.sb.key}` }
             });
-            const data = await res.json();
+
+            let data;
+            try { data = await res.json(); } catch { data = null; }
+
+            if (!res.ok) {
+                // Tabla no existe o error de permisos
+                const msg = data?.message || data?.hint || `HTTP ${res.status}`;
+                if (res.status === 404 || (data?.code === '42P01') || msg.includes('does not exist')) {
+                    // Tabla faltante — mostrar botón para insertar datos por defecto
+                    if (container) container.innerHTML = `
+                        <p style="color:var(--text-secondary);margin-bottom:1rem;">
+                            ⚠️ La tabla <code>disponibilidad</code> no existe aún en Supabase.
+                            Puedes crearla con el SQL del manual y luego insertar los modelos por defecto aquí:
+                        </p>
+                        <button class="btn btn-primary" onclick="AdminPanel.insertDefaults()">⚡ Insertar modelos por defecto</button>`;
+                } else {
+                    if (container) container.innerHTML = `<p style="color:var(--red-primary);">❌ Error Supabase: ${msg}</p>`;
+                }
+                return;
+            }
+
+            if (!Array.isArray(data)) {
+                if (container) container.innerHTML = `<p style="color:var(--red-primary);">❌ Respuesta inesperada de Supabase. Verifica los permisos RLS de la tabla disponibilidad.</p>`;
+                return;
+            }
+
             this.renderDisponibilidadEditor(data);
         } catch (e) {
             console.error('Admin: Error cargando disponibilidad:', e);
-            document.getElementById('admin-content').innerHTML = '<p style="color:var(--red-primary);">Error al conectar con Supabase. Verifica tu configuración.</p>';
+            if (container) container.innerHTML = `<p style="color:var(--red-primary);">❌ Error de red: ${e.message}<br><small>Verifica que la URL y clave de Supabase en index.html sean correctas.</small></p>`;
         }
     },
 
