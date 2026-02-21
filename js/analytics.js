@@ -53,6 +53,8 @@ const Analytics = {
                     from_section: lastSection,
                     url: window.location.href
                 });
+                // Meta Pixel: track Lead event
+                if (window.fbq) fbq('track', 'Lead', { content_name: 'WhatsApp Click', content_category: lastSection });
             }
 
             if (href.includes('mailto:')) {

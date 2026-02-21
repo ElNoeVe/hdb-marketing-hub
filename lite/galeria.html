@@ -4,12 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Modelos — HDB</title>
+    <title>Galería de Modelos — Haciendas del Bosque, Tecámac</title>
     <meta name="description"
-        content="Explora los modelos de casas y departamentos disponibles en Haciendas del Bosque, Tecámac.">
+        content="Explora los modelos de casas y departamentos disponibles en Haciendas del Bosque, Tecámac. Aparta con Infonavit, FOVISSSTE o crédito bancario.">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../assets/logo-hdb.png" type="image/png">
     <script src="../js/analytics.js" defer></script>
+
+    <style>
+        /* Disponibilidad badge */
+        .disp-badge {
+            display: none;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-top: 6px;
+        }
+
+        /* Por qué comprar cards */
+        .why-card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .why-card h4 {
+            margin: 0;
+            font-size: 1rem;
+            color: var(--blue-light);
+        }
+
+        .why-card ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        .credit-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .credit-badge {
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            background: rgba(37, 211, 102, 0.15);
+            color: var(--green);
+            border: 1px solid rgba(37, 211, 102, 0.4);
+        }
+
+        /* Pre-registro form */
+        .preregistro-section {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(37, 211, 102, 0.08));
+            border: 1px solid var(--blue-light);
+        }
+    </style>
 </head>
 
 <body>
@@ -47,6 +107,7 @@
         </div>
 
         <!-- Model Cards Grid -->
+        <!-- Los badges de disponibilidad se insertan via preregistro.js con data-disponibilidad="modelo-id" -->
         <div class="gallery-grid" id="modelGrid">
             <div class="loading">
                 <div class="loading-spinner"></div>
@@ -92,6 +153,138 @@
             </div>
         </div>
 
+        <!-- ════════════════════════════════════════ -->
+        <!-- ¿POR QUÉ COMPRAR AQUÍ? -->
+        <!-- ════════════════════════════════════════ -->
+        <div class="card mt-2 fade-in">
+            <h3 class="card-title mb-1">🤔 ¿Por qué comprar en Haciendas del Bosque?</h3>
+            <div class="grid grid-3" style="gap:1rem;">
+
+                <!-- Tarjeta 1: Ubicación -->
+                <div class="why-card">
+                    <h4>📍 Ubicación Estratégica</h4>
+                    <ul>
+                        <li>Carretera libre México-Pachuca — <strong>2 min</strong></li>
+                        <li>Multiplaza Ojo de Agua — <strong>6 min</strong></li>
+                        <li>IMSS Hospital 200 — <strong>15 min</strong></li>
+                        <li>Aeropuerto AIFA — <strong>25 min</strong></li>
+                        <li>Estación Mexibús — <strong>7 min</strong></li>
+                        <li>Escuelas dentro del desarrollo</li>
+                    </ul>
+                    <a href="https://www.google.com/maps/place/Haciendas+del+Bosque,+Tec%C3%A1mac" target="_blank"
+                        class="btn btn-outline" style="font-size:0.8rem;text-align:center;">
+                        🗺️ Ver en Google Maps →
+                    </a>
+                </div>
+
+                <!-- Tarjeta 2: Seguridad -->
+                <div class="why-card">
+                    <h4>🔒 Seguridad Garantizada</h4>
+                    <ul>
+                        <li>✅ Fraccionamiento privado</li>
+                        <li>✅ Caseta de seguridad 24/7</li>
+                        <li>✅ Acceso controlado con pluma</li>
+                        <li>✅ Cámaras de vigilancia</li>
+                        <li>✅ Calles cerradas — sin tráfico de paso</li>
+                        <li>✅ Comunidad organizada con vigilancia vecinal</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta 3: Financiamiento -->
+                <div class="why-card">
+                    <h4>💳 Financiamiento Flexible</h4>
+                    <p style="font-size:0.85rem;color:var(--text-secondary);">Aceptamos múltiples formas de crédito para
+                        que te sea más fácil comprar:</p>
+                    <div class="credit-badges">
+                        <span class="credit-badge">✅ Infonavit</span>
+                        <span class="credit-badge">✅ FOVISSSTE</span>
+                        <span class="credit-badge">✅ Crédito Bancario</span>
+                        <span class="credit-badge">✅ Cofinanciamiento</span>
+                        <span class="credit-badge">✅ Infonavit + Banco</span>
+                    </div>
+                    <a href="calculadora.html" class="btn btn-primary"
+                        style="font-size:0.85rem;text-align:center;margin-top:0.5rem;">
+                        📊 Simular mi crédito →
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- FIN ¿POR QUÉ COMPRAR AQUÍ? -->
+
+        <!-- ════════════════════════════════════════ -->
+        <!-- PRE-REGISTRO Y APARTADO -->
+        <!-- ════════════════════════════════════════ -->
+        <div class="card mt-2 fade-in preregistro-section">
+            <h3 class="card-title mb-1" style="color:var(--blue-light);">📋 Pre-registro — Aparta tu Propiedad</h3>
+            <p style="font-size:0.88rem;color:var(--text-secondary);margin-bottom:1.5rem;">
+                Regístrate y aparta con un mínimo de <strong style="color:var(--green);">$5,000 MXN</strong>.
+                Un asesor te contactará en menos de 24 horas para confirmar y orientarte en el proceso.
+            </p>
+
+            <!-- Éxito (oculto hasta envío) -->
+            <div id="preregistro-success" style="display:none;"></div>
+
+            <!-- Formulario -->
+            <form id="preregistro-form">
+                <div class="grid grid-2" style="gap:1rem;">
+                    <div class="form-group">
+                        <label class="form-label">Nombre completo *</label>
+                        <input type="text" class="form-input" id="reg-nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Teléfono (10 dígitos) *</label>
+                        <input type="tel" class="form-input" id="reg-telefono" placeholder="55 1234 5678" maxlength="10"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Correo electrónico *</label>
+                        <input type="email" class="form-input" id="reg-correo" placeholder="tu@correo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Modelo de interés</label>
+                        <select class="form-select" id="reg-modelo">
+                            <option value="">— Sin preferencia —</option>
+                            <option value="Depa Pino Plus">🏢 Depa Pino Plus — $1,000,000</option>
+                            <option value="Depa Pino Premium 2R">🏢 Depa Pino Premium 2R — $1,150,000</option>
+                            <option value="Depa Pino Premium 3R">🏢 Depa Pino Premium 3R — $1,200,000</option>
+                            <option value="Casa Esmeralda">🏡 Casa Esmeralda — $1,336,000</option>
+                            <option value="Casa Citrino">🏡 Casa Citrino — $1,850,000</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Monto de apartado -->
+                <div class="form-group" style="margin-top:0.5rem;">
+                    <label class="form-label">Monto de apartado (MXN) — mínimo $5,000, sin límite máximo</label>
+                    <div style="display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap;">
+                        <input type="number" class="form-input" id="reg-monto" placeholder="Ej: 10000" min="5000"
+                            style="max-width:200px;">
+                        <div class="flex gap-1" style="flex-wrap:wrap;">
+                            <button type="button" class="btn btn-outline" style="font-size:0.8rem;"
+                                onclick="document.getElementById('reg-monto').value=5000">$5,000</button>
+                            <button type="button" class="btn btn-outline" style="font-size:0.8rem;"
+                                onclick="document.getElementById('reg-monto').value=10000">$10,000</button>
+                            <button type="button" class="btn btn-outline" style="font-size:0.8rem;"
+                                onclick="document.getElementById('reg-monto').value=20000">$20,000</button>
+                            <button type="button" class="btn btn-outline" style="font-size:0.8rem;"
+                                onclick="document.getElementById('reg-monto').value=50000">$50,000</button>
+                        </div>
+                    </div>
+                    <p style="font-size:0.75rem;color:var(--text-muted);margin-top:4px;">* Si aún no defines el monto,
+                        déjalo vacío y te lo indicamos personalmente.</p>
+                </div>
+
+                <p id="preregistro-message" style="display:none;font-size:0.85rem;margin:0.5rem 0;"></p>
+
+                <button type="submit" id="preregistro-btn" class="btn btn-primary"
+                    style="margin-top:1rem;font-size:1rem;padding:0.8rem 2rem;">
+                    📋 Enviar Pre-registro
+                </button>
+            </form>
+        </div>
+        <!-- FIN PRE-REGISTRO -->
+
         <!-- Contact Bar -->
         <div class="contact-bar mt-2">
             <a href="https://wa.me/525537494034" target="_blank" class="btn-whatsapp">
@@ -120,6 +313,7 @@
     <script>window.BASE_PATH = '../';</script>
     <script src="../js/app.js"></script>
     <script src="../js/galeria.js"></script>
+    <script src="../js/preregistro.js"></script>
 </body>
 
 </html>

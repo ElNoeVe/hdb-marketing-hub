@@ -5,7 +5,10 @@
     supabaseUrl: 'https://smdenxdjsrhijanupxll.supabase.co',
     supabaseKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNtZGVueGRqc3JoaWphbnVweGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE2MTg0OTQsImV4cCI6MjA4NzE5NDQ5NH0.NdM0hZ4DY8ty-Kd_ETyWfSvyIYyaobyFD_Hq-jZAGR0'
   };
+  // ⚙️ ADMIN: Cambia aquí tu contraseña de administrador antes del push
+  window.ADMIN_PASSWORD = 'GuHeCoTo9494.';
 </script>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +16,64 @@
   <meta name="description" content="Panel de control de campañas publicitarias para Haciendas del Bosque, Tecámac.">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="assets/logo-hdb.png" type="image/png">
+
+
   <script src="js/analytics.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <style>
+    /* ── Admin Panel styles ── */
+    #admin-section {
+      display: none;
+    }
+
+    #admin-section.visible {
+      display: block;
+    }
+
+    .admin-model-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    /* ── Leads table ── */
+    #leads-panel table th,
+    #leads-panel table td {
+      font-size: 0.82rem;
+    }
+
+    /* ── Trend chart ── */
+    .trend-chart-container {
+      height: 220px;
+      position: relative;
+    }
+
+    /* ── Summary stat mini ── */
+    .leads-stat {
+      text-align: center;
+      padding: 1rem;
+      background: var(--bg-elevated);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .leads-stat .num {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--green);
+    }
+
+    .leads-stat .lbl {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+  </style>
 </head>
 
 <body>
@@ -34,11 +94,17 @@
         <li><a href="creativos.html">✍️ Creativos</a></li>
         <li><a href="calculadora.html">📈 Plusvalía</a></li>
         <li><a href="galeria.html">🏠 Galería</a></li>
+        <li>
+          <a href="#admin-section" onclick="toggleAdmin(event)" style="color:var(--text-muted);font-size:0.85rem;">
+            🔐 Admin
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
 
   <div class="app-container page-content">
+
     <!-- Header -->
     <div class="section-header fade-in">
       <h1>📊 Dashboard de Campañas</h1>
@@ -86,24 +152,71 @@
     <!-- AI Advice Section -->
     <div id="aiAdvice" class="mt-2 fade-in"></div>
 
+    <!-- Comparador de Campañas: Trend Chart -->
+    <div class="card mt-2 fade-in">
+      <h3 class="card-title mb-1">📈 Comparador Semanal — Clics a WhatsApp</h3>
+      <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:1rem;">Esta semana vs semana anterior (datos
+        desde App Principal + Lite)</p>
+      <div class="trend-chart-container">
+        <canvas id="trend-chart"></canvas>
+      </div>
+    </div>
+
     <!-- Report History -->
     <div class="card mt-2" id="reportHistory"></div>
 
-    <!-- Contact Bar -->
-    <div class="contact-bar mt-2">
-      <a href="https://wa.me/525537494034" target="_blank" class="btn-whatsapp">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.029.566 1.936.84 2.806.84 3.181 0 5.767-2.586 5.767-5.766.001-3.18-2.585-5.766-5.767-5.766zm9.93 5.766c0-5.476-4.455-9.931-9.931-9.931-5.476 0-9.931 4.455-9.931 9.931 0 1.968.578 3.633 1.549 5.06l-1.616 5.895 6.046-1.584c1.375.831 2.977 1.306 4.352 1.306 5.476 0 9.931-4.455 9.931-9.931z" />
-        </svg>
-        WhatsApp: 55 3749 4034
-      </a>
-      <a href="mailto:n.gutierrez.hernandez@hogaresunion.mx">✉️ n.gutierrez.hernandez@hogaresunion.mx</a>
+    <!-- ──────────────────────────────────────── -->
+    <!-- Panel de Leads -->
+    <!-- ──────────────────────────────────────── -->
+    <div class="card mt-2 fade-in" id="leads-panel">
+      <h3 class="card-title mb-1">👥 Panel de Leads — Pre-registros</h3>
+
+      <!-- Resumen numérico -->
+      <div class="grid grid-4 mb-1">
+        <div class="leads-stat">
+          <div class="num" id="leads-today">—</div>
+          <div class="lbl">Hoy</div>
+        </div>
+        <div class="leads-stat">
+          <div class="num" id="leads-week">—</div>
+          <div class="lbl">Esta semana</div>
+        </div>
+        <div class="leads-stat">
+          <div class="num" id="leads-total">—</div>
+          <div class="lbl">Total</div>
+        </div>
+        <div class="leads-stat">
+          <div class="num" id="leads-deposits" style="color:#f59e0b;">—</div>
+          <div class="lbl">Con apartado</div>
+        </div>
+      </div>
+
+      <!-- Tabla de leads -->
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Nombre</th>
+              <th>Teléfono</th>
+              <th>Correo</th>
+              <th>Modelo</th>
+              <th>Apartado</th>
+              <th>Fuente</th>
+            </tr>
+          </thead>
+          <tbody id="leads-table-body">
+            <tr>
+              <td colspan="7" style="text-align:center;padding:1.5rem;opacity:0.5;">Cargando leads...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
-    <!-- Sección de Estadísticas en Tiempo Real (Agregado) -->
+    <!-- Estadísticas en Tiempo Real -->
     <div id="stats-dashboard"
-      style="background: rgba(26, 26, 26, 0.9); color: white; padding: 2rem; border-radius: 15px; margin-top: 3rem; border: 1px solid #333; backdrop-filter: blur(10px);">
+      style="background: rgba(26,26,26,0.9); color: white; padding: 2rem; border-radius: 15px; margin-top: 3rem; border: 1px solid #333; backdrop-filter: blur(10px);">
       <h3 style="margin-top: 0; color: #4ade80;">📊 Rendimiento en Tiempo Real (Apps Conectadas)</h3>
       <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center;">
         <div>
@@ -123,6 +236,54 @@
         automáticamente desde App Principal y Lite</p>
     </div>
 
+    <!-- ──────────────────────────────────────── -->
+    <!-- Admin Panel -->
+    <!-- ──────────────────────────────────────── -->
+    <div id="admin-section" class="card mt-2">
+      <h3 class="card-title mb-1">🔐 Panel de Administración</h3>
+
+      <!-- Login -->
+      <div id="admin-login">
+        <p style="color:var(--text-secondary);margin-bottom:1rem;font-size:0.9rem;">Acceso restringido. Ingresa la
+          contraseña de administrador.</p>
+        <div style="display:flex;gap:0.75rem;max-width:400px;">
+          <input type="password" id="admin-pass-input" placeholder="Contraseña de admin"
+            style="flex:1;padding:0.6rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);"
+            onkeydown="if(event.key==='Enter') AdminPanel.login()">
+          <button class="btn btn-primary" onclick="AdminPanel.login()">Entrar</button>
+        </div>
+        <p id="admin-pass-error" style="color:var(--red-primary);font-size:0.85rem;margin-top:0.5rem;display:none;">
+          ❌ Contraseña incorrecta.
+        </p>
+      </div>
+
+      <!-- Panel content (visible tras login) -->
+      <div id="admin-panel" style="display:none;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+          <h4 style="margin:0;">🏠 Disponibilidad por Modelo</h4>
+          <button class="btn btn-outline" style="font-size:0.8rem;" onclick="AdminPanel.logout()">Cerrar sesión</button>
+        </div>
+        <div id="admin-content">
+          <div class="loading">
+            <div class="loading-spinner"></div>
+            <p>Cargando...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Bar -->
+    <div class="contact-bar mt-2">
+      <a href="https://wa.me/525537494034" target="_blank" class="btn-whatsapp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.029.566 1.936.84 2.806.84 3.181 0 5.767-2.586 5.767-5.766.001-3.18-2.585-5.766-5.767-5.766zm9.93 5.766c0-5.476-4.455-9.931-9.931-9.931-5.476 0-9.931 4.455-9.931 9.931 0 1.968.578 3.633 1.549 5.06l-1.616 5.895 6.046-1.584c1.375.831 2.977 1.306 4.352 1.306 5.476 0 9.931-4.455 9.931-9.931z" />
+        </svg>
+        WhatsApp: 55 3749 4034
+      </a>
+      <a href="mailto:n.gutierrez.hernandez@hogaresunion.mx">✉️ n.gutierrez.hernandez@hogaresunion.mx</a>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-logos">
@@ -134,9 +295,22 @@
     </footer>
   </div>
 
+  <script>
+    function toggleAdmin(e) {
+      e.preventDefault();
+      const section = document.getElementById('admin-section');
+      section.classList.toggle('visible');
+      if (section.classList.contains('visible')) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+
   <script src="data/data.js"></script>
   <script src="js/app.js"></script>
   <script src="js/dashboard.js"></script>
+  <script src="js/leads-dashboard.js"></script>
+  <script src="js/admin.js"></script>
 </body>
 
 </html>

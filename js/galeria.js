@@ -188,7 +188,10 @@ function renderModels(modelos, filter = 'all') {
             <h3 class="gallery-card-title" style="margin:0;">${model.nombre}</h3>
             ${availBadge}
           </div>
-          
+          <div>
+            <span class="disp-badge" data-disponibilidad="${model.id}">Cargando...</span>
+          </div>
+
           <p style="font-size:0.85rem;color:var(--text-secondary);margin:var(--space-sm) 0;">${model.descripcion}</p>
           
           <div class="gallery-card-meta">
