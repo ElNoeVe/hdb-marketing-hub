@@ -604,12 +604,12 @@ window.StartData = {
         "anuncio_tecnico": {
             "copy": "🏡 ¡Tu nuevo hogar te espera en Tecámac! 🌳\n\nConoce Casa Esmeralda:\n✅ 3 Recámaras\n✅ 2.5 Baños\n✅ 2 Niveles\n✅ Seguridad 24/7\n\nDesde $1,336,000 MXN. Aceptamos Infonavit y Fovissste.\n\n📍 Ubicación privilegiada cerca del AIFA y centros comerciales.\n\n¡Agenda tu visita hoy mismo! 👇\n[Botón: Más informes]",
             "hashtags": ["#HaciendasDelBosque", "#CasaPropia", "#Infonavit", "#Tecamac", "#Edomex"],
-            "prompt_imagen": "Fachada moderna de casa de 2 niveles iluminación cálida atardecer..."
+            "prompt_imagen": "Fachada moderna de casa de 2 niveles con acabados blancos y detalles en gris, jardín frontal con pasto verde bien cuidado, iluminación cálida de atardecer, cielo naranja y dorado de fondo, estilo arquitectónico contemporáneo mexicano, fotografía de bienes raíces de alta calidad, lente gran angular, aspecto premium y aspiracional, proporción 4:5 para redes sociales."
         },
         "anuncio_sentimental": {
             "copy": "✨ Construye momentos inolvidables con tu familia. ✨\n\nImagina ver crecer a tus hijos en un entorno seguro, rodeado de naturaleza y con amenidades pensadas para ti.\n\nEn Haciendas del Bosque, no solo compras una casa, compras calidad de vida.\n\n❤️ Jardines y áreas de juegos\n❤️ Escuelas dentro del desarrollo\n❤️ Comunidad organizada\n\nDa el paso hoy. Tu familia lo merece. 👨‍👩‍👧‍👦",
             "hashtags": ["#FamiliaFeliz", "#HogarDulceHogar", "#CalidadDeVida", "#Seguridad", "#AmorDeFamilia"],
-            "prompt_imagen": "Familia feliz jugando en parque residencial al atardecer..."
+            "prompt_imagen": "Familia mexicana feliz de 4 integrantes jugando juntos en el jardín de un fraccionamiento residencial moderno al atardecer, árboles y pasto verde alrededor, ambiente cálido y emotivo, luz dorada de hora mágica, sonrisas auténticas, vibes de hogar seguro y feliz, estilo fotografía lifestyle editorial, fondo con casas del fraccionamiento difuminadas, proporción 4:5."
         },
         "anuncio_educativo": {
             "copy": "🤔 ¿Sabías que comprar casa es la inversión más segura? 📈\n\nDescubre por qué Tecámac es la zona con mayor plusvalía del Estado de México.\n\nDesliza para conocer los datos 👇",
@@ -622,8 +622,8 @@ window.StartData = {
         },
         "anuncio_video": {
             "copy": "🎥 Recorrido Virtual: Casa Esmeralda\n\nEnamórate de cada rincón de tu próxima casa. Espacios amplios, iluminados y acabados de primera.\n\n¡Míralo completo! 👀\n\n#TourVirtual #CasaEsmeralda #HaciendasDelBosque",
-            "guion_tecnico": "00:00 - Vista aérea del fraccionamiento\n00:05 - Fachada Casa Esmeralda\n00:10 - Sala y Comedor con familia...",
-            "prompt_video_ia": "Drone view of residential complex sunset cinematic lighting..."
+            "guion_tecnico": "00:00 - Vista aérea del fraccionamiento Haciendas del Bosque al amanecer desde dron\n00:05 - Acercamiento lento a la fachada de Casa Esmeralda, énfasis en acabados modernos\n00:10 - Paneo de sala y comedor con familia sentada, luz natural entrando por ventanas\n00:18 - Recorrido rápido por cocina integral con acabados blancos\n00:24 - Recámara principal con vista amplia y clóset incluido\n00:30 - Jardín trasero con familia conviviendo, niños jugando\n00:38 - Amenidades del fraccionamiento: canchas, área infantil, seguridad\n00:45 - Texto final: Tu familia merece lo mejor - Desde $1,336,000 MXN con logo HDB\n00:50 - CTA: WhatsApp 55 3749 4034 + música de fondo motivacional",
+            "prompt_video_ia": "Cinematic drone shot flying over a modern Mexican residential complex at golden hour, smooth camera movement gliding toward a two-story contemporary house with white facades and grey accents, lush green gardens, warm sunset lighting, 4K quality, real estate promotional video style, 30fps, wide angle lens, color grading: warm tones with slight desaturation, aspect ratio 9:16 for Reels/TikTok."
         }
     }
 };
