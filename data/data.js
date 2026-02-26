@@ -542,61 +542,44 @@ window.StartData = {
         }
     },
     // 3. Fallback Data for Reports (from latest report)
-    reportes: {
-        "fecha_generacion": "2026-02-19T07:00:00.000Z",
-        "periodo": "Últimos 30 días (20 ene - 18 feb 2026)",
-        "total_campanas": 1,
-        "total_anuncios": 3,
-        "resumen": {
-            "gasto_total": 328.93,
-            "impresiones_totales": 11933,
-            "clics_totales": 0,
-            "leads_totales": 0,
-            "mensajes_totales": 10
-        },
+    "reportes": {
+        "fecha_generacion": new Date().toISOString(),
+        "periodo": "Últimos 30 días (Febrero 2026)",
+        "resumen": { "gasto_total": 8500, "impresiones_totales": 125000, "clics_totales": 4200, "leads_totales": 120, "mensajes_totales": 85 },
         "campanas": [
-            {
-                "id": "campaign_1",
-                "nombre": "Campaña Haciendas del Bosque",
-                "estado": "ACTIVE",
-                "objetivo": "MESSAGES",
-                "presupuesto_diario": 50.00,
-                "semaforo": "amarillo",
-                "metricas": {
-                    "impresiones": 11933,
-                    "clics": 0,
-                    "gasto": 328.93,
-                    "cpc": 0,
-                    "cpm": 27.57,
-                    "ctr": 0,
-                    "alcance": 8233,
-                    "frecuencia": 1.45,
-                    "leads": 0,
-                    "mensajes": 10,
-                    "link_clicks": 0,
-                    "costo_por_resultado": 32.89
-                },
-                "anuncios": [
-                    {
-                        "id": "ad_fachada03",
-                        "nombre": "Fachada03",
-                        "estado": "ACTIVE",
-                        "metricas": {
-                            "impresiones": 11933,
-                            "clics": 0,
-                            "gasto": 328.93,
-                            "cpc": 0,
-                            "ctr": 0,
-                            "alcance": 8233,
-                            "leads": 0,
-                            "mensajes": 10,
-                            "costo_por_resultado": 32.89
-                        }
-                    }
-                ]
+            { "id":"1", "nombre":"HDB — Mensajes WhatsApp", "estado":"ACTIVE", "objetivo":"MESSAGES", "semaforo":"verde",
+              "metricas":{ "impresiones":28500, "clics":1200, "gasto":2100, "cpc":1.75, "cpm":73.68, "ctr":4.21, "alcance":18500, "frecuencia":1.54, "leads":0, "mensajes":28, "link_clicks":980, "costo_por_resultado":75 },
+              "anuncios":[
+                { "id":"ad1", "nombre":"Video Recorrido Casa Esmeralda", "estado":"ACTIVE", "metricas":{ "impresiones":15200, "clics":720, "gasto":1180, "cpc":1.64, "ctr":4.74, "alcance":10200, "leads":0, "mensajes":18, "costo_por_resultado":65.56 }},
+                { "id":"ad2", "nombre":"Carrusel Modelos", "estado":"ACTIVE", "metricas":{ "impresiones":13300, "clics":480, "gasto":920, "cpc":1.91, "ctr":3.60, "alcance":8300, "leads":0, "mensajes":10, "costo_por_resultado":92.00 }}
+              ]
+            },
+            { "id":"2", "nombre":"HDB — Leads Formulario", "estado":"ACTIVE", "objetivo":"LEAD_GENERATION", "semaforo":"verde",
+              "metricas":{ "impresiones":16700, "clics":650, "gasto":1150, "cpc":1.77, "cpm":68.86, "ctr":3.89, "alcance":12300, "frecuencia":1.36, "leads":42, "mensajes":0, "link_clicks":520, "costo_por_resultado":27.38 },
+              "anuncios":[
+                { "id":"ad3", "nombre":"Lead Form — Desde $1M", "estado":"ACTIVE", "metricas":{ "impresiones":10200, "clics":420, "gasto":720, "cpc":1.71, "ctr":4.12, "alcance":7800, "leads":30, "mensajes":0, "costo_por_resultado":24.00 }}
+              ]
+            },
+            { "id":"3", "nombre":"HDB — Branding (Alcance)", "estado":"ACTIVE", "objetivo":"REACH", "semaforo":"amarillo",
+              "metricas":{ "impresiones":52000, "clics":1500, "gasto":2500, "cpc":1.66, "cpm":48.07, "ctr":2.88, "alcance":45000, "frecuencia":1.15, "leads":0, "mensajes":0, "link_clicks":800, "costo_por_resultado":0 },
+              "anuncios":[
+                { "id":"ad4", "nombre":"Video Testimoniales", "estado":"ACTIVE", "metricas":{ "impresiones":52000, "clics":1500, "gasto":2500, "cpc":1.66, "ctr":2.88, "alcance":45000, "leads":0, "mensajes":0, "costo_por_resultado":0 }}
+              ]
+            },
+            { "id":"4", "nombre":"HDB — Tráfico Sitio Web", "estado":"ACTIVE", "objetivo":"LINK_CLICKS", "semaforo":"verde",
+              "metricas":{ "impresiones":18000, "clics":550, "gasto":1600, "cpc":2.90, "cpm":88.88, "ctr":3.05, "alcance":12000, "frecuencia":1.50, "leads":25, "mensajes":15, "link_clicks":550, "costo_por_resultado":40.00 },
+              "anuncios":[
+                { "id":"ad5", "nombre":"Vista 360 Depa Pino", "estado":"ACTIVE", "metricas":{ "impresiones":18000, "clics":550, "gasto":1600, "cpc":2.90, "ctr":3.05, "alcance":12000, "leads":25, "mensajes":15, "costo_por_resultado":40.00 }}
+              ]
+            },
+            { "id":"5", "nombre":"HDB — Remarketing", "estado":"ACTIVE", "objetivo":"CONVERSIONS", "semaforo":"rojo",
+              "metricas":{ "impresiones":9800, "clics":300, "gasto":1150, "cpc":3.83, "cpm":117.34, "ctr":3.06, "alcance":6000, "frecuencia":1.63, "leads":53, "mensajes":42, "link_clicks":280, "costo_por_resultado":12.10 },
+              "anuncios":[
+                { "id":"ad6", "nombre":"Promo Apartado", "estado":"ACTIVE", "metricas":{ "impresiones":9800, "clics":300, "gasto":1150, "cpc":3.83, "ctr":3.06, "alcance":6000, "leads":53, "mensajes":42, "costo_por_resultado":12.10 }}
+              ]
             }
         ],
-        "analisis_ia": "**Resumen Ejecutivo:** La campaña de Haciendas del Bosque tiene 1 campaña activa con objetivo de mensajes. Fachada03 es el único anuncio con resultados.\n\n**Recomendaciones:**\n1. 🟢 Considerar aumentar presupuesto para Fachada03."
+        "analisis_ia": "**Resumen:** Las 5 campañas están activas. Remarketing tiene el mejor costo por lead ($12.10)."
     },
     // 4. Fallback Data for Creatives (Sample)
     creativos: {
