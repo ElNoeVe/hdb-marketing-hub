@@ -17,8 +17,9 @@ async function fetchFacebookData() {
     const campaignsRes = await fetch(campaignsUrl);
     const campaignsData = await campaignsRes.json();
 
-    if (campaignsData.error) {
-        console.error('❌ Error de Facebook API:', campaignsData.error.message);
+    if (!campaignsRes.ok || campaignsData.error) {
+        console.error('❌ HTTP Status Facebook:', campaignsRes.status);
+        console.error('❌ Error de Facebook API detallado:', JSON.stringify(campaignsData, null, 2));
         process.exit(1);
     }
 
@@ -162,6 +163,12 @@ Sé conciso y orientado a la acción.`;
     });
 
     const data = await res.json();
+    if (!res.ok || data.error) {
+        console.error('⚠️ Error de IA (Geimini) - HTTP Status:', res.status);
+        console.error('⚠️ Detalle:', JSON.stringify(data, null, 2));
+        return 'Análisis de IA falló. Revisar Logs.';
+    }
+
     return data.candidates?.[0]?.content?.parts?.[0]?.text || 'No se pudo generar análisis';
 }
 

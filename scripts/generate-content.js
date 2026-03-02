@@ -116,6 +116,11 @@ FORMATO JSON ESPERADO:
     });
 
     const data = await res.json();
+    if (!res.ok) {
+        console.error('❌ Error de Gemini API HTTP Status:', res.status, res.statusText);
+        console.error('❌ Detalle del error:', JSON.stringify(data, null, 2));
+        throw new Error(`API Error: ${data.error?.message || res.statusText}`);
+    }
     if (data.error) throw new Error(data.error.message);
 
     const jsonString = data.candidates[0].content.parts[0].text;
