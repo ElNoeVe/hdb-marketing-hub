@@ -118,24 +118,6 @@ function createAdCard(type, title, adData, date, imageName) {
             <span class="badge badge-green">📋 Listo</span>
         </div>
 
-        <div style="margin-bottom:1rem;">
-            <h4 style="color:var(--blue-light);margin-bottom:8px;">🖼️ Imagen del Anuncio</h4>
-            <div class="generated-image-container" id="container-${imgId}">
-                <img id="${imgId}" src="${imagePath}" alt="${type}"
-                    onload="document.getElementById('${dlId}').style.display='inline-flex';"
-                    onerror="
-                        this.style.display='none';
-                        document.getElementById('placeholder-${imgId}').style.display='flex';
-                        document.getElementById('${dlId}').style.display='none';
-                    ">
-                <div id="placeholder-${imgId}" style="display:none;align-items:center;justify-content:center;flex-direction:column;gap:8px;padding:2rem;background:rgba(255,255,255,0.04);border-radius:8px;border:1px dashed rgba(255,255,255,0.15);min-height:160px;">
-                    <span style="font-size:2rem;">🎨</span>
-                    <p style="margin:0;font-size:0.85rem;color:var(--text-secondary);text-align:center;">Imagen no generada aún.<br>Usa el prompt de abajo en Dall-E, Midjourney o Canva.</p>
-                </div>
-                <a id="${dlId}" href="${imagePath}" download="${imageName}" class="btn-download" style="display:none;">⬇️ Descargar</a>
-            </div>
-        </div>
-
         <div>
             <h4 style="color:var(--blue-light);margin-bottom:8px;">📝 Copy</h4>
             <div class="copy-block">
@@ -149,7 +131,7 @@ function createAdCard(type, title, adData, date, imageName) {
                 <pre>${(adData.hashtags || []).join(' ')}</pre>
             </div>
 
-             <h4 style="color:var(--blue-light);margin-bottom:8px;">🎨 Prompt para Imagen IA</h4>
+             <h4 style="color:var(--blue-light);margin-bottom:8px;">🎨 Prompt Sugerido para IA</h4>
             <div class="copy-block">
                 <button class="copy-btn" onclick="copyText(this)">📋 Copiar</button>
                  <pre style="white-space: pre-wrap; font-size: 0.8em;">${adData.prompt_imagen}</pre>
@@ -170,15 +152,12 @@ function createCarouselCard(type, title, adData, date) {
             <div class="carousel-slide mb-1" style="border:1px solid #333; padding:10px; border-radius:8px;">
                 <h5 style="margin-top:0;">Slide ${index + 1}: ${slide.titulo}</h5>
                 <div style="display:flex;gap:12px;align-items:flex-start;">
-                    <div style="flex:0 0 auto;">
-                        <img id="${imgId}" src="${imagePath}" alt="Slide ${index + 1}" style="width:80px;height:80px;object-fit:cover;border-radius:6px;"
-                            onload="document.getElementById('${dlId}').style.display='inline-flex';"
-                            onerror="this.style.display='none';document.getElementById('${dlId}').style.display='none';">
-                        <a id="${dlId}" href="${imagePath}" download="slide_${index + 1}.png" class="btn-download sm" style="display:none;">⬇️</a>
-                    </div>
                     <div style="flex:1;">
                         <p style="font-size:0.9em;color:#ccc;margin:0;">${slide.texto}</p>
-                        ${slide.prompt_imagen ? `<p style="font-size:0.75em;color:var(--text-muted);margin-top:6px;">🎨 Prompt: ${slide.prompt_imagen}</p>` : ''}
+                        ${slide.prompt_imagen ? `<div class="copy-block mt-1" style="margin-top:8px;">
+                            <button class="copy-btn sm" onclick="copyText(this)">📋 Copiar</button>
+                            <pre style="white-space: pre-wrap; font-size: 0.75em; color:var(--text-muted); margin:0;">🎨 Prompt: ${slide.prompt_imagen}</pre>
+                        </div>` : ''}
                     </div>
                 </div>
             </div>`;

@@ -21,55 +21,19 @@ async function main() {
     }
 
     try {
-        const referenceImages = getReferenceImages();
-        const content = await generateCampaignContent(referenceImages);
-
-        console.log('🎨 Generando imágenes con IA...');
-        await generateImagesForCampaign(content);
+        const content = await generateCampaignContent();
 
         await saveContent(content);
-        console.log('✅ Creativos y assets generados exitosamente');
+        console.log('✅ Creativos generados exitosamente');
     } catch (error) {
         console.error('❌ Error:', error.message);
         process.exit(1);
     }
 }
 
-function getReferenceImages() {
-    // Correct path relative to project root
-    const dir = path.join(PROJECT_ROOT, 'assets', 'modelos', 'REFERENCIAS');
-    console.log(`📂 Buscando referencias en: ${dir}`);
+// Removed getReferenceImages and getMimeType
 
-    if (!fs.existsSync(dir)) {
-        console.warn(`⚠️ No se encontró la carpeta de referencias: ${dir}`);
-        return [];
-    }
-
-    const files = fs.readdirSync(dir).filter(file => /\.(jpg|jpeg|png|webp)$/i.test(file));
-    const images = [];
-
-    for (const file of files) {
-        const filePath = path.join(dir, file);
-        const data = fs.readFileSync(filePath);
-        images.push({
-            inlineData: {
-                data: data.toString('base64'),
-                mimeType: getMimeType(file)
-            }
-        });
-    }
-    console.log(`📸 Se cargaron ${images.length} imágenes de referencia.`);
-    return images;
-}
-
-function getMimeType(filename) {
-    const ext = path.extname(filename).toLowerCase();
-    if (ext === '.png') return 'image/png';
-    if (ext === '.webp') return 'image/webp';
-    return 'image/jpeg';
-}
-
-async function generateCampaignContent(referenceImages) {
+async function generateCampaignContent() {
     const promptText = `
 Eres un estratega experto en marketing inmobiliario digital en México.
 Tu objetivo es generar una campaña semanal para "Haciendas del Bosque" (Tecámac, Edo. Méx) basada en 3 enfoques específicos.
@@ -134,8 +98,8 @@ FORMATO JSON ESPERADO:
 }
 `;
 
-    // Combine text prompt with images
-    const parts = [{ text: promptText }, ...referenceImages];
+    // Combine text prompt
+    const parts = [{ text: promptText }];
 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
 
@@ -158,79 +122,7 @@ FORMATO JSON ESPERADO:
     return JSON.parse(jsonString);
 }
 
-async function generateImagesForCampaign(content) {
-    const today = new Date().toISOString().split('T')[0];
-    // Define output directory relative to project root
-    const outputDir = path.join(PROJECT_ROOT, 'assets', 'generated', today);
-
-    if (!fs.existsSync(outputDir)) {
-        fs.mkdirSync(outputDir, { recursive: true });
-    }
-
-    // Process prompts
-    const tasks = [];
-
-    // Técnico
-    if (content.anuncio_tecnico?.prompt_imagen) {
-        tasks.push(generateImage(content.anuncio_tecnico.prompt_imagen, path.join(outputDir, 'tecnico.png')));
-    }
-    // Sentimental
-    if (content.anuncio_sentimental?.prompt_imagen) {
-        tasks.push(generateImage(content.anuncio_sentimental.prompt_imagen, path.join(outputDir, 'sentimental.png')));
-    }
-    // Educativo (Slides)
-    if (content.anuncio_educativo?.slides) {
-        content.anuncio_educativo.slides.forEach((slide, i) => {
-            if (slide.prompt_imagen) {
-                tasks.push(generateImage(slide.prompt_imagen, path.join(outputDir, `educativo_slide_${i + 1}.png`)));
-            }
-        });
-    }
-
-    await Promise.all(tasks);
-}
-
-async function generateImage(prompt, outputPath) {
-    console.log(`🎨 Generando: ${path.basename(outputPath)}...`);
-
-    // Using Imagen 3 endpoint
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-001:predict?key=${GEMINI_API_KEY}`;
-
-    const payload = {
-        instances: [{ prompt }],
-        parameters: {
-            sampleCount: 1,
-            aspectRatio: "1:1" // Cuadrado para feed
-        }
-    };
-
-    try {
-        const res = await fetch(url, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-        });
-
-        if (!res.ok) {
-            const err = await res.json();
-            console.error(`⚠️ Error generando imagen (${path.basename(outputPath)}): ${err.error?.message || res.statusText}`);
-            return;
-        }
-
-        const data = await res.json();
-        const base64Image = data.predictions?.[0]?.bytesBase64Encoded;
-
-        if (base64Image) {
-            fs.writeFileSync(outputPath, base64Image, 'base64');
-            console.log(`✅ Imagen guardada: ${outputPath}`);
-        } else {
-            console.warn(`⚠️ No se recibió imagen para: ${path.basename(outputPath)}`);
-        }
-
-    } catch (e) {
-        console.error(`❌ Excepción al generar imagen: ${e.message}`);
-    }
-}
+// Removed generateImagesForCampaign and generateImage
 
 async function saveContent(content) {
     const date = new Date().toISOString().split('T')[0];
