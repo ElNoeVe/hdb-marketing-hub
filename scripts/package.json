@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Scripts de automatización para HDB Marketing Hub",
     "private": true,
+    "type": "module",
     "dependencies": {
         "node-fetch": "^3.3.2"
     }
