@@ -12,8 +12,8 @@ const BASE_URL = 'https://graph.facebook.com/v21.0';
 async function fetchFacebookData() {
     console.log('📊 Obteniendo datos de Facebook Ads...');
 
-    // 1. Fetch campaigns
-    const campaignsUrl = `${BASE_URL}/act_${FB_AD_ACCOUNT_ID}/campaigns?fields=id,name,status,objective,daily_budget,lifetime_budget&access_token=${FB_ACCESS_TOKEN}`;
+    // 1. Fetch campaigns (filter for ACTIVE to ensure all relevant are grabbed)
+    const campaignsUrl = `${BASE_URL}/act_${FB_AD_ACCOUNT_ID}/campaigns?fields=id,name,status,objective,daily_budget,lifetime_budget&filtering=[{field:"effective_status",operator:"IN",value:["ACTIVE","PAUSED"]}]&limit=100&access_token=${FB_ACCESS_TOKEN}`;
     const campaignsRes = await fetch(campaignsUrl);
     const campaignsData = await campaignsRes.json();
 

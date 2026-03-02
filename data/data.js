@@ -542,44 +542,61 @@ window.StartData = {
         }
     },
     // 3. Fallback Data for Reports (from latest report)
-    "reportes": {
-        "fecha_generacion": new Date().toISOString(),
-        "periodo": "Últimos 30 días (Febrero 2026)",
-        "resumen": { "gasto_total": 8500, "impresiones_totales": 125000, "clics_totales": 4200, "leads_totales": 120, "mensajes_totales": 85 },
+    reportes: {
+        "fecha_generacion": "2026-02-19T07:00:00.000Z",
+        "periodo": "Últimos 30 días (20 ene - 18 feb 2026)",
+        "total_campanas": 1,
+        "total_anuncios": 3,
+        "resumen": {
+            "gasto_total": 328.93,
+            "impresiones_totales": 11933,
+            "clics_totales": 0,
+            "leads_totales": 0,
+            "mensajes_totales": 10
+        },
         "campanas": [
-            { "id":"1", "nombre":"HDB — Mensajes WhatsApp", "estado":"ACTIVE", "objetivo":"MESSAGES", "semaforo":"verde",
-              "metricas":{ "impresiones":28500, "clics":1200, "gasto":2100, "cpc":1.75, "cpm":73.68, "ctr":4.21, "alcance":18500, "frecuencia":1.54, "leads":0, "mensajes":28, "link_clicks":980, "costo_por_resultado":75 },
-              "anuncios":[
-                { "id":"ad1", "nombre":"Video Recorrido Casa Esmeralda", "estado":"ACTIVE", "metricas":{ "impresiones":15200, "clics":720, "gasto":1180, "cpc":1.64, "ctr":4.74, "alcance":10200, "leads":0, "mensajes":18, "costo_por_resultado":65.56 }},
-                { "id":"ad2", "nombre":"Carrusel Modelos", "estado":"ACTIVE", "metricas":{ "impresiones":13300, "clics":480, "gasto":920, "cpc":1.91, "ctr":3.60, "alcance":8300, "leads":0, "mensajes":10, "costo_por_resultado":92.00 }}
-              ]
-            },
-            { "id":"2", "nombre":"HDB — Leads Formulario", "estado":"ACTIVE", "objetivo":"LEAD_GENERATION", "semaforo":"verde",
-              "metricas":{ "impresiones":16700, "clics":650, "gasto":1150, "cpc":1.77, "cpm":68.86, "ctr":3.89, "alcance":12300, "frecuencia":1.36, "leads":42, "mensajes":0, "link_clicks":520, "costo_por_resultado":27.38 },
-              "anuncios":[
-                { "id":"ad3", "nombre":"Lead Form — Desde $1M", "estado":"ACTIVE", "metricas":{ "impresiones":10200, "clics":420, "gasto":720, "cpc":1.71, "ctr":4.12, "alcance":7800, "leads":30, "mensajes":0, "costo_por_resultado":24.00 }}
-              ]
-            },
-            { "id":"3", "nombre":"HDB — Branding (Alcance)", "estado":"ACTIVE", "objetivo":"REACH", "semaforo":"amarillo",
-              "metricas":{ "impresiones":52000, "clics":1500, "gasto":2500, "cpc":1.66, "cpm":48.07, "ctr":2.88, "alcance":45000, "frecuencia":1.15, "leads":0, "mensajes":0, "link_clicks":800, "costo_por_resultado":0 },
-              "anuncios":[
-                { "id":"ad4", "nombre":"Video Testimoniales", "estado":"ACTIVE", "metricas":{ "impresiones":52000, "clics":1500, "gasto":2500, "cpc":1.66, "ctr":2.88, "alcance":45000, "leads":0, "mensajes":0, "costo_por_resultado":0 }}
-              ]
-            },
-            { "id":"4", "nombre":"HDB — Tráfico Sitio Web", "estado":"ACTIVE", "objetivo":"LINK_CLICKS", "semaforo":"verde",
-              "metricas":{ "impresiones":18000, "clics":550, "gasto":1600, "cpc":2.90, "cpm":88.88, "ctr":3.05, "alcance":12000, "frecuencia":1.50, "leads":25, "mensajes":15, "link_clicks":550, "costo_por_resultado":40.00 },
-              "anuncios":[
-                { "id":"ad5", "nombre":"Vista 360 Depa Pino", "estado":"ACTIVE", "metricas":{ "impresiones":18000, "clics":550, "gasto":1600, "cpc":2.90, "ctr":3.05, "alcance":12000, "leads":25, "mensajes":15, "costo_por_resultado":40.00 }}
-              ]
-            },
-            { "id":"5", "nombre":"HDB — Remarketing", "estado":"ACTIVE", "objetivo":"CONVERSIONS", "semaforo":"rojo",
-              "metricas":{ "impresiones":9800, "clics":300, "gasto":1150, "cpc":3.83, "cpm":117.34, "ctr":3.06, "alcance":6000, "frecuencia":1.63, "leads":53, "mensajes":42, "link_clicks":280, "costo_por_resultado":12.10 },
-              "anuncios":[
-                { "id":"ad6", "nombre":"Promo Apartado", "estado":"ACTIVE", "metricas":{ "impresiones":9800, "clics":300, "gasto":1150, "cpc":3.83, "ctr":3.06, "alcance":6000, "leads":53, "mensajes":42, "costo_por_resultado":12.10 }}
-              ]
+            {
+                "id": "campaign_1",
+                "nombre": "Campaña Haciendas del Bosque",
+                "estado": "ACTIVE",
+                "objetivo": "MESSAGES",
+                "presupuesto_diario": 50.00,
+                "semaforo": "amarillo",
+                "metricas": {
+                    "impresiones": 11933,
+                    "clics": 0,
+                    "gasto": 328.93,
+                    "cpc": 0,
+                    "cpm": 27.57,
+                    "ctr": 0,
+                    "alcance": 8233,
+                    "frecuencia": 1.45,
+                    "leads": 0,
+                    "mensajes": 10,
+                    "link_clicks": 0,
+                    "costo_por_resultado": 32.89
+                },
+                "anuncios": [
+                    {
+                        "id": "ad_fachada03",
+                        "nombre": "Fachada03",
+                        "estado": "ACTIVE",
+                        "metricas": {
+                            "impresiones": 11933,
+                            "clics": 0,
+                            "gasto": 328.93,
+                            "cpc": 0,
+                            "ctr": 0,
+                            "alcance": 8233,
+                            "leads": 0,
+                            "mensajes": 10,
+                            "costo_por_resultado": 32.89
+                        }
+                    }
+                ]
             }
         ],
-        "analisis_ia": "**Resumen:** Las 5 campañas están activas. Remarketing tiene el mejor costo por lead ($12.10)."
+        "analisis_ia": "**Resumen Ejecutivo:** La campaña de Haciendas del Bosque tiene 1 campaña activa con objetivo de mensajes. Fachada03 es el único anuncio con resultados.\n\n**Recomendaciones:**\n1. 🟢 Considerar aumentar presupuesto para Fachada03."
     },
     // 4. Fallback Data for Creatives (Sample)
     creativos: {
@@ -592,20 +609,20 @@ window.StartData = {
         "anuncio_sentimental": {
             "copy": "✨ Construye momentos inolvidables con tu familia. ✨\n\nImagina ver crecer a tus hijos en un entorno seguro, rodeado de naturaleza y con amenidades pensadas para ti.\n\nEn Haciendas del Bosque, no solo compras una casa, compras calidad de vida.\n\n❤️ Jardines y áreas de juegos\n❤️ Escuelas dentro del desarrollo\n❤️ Comunidad organizada\n\nDa el paso hoy. Tu familia lo merece. 👨‍👩‍👧‍👦",
             "hashtags": ["#FamiliaFeliz", "#HogarDulceHogar", "#CalidadDeVida", "#Seguridad", "#AmorDeFamilia"],
-            "prompt_imagen": "Familia mexicana feliz de 4 integrantes jugando juntos en el jardín de un fraccionamiento residencial moderno al atardecer, árboles y pasto verde alrededor, ambiente cálido y emotivo, luz dorada de hora mágica, sonrisas auténticas, vibes de hogar seguro y feliz, estilo fotografía lifestyle editorial, fondo con casas del fraccionamiento difuminadas, proporción 4:5."
+            "prompt_imagen": "Familia mexicana feliz de 4 integrantes —papá, mamá y dos hijos pequeños— jugando juntos en el jardín de un fraccionamiento residencial moderno al atardecer, árboles y pasto verde alrededor, ambiente cálido y emotivo, luz dorada de hora mágica, sonrisas auténticas, vibes de hogar seguro y feliz, estilo fotografía lifestyle editorial, fondo con casas del fraccionamiento difuminadas, proporción 4:5."
         },
         "anuncio_educativo": {
             "copy": "🤔 ¿Sabías que comprar casa es la inversión más segura? 📈\n\nDescubre por qué Tecámac es la zona con mayor plusvalía del Estado de México.\n\nDesliza para conocer los datos 👇",
             "hashtags": ["#TipsInmobiliarios", "#InversionInteligente", "#Plusvalia", "#BienesRaices"],
             "slides": [
-                { "titulo": "1. Plusvalía Creciente", "texto": "El valor de las propiedades en Tecámac ha crecido un 5.2% anual en promedio." },
-                { "titulo": "2. Conectividad", "texto": "El nuevo AIFA y la ampliación de autopistas han detonado el desarrollo de la zona." },
-                { "titulo": "3. Infraestructura", "texto": "Hospitales, escuelas y centros comerciales a menos de 15 minutos." }
+                { "titulo": "1. Plusvalía Creciente", "texto": "El valor de las propiedades en Tecámac ha crecido un 5.2% anual en promedio según el índice SHF.", "prompt_imagen": "Gráfica de barras ascendentes con colores azul y verde sobre fondo oscuro elegante, mostrando crecimiento de plusvalía inmobiliaria año tras año, estilo infográfico moderno minimalista, tipografía limpia." },
+                { "titulo": "2. Conectividad AIFA", "texto": "El nuevo AIFA y la ampliación de autopistas han detonado el desarrollo económico de la zona norte del EDOMEX.", "prompt_imagen": "Imagen aérea de autopistas modernas con señalización vial, aeropuerto al fondo, amanecer, colores azul cielo y tonos grises metálicos, perspectiva cinematográfica, estilo editorial de negocios." },
+                { "titulo": "3. Infraestructura Completa", "texto": "Hospitales, escuelas y centros comerciales a menos de 15 minutos. Todo lo que tu familia necesita está cerca.", "prompt_imagen": "Collage limpio de iconos modernos: hospital, escuela, plaza comercial, con paleta de colores azul y blanco sobre fondo gris claro, estilo diseño flat moderno, tipografía sans-serif." }
             ]
         },
         "anuncio_video": {
             "copy": "🎥 Recorrido Virtual: Casa Esmeralda\n\nEnamórate de cada rincón de tu próxima casa. Espacios amplios, iluminados y acabados de primera.\n\n¡Míralo completo! 👀\n\n#TourVirtual #CasaEsmeralda #HaciendasDelBosque",
-            "guion_tecnico": "00:00 - Vista aérea del fraccionamiento Haciendas del Bosque al amanecer desde dron\n00:05 - Acercamiento lento a la fachada de Casa Esmeralda, énfasis en acabados modernos\n00:10 - Paneo de sala y comedor con familia sentada, luz natural entrando por ventanas\n00:18 - Recorrido rápido por cocina integral con acabados blancos\n00:24 - Recámara principal con vista amplia y clóset incluido\n00:30 - Jardín trasero con familia conviviendo, niños jugando\n00:38 - Amenidades del fraccionamiento: canchas, área infantil, seguridad\n00:45 - Texto final: Tu familia merece lo mejor - Desde $1,336,000 MXN con logo HDB\n00:50 - CTA: WhatsApp 55 3749 4034 + música de fondo motivacional",
+            "guion_tecnico": "00:00 - Vista aérea del fraccionamiento Haciendas del Bosque al amanecer desde dron\n00:05 - Acercamiento lento a la fachada de Casa Esmeralda, énfasis en acabados modernos\n00:10 - Paneo de sala y comedor con familia sentada, luz natural entrando por ventanas\n00:18 - Recorrido rápido por cocina integral con acabados blancos\n00:24 - Recámara principal con vista amplia y clóset incluido\n00:30 - Jardín trasero con familia conviviendo, niños jugando\n00:38 - Amenidades del fraccionamiento: canchas, área infantil, seguridad\n00:45 - Texto final: 'Tu familia merece lo mejor — Desde $1,336,000 MXN' con logo HDB\n00:50 - CTA: WhatsApp 55 3749 4034 + música de fondo motivacional",
             "prompt_video_ia": "Cinematic drone shot flying over a modern Mexican residential complex at golden hour, smooth camera movement gliding toward a two-story contemporary house with white facades and grey accents, lush green gardens, warm sunset lighting, 4K quality, real estate promotional video style, 30fps, wide angle lens, color grading: warm tones with slight desaturation, aspect ratio 9:16 for Reels/TikTok."
         }
     }
