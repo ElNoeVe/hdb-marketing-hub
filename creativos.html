@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de Creativos — HDB Marketing Hub</title>
+    <title>Optimización creativa — HDB Marketing Hub</title>
     <meta name="description"
         content="Copys, hashtags y prompts generados por IA para campañas de Haciendas del Bosque.">
     <link rel="stylesheet" href="css/styles.css">
@@ -412,74 +412,11 @@
             <p>Consejos estratégicos, copys y segmentación generada automáticamente — Lunes a Viernes</p>
         </div>
 
-        <!-- Week Selector -->
-        <div class="flex items-center justify-between mb-1 fade-in">
-            <div class="tabs" id="creativeTabs">
-                <button class="tab active" data-type="imagenes">🖼️ Campaña Imágenes</button>
-                <button class="tab" data-type="videos">🎬 Campaña Videos</button>
-                <button class="tab" data-type="segmentacion">🎯 Segmentación</button>
-                <button class="tab" data-type="generador">✨ Generar Anuncio</button>
-            </div>
-            <select class="form-select" id="weekSelect" style="width:auto;min-width:200px;">
-                <option value="latest">Cargando fechas...</option>
-            </select>
-        </div>
-
-        <!-- Image Campaign Section -->
-        <div id="section-imagenes">
-            <div class="section-header">
-                <h2>📝 Campaña de Textos y Prompts (3 Enfoques)</h2>
-                <p>Copys y Prompts diseñados para diferentes segmentos: Técnico, Sentimental y Educativo para usar en
-                    generadores de imágenes externos.</p>
-            </div>
-
+        <!-- Strategic View -->
+        <div id="section-optimizer" class="fade-in">
             <div id="imageAdsContainer">
-                <!-- Content injected via JS -->
-                <div class="loading-state">Cargando creativos...</div>
-            </div>
-        </div>
-
-        <!-- Video Campaign Section -->
-        <div id="section-videos" class="hidden">
-            <div class="section-header">
-                <h2>🎬 Estrategia de Video Storytelling</h2>
-                <p>Guiones y Prompts para generar contenido viral en Reels/TikTok</p>
-            </div>
-
-            <div id="videoAdsContainer">
-                <!-- Content injected via JS -->
-            </div>
-        </div>
-
-        <!-- Segmentation Section -->
-        <div id="section-segmentacion" class="hidden">
-            <div class="section-header">
-                <h2>🎯 Segmentación Recomendada</h2>
-                <p>Configuración sugerida para Facebook Ads Manager</p>
-            </div>
-            <!-- Static content for now, or injected via JS if dynamic -->
-            <div class="grid grid-2">
-                <div class="card fade-in">
-                    <h3 class="card-title mb-1">👥 Público Objetivo</h3>
-                    <div class="table-wrapper">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Edad</strong></td>
-                                    <td>25 - 55 años</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Género</strong></td>
-                                    <td>Todos</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Intereses</strong></td>
-                                    <td>Bienes raíces, Inversión, Familia, Infonavit</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <!-- Data will be loaded here -->
+                <div class="loading-state">Cargando consejos estratégicos...</div>
             </div>
         </div>
 

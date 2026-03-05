@@ -34,7 +34,7 @@ const Analytics = {
         const path = window.location.pathname;
         if (path.includes('calculadora')) this.lastSection = 'Plusvalía';
         else if (path.includes('galeria')) this.lastSection = 'Galería';
-        else if (path.includes('creativos')) this.lastSection = 'Creativos';
+        else if (path.includes('creativos')) this.lastSection = 'Optimización creativa';
         else this.lastSection = 'Dashboard';
 
         sessionStorage.setItem('last_active_section', this.lastSection);

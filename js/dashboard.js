@@ -39,12 +39,12 @@ function applyFilters() {
     // 2. Status Filter
     const matchStatus = status === 'all' || c.estado === status;
 
-    // 3. Month Filter
+    // 3. Month Filter (Now using campaign start date)
     let matchMonth = true;
-    if (month !== 'all') {
+    if (month !== 'all' && c.fecha_inicio) {
       const [selYear, selMonth] = month.split('-');
-      const repDate = new Date(reportData.fecha_generacion);
-      matchMonth = (repDate.getFullYear() == selYear && (repDate.getMonth() + 1) == selMonth);
+      const camDate = new Date(c.fecha_inicio);
+      matchMonth = (camDate.getFullYear() == selYear && (camDate.getMonth() + 1) == selMonth);
     }
 
     return matchHealth && matchStatus && matchMonth;
@@ -55,13 +55,31 @@ function applyFilters() {
 
 function populateMonthFilter() {
   const select = document.getElementById('filterMonth');
-  if (!select || !reportData) return;
-  const d = new Date(reportData.fecha_generacion);
-  const m = d.getMonth() + 1;
-  const y = d.getFullYear();
-  const val = `${y}-${m}`;
-  const label = d.toLocaleDateString('es-MX', { month: 'long', year: 'numeric' });
-  select.innerHTML = `<option value="all">Cualquier fecha</option><option value="${val}">${label}</option>`;
+  if (!select) return;
+
+  const months = [
+    "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+  ];
+
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  const currentMonth = now.getMonth();
+
+  let html = '<option value="all">Cualquier fecha</option>';
+
+  for (let year = 2025; year <= currentYear; year++) {
+    let startMonth = 0;
+    let endMonth = (year === currentYear) ? currentMonth : 11;
+
+    for (let m = startMonth; m <= endMonth; m++) {
+      const val = `${year}-${m + 1}`;
+      const label = `${months[m]} ${year}`;
+      html += `<option value="${val}">${label}</option>`;
+    }
+  }
+
+  select.innerHTML = html;
 }
 
 async function loadLatestReport() {
