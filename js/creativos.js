@@ -455,6 +455,13 @@ function updateOpacityLabel() {
     updateLivePreview();
 }
 
+function updateLogoScaleLabel(side) {
+    const val = document.getElementById(`logo${side}Scale`).value;
+    const label = document.getElementById(`logo${side}SclVal`);
+    if (label) label.textContent = `${val}%`;
+    updateLivePreview();
+}
+
 function selectEnh(btn) {
     document.querySelectorAll('#enhBtns .enh-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
@@ -539,40 +546,70 @@ function setSpinner(on, msg = '') {
     if (msgEl && msg) msgEl.textContent = msg;
 }
 
-// ── Gemini Image Enhancement ──────────────────────────────────────────
-async function enhanceWithGemini(base64, mimeType, enhancement, apiKey) {
+// ── Hugging Face Image Enhancement (img2img) ───────────────────────
+async function enhanceWithHuggingFace(base64, enhancement, apiKey) {
     const enhMap = {
-        calidad: 'Mejora la calidad fotográfica de esta imagen: corrige la iluminación y exposición, mejora el contraste, ajusta los colores para que sean más vibrantes pero realistas, mejora las sombras y la saturación. NO cambies la arquitectura, NO alteres la estructura del espacio, NO inventes elementos que no existen. El resultado debe verse como una edición profesional de Photoshop de la misma foto.',
-        personas: 'Mejora la calidad fotográfica de esta imagen (iluminación, colores, contraste, saturación). Adicionalmente, agrega 1-2 personas en el espacio mostrando una familia mexicana de clase media usando el espacio de forma natural (sentados, cocinando, etc.). Las personas deben ser fotorrealistas. NO cambies la arquitectura ni la estructura del espacio.',
-        mobiliario: 'Mejora la calidad fotográfica de esta imagen (iluminación, colores, contraste, saturación). Si el espacio tiene mobiliario escaso o ausente, agrega muebles modernos y acogedores apropiados para el espacio (sala, comedores, camas, etc.), manteniendo un estilo moderno y accesible. NO cambies la arquitectura ni la estructura.'
+        calidad: 'highly detailed real estate photography, photorealistic, cinematic lighting, 8k resolution, vibrant colors',
+        personas: 'highly detailed real estate photography, middle class mexican family resting naturally, photorealistic, 8k',
+        mobiliario: 'highly detailed real estate photography, elegant modern cozy furniture, photorealistic interior design, 8k'
     };
 
     const prompt = enhMap[enhancement] || enhMap.calidad;
 
-    const body = {
-        contents: [{
-            parts: [
-                { text: prompt },
-                { inline_data: { mime_type: mimeType, data: base64 } }
-            ]
-        }],
-        generationConfig: { responseModalities: ['IMAGE', 'TEXT'] }
-    };
+    // For HF we can just use data:image/jpeg;base64,... standard format
+    // Model: FLUX.1-schnell (faster, free, high quality) or stable-diffusion-xl
+    const apiUrl = 'https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell';
 
-    const res = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp-image-generation:generateContent?key=${apiKey}`,
-        { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
-    );
+    // Convert base64 into a Blob to send as pure image bytes
+    const byteString = atob(base64);
+    const ab = new ArrayBuffer(byteString.length);
+    const ia = new Uint8Array(ab);
+    for (let i = 0; i < byteString.length; i++) {
+        ia[i] = byteString.charCodeAt(i);
+    }
+    const blob = new Blob([ab], { type: 'image/jpeg' });
 
-    const data = await res.json();
-    if (!res.ok || data.error) throw new Error(data.error?.message || `HTTP ${res.status}`);
+    // We pass the image as binary payload, but passing prompt as header 'Parameters' or via JSON is tricky in basic inference API.
+    // For Hugging Face Inference API standard image-to-image task:
+    const res = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${apiKey.trim()}`,
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            inputs: prompt,
+            parameters: {
+                image: base64, // Providing base64 string
+                strength: 0.25
+            }
+        })
+    });
 
-    // Find image part
-    const parts = data.candidates?.[0]?.content?.parts || [];
-    const imgPart = parts.find(p => p.inline_data?.mime_type?.startsWith('image/'));
-    if (!imgPart) throw new Error('Gemini no devolvió imagen');
+    if (res.status === 503) {
+        throw new Error('El modelo de IA está "durmiendo". Espera 30 segundos e intenta de nuevo.');
+    }
 
-    return imgPart.inline_data.data;
+    if (!res.ok) {
+        let msg = `HTTP ${res.status}`;
+        try {
+            const errJson = await res.json();
+            msg = errJson.error || msg;
+        } catch (e) { }
+        throw new Error(msg);
+    }
+
+    const blobRes = await res.blob();
+
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onloadend = () => {
+            const b64 = reader.result.split(',')[1];
+            resolve(b64);
+        };
+        reader.onerror = reject;
+        reader.readAsDataURL(blobRes);
+    });
 }
 
 // ── Canvas Compositing ────────────────────────────────────────────────
@@ -639,14 +676,21 @@ async function compositeAd(imageDataUrl) {
         loadImage(AD_CONFIG.logoRight)
     ]);
 
-    // Draw left logo
+    // Handle Logo sizes (sliders)
+    const scaleL = (parseInt(document.getElementById('logoLScale')?.value || 100) / 100);
+    const scaleR = (parseInt(document.getElementById('logoRScale')?.value || 100) / 100);
+
     const logoPad = 28;
-    const logoH = 60;
+    const baseLogoH = 60;
+
+    // Draw left logo
     if (logoL) {
-        const lw = logoL.width * (logoH / logoL.height);
-        ctx.drawImage(logoL, logoPad, 16, lw, logoH);
+        let finalH = baseLogoH * scaleL;
+        let finalW = logoL.width * (finalH / logoL.height);
+        // Center vertically in the 90px bar, or just align from top if very large
+        let ly = Math.max(10, (logoBarH - finalH) / 2);
+        ctx.drawImage(logoL, logoPad, ly, finalW, finalH);
     } else {
-        // Fallback text for missing Privadas logo
         ctx.fillStyle = '#fff';
         ctx.font = 'bold 22px Inter, Arial, sans-serif';
         ctx.fillText('Privadas del Bosque', logoPad, 56);
@@ -654,8 +698,10 @@ async function compositeAd(imageDataUrl) {
 
     // Draw right logo (Hogares Unión)
     if (logoR) {
-        const rw = logoR.width * (logoH / logoR.height);
-        ctx.drawImage(logoR, W - rw - logoPad, 16, rw, logoH);
+        let finalH = baseLogoH * scaleR;
+        let finalW = logoR.width * (finalH / logoR.height);
+        let ly = Math.max(10, (logoBarH - finalH) / 2);
+        ctx.drawImage(logoR, W - finalW - logoPad, ly, finalW, finalH);
     }
 
     // 4. Copy text block

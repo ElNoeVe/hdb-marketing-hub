@@ -550,6 +550,25 @@
                         <input type="range" id="adOpacity" min="0" max="100" value="70" oninput="updateOpacityLabel()">
                     </div>
 
+                    <div class="control-row">
+                        <div style="flex:1;">
+                            <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+                                <small style="color:var(--text-muted);">Tamaño Logo Izquierdo:</small>
+                                <small style="color:var(--text-secondary);" id="logoLSclVal">100%</small>
+                            </div>
+                            <input type="range" id="logoLScale" min="30" max="250" value="100"
+                                oninput="updateLogoScaleLabel('L')">
+                        </div>
+                        <div style="flex:1;">
+                            <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+                                <small style="color:var(--text-muted);">Tamaño Logo Derecho (HU):</small>
+                                <small style="color:var(--text-secondary);" id="logoRSclVal">100%</small>
+                            </div>
+                            <input type="range" id="logoRScale" min="30" max="250" value="100"
+                                oninput="updateLogoScaleLabel('R')">
+                        </div>
+                    </div>
+
                     <!-- Copy fields -->
                     <label class="gen-label">7. Copy del anuncio</label>
                     <input class="gen-input" id="adTitulo" type="text"
