@@ -599,8 +599,7 @@ async function compositeAd(imageDataUrl) {
 
     // 1. Initialize or Resize Fabric Canvas
     if (!fabricCanvas) {
-        fabricCanvas = new fabric.Canvas('adCanvas', { width: W, height: H, preserveObjectStacking: true });
-        fabricCanvas.hdbBgImageSrc = null;
+        fabricCanvas = new fabric.Canvas('adCanvas', { preserveObjectStacking: true });
 
         // Custom interactive handles style
         fabric.Object.prototype.transparentCorners = false;
@@ -608,11 +607,21 @@ async function compositeAd(imageDataUrl) {
         fabric.Object.prototype.cornerStyle = 'circle';
     }
 
-    if (fabricCanvas.width !== W || fabricCanvas.height !== H) {
-        fabricCanvas.setWidth(W);
-        fabricCanvas.setHeight(H);
-        fabricCanvas.clear(); // format change restarts template
-        fabricCanvas.hdbBgImageSrc = null;
+    // Handle Scaling/Zooming to fit screen while keeping 1080px native
+    const containerWidth = canvasEl.parentElement.clientWidth - 32; // padding
+    const zoom = containerWidth / W;
+
+    fabricCanvas.setZoom(zoom);
+    fabricCanvas.setDimensions({
+        width: W * zoom,
+        height: H * zoom
+    }, { backstoreOnly: false });
+
+    // Refresh if source or format changed
+    if (fabricCanvas.hdbBgImageSrc !== imageDataUrl || fabricCanvas.hdbFormat !== genState.format) {
+        fabricCanvas.clear();
+        fabricCanvas.hdbBgImageSrc = imageDataUrl;
+        fabricCanvas.hdbFormat = genState.format;
     }
 
     // Personalization controls

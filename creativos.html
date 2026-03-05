@@ -156,16 +156,27 @@
             border: 1px solid var(--border);
             overflow: hidden;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+            /* top align */
             justify-content: center;
-            min-height: 300px;
+            min-height: 400px;
+            padding: 1rem;
+        }
+
+        /* Fabric JS wrapper needs to be responsive */
+        .canvas-container {
+            margin: 0 auto !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 100% !important;
+            max-height: 70vh !important;
         }
 
         #adCanvas {
             max-width: 100%;
-            max-height: 540px;
+            height: auto !important;
             display: block;
-            border-radius: 10px;
         }
 
         .canvas-placeholder {
