@@ -349,7 +349,8 @@ let genState = {
     selectedImg: null,  // { src, label }
     enhancement: 'calidad',
     format: 'square',   // 'square' | 'vertical'
-    enhancedImageDataUrl: null
+    textAlign: 'bottom', // 'top' | 'center' | 'bottom'
+    enhancedImageDataUrl: null // If AI ran, stores the result. Otherwise null.
 };
 
 // ── Init ──────────────────────────────────────────────────────────────
@@ -437,7 +438,21 @@ function selectFormat(btn) {
     document.querySelectorAll('#formatBtns .format-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     genState.format = btn.dataset.fmt;
-    resetPreview();
+    updateLivePreview();
+}
+
+function selectAlign(btn) {
+    document.querySelectorAll('#alignBtns .format-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    genState.textAlign = btn.dataset.val;
+    updateLivePreview();
+}
+
+function updateOpacityLabel() {
+    const val = document.getElementById('adOpacity').value;
+    const label = document.getElementById('opacityVal');
+    if (label) label.textContent = `${val}%`;
+    updateLivePreview();
 }
 
 function selectEnh(btn) {
@@ -450,70 +465,70 @@ function selectImage(el, src, label) {
     document.querySelectorAll('.img-thumb').forEach(t => t.classList.remove('selected'));
     el.classList.add('selected');
     genState.selectedImg = { src, label };
-    resetPreview();
+
+    // Reset AI enhancement when picking a new base image
+    genState.enhancedImageDataUrl = null;
+    updateLivePreview();
 }
 
 function resetPreview() {
     genState.enhancedImageDataUrl = null;
-    const canvas = document.getElementById('adCanvas');
-    const placeholder = document.getElementById('canvasPlaceholder');
-    const dlBtn = document.getElementById('btnDownload');
-    if (canvas) canvas.style.display = 'none';
-    if (placeholder) placeholder.style.display = 'block';
-    if (dlBtn) dlBtn.classList.remove('visible');
+    updateLivePreview();
 }
 
-// ── Generate ──────────────────────────────────────────────────────────
-async function generateAd() {
+// ── Generate & Preview ────────────────────────────────────────────────
+
+async function updateLivePreview() {
+    if (!genState.selectedImg) return;
+
+    const dlBtn = document.getElementById('btnDownload');
+    if (dlBtn) dlBtn.classList.add('visible');
+
+    // Use AI image if we have one for this base image, otherwise use the original base image
+    const sourceUrl = genState.enhancedImageDataUrl || genState.selectedImg.src;
+
+    // Draw instantly without waiting for AI
+    await compositeAd(sourceUrl);
+}
+
+async function generateAdAI() {
     if (!genState.selectedImg) {
         alert('Selecciona una imagen del desarrollo primero.');
         return;
     }
 
-    const apiKey = window.GEMINI_API_KEY || (window.ANALYTICS_CONFIG && window.ANALYTICS_CONFIG.geminiKey);
+    let apiKey = sessionStorage.getItem('hdb_hf_key');
     if (!apiKey) {
-        // Ask for key if not stored
-        const key = prompt('Ingresa tu Gemini API Key para mejorar la imagen:');
-        if (!key) return;
-        window.GEMINI_API_KEY = key;
-        sessionStorage.setItem('hdb_gemini_key', key);
+        apiKey = prompt('Ingresa tu Hugging Face API Key para generar imágenes (ej. hf_...):');
+        if (!apiKey) return;
+        sessionStorage.setItem('hdb_hf_key', apiKey.trim());
     }
 
-    setSpinner(true, 'Mejorando imagen con IA...');
-    document.getElementById('btnGenerate').disabled = true;
+    setSpinner(true, 'Mejorando imagen con IA (Hugging Face)...');
+    const btn = document.getElementById('btnGenerateAI');
+    if (btn) btn.disabled = true;
 
     try {
-        // Step 1: Load source image as base64
         const base64 = await imageUrlToBase64(genState.selectedImg.src);
-        const mimeType = getMimeFromSrc(genState.selectedImg.src);
 
-        // Step 2: Enhance with Gemini
-        setSpinner(true, 'Aplicando mejoras de calidad fotográfica...');
-        const enhancedBase64 = await enhanceWithGemini(base64, mimeType, genState.enhancement, window.GEMINI_API_KEY);
+        setSpinner(true, 'Procesando (puede tardar la primera vez)...');
+        const enhancedBase64 = await enhanceWithHuggingFace(base64, genState.enhancement, apiKey);
 
-        genState.enhancedImageDataUrl = `data:image/png;base64,${enhancedBase64}`;
+        genState.enhancedImageDataUrl = `data:image/jpeg;base64,${enhancedBase64}`;
 
-        // Step 3: Composite
-        setSpinner(true, 'Componiendo anuncio...');
-        await compositeAd(genState.enhancedImageDataUrl);
-
-        document.getElementById('btnDownload').classList.add('visible');
+        await updateLivePreview();
     } catch (err) {
         console.error('❌ Generator error:', err);
-        // Fallback: use original image without AI enhancement
-        alert(`⚠️ La mejora de IA no estuvo disponible (${err.message}). Se usará la imagen original.`);
-        try {
-            const base64 = await imageUrlToBase64(genState.selectedImg.src);
-            const mimeType = getMimeFromSrc(genState.selectedImg.src);
-            genState.enhancedImageDataUrl = `data:${mimeType};base64,${base64}`;
-            await compositeAd(genState.enhancedImageDataUrl);
-            document.getElementById('btnDownload').classList.add('visible');
-        } catch (e2) {
-            alert('No se pudo generar el anuncio. Verifica que la imagen cargue correctamente.');
+        if (err.message.includes('401')) {
+            alert('⚠️ Token de Hugging Face inválido. Recarga la página y vuelve a ingresarlo.');
+            sessionStorage.removeItem('hdb_hf_key');
+        } else {
+            alert(`⚠️ Error de IA: ${err.message}. El renderizado usando la foto original seguirá disponible.`);
         }
+        await updateLivePreview();
     } finally {
         setSpinner(false);
-        document.getElementById('btnGenerate').disabled = false;
+        if (btn) btn.disabled = false;
     }
 }
 
@@ -572,18 +587,45 @@ async function compositeAd(imageDataUrl) {
     canvas.height = H;
     const ctx = canvas.getContext('2d');
 
-    // 1. Draw background image
-    const bg = await loadImage(imageDataUrl);
+    // 1. Draw background image from passed URL (base64 or direct asset path)
+    let bg;
+    if (imageDataUrl.startsWith('data:')) {
+        bg = await loadImage(imageDataUrl);
+    } else {
+        bg = await tryLoadImage(imageDataUrl);
+        if (!bg) throw new Error(`Could not load source image: ${imageDataUrl}`);
+    }
     drawCoverImage(ctx, bg, 0, 0, W, H);
 
-    // 2. Dark gradient overlay (bottom 40%)
-    const gradH = isVertical ? H * 0.45 : H * 0.42;
-    const grad = ctx.createLinearGradient(0, H - gradH, 0, H);
-    grad.addColorStop(0, 'rgba(0,0,0,0)');
-    grad.addColorStop(0.35, 'rgba(0,0,0,0.72)');
-    grad.addColorStop(1, 'rgba(0,0,0,0.92)');
-    ctx.fillStyle = grad;
-    ctx.fillRect(0, H - gradH, W, gradH);
+    // Get user personalization
+    const primaryColor = document.getElementById('adColor')?.value || '#22c55e';
+    const opacityVal = document.getElementById('adOpacity')?.value || 70;
+    const txtAlign = genState.textAlign; // 'top' | 'center' | 'bottom'
+    const darkAlpha = opacityVal / 100;
+
+    // 2. Dark gradient overlay
+    // Adjust gradient based on text alignment
+    const gradH = isVertical ? H * 0.5 : H * 0.45;
+
+    let grad;
+    if (txtAlign === 'bottom') {
+        grad = ctx.createLinearGradient(0, H - gradH, 0, H);
+        grad.addColorStop(0, 'rgba(0,0,0,0)');
+        grad.addColorStop(0.35, `rgba(0,0,0,${darkAlpha * 0.75})`);
+        grad.addColorStop(1, `rgba(0,0,0,${darkAlpha})`);
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, H - gradH, W, gradH);
+    } else if (txtAlign === 'top') {
+        grad = ctx.createLinearGradient(0, gradH, 0, 0); // reverse direction
+        grad.addColorStop(0, 'rgba(0,0,0,0)');
+        grad.addColorStop(0.35, `rgba(0,0,0,${darkAlpha * 0.75})`);
+        grad.addColorStop(1, `rgba(0,0,0,${darkAlpha})`);
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, W, gradH);
+    } else { // center overlay
+        ctx.fillStyle = `rgba(0,0,0,${darkAlpha * 0.8})`;
+        ctx.fillRect(0, 0, W, H);
+    }
 
     // 3. Top logo bar (semi-transparent pill background)
     const logoBarH = 90;
@@ -617,21 +659,38 @@ async function compositeAd(imageDataUrl) {
     }
 
     // 4. Copy text block
-    const titulo = document.getElementById('adTitulo').value.trim() || '';
-    const subtitle = document.getElementById('adSubtitle').value.trim() || '';
-    const precio = document.getElementById('adPrecio').value.trim() || getCurrentModel()?.precio || '';
-    const cta = document.getElementById('adCta').value.trim() || '¡Aparta hoy!';
+    const titulo = document.getElementById('adTitulo')?.value.trim() || '';
+    const subtitle = document.getElementById('adSubtitle')?.value.trim() || '';
+    const precio = document.getElementById('adPrecio')?.value.trim() || getCurrentModel()?.precio || '';
+    const cta = document.getElementById('adCta')?.value.trim() || '¡Aparta hoy!';
 
     const textX = 52;
     const textMaxW = W - textX * 2;
-    let textY = H - (isVertical ? 440 : 360);
+
+    // Calculate content height to position it based on alignment
+    let contentH = 0;
+    if (precio) contentH += 60;
+    if (titulo) contentH += isVertical ? 80 : 68; // approx 1 line
+    if (subtitle) contentH += isVertical ? 50 : 42;
+    contentH += isVertical ? 56 : 46; // phone
+    if (cta) contentH += 56;
+
+    // Starting Y based on alignment
+    let textY;
+    if (txtAlign === 'bottom') {
+        textY = H - contentH - (isVertical ? 90 : 80); // Above legal text
+    } else if (txtAlign === 'top') {
+        textY = logoBarH + 50 + (precio ? 40 : 10); // Below logos
+    } else {
+        textY = (H - contentH) / 2 + 30;
+    }
 
     // Precio tag
     if (precio) {
         const tagPad = 18;
         ctx.font = `bold ${isVertical ? 32 : 28}px Inter, Arial, sans-serif`;
         const tagW = ctx.measureText(precio).width + tagPad * 2;
-        ctx.fillStyle = '#22c55e';
+        ctx.fillStyle = primaryColor;
         roundRect(ctx, textX, textY - 36, tagW, 44, 8);
         ctx.fillStyle = '#fff';
         ctx.fillText(precio, textX + tagPad, textY + 1);
@@ -661,14 +720,15 @@ async function compositeAd(imageDataUrl) {
     textY += isVertical ? 56 : 46;
 
     // CTA button
-    const ctaFont = isVertical ? 36 : 30;
-    ctx.font = `bold ${ctaFont}px Inter, Arial, sans-serif`;
-    const ctaW = ctx.measureText(cta).width + 60;
-    ctx.fillStyle = '#22c55e';
-    roundRect(ctx, textX, textY - ctaFont, ctaW, ctaFont + 22, 30);
-    ctx.fillStyle = '#fff';
-    ctx.fillText(cta, textX + 30, textY + 2);
-    textY += 56;
+    if (cta) {
+        const ctaFont = isVertical ? 36 : 30;
+        ctx.font = `bold ${ctaFont}px Inter, Arial, sans-serif`;
+        const ctaW = ctx.measureText(cta).width + 60;
+        ctx.fillStyle = primaryColor;
+        roundRect(ctx, textX, textY - ctaFont, ctaW, ctaFont + 22, 30);
+        ctx.fillStyle = '#fff';
+        ctx.fillText(cta, textX + 30, textY + 2);
+    }
 
     // 5. Legal disclaimers
     const discFont = isVertical ? 24 : 20;
