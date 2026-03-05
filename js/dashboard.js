@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (reportData) {
     renderSummary(reportData.resumen);
     renderCampaigns(reportData.campanas);
-    renderAIAdvice(reportData.analisis_ia);
     renderReportHistory();
     populateMonthFilter();
   }
@@ -313,22 +312,7 @@ function renderCampaigns(campanas, filter = 'all') {
   }).join('');
 }
 
-function renderAIAdvice(analysis) {
-  const container = document.getElementById('aiAdvice');
-  if (!container || !analysis) return;
 
-  // Simple markdown-like rendering
-  const html = analysis
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\n\n/g, '<br><br>')
-    .replace(/\n/g, '<br>');
-
-  container.innerHTML = `
-    <div class="card">
-      <h3 class="card-title mb-1">🤖 Análisis Inteligente (Gemini AI)</h3>
-      <div style="font-size:0.9rem;line-height:1.7;color:var(--text-secondary);">${html}</div>
-    </div>`;
-}
 
 function renderReportHistory() {
   const container = document.getElementById('reportHistory');
