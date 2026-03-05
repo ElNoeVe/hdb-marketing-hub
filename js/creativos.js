@@ -608,20 +608,22 @@ async function compositeAd(imageDataUrl) {
     }
 
     // Handle Scaling/Zooming to fit screen while keeping 1080px native
-    const containerWidth = canvasEl.parentElement.clientWidth - 32; // padding
-    const zoom = containerWidth / W;
+    // We get the width from the preview wrapper, but we ensure it doesn't shrink with the canvas
+    const wrapper = canvasEl.closest('.canvas-preview-wrap');
+    const containerWidth = wrapper ? (wrapper.offsetWidth - 32) : (canvasEl.parentElement.clientWidth - 32);
+    const zoom = Math.max(0.1, containerWidth / W);
 
     fabricCanvas.setZoom(zoom);
     fabricCanvas.setDimensions({
         width: W * zoom,
         height: H * zoom
-    }, { backstoreOnly: false });
+    });
 
-    // Refresh if source or format changed
-    if (fabricCanvas.hdbBgImageSrc !== imageDataUrl || fabricCanvas.hdbFormat !== genState.format) {
+    // Refresh if format changed (clear is necessary to reset coordinates/objects)
+    if (fabricCanvas.hdbFormat !== genState.format) {
         fabricCanvas.clear();
-        fabricCanvas.hdbBgImageSrc = imageDataUrl;
         fabricCanvas.hdbFormat = genState.format;
+        fabricCanvas.hdbBgImageSrc = null; // force reload bg
     }
 
     // Personalization controls
@@ -633,7 +635,6 @@ async function compositeAd(imageDataUrl) {
     // 2. Background Image
     const imgSourceChanged = fabricCanvas.hdbBgImageSrc !== imageDataUrl;
     if (imgSourceChanged) {
-        fabricCanvas.hdbBgImageSrc = imageDataUrl;
         let bgImg;
         if (imageDataUrl.startsWith('data:')) {
             bgImg = await loadFabricImageFallback(imageDataUrl);
@@ -642,12 +643,14 @@ async function compositeAd(imageDataUrl) {
         }
 
         if (bgImg) {
+            fabricCanvas.hdbBgImageSrc = imageDataUrl; // update only after successful load
             const scale = Math.max(W / bgImg.width, H / bgImg.height);
             bgImg.set({
                 originX: 'center', originY: 'center',
                 left: W / 2, top: H / 2,
                 scaleX: scale, scaleY: scale,
-                selectable: false, evented: false
+                selectable: false, evented: false,
+                id: 'bgImage'
             });
             fabricCanvas.setBackgroundImage(bgImg, fabricCanvas.renderAll.bind(fabricCanvas));
         }
