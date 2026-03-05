@@ -525,84 +525,34 @@
                     </div>
 
                     <!-- Personalization -->
-                    <label class="gen-label">6. Editor de Diseño Libre</label>
+                    <label class="gen-label">6. Estética y Textos</label>
                     <div
                         style="background:var(--bg-elevated); border:1px solid var(--border); border-radius:8px; padding:1rem; margin-bottom:1rem; font-size:0.85rem;">
-                        <!-- Right/Left Logos Group -->
-                        <div style="margin-bottom:1rem; padding-bottom:1rem; border-bottom:1px solid var(--border);">
-                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Logo
-                                Izquierdo (Desarrollo)</strong>
-                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
-                                <label style="width:60px; color:var(--text-muted);">Tamaño</label>
-                                <input type="range" id="logoLScale" min="20" max="300" value="100" style="flex:1"
-                                    oninput="updateLivePreview()">
-                            </div>
-                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
-                                <label style="width:60px; color:var(--text-muted);">Pos X</label>
-                                <input type="range" id="logoLX" min="0" max="100" value="2" style="flex:1"
-                                    oninput="updateLivePreview()">
-                            </div>
-                            <div style="display:flex; align-items:center; gap:0.5rem;">
-                                <label style="width:60px; color:var(--text-muted);">Pos Y</label>
-                                <input type="range" id="logoLY" min="0" max="100" value="1" style="flex:1"
-                                    oninput="updateLivePreview()">
-                            </div>
-                        </div>
-
-                        <div style="margin-bottom:1rem; padding-bottom:1rem; border-bottom:1px solid var(--border);">
-                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Logo Derecho
-                                (Hogares Unión)</strong>
-                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
-                                <label style="width:60px; color:var(--text-muted);">Tamaño</label>
-                                <input type="range" id="logoRScale" min="20" max="300" value="100" style="flex:1"
-                                    oninput="updateLivePreview()">
-                            </div>
-                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
-                                <label style="width:60px; color:var(--text-muted);">Pos X</label>
-                                <input type="range" id="logoRX" min="0" max="100" value="98" style="flex:1"
-                                    oninput="updateLivePreview()">
-                            </div>
-                            <div style="display:flex; align-items:center; gap:0.5rem;">
-                                <label style="width:60px; color:var(--text-muted);">Pos Y</label>
-                                <input type="range" id="logoRY" min="0" max="100" value="1" style="flex:1"
-                                    oninput="updateLivePreview()">
-                            </div>
-                        </div>
-
-                        <!-- Texts Group -->
-                        <div style="margin-bottom:1rem; padding-bottom:1rem; border-bottom:1px solid var(--border);">
-                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Bloque de
-                                Textos y Precio</strong>
-                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
-                                <label style="width:60px; color:var(--text-muted);">Pos X</label>
-                                <input type="range" id="textX" min="0" max="100" value="5" style="flex:1"
-                                    oninput="updateLivePreview()">
-                            </div>
-                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
-                                <label style="width:60px; color:var(--text-muted);">Pos Y</label>
-                                <input type="range" id="textY" min="0" max="100" value="85" style="flex:1"
-                                    oninput="updateLivePreview()">
-                            </div>
-                            <div style="display:flex; align-items:center; gap:0.5rem;">
-                                <label style="width:60px; color:var(--text-muted);">Color CTA</label>
-                                <input type="color" id="adColor" value="#22c55e" style="height:30px; border-radius:4px"
-                                    oninput="updateLivePreview()">
-                            </div>
-                        </div>
+                        <p style="margin-bottom:0.75rem; color:var(--text-secondary); line-height:1.4;">
+                            💡 <strong>Nuevo Editor Interactivo:</strong> Ahora puedes arrastrar, soltar y cambiar el
+                            tamaño de los logos y textos directamente sobre la previsualización del lienzo. ¡Como en
+                            Canva!
+                        </p>
 
                         <!-- Background Gradient Group -->
-                        <div>
-                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Sombreado
-                                Principal</strong>
-                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
-                                <label style="width:60px; color:var(--text-muted);">Pos Y</label>
-                                <input type="range" id="gradY" min="0" max="100" value="100" style="flex:1"
-                                    oninput="updateLivePreview()">
-                            </div>
+                        <div style="margin-bottom:1rem; padding-bottom:1rem; border-bottom:1px solid var(--border);">
+                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Sombreado de
+                                fondo</strong>
                             <div style="display:flex; align-items:center; gap:0.5rem;">
                                 <label style="width:60px; color:var(--text-muted);">Opacidad</label>
                                 <input type="range" id="adOpacity" min="0" max="100" value="70" style="flex:1"
                                     oninput="updateLivePreview()">
+                            </div>
+                        </div>
+
+                        <!-- General Design Group -->
+                        <div>
+                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Color de
+                                Botón y Precio</strong>
+                            <div style="display:flex; align-items:center; gap:0.5rem;">
+                                <label style="width:60px; color:var(--text-muted);">Color</label>
+                                <input type="color" id="adColor" value="#22c55e" style="height:30px; border-radius:4px"
+                                    onchange="updateLivePreview()">
                             </div>
                         </div>
                     </div>
@@ -670,6 +620,7 @@
         </footer>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
     <script src="data/data.js"></script>
     <script src="js/app.js"></script>
     <script src="js/creativos.js"></script>

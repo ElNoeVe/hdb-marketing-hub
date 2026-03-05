@@ -504,31 +504,32 @@ async function generateAdAI() {
         return;
     }
 
-    let apiKey = sessionStorage.getItem('hdb_hf_key');
+    let apiKey = sessionStorage.getItem('hdb_gemini_key');
     if (!apiKey) {
-        apiKey = prompt('Ingresa tu Hugging Face API Key para generar imágenes (ej. hf_...):');
+        apiKey = prompt('Ingresa tu Gemini API Key para generar imágenes:');
         if (!apiKey) return;
-        sessionStorage.setItem('hdb_hf_key', apiKey.trim());
+        sessionStorage.setItem('hdb_gemini_key', apiKey.trim());
     }
 
-    setSpinner(true, 'Mejorando imagen con IA (Hugging Face)...');
+    setSpinner(true, 'Mejorando imagen con IA (Gemini 2.0)...');
     const btn = document.getElementById('btnGenerateAI');
     if (btn) btn.disabled = true;
 
     try {
         const base64 = await imageUrlToBase64(genState.selectedImg.src);
+        const mimeType = getMimeFromSrc(genState.selectedImg.src);
 
-        setSpinner(true, 'Procesando (puede tardar la primera vez)...');
-        const enhancedBase64 = await enhanceWithHuggingFace(base64, genState.enhancement, apiKey);
+        setSpinner(true, 'Procesando la imagen, esto puede tardar unos segundos...');
+        const enhancedBase64 = await enhanceWithGemini(base64, mimeType, genState.enhancement, apiKey);
 
         genState.enhancedImageDataUrl = `data:image/jpeg;base64,${enhancedBase64}`;
 
         await updateLivePreview();
     } catch (err) {
         console.error('❌ Generator error:', err);
-        if (err.message.includes('401')) {
-            alert('⚠️ Token de Hugging Face inválido. Recarga la página y vuelve a ingresarlo.');
-            sessionStorage.removeItem('hdb_hf_key');
+        if (err.message.includes('API_KEY_INVALID')) {
+            alert('⚠️ Token de Gemini inválido. Recarga la página y vuelve a ingresarlo a través del botón IA.');
+            sessionStorage.removeItem('hdb_gemini_key');
         } else {
             alert(`⚠️ Error de IA: ${err.message}. El renderizado usando la foto original seguirá disponible.`);
         }
@@ -546,298 +547,309 @@ function setSpinner(on, msg = '') {
     if (msgEl && msg) msgEl.textContent = msg;
 }
 
-// ── Hugging Face Image Enhancement (img2img) ───────────────────────
-async function enhanceWithHuggingFace(base64, enhancement, apiKey) {
+// ── Gemini Image Enhancement ──────────────────────────────────────────
+async function enhanceWithGemini(base64, mimeType, enhancement, apiKey) {
     const enhMap = {
-        calidad: 'highly detailed real estate photography, photorealistic, cinematic lighting, 8k resolution, vibrant colors',
-        personas: 'highly detailed real estate photography, middle class mexican family resting naturally, photorealistic, 8k',
-        mobiliario: 'highly detailed real estate photography, elegant modern cozy furniture, photorealistic interior design, 8k'
+        calidad: 'Mejora la calidad fotográfica de esta imagen: corrige la iluminación y exposición, mejora el contraste, ajusta los colores para que sean más vibrantes pero realistas, mejora las sombras y la saturación. NO cambies la arquitectura, NO alteres la estructura del espacio, NO inventes elementos que no existen. El resultado debe verse como una edición profesional de Photoshop de la misma foto.',
+        personas: 'Mejora la calidad fotográfica de esta imagen (iluminación, colores, contraste, saturación). Adicionalmente, agrega 1-2 personas en el espacio mostrando una familia mexicana de clase media usando el espacio de forma natural (sentados, cocinando, etc.). Las personas deben ser fotorrealistas. NO cambies la arquitectura ni la estructura del espacio.',
+        mobiliario: 'Mejora la calidad fotográfica de esta imagen (iluminación, colores, contraste, saturación). Si el espacio tiene mobiliario escaso o ausente, agrega muebles modernos y acogedores apropiados para el espacio (sala, comedores, camas, etc.), manteniendo un estilo moderno y accesible. NO cambies la arquitectura ni la estructura.'
     };
 
     const prompt = enhMap[enhancement] || enhMap.calidad;
 
-    // Convert base64 into a Blob to send as pure image bytes
-    const byteString = atob(base64);
-    const ab = new ArrayBuffer(byteString.length);
-    const ia = new Uint8Array(ab);
-    for (let i = 0; i < byteString.length; i++) {
-        ia[i] = byteString.charCodeAt(i);
-    }
-    const blob = new Blob([ab], { type: 'image/jpeg' });
+    const body = {
+        contents: [{
+            parts: [
+                { text: prompt },
+                { inline_data: { mime_type: mimeType, data: base64 } }
+            ]
+        }],
+        generationConfig: { responseModalities: ['IMAGE', 'TEXT'] }
+    };
 
-    // Use a widely-compatible model for img2img in the free Inference API
-    const apiUrl = 'https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5';
+    const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp-image-generation:generateContent?key=${apiKey}`,
+        { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
+    );
 
-    // Send the image Blob directly in the body.
-    const res = await fetch(apiUrl, {
-        method: 'POST',
-        headers: {
-            'Authorization': `Bearer ${apiKey.trim()}`,
-            'Accept': 'image/jpeg',
-            'Content-Type': 'image/jpeg'
-        },
-        body: blob
-    });
+    const data = await res.json();
+    if (!res.ok || data.error) throw new Error(data.error?.message || `HTTP ${res.status}`);
 
-    if (res.status === 503) {
-        throw new Error('El modelo de IA está "durmiendo". Espera 30 segundos e intenta de nuevo.');
-    }
+    // Find image part
+    const parts = data.candidates?.[0]?.content?.parts || [];
+    const imgPart = parts.find(p => p.inline_data?.mime_type?.startsWith('image/'));
+    if (!imgPart) throw new Error('Gemini no devolvió imagen');
 
-    if (!res.ok) {
-        let msg = `HTTP ${res.status}`;
-        try {
-            const errJson = await res.json();
-            msg = errJson.error || msg;
-        } catch (e) { }
-        throw new Error(msg);
-    }
-
-    const blobRes = await res.blob();
-
-    return new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onloadend = () => {
-            const b64 = reader.result.split(',')[1];
-            resolve(b64);
-        };
-        reader.onerror = reject;
-        reader.readAsDataURL(blobRes);
-    });
+    return imgPart.inline_data.data;
 }
 
 // ── Canvas Compositing ────────────────────────────────────────────────
+let fabricCanvas = null;
+
 async function compositeAd(imageDataUrl) {
-    const canvas = document.getElementById('adCanvas');
+    const canvasEl = document.getElementById('adCanvas');
     const placeholder = document.getElementById('canvasPlaceholder');
     const isVertical = genState.format === 'vertical';
     const W = 1080;
     const H = isVertical ? 1920 : 1080;
 
-    canvas.width = W;
-    canvas.height = H;
-    const ctx = canvas.getContext('2d');
+    // Show canvas container early
+    canvasEl.style.display = 'block';
+    if (placeholder) placeholder.style.display = 'none';
 
-    // 1. Draw background image from passed URL (base64 or direct asset path)
-    let bg;
-    if (imageDataUrl.startsWith('data:')) {
-        bg = await loadImage(imageDataUrl);
-    } else {
-        bg = await tryLoadImage(imageDataUrl);
-        if (!bg) throw new Error(`Could not load source image: ${imageDataUrl}`);
+    // 1. Initialize or Resize Fabric Canvas
+    if (!fabricCanvas) {
+        fabricCanvas = new fabric.Canvas('adCanvas', { width: W, height: H, preserveObjectStacking: true });
+        fabricCanvas.hdbBgImageSrc = null;
+
+        // Custom interactive handles style
+        fabric.Object.prototype.transparentCorners = false;
+        fabric.Object.prototype.cornerColor = '#22c55e';
+        fabric.Object.prototype.cornerStyle = 'circle';
     }
-    drawCoverImage(ctx, bg, 0, 0, W, H);
 
-    // Get user personalization
+    if (fabricCanvas.width !== W || fabricCanvas.height !== H) {
+        fabricCanvas.setWidth(W);
+        fabricCanvas.setHeight(H);
+        fabricCanvas.clear(); // format change restarts template
+        fabricCanvas.hdbBgImageSrc = null;
+    }
+
+    // Personalization controls
     const primaryColor = document.getElementById('adColor')?.value || '#22c55e';
     const opacityVal = parseInt(document.getElementById('adOpacity')?.value || 70);
     const darkAlpha = opacityVal / 100;
+    const txtYPercent = 1; // Used as base anchor multiplier
 
-    const gradYPercent = document.getElementById('gradY')?.value / 100 ?? 1; // Default bot
+    // 2. Background Image
+    const imgSourceChanged = fabricCanvas.hdbBgImageSrc !== imageDataUrl;
+    if (imgSourceChanged) {
+        fabricCanvas.hdbBgImageSrc = imageDataUrl;
+        let bgImg;
+        if (imageDataUrl.startsWith('data:')) {
+            bgImg = await loadFabricImageFallback(imageDataUrl);
+        } else {
+            bgImg = await tryLoadFabricImage(imageDataUrl);
+        }
 
-    // 2. Dark gradient overlay
-    // The gradient represents the shadow behind text.
-    // Height of gradient is fixed ~45-50% of image.
+        if (bgImg) {
+            const scale = Math.max(W / bgImg.width, H / bgImg.height);
+            bgImg.set({
+                originX: 'center', originY: 'center',
+                left: W / 2, top: H / 2,
+                scaleX: scale, scaleY: scale,
+                selectable: false, evented: false
+            });
+            fabricCanvas.setBackgroundImage(bgImg, fabricCanvas.renderAll.bind(fabricCanvas));
+        }
+    }
+
+    const getById = (id) => fabricCanvas.getObjects().find(o => o.id === id);
+
+    // 3. Dark gradient overlay
+    let shadowRect = getById('shadowOverlay');
+    if (!shadowRect) {
+        shadowRect = new fabric.Rect({
+            id: 'shadowOverlay', left: 0, top: 0, width: W, height: H,
+            evented: false, selectable: false
+        });
+        fabricCanvas.add(shadowRect);
+        shadowRect.sendToBack(); // always behind texts
+    }
+
+    shadowRect.set({ width: W, height: H });
     const gradH = isVertical ? H * 0.5 : H * 0.45;
-    const startY = (H - gradH) * gradYPercent;
+    const startY = (H - gradH) * txtYPercent;
 
-    const grad = ctx.createLinearGradient(0, startY, 0, startY + gradH);
-    grad.addColorStop(0, 'rgba(0,0,0,0)');
-    grad.addColorStop(0.35, `rgba(0,0,0,${darkAlpha * 0.75})`);
-    grad.addColorStop(1, `rgba(0,0,0,${darkAlpha})`);
-    ctx.fillStyle = grad;
-    ctx.fillRect(0, startY, W, gradH);
-
-    // 3. Top logo bar (semi-transparent pill background)
-    const logoBarH = 90;
-    ctx.fillStyle = 'rgba(0,0,0,0.4)';
-    roundRect(ctx, 0, 0, W, logoBarH + 10, 0);
-
-    // Load logos
-    const propData = AD_DATA[genState.propType];
-    const [logoL, logoR] = await Promise.all([
-        tryLoadImage(propData.logoLeft),
-        loadImage(AD_CONFIG.logoRight)
-    ]);
-
-    // Handle Logo positions and sizes
-    const scaleL = (parseInt(document.getElementById('logoLScale')?.value || 100) / 100);
-    const posX_L = (parseInt(document.getElementById('logoLX')?.value || 2) / 100);
-    const posY_L = (parseInt(document.getElementById('logoLY')?.value || 1) / 100);
-
-    const scaleR = (parseInt(document.getElementById('logoRScale')?.value || 100) / 100);
-    const posX_R = (parseInt(document.getElementById('logoRX')?.value || 98) / 100);
-    const posY_R = (parseInt(document.getElementById('logoRY')?.value || 1) / 100);
-
-    const baseLogoH = 60;
-
-    // Draw left logo
-    if (logoL) {
-        let finalH = baseLogoH * scaleL;
-        let finalW = logoL.width * (finalH / logoL.height);
-        let lx = (W - finalW) * posX_L;
-        let ly = (H - finalH) * posY_L;
-        ctx.drawImage(logoL, lx, ly, finalW, finalH);
+    // Only apply gradient if alpha > 0
+    if (darkAlpha > 0) {
+        shadowRect.set('fill', new fabric.Gradient({
+            type: 'linear',
+            coords: { x1: 0, y1: startY, x2: 0, y2: H },
+            colorStops: [
+                { offset: 0, color: 'rgba(0,0,0,0)' },
+                { offset: 0.35, color: `rgba(0,0,0,${darkAlpha * 0.75})` },
+                { offset: 1, color: `rgba(0,0,0,${darkAlpha})` }
+            ]
+        }));
     } else {
-        ctx.fillStyle = '#fff';
-        ctx.font = 'bold 22px Inter, Arial, sans-serif';
-        // Approximate width
-        let txtW = ctx.measureText('Privadas del Bosque').width;
-        let finalH = 22 * scaleL;
-        ctx.font = `bold ${finalH}px Inter, Arial, sans-serif`;
-        let lx = (W - txtW) * posX_L;
-        let ly = (H - finalH) * posY_L;
-        ctx.fillText('Privadas del Bosque', lx, ly + finalH);
+        shadowRect.set('fill', 'transparent');
     }
 
-    // Draw right logo (Hogares Unión)
-    if (logoR) {
-        let finalH = baseLogoH * scaleR;
-        let finalW = logoR.width * (finalH / logoR.height);
-        let lx = (W - finalW) * posX_R;
-        let ly = (H - finalH) * posY_R;
-        ctx.drawImage(logoR, lx, ly, finalW, finalH);
+    // 4. Bar Top
+    let topBar = getById('topBar');
+    if (!topBar) {
+        topBar = new fabric.Rect({
+            id: 'topBar', left: 0, top: 0, width: W, height: 100, fill: 'rgba(0,0,0,0.4)',
+            selectable: true, // You can delete or move it if you want!
+        });
+        fabricCanvas.add(topBar);
+    } else {
+        topBar.set({ width: W });
     }
 
-    // 4. Copy text block
+    // 5. Logos
+    let logoL = getById('logoLeft');
+    let logoR = getById('logoRight');
+
+    if (!logoL && !logoR) {
+        const propData = AD_DATA[genState.propType];
+
+        tryLoadFabricImage(propData.logoLeft).then(lImage => {
+            if (lImage) {
+                lImage.set({ id: 'logoLeft', left: 28, top: 18 });
+                lImage.scaleToHeight(60);
+                fabricCanvas.add(lImage);
+                fabricCanvas.renderAll();
+            }
+        });
+
+        tryLoadFabricImage(AD_CONFIG.logoRight).then(rImage => {
+            if (rImage) {
+                rImage.set({ id: 'logoRight', left: W - 220, top: 18 }); // Placeholder
+                rImage.scaleToHeight(60);
+                rImage.set({ left: W - rImage.getScaledWidth() - 28 }); // Real adjust
+                fabricCanvas.add(rImage);
+                fabricCanvas.renderAll();
+            }
+        });
+    }
+
+    // 6. Text Elements
     const titulo = document.getElementById('adTitulo')?.value.trim() || '';
     const subtitle = document.getElementById('adSubtitle')?.value.trim() || '';
     const precio = document.getElementById('adPrecio')?.value.trim() || getCurrentModel()?.precio || '';
     const cta = document.getElementById('adCta')?.value.trim() || '¡Aparta hoy!';
 
-    // Get position from sliders
-    const txtXPercent = parseInt(document.getElementById('textX')?.value || 5) / 100;
-    const txtYPercent = parseInt(document.getElementById('textY')?.value || 85) / 100;
+    const textStartY = H - (isVertical ? 440 : 360);
+    const textX = 52;
+    const fontFam = 'Inter, Arial, sans-serif';
 
-    const textMaxW = parseInt(W * 0.9); // 90% of screen width
+    function updateTextItem(id, text, options) {
+        if (!text) {
+            let existing = getById(id);
+            if (existing) fabricCanvas.remove(existing);
+            return null;
+        }
 
-    // Calculate content height
-    let contentH = 0;
-    if (precio) contentH += 60;
-    if (titulo) contentH += isVertical ? 80 : 68;
-    if (subtitle) contentH += isVertical ? 50 : 42;
-    contentH += isVertical ? 56 : 46; // phone
-    if (cta) contentH += 56;
-
-    // Compute Base Coordinate
-    let textX = W * txtXPercent;
-    let textY = (H - contentH) * txtYPercent;
-
-    // Draw blocks exactly exactly at requested coordinate
-    // Precio tag
-    if (precio) {
-        const tagPad = 18;
-        ctx.font = `bold ${isVertical ? 32 : 28}px Inter, Arial, sans-serif`;
-        const tagW = ctx.measureText(precio).width + tagPad * 2;
-        ctx.fillStyle = primaryColor;
-        roundRect(ctx, textX, textY - 36, tagW, 44, 8);
-
-        ctx.fillStyle = '#fff';
-        ctx.fillText(precio, textX + tagPad, textY + 1);
-        textY += 60;
+        let obj = getById(id);
+        if (obj) {
+            obj.set({ text: text });
+            if (options.fill) obj.set({ fill: options.fill });
+            if (options.backgroundColor) obj.set({ backgroundColor: options.backgroundColor });
+        } else {
+            obj = new fabric.Textbox(text, {
+                id: id,
+                fontFamily: fontFam,
+                left: options.left !== undefined ? options.left : textX,
+                top: options.top,
+                fill: options.fill || '#fff',
+                fontSize: options.fontSize || 32,
+                fontWeight: options.fontWeight || 'normal',
+                width: options.width || (W - textX * 2), // wrapping
+                ...options.extras
+            });
+            fabricCanvas.add(obj);
+        }
+        return obj;
     }
+
+    // Pricing
+    let precioObj = updateTextItem('txtPrecio', precio, {
+        top: textStartY - 36,
+        fontSize: isVertical ? 32 : 28,
+        fontWeight: 'bold',
+        fill: '#fff',
+        backgroundColor: primaryColor,
+        width: 350,
+        extras: { padding: 12, textAlign: 'center' }
+    });
+    if (precioObj && precioObj.backgroundColor) precioObj.set('backgroundColor', primaryColor);
 
     // Titular
-    if (titulo) {
-        ctx.fillStyle = '#ffffff';
-        ctx.font = `bold ${isVertical ? 68 : 58}px Inter, Arial, sans-serif`;
-        textY = wrapText(ctx, titulo, textX, textY, textMaxW, isVertical ? 80 : 68);
-        textY += 14;
-    }
+    updateTextItem('txtTitulo', titulo, {
+        top: textStartY + 40,
+        fontSize: isVertical ? 68 : 58,
+        fontWeight: 'bold',
+        fill: '#ffffff'
+    });
 
-    // Subtítulo
-    if (subtitle) {
-        ctx.fillStyle = 'rgba(255,255,255,0.82)';
-        ctx.font = `${isVertical ? 38 : 32}px Inter, Arial, sans-serif`;
-        textY = wrapText(ctx, subtitle, textX, textY, textMaxW, isVertical ? 50 : 42);
-        textY += 20;
-    }
+    // Subtitle
+    updateTextItem('txtSubtitle', subtitle, {
+        top: textStartY + 140,
+        fontSize: isVertical ? 38 : 32,
+        fill: 'rgba(255,255,255,0.85)'
+    });
 
-    // Teléfono
-    ctx.fillStyle = 'rgba(255,255,255,0.7)';
-    ctx.font = `${isVertical ? 32 : 27}px Inter, Arial, sans-serif`;
-    ctx.fillText(`📞 ${AD_CONFIG.telefono}`, textX, textY);
-    textY += isVertical ? 56 : 46;
+    // Phone
+    updateTextItem('txtPhone', `📞 ${AD_CONFIG.telefono}`, {
+        top: textStartY + 210,
+        fontSize: isVertical ? 32 : 27,
+        fill: 'rgba(255,255,255,0.7)',
+        width: 300
+    });
 
-    // CTA button
-    if (cta) {
-        const ctaFont = isVertical ? 36 : 30;
-        ctx.font = `bold ${ctaFont}px Inter, Arial, sans-serif`;
-        const ctaW = ctx.measureText(cta).width + 60;
-        ctx.fillStyle = primaryColor;
-        roundRect(ctx, textX, textY - ctaFont, ctaW, ctaFont + 22, 30);
-        ctx.fillStyle = '#fff';
-        ctx.fillText(cta, textX + 30, textY + 2);
-    }
+    // CTA Button
+    let ctaObj = updateTextItem('txtCta', cta, {
+        top: textStartY + 280,
+        fontSize: isVertical ? 36 : 30,
+        fontWeight: 'bold',
+        fill: '#fff',
+        backgroundColor: primaryColor,
+        width: 250,
+        extras: { padding: 12, textAlign: 'center' }
+    });
+    if (ctaObj && ctaObj.backgroundColor) ctaObj.set('backgroundColor', primaryColor);
 
-    // 5. Legal disclaimers
-    const discFont = isVertical ? 24 : 20;
-    ctx.font = `${discFont}px Inter, Arial, sans-serif`;
-    ctx.fillStyle = 'rgba(255,255,255,0.55)';
-    ctx.fillText(AD_CONFIG.disclaimer1, textX, H - (isVertical ? 62 : 52));
-    ctx.fillText(AD_CONFIG.disclaimer2, textX, H - (isVertical ? 32 : 26));
+    // Legal Disclaimers
+    let legalTxt = `${AD_CONFIG.disclaimer1}\n${AD_CONFIG.disclaimer2}`;
+    updateTextItem('txtLegal', legalTxt, {
+        top: H - (isVertical ? 80 : 70),
+        fontSize: isVertical ? 24 : 20,
+        fill: 'rgba(255,255,255,0.55)',
+        width: W - 100
+    });
 
-    // Show canvas
-    canvas.style.display = 'block';
-    if (placeholder) placeholder.style.display = 'none';
+    fabricCanvas.renderAll();
 }
 
 // ── Download ──────────────────────────────────────────────────────────
 function downloadAd() {
-    const canvas = document.getElementById('adCanvas');
+    if (!fabricCanvas) return;
     const model = getCurrentModel();
     const fmt = genState.format === 'vertical' ? '9x16' : '1x1';
     const name = `anuncio-${(model?.nombre || 'hdb').replace(/\s+/g, '-').toLowerCase()}-${fmt}-${new Date().toISOString().split('T')[0]}.png`;
 
-    canvas.toBlob(blob => {
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = name;
-        a.click();
-        URL.revokeObjectURL(url);
-    }, 'image/png');
+    // Clear selection so handles aren't visible in the output image
+    fabricCanvas.discardActiveObject();
+    fabricCanvas.renderAll();
+
+    const dataURL = fabricCanvas.toDataURL({
+        format: 'png',
+        quality: 1,
+        multiplier: 1
+    });
+
+    const a = document.createElement('a');
+    a.href = dataURL;
+    a.download = name;
+    a.click();
 }
 
-// ── Canvas helpers ────────────────────────────────────────────────────
-function drawCoverImage(ctx, img, x, y, w, h) {
-    const ratio = Math.max(w / img.width, h / img.height);
-    const sw = w / ratio;
-    const sh = h / ratio;
-    const sx = (img.width - sw) / 2;
-    const sy = (img.height - sh) / 2;
-    ctx.drawImage(img, sx, sy, sw, sh, x, y, w, h);
+// ── Fabric Image Helpers ──────────────────────────────────────────────
+function tryLoadFabricImage(url) {
+    return new Promise((resolve) => {
+        fabric.Image.fromURL(url + (url.includes('?') ? '&' : '?') + '_t=' + Date.now(), function (img) {
+            resolve(img || null);
+        }, { crossOrigin: 'anonymous' });
+    });
 }
-
-function roundRect(ctx, x, y, w, h, r) {
-    ctx.beginPath();
-    ctx.moveTo(x + r, y);
-    ctx.lineTo(x + w - r, y);
-    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
-    ctx.lineTo(x + w, y + h - r);
-    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
-    ctx.lineTo(x + r, y + h);
-    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
-    ctx.lineTo(x, y + r);
-    ctx.quadraticCurveTo(x, y, x + r, y);
-    ctx.closePath();
-    ctx.fill();
-}
-
-function wrapText(ctx, text, x, y, maxW, lineH) {
-    const words = text.split(' ');
-    let line = '';
-    for (const word of words) {
-        const test = line ? `${line} ${word}` : word;
-        if (ctx.measureText(test).width > maxW && line) {
-            ctx.fillText(line, x, y);
-            y += lineH;
-            line = word;
-        } else {
-            line = test;
-        }
-    }
-    if (line) { ctx.fillText(line, x, y); y += lineH; }
-    return y;
+function loadFabricImageFallback(base64Str) {
+    return new Promise((resolve) => {
+        fabric.Image.fromURL(base64Str, function (img) {
+            resolve(img || null);
+        });
+    });
 }
 
 function loadImage(src) {
