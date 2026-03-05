@@ -41,10 +41,15 @@ function applyFilters() {
 
     // 3. Month Filter (Now using campaign start date)
     let matchMonth = true;
-    if (month !== 'all' && c.fecha_inicio) {
-      const [selYear, selMonth] = month.split('-');
-      const camDate = new Date(c.fecha_inicio);
-      matchMonth = (camDate.getFullYear() == selYear && (camDate.getMonth() + 1) == selMonth);
+    if (month !== 'all') {
+      if (c.fecha_inicio) {
+        const [selYear, selMonth] = month.split('-');
+        const camDate = new Date(c.fecha_inicio);
+        matchMonth = (camDate.getFullYear() == selYear && (camDate.getMonth() + 1) == selMonth);
+      } else {
+        // Fallback: If no start date, it doesn't match a specific month filter
+        matchMonth = false;
+      }
     }
 
     return matchHealth && matchStatus && matchMonth;
