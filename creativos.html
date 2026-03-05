@@ -525,47 +525,85 @@
                     </div>
 
                     <!-- Personalization -->
-                    <label class="gen-label">6. Estilo visual</label>
-                    <div class="control-row">
-                        <div style="flex:1;">
-                            <small style="color:var(--text-muted);display:block;margin-bottom:4px">Posición del
-                                texto:</small>
-                            <div class="format-btns" style="margin-bottom:0;" id="alignBtns">
-                                <button class="format-btn" data-val="top" onclick="selectAlign(this)">Arriba</button>
-                                <button class="format-btn" data-val="center" onclick="selectAlign(this)">Centro</button>
-                                <button class="format-btn active" data-val="bottom"
-                                    onclick="selectAlign(this)">Abajo</button>
+                    <label class="gen-label">6. Editor de Diseño Libre</label>
+                    <div
+                        style="background:var(--bg-elevated); border:1px solid var(--border); border-radius:8px; padding:1rem; margin-bottom:1rem; font-size:0.85rem;">
+                        <!-- Right/Left Logos Group -->
+                        <div style="margin-bottom:1rem; padding-bottom:1rem; border-bottom:1px solid var(--border);">
+                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Logo
+                                Izquierdo (Desarrollo)</strong>
+                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+                                <label style="width:60px; color:var(--text-muted);">Tamaño</label>
+                                <input type="range" id="logoLScale" min="20" max="300" value="100" style="flex:1"
+                                    oninput="updateLivePreview()">
+                            </div>
+                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+                                <label style="width:60px; color:var(--text-muted);">Pos X</label>
+                                <input type="range" id="logoLX" min="0" max="100" value="2" style="flex:1"
+                                    oninput="updateLivePreview()">
+                            </div>
+                            <div style="display:flex; align-items:center; gap:0.5rem;">
+                                <label style="width:60px; color:var(--text-muted);">Pos Y</label>
+                                <input type="range" id="logoLY" min="0" max="100" value="1" style="flex:1"
+                                    oninput="updateLivePreview()">
                             </div>
                         </div>
-                        <div style="flex:0 0 auto;text-align:center;">
-                            <small style="color:var(--text-muted);display:block;margin-bottom:4px">Color CTA:</small>
-                            <input type="color" id="adColor" value="#22c55e" oninput="updateLivePreview()">
-                        </div>
-                    </div>
-                    <div style="margin-bottom:1rem;">
-                        <div style="display:flex;justify-content:space-between;margin-bottom:4px">
-                            <small style="color:var(--text-muted);">Opacidad del fondo oscuro:</small>
-                            <small style="color:var(--text-secondary);" id="opacityVal">70%</small>
-                        </div>
-                        <input type="range" id="adOpacity" min="0" max="100" value="70" oninput="updateOpacityLabel()">
-                    </div>
 
-                    <div class="control-row">
-                        <div style="flex:1;">
-                            <div style="display:flex;justify-content:space-between;margin-bottom:4px">
-                                <small style="color:var(--text-muted);">Tamaño Logo Izquierdo:</small>
-                                <small style="color:var(--text-secondary);" id="logoLSclVal">100%</small>
+                        <div style="margin-bottom:1rem; padding-bottom:1rem; border-bottom:1px solid var(--border);">
+                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Logo Derecho
+                                (Hogares Unión)</strong>
+                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+                                <label style="width:60px; color:var(--text-muted);">Tamaño</label>
+                                <input type="range" id="logoRScale" min="20" max="300" value="100" style="flex:1"
+                                    oninput="updateLivePreview()">
                             </div>
-                            <input type="range" id="logoLScale" min="30" max="250" value="100"
-                                oninput="updateLogoScaleLabel('L')">
+                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+                                <label style="width:60px; color:var(--text-muted);">Pos X</label>
+                                <input type="range" id="logoRX" min="0" max="100" value="98" style="flex:1"
+                                    oninput="updateLivePreview()">
+                            </div>
+                            <div style="display:flex; align-items:center; gap:0.5rem;">
+                                <label style="width:60px; color:var(--text-muted);">Pos Y</label>
+                                <input type="range" id="logoRY" min="0" max="100" value="1" style="flex:1"
+                                    oninput="updateLivePreview()">
+                            </div>
                         </div>
-                        <div style="flex:1;">
-                            <div style="display:flex;justify-content:space-between;margin-bottom:4px">
-                                <small style="color:var(--text-muted);">Tamaño Logo Derecho (HU):</small>
-                                <small style="color:var(--text-secondary);" id="logoRSclVal">100%</small>
+
+                        <!-- Texts Group -->
+                        <div style="margin-bottom:1rem; padding-bottom:1rem; border-bottom:1px solid var(--border);">
+                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Bloque de
+                                Textos y Precio</strong>
+                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+                                <label style="width:60px; color:var(--text-muted);">Pos X</label>
+                                <input type="range" id="textX" min="0" max="100" value="5" style="flex:1"
+                                    oninput="updateLivePreview()">
                             </div>
-                            <input type="range" id="logoRScale" min="30" max="250" value="100"
-                                oninput="updateLogoScaleLabel('R')">
+                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+                                <label style="width:60px; color:var(--text-muted);">Pos Y</label>
+                                <input type="range" id="textY" min="0" max="100" value="85" style="flex:1"
+                                    oninput="updateLivePreview()">
+                            </div>
+                            <div style="display:flex; align-items:center; gap:0.5rem;">
+                                <label style="width:60px; color:var(--text-muted);">Color CTA</label>
+                                <input type="color" id="adColor" value="#22c55e" style="height:30px; border-radius:4px"
+                                    oninput="updateLivePreview()">
+                            </div>
+                        </div>
+
+                        <!-- Background Gradient Group -->
+                        <div>
+                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Sombreado
+                                Principal</strong>
+                            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+                                <label style="width:60px; color:var(--text-muted);">Pos Y</label>
+                                <input type="range" id="gradY" min="0" max="100" value="100" style="flex:1"
+                                    oninput="updateLivePreview()">
+                            </div>
+                            <div style="display:flex; align-items:center; gap:0.5rem;">
+                                <label style="width:60px; color:var(--text-muted);">Opacidad</label>
+                                <input type="range" id="adOpacity" min="0" max="100" value="70" style="flex:1"
+                                    oninput="updateLivePreview()">
+                            </div>
                         </div>
                     </div>
 

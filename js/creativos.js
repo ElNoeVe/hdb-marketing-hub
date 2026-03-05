@@ -556,10 +556,6 @@ async function enhanceWithHuggingFace(base64, enhancement, apiKey) {
 
     const prompt = enhMap[enhancement] || enhMap.calidad;
 
-    // For HF we can just use data:image/jpeg;base64,... standard format
-    // Model: FLUX.1-schnell (faster, free, high quality) or stable-diffusion-xl
-    const apiUrl = 'https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell';
-
     // Convert base64 into a Blob to send as pure image bytes
     const byteString = atob(base64);
     const ab = new ArrayBuffer(byteString.length);
@@ -569,21 +565,18 @@ async function enhanceWithHuggingFace(base64, enhancement, apiKey) {
     }
     const blob = new Blob([ab], { type: 'image/jpeg' });
 
-    // We pass the image as binary payload, but passing prompt as header 'Parameters' or via JSON is tricky in basic inference API.
-    // For Hugging Face Inference API standard image-to-image task:
+    // Use a widely-compatible model for img2img in the free Inference API
+    const apiUrl = 'https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5';
+
+    // Send the image Blob directly in the body.
     const res = await fetch(apiUrl, {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${apiKey.trim()}`,
-            'Content-Type': 'application/json'
+            'Accept': 'image/jpeg',
+            'Content-Type': 'image/jpeg'
         },
-        body: JSON.stringify({
-            inputs: prompt,
-            parameters: {
-                image: base64, // Providing base64 string
-                strength: 0.25
-            }
-        })
+        body: blob
     });
 
     if (res.status === 503) {
@@ -636,33 +629,23 @@ async function compositeAd(imageDataUrl) {
 
     // Get user personalization
     const primaryColor = document.getElementById('adColor')?.value || '#22c55e';
-    const opacityVal = document.getElementById('adOpacity')?.value || 70;
-    const txtAlign = genState.textAlign; // 'top' | 'center' | 'bottom'
+    const opacityVal = parseInt(document.getElementById('adOpacity')?.value || 70);
     const darkAlpha = opacityVal / 100;
 
-    // 2. Dark gradient overlay
-    // Adjust gradient based on text alignment
-    const gradH = isVertical ? H * 0.5 : H * 0.45;
+    const gradYPercent = document.getElementById('gradY')?.value / 100 ?? 1; // Default bot
 
-    let grad;
-    if (txtAlign === 'bottom') {
-        grad = ctx.createLinearGradient(0, H - gradH, 0, H);
-        grad.addColorStop(0, 'rgba(0,0,0,0)');
-        grad.addColorStop(0.35, `rgba(0,0,0,${darkAlpha * 0.75})`);
-        grad.addColorStop(1, `rgba(0,0,0,${darkAlpha})`);
-        ctx.fillStyle = grad;
-        ctx.fillRect(0, H - gradH, W, gradH);
-    } else if (txtAlign === 'top') {
-        grad = ctx.createLinearGradient(0, gradH, 0, 0); // reverse direction
-        grad.addColorStop(0, 'rgba(0,0,0,0)');
-        grad.addColorStop(0.35, `rgba(0,0,0,${darkAlpha * 0.75})`);
-        grad.addColorStop(1, `rgba(0,0,0,${darkAlpha})`);
-        ctx.fillStyle = grad;
-        ctx.fillRect(0, 0, W, gradH);
-    } else { // center overlay
-        ctx.fillStyle = `rgba(0,0,0,${darkAlpha * 0.8})`;
-        ctx.fillRect(0, 0, W, H);
-    }
+    // 2. Dark gradient overlay
+    // The gradient represents the shadow behind text.
+    // Height of gradient is fixed ~45-50% of image.
+    const gradH = isVertical ? H * 0.5 : H * 0.45;
+    const startY = (H - gradH) * gradYPercent;
+
+    const grad = ctx.createLinearGradient(0, startY, 0, startY + gradH);
+    grad.addColorStop(0, 'rgba(0,0,0,0)');
+    grad.addColorStop(0.35, `rgba(0,0,0,${darkAlpha * 0.75})`);
+    grad.addColorStop(1, `rgba(0,0,0,${darkAlpha})`);
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, startY, W, gradH);
 
     // 3. Top logo bar (semi-transparent pill background)
     const logoBarH = 90;
@@ -676,32 +659,43 @@ async function compositeAd(imageDataUrl) {
         loadImage(AD_CONFIG.logoRight)
     ]);
 
-    // Handle Logo sizes (sliders)
+    // Handle Logo positions and sizes
     const scaleL = (parseInt(document.getElementById('logoLScale')?.value || 100) / 100);
-    const scaleR = (parseInt(document.getElementById('logoRScale')?.value || 100) / 100);
+    const posX_L = (parseInt(document.getElementById('logoLX')?.value || 2) / 100);
+    const posY_L = (parseInt(document.getElementById('logoLY')?.value || 1) / 100);
 
-    const logoPad = 28;
+    const scaleR = (parseInt(document.getElementById('logoRScale')?.value || 100) / 100);
+    const posX_R = (parseInt(document.getElementById('logoRX')?.value || 98) / 100);
+    const posY_R = (parseInt(document.getElementById('logoRY')?.value || 1) / 100);
+
     const baseLogoH = 60;
 
     // Draw left logo
     if (logoL) {
         let finalH = baseLogoH * scaleL;
         let finalW = logoL.width * (finalH / logoL.height);
-        // Center vertically in the 90px bar, or just align from top if very large
-        let ly = Math.max(10, (logoBarH - finalH) / 2);
-        ctx.drawImage(logoL, logoPad, ly, finalW, finalH);
+        let lx = (W - finalW) * posX_L;
+        let ly = (H - finalH) * posY_L;
+        ctx.drawImage(logoL, lx, ly, finalW, finalH);
     } else {
         ctx.fillStyle = '#fff';
         ctx.font = 'bold 22px Inter, Arial, sans-serif';
-        ctx.fillText('Privadas del Bosque', logoPad, 56);
+        // Approximate width
+        let txtW = ctx.measureText('Privadas del Bosque').width;
+        let finalH = 22 * scaleL;
+        ctx.font = `bold ${finalH}px Inter, Arial, sans-serif`;
+        let lx = (W - txtW) * posX_L;
+        let ly = (H - finalH) * posY_L;
+        ctx.fillText('Privadas del Bosque', lx, ly + finalH);
     }
 
     // Draw right logo (Hogares Unión)
     if (logoR) {
         let finalH = baseLogoH * scaleR;
         let finalW = logoR.width * (finalH / logoR.height);
-        let ly = Math.max(10, (logoBarH - finalH) / 2);
-        ctx.drawImage(logoR, W - finalW - logoPad, ly, finalW, finalH);
+        let lx = (W - finalW) * posX_R;
+        let ly = (H - finalH) * posY_R;
+        ctx.drawImage(logoR, lx, ly, finalW, finalH);
     }
 
     // 4. Copy text block
@@ -710,27 +704,25 @@ async function compositeAd(imageDataUrl) {
     const precio = document.getElementById('adPrecio')?.value.trim() || getCurrentModel()?.precio || '';
     const cta = document.getElementById('adCta')?.value.trim() || '¡Aparta hoy!';
 
-    const textX = 52;
-    const textMaxW = W - textX * 2;
+    // Get position from sliders
+    const txtXPercent = parseInt(document.getElementById('textX')?.value || 5) / 100;
+    const txtYPercent = parseInt(document.getElementById('textY')?.value || 85) / 100;
 
-    // Calculate content height to position it based on alignment
+    const textMaxW = parseInt(W * 0.9); // 90% of screen width
+
+    // Calculate content height
     let contentH = 0;
     if (precio) contentH += 60;
-    if (titulo) contentH += isVertical ? 80 : 68; // approx 1 line
+    if (titulo) contentH += isVertical ? 80 : 68;
     if (subtitle) contentH += isVertical ? 50 : 42;
     contentH += isVertical ? 56 : 46; // phone
     if (cta) contentH += 56;
 
-    // Starting Y based on alignment
-    let textY;
-    if (txtAlign === 'bottom') {
-        textY = H - contentH - (isVertical ? 90 : 80); // Above legal text
-    } else if (txtAlign === 'top') {
-        textY = logoBarH + 50 + (precio ? 40 : 10); // Below logos
-    } else {
-        textY = (H - contentH) / 2 + 30;
-    }
+    // Compute Base Coordinate
+    let textX = W * txtXPercent;
+    let textY = (H - contentH) * txtYPercent;
 
+    // Draw blocks exactly exactly at requested coordinate
     // Precio tag
     if (precio) {
         const tagPad = 18;
@@ -738,6 +730,7 @@ async function compositeAd(imageDataUrl) {
         const tagW = ctx.measureText(precio).width + tagPad * 2;
         ctx.fillStyle = primaryColor;
         roundRect(ctx, textX, textY - 36, tagW, 44, 8);
+
         ctx.fillStyle = '#fff';
         ctx.fillText(precio, textX + tagPad, textY + 1);
         textY += 60;
