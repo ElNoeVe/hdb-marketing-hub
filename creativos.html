@@ -5,6 +5,9 @@
         supabaseUrl: 'https://smdenxdjsrhijanupxll.supabase.co',
         supabaseKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNtZGVueGRqc3JoaWphbnVweGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE2MTg0OTQsImV4cCI6MjA4NzE5NDQ5NH0.NdM0hZ4DY8ty-Kd_ETyWfSvyIYyaobyFD_Hq-jZAGR0'
     };
+    // API Key Gemini — se guarda en sessionStorage (no queda en el código)
+    // Se pide una sola vez por sesión al intentar generar un anuncio
+    window.GEMINI_API_KEY = sessionStorage.getItem('hdb_gemini_key') || null;
 </script>
 
 <head>
@@ -15,6 +18,267 @@
         content="Copys, hashtags y prompts generados por IA para campañas de Haciendas del Bosque.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="assets/logo-hdb.png" type="image/png">
+
+    <style>
+        /* ── Ad Generator ── */
+        .gen-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .gen-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .gen-label {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            margin-bottom: .45rem;
+            display: block;
+        }
+
+        .gen-select,
+        .gen-input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: .65rem .9rem;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            background: var(--bg-elevated);
+            color: var(--text-primary);
+            font-size: .9rem;
+            margin-bottom: 1rem;
+        }
+
+        .gen-select:focus,
+        .gen-input:focus {
+            outline: none;
+            border-color: var(--green);
+        }
+
+        .img-picker {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+            gap: .5rem;
+            margin-bottom: 1rem;
+        }
+
+        .img-thumb {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: border-color .15s, transform .15s;
+        }
+
+        .img-thumb:hover {
+            border-color: var(--green);
+            transform: scale(1.03);
+        }
+
+        .img-thumb.selected {
+            border-color: var(--green);
+            box-shadow: 0 0 0 3px rgba(74, 222, 128, .25);
+        }
+
+        .img-thumb-label {
+            font-size: .68rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .format-btns {
+            display: flex;
+            gap: .6rem;
+            margin-bottom: 1rem;
+        }
+
+        .format-btn {
+            flex: 1;
+            padding: .6rem;
+            border-radius: 10px;
+            border: 2px solid var(--border);
+            background: var(--bg-elevated);
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: .85rem;
+            font-weight: 600;
+            transition: all .15s;
+            text-align: center;
+        }
+
+        .format-btn.active {
+            border-color: var(--green);
+            color: var(--green);
+            background: rgba(74, 222, 128, .08);
+        }
+
+        .enhancement-btns {
+            display: flex;
+            gap: .5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .enh-btn {
+            padding: .45rem .9rem;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            background: var(--bg-elevated);
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: .82rem;
+            transition: all .15s;
+        }
+
+        .enh-btn.active {
+            border-color: #a78bfa;
+            color: #a78bfa;
+            background: rgba(167, 139, 250, .08);
+        }
+
+        .canvas-preview-wrap {
+            position: relative;
+            background: var(--bg-base);
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+        }
+
+        #adCanvas {
+            max-width: 100%;
+            max-height: 540px;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .canvas-placeholder {
+            text-align: center;
+            color: var(--text-muted);
+            padding: 3rem 1rem;
+        }
+
+        .canvas-placeholder .ph-icon {
+            font-size: 3rem;
+            margin-bottom: .5rem;
+        }
+
+        .gen-actions {
+            display: flex;
+            gap: .75rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .btn-generate {
+            flex: 1;
+            padding: .75rem 1rem;
+            border-radius: 12px;
+            border: none;
+            background: linear-gradient(135deg, #a78bfa, #7c3aed);
+            color: #fff;
+            font-size: .95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity .2s, transform .1s;
+        }
+
+        .btn-generate:hover {
+            opacity: .9;
+        }
+
+        .btn-generate:active {
+            transform: scale(.98);
+        }
+
+        .btn-generate:disabled {
+            opacity: .5;
+            cursor: not-allowed;
+        }
+
+        .btn-download {
+            padding: .75rem 1.2rem;
+            border-radius: 12px;
+            border: 1px solid var(--green);
+            background: transparent;
+            color: var(--green);
+            font-size: .95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .15s;
+            display: none;
+        }
+
+        .btn-download.visible {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+        }
+
+        .btn-download:hover {
+            background: rgba(74, 222, 128, .1);
+        }
+
+        .gen-spinner {
+            display: none;
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, .6);
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+            flex-direction: column;
+            color: #fff;
+            gap: .5rem;
+            font-size: .9rem;
+        }
+
+        .gen-spinner.active {
+            display: flex;
+        }
+
+        .spinner-ring {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255, 255, 255, .2);
+            border-top-color: #a78bfa;
+            border-radius: 50%;
+            animation: spin .8s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .gen-notice {
+            font-size: .78rem;
+            color: var(--text-muted);
+            padding: .6rem .9rem;
+            background: rgba(167, 139, 250, .06);
+            border-radius: 8px;
+            border-left: 3px solid #a78bfa;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+    </style>
 </head>
 
 <body>
@@ -96,6 +360,7 @@
                 <button class="tab active" data-type="imagenes">🖼️ Campaña Imágenes</button>
                 <button class="tab" data-type="videos">🎬 Campaña Videos</button>
                 <button class="tab" data-type="segmentacion">🎯 Segmentación</button>
+                <button class="tab" data-type="generador">✨ Generar Anuncio</button>
             </div>
             <select class="form-select" id="weekSelect" style="width:auto;min-width:200px;">
                 <option value="latest">Cargando fechas...</option>
@@ -106,7 +371,8 @@
         <div id="section-imagenes">
             <div class="section-header">
                 <h2>📝 Campaña de Textos y Prompts (3 Enfoques)</h2>
-                <p>Copys y Prompts diseñados para diferentes segmentos: Técnico, Sentimental y Educativo para usar en generadores de imágenes externos.</p>
+                <p>Copys y Prompts diseñados para diferentes segmentos: Técnico, Sentimental y Educativo para usar en
+                    generadores de imágenes externos.</p>
             </div>
 
             <div id="imageAdsContainer">
@@ -154,6 +420,107 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Ad Image Generator Section ── -->
+        <div id="section-generador" class="hidden">
+            <div class="section-header">
+                <h2>✨ Generador de Anuncios Publicitarios</h2>
+                <p>Selecciona una foto real del desarrollo, mejórala con IA y descarga el anuncio listo para publicar en
+                    1080×1080 o 1080×1920 px.</p>
+            </div>
+
+            <div class="gen-notice">
+                💡 Gemini mejora la calidad fotográfica (iluminación, colores, contraste) de las fotos reales del
+                desarrollo. <strong>No altera la arquitectura ni crea espacios falsos.</strong>
+            </div>
+
+            <div class="gen-grid">
+                <!-- LEFT: Controls -->
+                <div>
+                    <!-- Property type -->
+                    <label class="gen-label">1. Tipo de propiedad</label>
+                    <div class="format-btns" id="propTypeBtns">
+                        <button class="format-btn active" data-prop="departamento" onclick="selectPropType(this)">🏢
+                            Departamentos<br><small>Haciendas del Bosque</small></button>
+                        <button class="format-btn" data-prop="casa" onclick="selectPropType(this)">🏠
+                            Casas<br><small>Privadas del Bosque</small></button>
+                    </div>
+
+                    <!-- Model selector -->
+                    <label class="gen-label">2. Modelo</label>
+                    <select class="gen-select" id="modelSelect" onchange="onModelChange()"></select>
+
+                    <!-- Image picker -->
+                    <label class="gen-label">3. Elige la foto base</label>
+                    <div class="img-picker" id="imagePicker"><!-- JS --></div>
+
+                    <!-- Enhancement type -->
+                    <label class="gen-label">4. Tipo de mejora con IA</label>
+                    <div class="enhancement-btns" id="enhBtns">
+                        <button class="enh-btn active" data-enh="calidad" onclick="selectEnh(this)">📸 Solo mejorar
+                            calidad</button>
+                        <button class="enh-btn" data-enh="personas" onclick="selectEnh(this)">👨‍👩‍👧 Agregar
+                            personas</button>
+                        <button class="enh-btn" data-enh="mobiliario" onclick="selectEnh(this)">🛋️ Mejorar
+                            mobiliario</button>
+                    </div>
+
+                    <!-- Format -->
+                    <label class="gen-label">5. Formato de salida</label>
+                    <div class="format-btns" id="formatBtns">
+                        <button class="format-btn active" data-fmt="square" onclick="selectFormat(this)">📱
+                            Cuadrado<br><small>1:1 — 1080×1080 px</small></button>
+                        <button class="format-btn" data-fmt="vertical" onclick="selectFormat(this)">📲
+                            Vertical<br><small>9:16 — 1080×1920 px</small></button>
+                    </div>
+
+                    <!-- Copy fields -->
+                    <label class="gen-label">6. Copy del anuncio</label>
+                    <input class="gen-input" id="adTitulo" type="text"
+                        placeholder="Titular (ej. Tu primer hogar desde...)" maxlength="60">
+                    <input class="gen-input" id="adSubtitle" type="text" placeholder="Subtítulo / copy corto"
+                        maxlength="80">
+                    <input class="gen-input" id="adPrecio" type="text" placeholder="Precio (ej. desde $850,000)"
+                        maxlength="40">
+                    <input class="gen-input" id="adCta" type="text" placeholder="CTA (ej. ¡Aparta hoy!)" maxlength="40"
+                        value="¡Aparta hoy!">
+
+                    <div class="gen-actions">
+                        <button class="btn-generate" id="btnGenerate" onclick="generateAd()">
+                            ✨ Mejorar con IA y Previsualizar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Preview -->
+                <div>
+                    <label class="gen-label">Vista previa</label>
+                    <div class="canvas-preview-wrap">
+                        <div class="gen-spinner" id="genSpinner">
+                            <div class="spinner-ring"></div>
+                            <span id="spinnerMsg">Mejorando imagen con IA...</span>
+                        </div>
+                        <div class="canvas-placeholder" id="canvasPlaceholder">
+                            <div class="ph-icon">🖼️</div>
+                            <p>Configura el anuncio y presiona<br><strong>✨ Mejorar con IA y Previsualizar</strong></p>
+                        </div>
+                        <canvas id="adCanvas" style="display:none;"></canvas>
+                    </div>
+
+                    <div class="gen-actions" style="margin-top:.75rem;">
+                        <button class="btn-download" id="btnDownload" onclick="downloadAd()">
+                            ⬇️ Descargar PNG
+                        </button>
+                    </div>
+
+                    <div style="margin-top:1rem;font-size:.75rem;color:var(--text-muted);line-height:1.6;">
+                        <strong>Nota legal:</strong> Todos los anuncios incluyen automáticamente:<br>
+                        • &quot;Imágenes de carácter ilustrativo&quot;<br>
+                        • &quot;Precios y promociones sujetas a cambios sin previo aviso&quot;
                     </div>
                 </div>
             </div>
