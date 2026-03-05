@@ -13,9 +13,15 @@ const Analytics = {
 
     init() {
         console.log("📊 HDB Analytics: Inicializando...");
+        this.saveCurrentPath();
         this.trackPageTime();
         this.setupEventListeners();
-        this.saveCurrentPath();
+
+        // 🔥 EVENTO CRÍTICO: Registrar visita de inmediato
+        this.sendData('page_view', {
+            path: window.location.pathname,
+            section: this.lastSection
+        });
 
         // Cargar Dashboard si existe el contenedor
         if (document.getElementById('stats-dashboard')) {
@@ -24,7 +30,8 @@ const Analytics = {
     },
 
     trackPageTime() {
-        window.addEventListener('beforeunload', () => {
+        // Enviar evento de salida (usamos 'pagehide' que es más fiable que 'beforeunload')
+        window.addEventListener('pagehide', () => {
             const timeSpent = Math.round((Date.now() - this.startTime) / 1000);
             this.sendData('session_end', { seconds: timeSpent });
         });
@@ -91,22 +98,33 @@ const Analytics = {
             event: event,
             timestamp: new Date().toISOString(),
             metadata: metadata,
-            app_version: window.location.pathname.includes('/lite/') ? 'Lite' : 'Principal'
+            app_version: window.location.pathname.includes('/lite') ? 'Lite' : 'Principal'
         };
 
         console.log("📡 Enviando evento:", payload);
 
         if (config.isActive) {
-            fetch(`${config.supabaseUrl}/rest/v1/events`, {
-                method: 'POST',
-                headers: {
-                    "apikey": config.supabaseKey,
-                    "Authorization": `Bearer ${config.supabaseKey}`,
-                    "Content-Type": "application/json",
-                    "Prefer": "return=minimal"
-                },
-                body: JSON.stringify(payload)
-            });
+            const url = `${config.supabaseUrl}/rest/v1/events`;
+            const headers = {
+                "apikey": config.supabaseKey,
+                "Authorization": `Bearer ${config.supabaseKey}`,
+                "Content-Type": "application/json",
+                "Prefer": "return=minimal"
+            };
+
+            // Intentar sendBeacon para eventos de cierre, fetch normal para el resto
+            if (event === 'session_end' && navigator.sendBeacon) {
+                // sendBeacon no soporta headers personalizados fácilmente con JSON, 
+                // pero Supabase acepta apikey en el query string
+                const beaconUrl = `${url}?apikey=${config.supabaseKey}`;
+                navigator.sendBeacon(beaconUrl, JSON.stringify(payload));
+            } else {
+                fetch(url, {
+                    method: 'POST',
+                    headers: headers,
+                    body: JSON.stringify(payload)
+                });
+            }
         }
     }
 };
