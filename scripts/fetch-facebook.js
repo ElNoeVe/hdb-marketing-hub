@@ -131,45 +131,64 @@ async function fetchFacebookData() {
     return reportData;
 }
 
-async function analyzeWithGemini(campaigns) {
+async function analyzeWithGemini(campaigns, isTuesday = false) {
     if (!GEMINI_API_KEY) {
         console.log('⚠️ No GEMINI_API_KEY, skipping AI analysis');
-        return 'Análisis de IA no disponible — configura GEMINI_API_KEY';
+        return { diario: 'No disponible', taller: null };
     }
 
     console.log('🤖 Analizando con Gemini...');
 
-    const prompt = `Eres un experto en marketing digital inmobiliario en México. Analiza estos datos de Facebook Ads del fraccionamiento Haciendas del Bosque (Hogares Unión) en Tecámac.
+    // Only analyze ACTIVE campaigns for strategic advice
+    const activeCampaigns = campaigns.filter(c => c.estado === 'ACTIVE');
 
-Datos de campañas y anuncios:
-${JSON.stringify(campaigns, null, 2)}
+    // 1. Daily Optimizer Prompt
+    const dailyPrompt = `Eres un experto en marketing digital inmobiliario en México. Analiza estos datos de campañas ACTIVAS de Facebook Ads del fraccionamiento Haciendas del Bosque en Tecámac.
+    
+    Datos actuales:
+    ${JSON.stringify(activeCampaigns, null, 2)}
+    
+    Genera un "Optimizador Diario" conciso (máx 150 palabras) en español con:
+    - Qué 3 acciones exactas debe tomar el usuario HOY para mejorar el rendimiento.
+    - Qué campaña potenciar y cuál vigilar.
+    - Sé directo y orientado a resultados inmediatos.`;
 
-Genera un análisis en español con:
-1. Resumen ejecutivo (2-3 líneas)
-2. Por cada campaña: qué funciona y qué no
-3. Comparación de rendimiento entre anuncios de la misma campaña
-4. Top 3 recomendaciones de optimización concretas
-5. Sugerencias de presupuesto
+    const fetchGemini = async (prompt) => {
+        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                contents: [{ parts: [{ text: prompt }] }],
+                generationConfig: { maxOutputTokens: 2048, temperature: 0.7 }
+            })
+        });
+        const data = await res.json();
+        return data.candidates?.[0]?.content?.parts?.[0]?.text || 'Error al generar';
+    };
 
-Sé conciso y orientado a la acción.`;
+    const diario = await fetchGemini(dailyPrompt);
+    let taller = null;
 
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { maxOutputTokens: 2048, temperature: 0.7 }
-        })
-    });
-
-    const data = await res.json();
-    if (!res.ok || data.error) {
-        console.error('⚠️ Error de IA (Geimini) - HTTP Status:', res.status);
-        console.error('⚠️ Detalle:', JSON.stringify(data, null, 2));
-        return 'Análisis de IA falló. Revisar Logs.';
+    // 2. Tuesday Creative Workshop (Only if it's Tuesday)
+    if (isTuesday) {
+        console.log('🎨 Generando Taller Creativo de los Martes...');
+        const tuesdayPrompt = `Eres un director creativo senior de marketing inmobiliario. 
+        Analiza el rendimiento histórico de los últimos 30 días de TODAS las campañas (especialmente las mejores) para planear el contenido de la próxima semana.
+        
+        Datos históricos:
+        ${JSON.stringify(campaigns, null, 2)}
+        
+        Genera el "Taller Creativo Semanal" en español con:
+        1. REPASO: Por qué las mejores campañas funcionaron (basado en datos).
+        2. ESTRATEGIA: 3 nuevas propuestas de anuncios (Copy con hashtags, Título gancho).
+        3. SEGMENTACIÓN: Sugerencias de audiencia detalladas para estas nuevas ideas.
+        4. VISUALES: Consejos específicos de qué imágenes generar en una IA externa para estos anuncios.
+        
+        Usa un tono inspirador pero basado en datos.`;
+        taller = await fetchGemini(tuesdayPrompt);
     }
 
-    return data.candidates?.[0]?.content?.parts?.[0]?.text || 'No se pudo generar análisis';
+    return { diario, taller };
 }
 
 async function main() {
@@ -179,13 +198,18 @@ async function main() {
     }
 
     const campaigns = await fetchFacebookData();
-    const analysis = await analyzeWithGemini(campaigns);
 
+    // Check if today is Tuesday (2 in JS Date.getDay())
     const now = new Date();
+    const isTuesday = now.getDay() === 2;
+
+    const analysis = await analyzeWithGemini(campaigns, isTuesday);
+
     const dateStr = now.toISOString().split('T')[0];
 
     const report = {
         fecha_generacion: now.toISOString(),
+        es_martes: isTuesday,
         periodo: 'Últimos 30 días',
         total_campanas: campaigns.length,
         total_anuncios: campaigns.reduce((sum, c) => sum + c.anuncios.length, 0),
@@ -197,7 +221,8 @@ async function main() {
             mensajes_totales: campaigns.reduce((sum, c) => sum + c.metricas.mensajes, 0)
         },
         campanas: campaigns,
-        analisis_ia: analysis
+        analisis_ia: analysis.diario,
+        taller_creativo: analysis.taller
     };
 
     // Save report

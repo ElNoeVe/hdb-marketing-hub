@@ -483,139 +483,64 @@
             </div>
         </div>
 
-        <!-- ── Ad Image Generator Section ── -->
-        <div id="section-generador" class="hidden">
+        <!-- ── AI Strategic Assistant Section ── -->
+        <div id="section-generador">
             <div class="section-header">
-                <h2>✨ Generador de Anuncios Publicitarios</h2>
-                <p>Selecciona una foto real del desarrollo, mejórala con IA y descarga el anuncio listo para publicar en
-                    1080×1080 o 1080×1920 px.</p>
+                <h2>🤖 Asistente Estratégico de IA</h2>
+                <p>Análisis diario de campañas activas y taller creativo semanal los martes a las 7:30 AM.</p>
             </div>
 
-            <div class="gen-notice">
-                💡 Gemini mejora la calidad fotográfica (iluminación, colores, contraste) de las fotos reales del
-                desarrollo. <strong>No altera la arquitectura ni crea espacios falsos.</strong>
-            </div>
-
-            <div class="gen-grid">
-                <!-- LEFT: Controls -->
-                <div>
-                    <!-- Property type -->
-                    <label class="gen-label">1. Tipo de propiedad</label>
-                    <div class="format-btns" id="propTypeBtns">
-                        <button class="format-btn active" data-prop="departamento" onclick="selectPropType(this)">🏢
-                            Departamentos<br><small>Haciendas del Bosque</small></button>
-                        <button class="format-btn" data-prop="casa" onclick="selectPropType(this)">🏠
-                            Casas<br><small>Privadas del Bosque</small></button>
-                    </div>
-
-                    <!-- Model selector -->
-                    <label class="gen-label">2. Modelo</label>
-                    <select class="gen-select" id="modelSelect" onchange="onModelChange()"></select>
-
-                    <!-- Image picker -->
-                    <label class="gen-label">3. Elige la foto base</label>
-                    <div class="img-picker" id="imagePicker"><!-- JS --></div>
-
-                    <!-- Enhancement type -->
-                    <label class="gen-label">4. Tipo de mejora con IA</label>
-                    <div class="enhancement-btns" id="enhBtns">
-                        <button class="enh-btn active" data-enh="calidad" onclick="selectEnh(this)">📸 Solo mejorar
-                            calidad</button>
-                        <button class="enh-btn" data-enh="personas" onclick="selectEnh(this)">👨‍👩‍👧 Agregar
-                            personas</button>
-                        <button class="enh-btn" data-enh="mobiliario" onclick="selectEnh(this)">🛋️ Mejorar
-                            mobiliario</button>
-                    </div>
-
-                    <!-- Format -->
-                    <label class="gen-label">5. Formato de salida</label>
-                    <div class="format-btns" id="formatBtns">
-                        <button class="format-btn active" data-fmt="square" onclick="selectFormat(this)">📱
-                            Cuadrado<br><small>1:1 — 1080×1080 px</small></button>
-                        <button class="format-btn" data-fmt="vertical" onclick="selectFormat(this)">📲
-                            Vertical<br><small>9:16 — 1080×1920 px</small></button>
-                    </div>
-
-                    <!-- Personalization -->
-                    <label class="gen-label">6. Estética y Textos</label>
-                    <div
-                        style="background:var(--bg-elevated); border:1px solid var(--border); border-radius:8px; padding:1rem; margin-bottom:1rem; font-size:0.85rem;">
-                        <p style="margin-bottom:0.75rem; color:var(--text-secondary); line-height:1.4;">
-                            💡 <strong>Nuevo Editor Interactivo:</strong> Ahora puedes arrastrar, soltar y cambiar el
-                            tamaño de los logos y textos directamente sobre la previsualización del lienzo. ¡Como en
-                            Canva!
-                        </p>
-
-                        <!-- Background Gradient Group -->
-                        <div style="margin-bottom:1rem; padding-bottom:1rem; border-bottom:1px solid var(--border);">
-                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Sombreado de
-                                fondo</strong>
-                            <div style="display:flex; align-items:center; gap:0.5rem;">
-                                <label style="width:60px; color:var(--text-muted);">Opacidad</label>
-                                <input type="range" id="adOpacity" min="0" max="100" value="70" style="flex:1"
-                                    oninput="updateLivePreview()">
-                            </div>
-                        </div>
-
-                        <!-- General Design Group -->
-                        <div>
-                            <strong style="display:block; margin-bottom:0.5rem; color:var(--text-primary);">Color de
-                                Botón y Precio</strong>
-                            <div style="display:flex; align-items:center; gap:0.5rem;">
-                                <label style="width:60px; color:var(--text-muted);">Color</label>
-                                <input type="color" id="adColor" value="#22c55e" style="height:30px; border-radius:4px"
-                                    onchange="updateLivePreview()">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Copy fields -->
-                    <label class="gen-label">7. Copy del anuncio</label>
-                    <input class="gen-input" id="adTitulo" type="text"
-                        placeholder="Titular (ej. Tu primer hogar desde...)" maxlength="60"
-                        oninput="updateLivePreview()">
-                    <input class="gen-input" id="adSubtitle" type="text" placeholder="Subtítulo / copy corto"
-                        maxlength="80" oninput="updateLivePreview()">
-                    <input class="gen-input" id="adPrecio" type="text" placeholder="Precio (ej. desde $850,000)"
-                        maxlength="40" oninput="updateLivePreview()">
-                    <input class="gen-input" id="adCta" type="text" placeholder="CTA (ej. ¡Aparta hoy!)" maxlength="40"
-                        value="¡Aparta hoy!" oninput="updateLivePreview()">
-
-                    <div class="gen-actions">
-                        <button class="btn-preview" id="btnPreview" onclick="updateLivePreview()">
-                            👁️ Previsualizar Anuncio
-                        </button>
-                        <button class="btn-ai" id="btnGenerateAI" onclick="generateAdAI()">
-                            ✨ Mejorar foto base con IA (Tarda ~15s)
-                        </button>
+            <div class="grid grid-2">
+                <!-- Daily Optimizer -->
+                <div class="card fade-in">
+                    <h3 class="card-title mb-1" style="display:flex; align-items:center; gap:0.5rem;">
+                        ☕ Optimizador Diario
+                    </h3>
+                    <div id="dailyAdviceContainer"
+                        style="font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">
+                        <!-- Injected via JS -->
+                        <div class="loading-state">Obteniendo análisis de hoy...</div>
                     </div>
                 </div>
 
-                <!-- RIGHT: Preview -->
-                <div>
-                    <label class="gen-label">Vista previa</label>
-                    <div class="canvas-preview-wrap">
-                        <div class="gen-spinner" id="genSpinner">
-                            <div class="spinner-ring"></div>
-                            <span id="spinnerMsg">Mejorando imagen con IA...</span>
-                        </div>
-                        <div class="canvas-placeholder" id="canvasPlaceholder">
-                            <div class="ph-icon">🖼️</div>
-                            <p>Configura el anuncio y presiona<br><strong>✨ Mejorar con IA y Previsualizar</strong></p>
-                        </div>
-                        <canvas id="adCanvas" style="display:none;"></canvas>
+                <!-- Tuesday Creative Workshop -->
+                <div class="card fade-in" id="tuesdayWorkshopCard" style="border: 1px solid var(--orange);">
+                    <h3 class="card-title mb-1"
+                        style="display:flex; align-items:center; gap:0.5rem; color:var(--orange);">
+                        🎨 Taller Creativo (Martes)
+                    </h3>
+                    <div id="tuesdayWorkshopContainer"
+                        style="font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">
+                        <p style="color:var(--text-muted); font-style:italic;">
+                            Este análisis profundo se genera todos los martes basándose en los mejores anuncios de los
+                            últimos 30 días.
+                        </p>
                     </div>
+                </div>
+            </div>
 
-                    <div class="gen-actions" style="margin-top:.75rem;">
-                        <button class="btn-download" id="btnDownload" onclick="downloadAd()">
-                            ⬇️ Descargar PNG
-                        </button>
+            <div class="card mt-2">
+                <h3 class="card-title mb-1">💡 ¿Cómo usar estas sugerencias?</h3>
+                <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1rem;">
+                    La IA analiza tus métricas reales de Facebook Ads (CTR, CPC, Leads) y te da una ruta de acción
+                    inmediata.
+                </p>
+                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:1rem;">
+                    <div style="background:rgba(255,255,255,0.05); padding:1rem; border-radius:8px;">
+                        <strong style="color:var(--green); display:block; margin-bottom:0.5rem;">Potenciar</strong>
+                        <span style="font-size:0.85rem;">Si la IA recomienda potenciar una campaña, considera aumentar
+                            su presupuesto un 10-15%.</span>
                     </div>
-
-                    <div style="margin-top:1rem;font-size:.75rem;color:var(--text-muted);line-height:1.6;">
-                        <strong>Nota legal:</strong> Todos los anuncios incluyen automáticamente:<br>
-                        • &quot;Imágenes de carácter ilustrativo&quot;<br>
-                        • &quot;Precios y promociones sujetas a cambios sin previo aviso&quot;
+                    <div style="background:rgba(255,255,255,0.05); padding:1rem; border-radius:8px;">
+                        <strong style="color:var(--orange); display:block; margin-bottom:0.5rem;">Revisar</strong>
+                        <span style="font-size:0.85rem;">Si una campaña está en "vigilancia", revisa sus creativos;
+                            quizás el arte ya se agotó.</span>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.05); padding:1rem; border-radius:8px;">
+                        <strong style="color:var(--blue-light); display:block; margin-bottom:0.5rem;">Nuevos
+                            Copys</strong>
+                        <span style="font-size:0.85rem;">Usa los martes para refrescar textos y probar las nuevas
+                            segmentaciones sugeridas.</span>
                     </div>
                 </div>
             </div>

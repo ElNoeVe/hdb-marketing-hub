@@ -12,17 +12,58 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderCampaigns(reportData.campanas);
     renderAIAdvice(reportData.analisis_ia);
     renderReportHistory();
-
-    // Setup filter tabs
-    document.querySelectorAll('#reportTabs .tab').forEach(tab => {
-      tab.addEventListener('click', () => {
-        document.querySelectorAll('#reportTabs .tab').forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        renderCampaigns(reportData.campanas, tab.getAttribute('data-filter'));
-      });
-    });
+    populateMonthFilter();
   }
 });
+
+let currentHealthFilter = 'all';
+
+function setHealthFilter(val) {
+  currentHealthFilter = val;
+  // Update UI tabs
+  document.querySelectorAll('#reportTabs .tab').forEach(t => {
+    t.classList.toggle('active', t.getAttribute('data-filter') === val);
+  });
+  applyFilters();
+}
+
+function applyFilters() {
+  if (!reportData) return;
+
+  const status = document.getElementById('filterStatus').value;
+  const month = document.getElementById('filterMonth').value;
+
+  const filtered = reportData.campanas.filter(c => {
+    // 1. Health Filter
+    const matchHealth = currentHealthFilter === 'all' || c.semaforo === currentHealthFilter;
+
+    // 2. Status Filter
+    const matchStatus = status === 'all' || c.estado === status;
+
+    // 3. Month Filter
+    let matchMonth = true;
+    if (month !== 'all') {
+      const [selYear, selMonth] = month.split('-');
+      const repDate = new Date(reportData.fecha_generacion);
+      matchMonth = (repDate.getFullYear() == selYear && (repDate.getMonth() + 1) == selMonth);
+    }
+
+    return matchHealth && matchStatus && matchMonth;
+  });
+
+  renderCampaigns(filtered, 'bypass');
+}
+
+function populateMonthFilter() {
+  const select = document.getElementById('filterMonth');
+  if (!select || !reportData) return;
+  const d = new Date(reportData.fecha_generacion);
+  const m = d.getMonth() + 1;
+  const y = d.getFullYear();
+  const val = `${y}-${m}`;
+  const label = d.toLocaleDateString('es-MX', { month: 'long', year: 'numeric' });
+  select.innerHTML = `<option value="all">Cualquier fecha</option><option value="${val}">${label}</option>`;
+}
 
 async function loadLatestReport() {
   try {
@@ -161,14 +202,14 @@ function getSampleData() {
 function renderSummary(resumen) {
   // Use correct element IDs from index.html
   const elImpressions = document.getElementById('totalImpressions');
-  const elClicks     = document.getElementById('totalClicks');
-  const elSpend      = document.getElementById('totalSpend');
-  const elResults    = document.getElementById('avgCPR');
+  const elClicks = document.getElementById('totalClicks');
+  const elSpend = document.getElementById('totalSpend');
+  const elResults = document.getElementById('avgCPR');
 
   if (elImpressions) elImpressions.textContent = formatNumber(resumen.impresiones_totales);
-  if (elClicks)      elClicks.textContent      = formatNumber(resumen.clics_totales);
-  if (elSpend)       elSpend.textContent       = '$' + formatNumber(Math.round(resumen.gasto_total));
-  if (elResults)     elResults.textContent     = formatNumber((resumen.leads_totales || 0) + (resumen.mensajes_totales || 0));
+  if (elClicks) elClicks.textContent = formatNumber(resumen.clics_totales);
+  if (elSpend) elSpend.textContent = '$' + formatNumber(Math.round(resumen.gasto_total));
+  if (elResults) elResults.textContent = formatNumber((resumen.leads_totales || 0) + (resumen.mensajes_totales || 0));
 
   // Update last-update label
   const lastUpdateEl = document.getElementById('lastUpdate');
@@ -183,12 +224,12 @@ function renderSummary(resumen) {
 function renderCampaigns(campanas, filter = 'all') {
   const grid = document.getElementById('campaignGrid');
 
-  const filtered = filter === 'all'
+  const filtered = (filter === 'all')
     ? campanas
-    : campanas.filter(c => c.semaforo === filter);
+    : (filter === 'bypass' ? campanas : campanas.filter(c => c.semaforo === filter));
 
   if (filtered.length === 0) {
-    grid.innerHTML = `<div class="empty-state"><div class="empty-state-icon">📊</div><p class="empty-state-text">No hay campañas con este filtro.</p></div>`;
+    grid.innerHTML = `<div class="card p-2 text-center" style="grid-column: 1 / -1;"><div style="font-size:3rem;margin-bottom:1rem;">📊</div><p>No hay campañas que coincidan con estos filtros.</p></div>`;
     return;
   }
 
