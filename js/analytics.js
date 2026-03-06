@@ -97,8 +97,7 @@ const Analytics = {
         const payload = {
             event: event,
             timestamp: new Date().toISOString(),
-            metadata: metadata,
-            app_version: window.location.pathname.includes('/lite') ? 'Lite' : 'Principal'
+            metadata: metadata
         };
 
         console.log("📡 Enviando evento:", payload);
