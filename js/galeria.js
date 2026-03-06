@@ -275,7 +275,7 @@ function renderModels(modelos, filter = 'all') {
             <span>🏗️ ${model.niveles} nivel${model.niveles > 1 ? 'es' : ''}</span>
           </div>
           
-          <div class="gallery-card-price">${formatCurrency(model.precio)}</div>
+          <div class="gallery-card-price">Desde: ${formatCurrency(model.precio)}</div>
           
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:var(--space-sm);font-size:0.8rem;color:var(--text-secondary);">
             <div>📝 Gastos: <strong>${model.gastos_adicionales}</strong></div>

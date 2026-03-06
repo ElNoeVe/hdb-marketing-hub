@@ -3,14 +3,14 @@
 // Fuentes: Infonavit.org.mx, FOVISSSTE, Banxico
 // ===================================
 
-// Datos oficiales 2025
+// Datos oficiales Marzo 2026
 const CALC_DATA = {
-    UMA_DIARIA: 108.57,           // UMA 2025 (INEGI)
-    UMA_MENSUAL: 108.57 * 30.4,   // ~3,300 MXN/mes
-    SMG_DIARIO: 278.80,           // Salario Mínimo General 2025 (CONASAMI)
-    SMG_MENSUAL: 278.80 * 30.4,   // ~8,476 MXN/mes
+    UMA_DIARIA: 117.31,           // UMA 2026 (INEGI)
+    UMA_MENSUAL: 117.31 * 30.4,   // ~3,566 MXN/mes
+    SMG_DIARIO: 315.04,           // Salario Mínimo General 2026 (CONASAMI)
+    SMG_MENSUAL: 315.04 * 30.4,   // ~9,577 MXN/mes
 
-    // Tabla Infonavit: [VSM mínimo, VSM máximo, tasa anual %]
+    // Tabla Infonavit 2026: [VSM mínimo, VSM máximo, tasa anual %]
     INFONAVIT_TASAS: [
         [1.0, 1.6, 1.90],
         [1.6, 2.0, 2.06],
@@ -31,19 +31,18 @@ const CALC_DATA = {
         [15.0, 999, 10.45],
     ],
 
-    // Infonavit 2025: límite máximo absoluto del crédito (pesos corrientes)
-    // Fuente: INFONAVIT / DOF 2025
-    INFONAVIT_MAX_CREDITO: 2830672,
+    // Infonavit 2026: límite máximo absoluto del crédito
+    INFONAVIT_MAX_CREDITO: 2950000,
 
-    // FOVISSSTE: tasa fija 6% anual, plazo hasta 30 años, tope ~1.5M
+    // FOVISSSTE: tasa fija 6% anual, plazo hasta 30 años
     FOVISSSTE_TASA: 6.0,
-    FOVISSSTE_MAX: 1500000,
+    FOVISSSTE_MAX: 1650000,
 
-    // Bancario: promedio ponderado 2025 (BBVA ~9.85%, Banorte ~10.5%) → usamos 10%
-    BANCARIO_TASA: 10.0,
+    // Bancario: promedio ponderado 2026
+    BANCARIO_TASA: 10.5,
     BANCARIO_PLAZOS: [10, 15, 20, 30],
 
-    // Enganche mínimo: 10% del valor de la propiedad
+    // Enganche mínimo bancario: 10%
     ENGANCHE_MIN_PCT: 10,
 };
 
@@ -107,53 +106,52 @@ function calcularCredito() {
     let html = '';
 
     if (tipo === 'infonavit') {
-        const { credito, tasa, vsm, maxMensualidad } = calcCreditoInfonvait(salario);
-        // Lo que realmente puede aplicar a esta propiedad
-        const montoNeeded = precioPropiedad - enganche;
-        const creditoEfectivo = Math.min(credito, montoNeeded);
-        const complemento = Math.max(0, montoNeeded - creditoEfectivo);
-        const mensualidad = calcMensualidad(creditoEfectivo, tasa, 30);
+        const precalificacion = salario; // En este modo el input de "salario" es la precalculada
+        const alcanzA_100 = precalificacion >= precioPropiedad;
+        const creditoAplicado = Math.min(precalificacion, precioPropiedad);
+        const complemento = Math.max(0, precioPropiedad - precalificacion);
 
-        const vsmLabel = vsm.toFixed(1);
-        const alcanza = complemento === 0;
+        // Estimar mensualidad (En Infonavit suele ser el 30% del salario base, 
+        // pero como ahora ingresan precalificación, calculamos una mensualidad 
+        // estándar sobre el monto aplicado con la tasa máxima para ser conservadores)
+        const mensualidad = calcMensualidad(creditoAplicado, 10.45, 30);
 
         html = renderResultCard({
             titulo: '🏛️ Crédito Infonavit',
             items: [
-                { label: 'Tu salario en VSM', value: `${vsmLabel} veces s. mínimo`, highlight: false },
-                { label: 'Tasa de interés Infonavit', value: `${tasa.toFixed(2)}% anual (tablas oficiales)`, highlight: false },
-                { label: 'Capacidad de crédito estimada', value: formatCurrencyCalc(credito), highlight: true },
-                { label: 'Crédito a aplicar a esta propiedad', value: formatCurrencyCalc(creditoEfectivo), highlight: true },
-                { label: 'Enganche mínimo (10%)', value: formatCurrencyCalc(enganche), highlight: false },
-                { label: 'Complemento con ahorro / cofinanciam.', value: formatCurrencyCalc(complemento), highlight: complemento > 0 },
+                { label: 'Monto de tu precalificación', value: formatCurrencyCalc(precalificacion), highlight: true },
+                { label: 'Tasa de interés Infonavit', value: `Hasta 10.45% anual (según nivel)`, highlight: false },
+                { label: 'Crédito aplicado a la propiedad', value: formatCurrencyCalc(creditoAplicado), highlight: true },
+                { label: 'Complemento necesario', value: formatCurrencyCalc(complemento), highlight: complemento > 0 },
                 { label: 'Mensualidad estimada', value: formatCurrencyCalc(mensualidad) + '/mes (30 años)', highlight: true },
             ],
-            advertencia: alcanza
-                ? '✅ Tu crédito es suficiente para esta propiedad. ¡Agenda una cita con un asesor!'
-                : `ℹ️ Infonavit cubre $${formatCurrencyCalc(creditoEfectivo)} de los $${formatCurrencyCalc(montoNeeded)} necesarios. Los $${formatCurrencyCalc(complemento)} restantes pueden cubrirse con cofinanciamiento bancario, ahorros o apoyo familiar. Esto es muy común y viable.`,
-            positivo: alcanza
+            advertencia: alcanzA_100
+                ? '✅ ¡Felicidades! Tu crédito Infonavit cubre el 100% del valor de esta propiedad. ¡Agenda una cita para iniciar el trámite!'
+                : `ℹ️ Tu precalificación cubre $${formatCurrencyCalc(creditoAplicado)}. Los $${formatCurrencyCalc(complemento)} restantes pueden cubrirse con ahorros o cofinanciamiento bancario. ¡Es una opción muy común y viable!`,
+            positivo: alcanzA_100
         });
 
     } else if (tipo === 'fovissste') {
-        const montoNeeded = precioPropiedad - enganche;
-        const prestamo = Math.min(montoNeeded, CALC_DATA.FOVISSSTE_MAX);
-        const complemento = Math.max(0, montoNeeded - prestamo);
-        const mensualidad = calcMensualidad(prestamo, CALC_DATA.FOVISSSTE_TASA, plazo);
+        const precalificacion = salario;
+        const alcanzA_100 = precalificacion >= precioPropiedad;
+        const creditoAplicado = Math.min(precalificacion, precioPropiedad);
+        const complemento = Math.max(0, precioPropiedad - precalificacion);
+        const mensualidad = calcMensualidad(creditoAplicado, CALC_DATA.FOVISSSTE_TASA, plazo);
 
         html = renderResultCard({
             titulo: '🏛️ Crédito FOVISSSTE',
             items: [
+                { label: 'Monto de tu precalificación', value: formatCurrencyCalc(precalificacion), highlight: true },
                 { label: 'Tasa de interés fija', value: CALC_DATA.FOVISSSTE_TASA + '% anual', highlight: false },
                 { label: 'Plazo seleccionado', value: `${plazo} años`, highlight: false },
-                { label: 'Enganche mínimo (10%)', value: formatCurrencyCalc(enganche), highlight: false },
-                { label: 'Monto del crédito FOVISSSTE', value: formatCurrencyCalc(prestamo), highlight: true },
-                { label: 'Complemento con cofinanciam. / ahorro', value: formatCurrencyCalc(complemento), highlight: complemento > 0 },
+                { label: 'Crédito aplicado a la propiedad', value: formatCurrencyCalc(creditoAplicado), highlight: true },
+                { label: 'Complemento necesario', value: formatCurrencyCalc(complemento), highlight: complemento > 0 },
                 { label: 'Mensualidad estimada', value: formatCurrencyCalc(mensualidad) + '/mes', highlight: true },
             ],
-            advertencia: complemento > 0
-                ? `ℹ️ FOVISSSTE tiene un tope de $1,500,000. Los $${formatCurrencyCalc(complemento)} restantes se pueden cubrir con cofinanciamiento bancario. Consulta con un asesor el esquema "Alia2" (FOVISSSTE + banco).`
-                : '✅ Tu crédito FOVISSSTE cubre esta propiedad. Requiere cotización mínima de 18 bimestres.',
-            positivo: true
+            advertencia: alcanzA_100
+                ? '✅ Tu crédito FOVISSSTE cubre el 100% de esta propiedad. ¡Excelente oportunidad!'
+                : `ℹ️ Tu crédito cubre $${formatCurrencyCalc(creditoAplicado)}. Los $${formatCurrencyCalc(complemento)} restantes se pueden cubrir con el esquema "Alia2" (FOVISSSTE + banco).`,
+            positivo: alcanzA_100
         });
 
     } else { // bancario
