@@ -39,15 +39,17 @@ function applyFilters() {
     // 2. Status Filter
     const matchStatus = status === 'all' || c.estado === status;
 
-    // 3. Month Filter (Now using campaign start date)
+    // 3. Month Filter (Now using campaign start date with fallback)
     let matchMonth = true;
     if (month !== 'all') {
-      if (c.fecha_inicio) {
-        const [selYear, selMonth] = month.split('-');
-        const camDate = new Date(c.fecha_inicio);
+      const [selYear, selMonth] = month.split('-');
+      // Use campaign date if available, otherwise fallback to report date
+      const dateToUse = c.fecha_inicio || reportData.fecha_generacion;
+
+      if (dateToUse) {
+        const camDate = new Date(dateToUse);
         matchMonth = (camDate.getFullYear() == selYear && (camDate.getMonth() + 1) == selMonth);
       } else {
-        // Fallback: If no start date, it doesn't match a specific month filter
         matchMonth = false;
       }
     }

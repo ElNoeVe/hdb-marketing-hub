@@ -13,7 +13,7 @@ async function fetchFacebookData() {
     console.log('📊 Obteniendo datos de Facebook Ads...');
 
     // 1. Fetch campaigns (filter for ACTIVE to ensure all relevant are grabbed)
-    const campaignsUrl = `${BASE_URL}/act_${FB_AD_ACCOUNT_ID}/campaigns?fields=id,name,status,objective,start_time,daily_budget,lifetime_budget&filtering=[{field:"effective_status",operator:"IN",value:["ACTIVE","PAUSED"]}]&limit=100&access_token=${FB_ACCESS_TOKEN}`;
+    const campaignsUrl = `${BASE_URL}/act_${FB_AD_ACCOUNT_ID}/campaigns?fields=id,name,status,objective,start_time,created_time,daily_budget,lifetime_budget&filtering=[{field:"effective_status",operator:"IN",value:["ACTIVE","PAUSED"]}]&limit=100&access_token=${FB_ACCESS_TOKEN}`;
     const campaignsRes = await fetch(campaignsUrl);
     const campaignsData = await campaignsRes.json();
 
@@ -107,7 +107,7 @@ async function fetchFacebookData() {
             nombre: campaign.name,
             estado: campaign.status,
             objetivo: campaign.objective,
-            fecha_inicio: campaign.start_time,
+            fecha_inicio: campaign.start_time || campaign.created_time,
             presupuesto_diario: campaign.daily_budget ? parseFloat(campaign.daily_budget) / 100 : null,
             presupuesto_total: campaign.lifetime_budget ? parseFloat(campaign.lifetime_budget) / 100 : null,
             semaforo,
