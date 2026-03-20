@@ -1,0 +1,3696 @@
+{
+  "fecha_generacion": "2026-03-20T03:29:48.222Z",
+  "es_martes": false,
+  "periodo": "Últimos 30 días",
+  "total_campanas": 65,
+  "total_anuncios": 94,
+  "resumen": {
+    "gasto_total": 3164.62,
+    "impresiones_totales": 128579,
+    "clics_totales": 1795,
+    "leads_totales": 1,
+    "mensajes_totales": 47
+  },
+  "campanas": [
+    {
+      "id": "120241897341460263",
+      "nombre": "Noe/Hacienda del Bosque/Interaccion/messenger",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2026-03-05T19:29:47-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "amarillo",
+      "metricas": {
+        "impresiones": 14588,
+        "clics": 221,
+        "gasto": 333.88,
+        "cpc": 1.510769,
+        "cpm": 22.887305,
+        "ctr": 1.514944,
+        "alcance": 10121,
+        "frecuencia": 1.44136,
+        "leads": 0,
+        "mensajes": 3,
+        "link_clicks": 148,
+        "costo_por_resultado": 111.293333
+      },
+      "anuncios": [
+        {
+          "id": "120241897582930263",
+          "nombre": "Pino 3",
+          "estado": "PAUSED",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/647574171_122124936921122721_2377271795189330482_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeHy_xLu9o1RA8_Sqj0qPHWPcByhYuz-bx1wHKFi7P5vHR_NckOMe0bUSl6nMZ5aEEBgg8hTsNPliKzyWHxzgNdX&_nc_ohc=D5ASy6akAasQ7kNvwEgdNg4&_nc_oc=AdrDHeoNzHuecqDVu-zpoLXxx_16rH3AU6LwETlksA18zP1ZDEmILVujfPxCEhWKco0&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=a7GWumZFzg3lNg0fOrMG7g&_nc_tpa=Q5bMBQGz91_k5e_vY1OKE1f51Aqwtmd2-un33dfHJMetejstNSZKeu9pda-7gt0UeBgAi4dCxwZxVJhF&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfylvbTvrAWxVTQWYDoVKyqXyMLRtJ_e3fNMAcEqTOygrQ&oe=69C2A2FC",
+            "id": "1613948306726449"
+          },
+          "metricas": {
+            "impresiones": 6118,
+            "clics": 86,
+            "gasto": 125.35,
+            "cpc": 1.457558,
+            "cpm": 20.488722,
+            "ctr": 1.405688,
+            "alcance": 4594,
+            "leads": 0,
+            "mensajes": 2,
+            "costo_por_resultado": 62.675
+          }
+        },
+        {
+          "id": "120241897521990263",
+          "nombre": "Pino 2",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/648141839_122124936333122721_3363259711356325118_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeG7O8iqbtwFQPRDV-3dulhAlwgIYKE1h6CXCAhgoTWHoHw8gTU8NSTvH2PzREzaiSVoDgKrDmvx9HDJU9ekG3tz&_nc_ohc=vlxerRYdga4Q7kNvwFYjp4o&_nc_oc=AdpedDgyvk7YKrejKFCX-5znZS3dHzAtjaaPFwIA5cveP3fs2pxlaTRT89kRGOxVUp0&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=a7GWumZFzg3lNg0fOrMG7g&_nc_tpa=Q5bMBQGrruyfgHq1r1J8SSEYFtPxHxEVoikSrGPqtHee-OgoMX9gryBt9jLnN4ZpUEjouKsxJEmsqf_F&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxO-z0-MQcFPPnrN3psDjLWOY7D08Bu_3aFdyTahqawvA&oe=69C29AA8",
+            "id": "1333294485491769"
+          },
+          "metricas": {
+            "impresiones": 2234,
+            "clics": 41,
+            "gasto": 42.42,
+            "cpc": 1.034634,
+            "cpm": 18.988362,
+            "ctr": 1.835273,
+            "alcance": 1922,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120241897635780263",
+          "nombre": "CITRINO Espacios",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/645670688_122124939003122721_8377832804485985645_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeHM9qhRt9ZMOvOuMjdCUIMboBlgmZo3Z6igGWCZmjdnqNXHlVsjiVjF6s58VRcQCujef-h98yHaPnCS-QxCp2Oi&_nc_ohc=JHx_fwVuwMEQ7kNvwHRBker&_nc_oc=Adrj4tx1S5F6Hv4paJ0v2ycGSLrFKLPHZAYzKR9MdNYVA7dTPPsfqNuIQTJ778ewaY0&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=a7GWumZFzg3lNg0fOrMG7g&_nc_tpa=Q5bMBQHuf35NEltOVb_lo00gruPvv8Q_JbSqMf2wG6_yry4zrXnUXHpThlw6JJJSasPa2B9uy6ukBsCK&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzPaq0WcjHv9Pm__e3v7h_6nSKzkYBvkBEBjHI4Xgya5Q&oe=69C27ECE",
+            "id": "1239190074967652"
+          },
+          "metricas": {
+            "impresiones": 5403,
+            "clics": 82,
+            "gasto": 154.29,
+            "cpc": 1.881585,
+            "cpm": 28.556358,
+            "ctr": 1.517675,
+            "alcance": 3681,
+            "leads": 0,
+            "mensajes": 1,
+            "costo_por_resultado": 154.29
+          }
+        },
+        {
+          "id": "120241897341440263",
+          "nombre": "Pino 1",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/647855004_122124935829122721_186809399939427649_n.png?_nc_cat=102&ccb=1-7&_nc_eui2=AeFd2IZPmDJd0pTlaEjhIy6iuUi1GfjMUd65SLUZ-MxR3gtv4Z3kPaiuaNSEEyYvnZDZTK6Lilsqz9mt8-olFAcR&_nc_ohc=5e2CXV3-WacQ7kNvwHRDX2I&_nc_oc=AdpLOy8FqKFUPefsXUZzVVUT8o72ECLi3RNgPeDdy-TpJyIgPrmWFgdmnitmULV4Rjg&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=a7GWumZFzg3lNg0fOrMG7g&_nc_tpa=Q5bMBQGUOdrypnIOh_PQCxm6A46xaPEF7FjDxzujpLntQbfHJCRVhEZ33bDczIeOn4_1FEa7VpUq9CHn&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afzj4r-o3RXOFIlOzlbNN59VCX2s35ZWMqZy8e3cdLpYgw&oe=69C28B29",
+            "id": "4450085188548152"
+          },
+          "metricas": {
+            "impresiones": 833,
+            "clics": 12,
+            "gasto": 11.82,
+            "cpc": 0.985,
+            "cpm": 14.189676,
+            "ctr": 1.440576,
+            "alcance": 769,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120241671965280263",
+      "nombre": "CITRINO BONO TEMPORAL",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2026-03-02T12:43:55-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "amarillo",
+      "metricas": {
+        "impresiones": 32940,
+        "clics": 604,
+        "gasto": 743.05,
+        "cpc": 1.230215,
+        "cpm": 22.557681,
+        "ctr": 1.833637,
+        "alcance": 11590,
+        "frecuencia": 2.842105,
+        "leads": 0,
+        "mensajes": 1,
+        "link_clicks": 196,
+        "costo_por_resultado": 743.05
+      },
+      "anuncios": [
+        {
+          "id": "120241671965300263",
+          "nombre": "CITRINO BONO TEMPORAL",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/644456495_122124053889122721_4924174942112835684_n.png?_nc_cat=107&ccb=1-7&_nc_eui2=AeHv8MGKxN-U7g4HTYxlRUUXemFXZ5L9iNp6YVdnkv2I2j5R5IzZPEEwZthfvFHxEA1JhAmHkmu4xUwj1U5e8OY8&_nc_ohc=qtVL8F0V0EkQ7kNvwGD104Z&_nc_oc=AdoCzc7EEQ788OdvLpz4uT-APQska-frli54qTkh8bcm7C-ZepO4kLMArBE4el7tS5c&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=eqoEVtOgsFwWSgsiTyY_NA&_nc_tpa=Q5bMBQH-njvaVKKpr3HwERwylLh2WCr2UnXvPouOJPetzLc8r1L8kNN921EKtZ-XBVsngp2f6EBIX3xo&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxU6DcuWLr3a5NhJfjfP9p8vQLDfptfsVI6G9Pyun0UEQ&oe=69C279E8",
+            "id": "1855630515826282"
+          },
+          "metricas": {
+            "impresiones": 32940,
+            "clics": 604,
+            "gasto": 743.05,
+            "cpc": 1.230215,
+            "cpm": 22.557681,
+            "ctr": 1.833637,
+            "alcance": 11590,
+            "leads": 0,
+            "mensajes": 1,
+            "costo_por_resultado": 743.05
+          }
+        }
+      ]
+    },
+    {
+      "id": "120241445699910263",
+      "nombre": "Campaña citrino formulario",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_LEADS",
+      "fecha_inicio": "2026-02-27T13:08:40-0600",
+      "presupuesto_diario": 50,
+      "presupuesto_total": null,
+      "semaforo": "rojo",
+      "metricas": {
+        "impresiones": 5761,
+        "clics": 39,
+        "gasto": 151.94,
+        "cpc": 3.895897,
+        "cpm": 26.373893,
+        "ctr": 0.676966,
+        "alcance": 5323,
+        "frecuencia": 1.082284,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 31,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120241445699900263",
+          "nombre": "CITRINO DESDE $1,790,000",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/644456495_122124053889122721_4924174942112835684_n.png?_nc_cat=107&ccb=1-7&_nc_eui2=AeHv8MGKxN-U7g4HTYxlRUUXemFXZ5L9iNp6YVdnkv2I2j5R5IzZPEEwZthfvFHxEA1JhAmHkmu4xUwj1U5e8OY8&_nc_ohc=qtVL8F0V0EkQ7kNvwGD104Z&_nc_oc=AdoCzc7EEQ788OdvLpz4uT-APQska-frli54qTkh8bcm7C-ZepO4kLMArBE4el7tS5c&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=OG7gzQAOlhneDld4FLVb5g&_nc_tpa=Q5bMBQHsDC6jSo5vjGUyl36slxuOcZeUy3-ffgPLqF3vUO-mO1VBPV8hmrZjcSP1sVIeCW0yYusmute3&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzmnQ2odqBDvo1aw2aQIKCNf5sIU0uRfV3UyEwAkPCVCA&oe=69C279E8",
+            "id": "1358435316049923"
+          },
+          "metricas": {
+            "impresiones": 5761,
+            "clics": 39,
+            "gasto": 151.94,
+            "cpc": 3.895897,
+            "cpm": 26.373893,
+            "ctr": 0.676966,
+            "alcance": 5323,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120241329315600263",
+      "nombre": "SEGMEN FAMILIAS JOVENES",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2026-02-25T16:33:49-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "amarillo",
+      "metricas": {
+        "impresiones": 9129,
+        "clics": 128,
+        "gasto": 239.62,
+        "cpc": 1.872031,
+        "cpm": 26.24822,
+        "ctr": 1.402125,
+        "alcance": 4894,
+        "frecuencia": 1.865345,
+        "leads": 0,
+        "mensajes": 1,
+        "link_clicks": 95,
+        "costo_por_resultado": 239.62
+      },
+      "anuncios": [
+        {
+          "id": "120241329315620263",
+          "nombre": "FAMILIAS JOVENES",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/642715561_122123786409122721_6718613510066141858_n.png?_nc_cat=109&ccb=1-7&_nc_eui2=AeG6Z70ffmL9zfmHNpljW01r9UhbsUxT-uL1SFuxTFP64twDf3cvDqsgfOGZhSfqiqqsxcWkpPXm7Mhdy5hy7Cai&_nc_ohc=F7YclvnmkNoQ7kNvwEwB1HG&_nc_oc=AdpgucWnb7mSywoMYmQRUx38fCmiTBHC3WNVV_6CopZ7cZPsiObiKz3gOUHWEJSFGcA&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=0OxRblxcJ02jDzjvKH-8pg&_nc_tpa=Q5bMBQEYkqMXJwzCapW6kaiOuFXlKNJgjFmS2ucqSNpb0A7HznE3VRwtDHYIAZP3K_0NpscpQu0K64nI&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afz14AY7FR0s9PrcElGqABcsSNRyzoKXBKnGMDQwfJVV7Q&oe=69C29D3B",
+            "id": "801108972360452"
+          },
+          "metricas": {
+            "impresiones": 9129,
+            "clics": 128,
+            "gasto": 239.62,
+            "cpc": 1.872031,
+            "cpm": 26.24822,
+            "ctr": 1.402125,
+            "alcance": 4894,
+            "leads": 0,
+            "mensajes": 1,
+            "costo_por_resultado": 239.62
+          }
+        }
+      ]
+    },
+    {
+      "id": "120241327395410263",
+      "nombre": "segematación Z",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2026-02-25T14:39:38-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "amarillo",
+      "metricas": {
+        "impresiones": 10039,
+        "clics": 144,
+        "gasto": 240.39,
+        "cpc": 1.669375,
+        "cpm": 23.945612,
+        "ctr": 1.434406,
+        "alcance": 6915,
+        "frecuencia": 1.451772,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 96,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120241327395390263",
+          "nombre": "Segemento Z",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/638850173_122123775747122721_4529626426288134043_n.png?_nc_cat=107&ccb=1-7&_nc_eui2=AeEcdV_nJqN188mwny15vwge8nZ2jtn0owfydnaO2fSjB5oMUnX3wZkZHtPSWLtvjPh2o0eVUTIqEjodFQcg1KvG&_nc_ohc=lVBWCAhppToQ7kNvwFyNA9Y&_nc_oc=AdpZAz5XU2TaGs4ehVl6xUdaYqgeOc5yL4uFtCL1ZVo87OLjkEgZkO-R8MPNSQUlofA&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=4Yzi6a6jOKLUzV4s8uzymw&_nc_tpa=Q5bMBQGWUDM6sd14Ndr97o47fzVKnyExCdJbtcYphS9hg5LaGKBwvrvSJgCVYtGp2nBEie9auLkwhZwJ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzMKLNTh8i5TFSiyi_mTgHM_gfq8AArVAR-P3m1KSCh_g&oe=69C28EEB",
+            "id": "2332411410579414"
+          },
+          "metricas": {
+            "impresiones": 10039,
+            "clics": 144,
+            "gasto": 240.39,
+            "cpc": 1.669375,
+            "cpm": 23.945612,
+            "ctr": 1.434406,
+            "alcance": 6915,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120241139411420263",
+      "nombre": "Nueva campaña de Interacción",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2026-02-21T17:00:00-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 12531,
+        "clics": 270,
+        "gasto": 301.8,
+        "cpc": 1.117778,
+        "cpm": 24.084271,
+        "ctr": 2.154656,
+        "alcance": 10465,
+        "frecuencia": 1.19742,
+        "leads": 0,
+        "mensajes": 9,
+        "link_clicks": 110,
+        "costo_por_resultado": 33.533333
+      },
+      "anuncios": [
+        {
+          "id": "120241139825570263",
+          "nombre": "VIDEO PINO",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t15.5256-10/637106777_1803694816964489_7038914583275365536_n.jpg?_nc_cat=105&ccb=1-7&_nc_eui2=AeFeBvKKdswGOURQrYtwnnlwQLqhOi4WK7xAuqE6LhYrvK4lmb7zd3uphgC8uxQxAoaCQbetXvXGXr33w1VwmW3s&_nc_ohc=RmTx0YwoKW8Q7kNvwF-04lx&_nc_oc=AdrNuXcqhCC8FvSPjeMOpeeoNSp0UhhV5TEU6f0rBGzgCACY3UuwyMkkSLUfCVho2H8&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=MPmjMeIxeXUfX2Yt-Llp_Q&_nc_tpa=Q5bMBQFypWg0NcGe1ijnQq2JcPAl0RklSHrhZ6gJtiblYKWXGCFyH-USnlD2_eKsvuMNhfBIE09bJgMu&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfzfkNI5N7KbCRR1GYDFyE0K9Ruaub6krdnQauseDmBckQ&oe=69C282BE",
+            "id": "1618211595749554"
+          },
+          "metricas": {
+            "impresiones": 640,
+            "clics": 16,
+            "gasto": 18.73,
+            "cpc": 1.170625,
+            "cpm": 29.265625,
+            "ctr": 2.5,
+            "alcance": 540,
+            "leads": 0,
+            "mensajes": 1,
+            "costo_por_resultado": 18.73
+          }
+        },
+        {
+          "id": "120241139411400263",
+          "nombre": "SENTIMIENTO",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/636405868_122122945419122721_5369877500307556741_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeHzo65xOi25AR8JoNmDoRqchmqfQhiOoR-Gap9CGI6hH56zNU1vTQ5LS5-YR8DGxYygacgewlvteDpgDOJyj2eA&_nc_ohc=bHyUEdaVtEUQ7kNvwF4moCI&_nc_oc=AdpYRFhbNEEtYWl0vo6ZG_M6azR5CF_YL602QBgOodgkFqnoTNcZu0zJPrv3d5KqirM&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=MPmjMeIxeXUfX2Yt-Llp_Q&_nc_tpa=Q5bMBQEahtKYIaMsM1mxyt7U5yFqy9is0rRqt13-V31TQCYVQIiSYdp2PTDYq3VhclLOX75UCKQfgWn_&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afx8LzskfnOqK0I44KpZZ43lph2wbtLnVkcCzCct53b48A&oe=69C27747",
+            "id": "4283979881838152"
+          },
+          "metricas": {
+            "impresiones": 11477,
+            "clics": 249,
+            "gasto": 277.27,
+            "cpc": 1.113534,
+            "cpm": 24.158752,
+            "ctr": 2.169557,
+            "alcance": 9527,
+            "leads": 0,
+            "mensajes": 8,
+            "costo_por_resultado": 34.65875
+          }
+        },
+        {
+          "id": "120241139795950263",
+          "nombre": "TECNICO PINO",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/638407476_122122946727122721_6218732383460672263_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeGFdcbU_LqjkxSiFQjG1n4ARsrI-MxVoThGysj4zFWhOHaIFNa4k44INY0xdumACqRYA0VUE9GfaTcnW9UpjYEO&_nc_ohc=QsScGsJp0iQQ7kNvwGJ1DGh&_nc_oc=AdoVazP1lhL5avQSpn0H7ESoqh7azy034hvRiqGYw6wuHbsd2JnKBUfp2YGe7DA0wKo&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=MPmjMeIxeXUfX2Yt-Llp_Q&_nc_tpa=Q5bMBQHDsOR0DwNt7TtZo78A3lBtJqSOz4gR-zPS4FDYfTT5bScvR4CR-hKd2YZjdJaUlCP5nQmo8oW8&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyOCAqJKxA52Ew6acQfgHuWS40XW_MEmyabzCJJ7qkqsw&oe=69C2AC76",
+            "id": "1990059344881271"
+          },
+          "metricas": {
+            "impresiones": 414,
+            "clics": 5,
+            "gasto": 5.8,
+            "cpc": 1.16,
+            "cpm": 14.009662,
+            "ctr": 1.207729,
+            "alcance": 400,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120240783038070263",
+      "nombre": "Noé/Haciendas del Bosque/Interacción/Messenger",
+      "estado": "ACTIVE",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2026-02-13T00:00:00-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "rojo",
+      "metricas": {
+        "impresiones": 43591,
+        "clics": 389,
+        "gasto": 1153.94,
+        "cpc": 2.966427,
+        "cpm": 26.471978,
+        "ctr": 0.892386,
+        "alcance": 28400,
+        "frecuencia": 1.534894,
+        "leads": 1,
+        "mensajes": 33,
+        "link_clicks": 297,
+        "costo_por_resultado": 1153.94
+      },
+      "anuncios": [
+        {
+          "id": "120240783038060263",
+          "nombre": "Fachada01",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/633318627_122121571803122721_7925372022172452642_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeHrHC5TfFOxB85M7oZzPEJAI3Kl4nUSP6cjcqXidRI_pw1m-lMyjPEZgo5hMsgjQZrgjjm82ahiB5EVbGEJCEef&_nc_ohc=kWpm4cPYNJcQ7kNvwGHVQEI&_nc_oc=Adq9AB0NtDYOYjU9cK_07jOeat2q-8KjFcIpNMhkkNUX5tYnqVgVd1gxLq1ocmHf3DI&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=cc-fnnzd856PAlqre8T7_A&_nc_tpa=Q5bMBQG6Ubgy7dvd1NqZkVo9AEMUo4WS3M3RyJtGMXzG1sBOgBzg8ZklFTOTy461C_ilz4hdkQZF-wb7&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfybadlSwDtYqMj2r42UHwX6VHXl5WWD7IzAvct7xoiGrw&oe=69C2894D",
+            "id": "1320387113285451"
+          },
+          "metricas": {
+            "impresiones": 19241,
+            "clics": 209,
+            "gasto": 615.37,
+            "cpc": 2.944354,
+            "cpm": 31.982225,
+            "ctr": 1.086222,
+            "alcance": 14498,
+            "leads": 0,
+            "mensajes": 20,
+            "costo_por_resultado": 30.7685
+          }
+        },
+        {
+          "id": "120240785476270263",
+          "nombre": "Fachada02",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/628231340_122121571767122721_6825391092143567191_n.png?_nc_cat=109&ccb=1-7&_nc_eui2=AeEHrdUJrNAnpl27g7jkUxT0CMJvza2FeisIwm_NrYV6K3zsAkJ80uNMM1FUYiQ4vS8wm8T3fhTvm4sYJ3YFyvVF&_nc_ohc=iorLgHqJzpgQ7kNvwF9GDPa&_nc_oc=Adr6lBbebVS71Fa_dZUEebFdMUJYzCesiB0DIVJphuwq-Lrpr_i_3pWBoREhWf3arKc&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=cc-fnnzd856PAlqre8T7_A&_nc_tpa=Q5bMBQGWjxmkIaQRNCJ1xwUcZdwZkbKHN_9rZVcNqzUYa1yAp9G1Fq_8C85-b5HQpP2fFQeFzVJ10942&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afw6xxedA50TcSNbSgB0CZKlvZj5SJbSPU0Hdzs92__leQ&oe=69C2920D",
+            "id": "929939432826886"
+          },
+          "metricas": {
+            "impresiones": 17725,
+            "clics": 159,
+            "gasto": 373.97,
+            "cpc": 2.352013,
+            "cpm": 21.098449,
+            "ctr": 0.897038,
+            "alcance": 11197,
+            "leads": 1,
+            "mensajes": 10,
+            "costo_por_resultado": 373.97
+          }
+        },
+        {
+          "id": "120240785677290263",
+          "nombre": "Fachada03",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/631679265_122121571785122721_589904074778325805_n.png?_nc_cat=104&ccb=1-7&_nc_eui2=AeGeBGKzaRnnKThkQwZ4XECZ_nYZkRv5Mmj-dhmRG_kyaCWpkCKuqQazrVsipJ5IGJghdJckOlgS0txdP-BT6BoP&_nc_ohc=KThsHLaYEigQ7kNvwEQGluu&_nc_oc=Adr6FWpjcKrvmWXc1IxAnW3tm2zKTb2TOZ9OX1VtdoURrjYgDr27YZhRhb6LB5i2ADE&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=cc-fnnzd856PAlqre8T7_A&_nc_tpa=Q5bMBQFMZqxxDL7zl8X8zpxAwV4e7S93Kj4HsIerNETijLePqWPJY3zteoumEPStfZWZsn6g-bF5GW-r&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzEY_e1hTjaHFuvrzi9y9BH7x2DOQ9fT6EV8EUzgtzgNg&oe=69C293AC",
+            "id": "1590607885422598"
+          },
+          "metricas": {
+            "impresiones": 6625,
+            "clics": 21,
+            "gasto": 164.6,
+            "cpc": 7.838095,
+            "cpm": 24.845283,
+            "ctr": 0.316981,
+            "alcance": 4905,
+            "leads": 0,
+            "mensajes": 3,
+            "costo_por_resultado": 54.866667
+          }
+        }
+      ]
+    },
+    {
+      "id": "120238304272490263",
+      "nombre": "Jessica García/PINO/formulario",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_LEADS",
+      "fecha_inicio": "2025-12-15T09:58:05-0600",
+      "presupuesto_diario": 50,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120238304272480263",
+          "nombre": "Nuevo anuncio de Clientes potenciales",
+          "estado": "ACTIVE",
+          "creative": {
+            "title": " ",
+            "thumbnail_url": "https://external-atl3-1.xx.fbcdn.net/emg1/v/t13/7210789227175194364?url=https%3A%2F%2Fwww.facebook.com%2Fimages%2Fshare_options%2Fshare_arrow.gif&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&edm=ANIILHsEAAAA&_nc_gid=YsGG9ZxwnelMNdCjV1SJhQ&_nc_eui2=AeFkGG69G9rE-qDJwH8XT5_DcE2Oww6si2lwTY7DDqyLaX8hXg9C0sQVo7dEJICX9_nFhBljmybXIv-mNyCVJDa-&_nc_oc=AdrVWJP3sals3zU9ZRT3XMrvjJN1_4j4FkJ58SH1ZnZByO8BawxH6zAGBW2xYF0EFNg&ccb=13-1&oh=06_Q3-9AefEkbJVihhaN7pSoxXmpwlYIS56ILGfAYLNa7PQxw2u&oe=69BE9875&_nc_sid=58080a",
+            "id": "1858558645047840"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120238305710350263",
+          "nombre": "Nuevo anuncio de Clientes potenciales - Copia",
+          "estado": "PAUSED",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t15.5256-10/588268641_823077260705166_4655021342403750356_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHrFmRJaXprsVE1Cj8z9c4wDH_tMoL03_QMf-0ygvTf9Eu-bGM4-SjFC8mvFPhIT3upnth1ZDZ9XUfUrB4yHdwM&_nc_ohc=PpliI0Ew8zUQ7kNvwF0YwmM&_nc_oc=AdqAf8qPYz-23D1ZKXT2rcmHtk68vVbdaMh56RhNSP17rwtg6YUwdnQFbVSe_fcqMig&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=YsGG9ZxwnelMNdCjV1SJhQ&_nc_tpa=Q5bMBQEtU_oWOO0DhNh1Um8VBCfbVumc-uS94lzQKswNnphxGN7mNBOOf2I194PGt8u_HonAeFf985fi&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfzKfGG4SWd38UX_De0ZKyN2YjXxYz-gZCINVeLuyEM6_g&oe=69C28F4B",
+            "id": "892849753098380"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120238295823210263",
+      "nombre": "Jessica Garcia/Citrino navideña/formulario",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_LEADS",
+      "fecha_inicio": "2025-12-15T09:26:50-0600",
+      "presupuesto_diario": 50,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120238295823190263",
+          "nombre": "Nuevo anuncio de Clientes potenciales",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/599053477_2094091104756672_4554450131327301409_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeF2UbM3nYAlh2kY7Cc-IZ7wot76C_lOY6-i3voL-U5jr3cAm3h6ilNS_pZHzk9P-HqdVvdwaadYcRohHNlx3hR9&_nc_ohc=AFJ3oeoEdh8Q7kNvwEEctaA&_nc_oc=AdrBryOII0nXo27CnvKgKELnW6N-Rhp6evg2QVjVqhMtI1wbzip1_b5t8GfP-iLkqAU&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=daKdGT1qmdF0OwBFuCHNeQ&_nc_tpa=Q5bMBQFvwzoPKkwktqJ7lqdZ27gExTPE7H02BhL_ADzAkZhplSNj1HfJr_WavkKTm4CzQaOX_mXy5vWe&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afws9fjLtOG1-66uAdx8n9FqmPn8Ql_ZoKGTZnyYNQ97ow&oe=69C29023",
+            "id": "1512302339822463"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120237918431000263",
+      "nombre": "Jessica García/PINO/formulario",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_LEADS",
+      "fecha_inicio": "2025-12-09T16:58:43-0600",
+      "presupuesto_diario": 50,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120237983909600263",
+          "nombre": "Nuevo anuncio de Clientes potenciales - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "title": "Departamento desde $1,178,940",
+            "body": "Estrena tu departamento en Tecámac desde $1,178,940.\nModelo Pino cuenta con 2 o 3 recámaras, 1 o 2 baños y una distribución inteligente que aprovecha cada espacio.\nAprovecha el bono especial en caso de diferencia.",
+            "image_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/597147157_2089476245218158_1629768350519533164_n.png?stp=dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=d5bd00&_nc_eui2=AeFGW4s8qj0whv0_1PAHRaxaM1FADtkdgxszUUAO2R2DGxgOW3lbqQqxG1VwTZBTqC4WevOB-xjRRS4JObBG_3qY&_nc_ohc=jgYoPYFbHl8Q7kNvwGaIGmS&_nc_oc=Adrw7Qu7i5YD2hrJefuhG4V8kcvGj2CxS4Uj0HxqhqczP6nGYzotgibXIw5NhRq_wi8&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=Z1gpac8UL7cCOzjHxTn_gg&_nc_tpa=Q5bMBQGCcGES-feKpa-1Z4G0yKlvSEdIBISfCu27HxPqV7ruz0C6TxY7Veax3IzWDXvewnTkeIy2XH2D&oh=00_AfwH_pzbC6-sEWGaNFY4rTdVD3L-Vf08UAjBhJu8yog7JQ&oe=69C2800A",
+            "thumbnail_url": "https://external-atl3-1.xx.fbcdn.net/emg1/v/t13/2156320495090837699?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQIvWN185h8c2PM6whEA-taeDS05g0IBOCYhV2bArnh7Tg1d_EIZKUqogYFYlg1ffp1xdQjejlCkXnzGWzAuccKnscnYGLq1012IopfIPYYfmFOMiSYU38aWz5w8RwCcc-94Z0bQzoiIb5ejRTB7xia7&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&edm=ANIILHsEAAAA&_nc_gid=Z1gpac8UL7cCOzjHxTn_gg&_nc_eui2=AeGQ-hONzEO8U4n38uwc5atAXZdk5zJRFwtdl2TnMlEXC3SfLIJEw9QqydNWsjI7T2VtUxuZ_y8-haahvqmRSMe3&_nc_oc=Adpke1TpE9mZ3XlBFZYl9swJE6eJ7F2XO3SwLeWoZv4JiaMMveBnbjQacI3IpPGQYM0&ccb=13-1&oh=06_Q3-9AY5FPuBHvV8HLhhkNJspufjatOwtc1B_dsTcIPqss7Vp&oe=69BE9807&_nc_sid=58080a",
+            "id": "735446215724128"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120237915081640263",
+      "nombre": "Jessica García/CITRINO/Formulario",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_LEADS",
+      "fecha_inicio": "2025-12-08T17:32:44-0600",
+      "presupuesto_diario": 50,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120237917963540263",
+          "nombre": "Casa Citrino desde $2,074,000 - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/595009931_2088693048629811_3125739410412507073_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeF4NF1j-CDgG9nV8wZLfPifQpAvsE5319xCkC-wTnfX3FIU6FbSWCmmOn_OGt_mcNIn_eDgvwjsfMZ91_-QjTEi&_nc_ohc=1Q3maJVhlGYQ7kNvwFfcYEC&_nc_oc=AdqmNFbaZX2e0tw9PSH5KrY6XXp3DquI8hNM9WlUb7jaq5EB56RjOGg4SXlugra9MXg&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=35JNTpaky6qR2i9hhJTuJQ&_nc_tpa=Q5bMBQGFXwmazWqu1vvzxUW_1yCoDgW2PBIoKDXesAnAY_4LKLxQVUS7w64PDEN2aMS414mNyMGY_yOl&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzGIIaL-uBotNnBdjbQDBAPwUw_Wo8HZAdcwt2Plke-aA&oe=69C29114",
+            "id": "876860248638026"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120237452388710263",
+      "nombre": "Jessica García/Esmeralda/interacción",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-12-01T14:55:41-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120237453101580263",
+          "nombre": "Esmeralda/interacción/video",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t15.5256-10/593991279_2036588817108462_1906144184984041953_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeFExUdNRFY3XwxlWfPEC-g7joZ9xLgCRU2Ohn3EuAJFTZrrOBq24JqWE2vtsYOF7OvvWyG75vP1Bi1SWP8yzUm-&_nc_ohc=W0fpia0Nl7IQ7kNvwGb6YO7&_nc_oc=AdqmOGnTgQq56g8ZPlKN-UmJRyiigsK3WLxsDe-puxYjChbsCMPz3eO86FamZ5mVNFo&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=NLPqCjp8jWmUwc25yjD6cg&_nc_tpa=Q5bMBQHXrcpg0HeQOxwVVCm-LMwsvQz07h8rO8dUDY8ne29oawuGCc82XfhEJGe-2_3O9QeybvAXVv5D&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_Afz8CGdCgfEVLv1bIFyeTjSE6I9m4WhtV17dNQA1k1iNzw&oe=69C2A493",
+            "id": "897367125952037"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120237452388730263",
+          "nombre": "ESMERALDA/INTERACCIÓN/IMAGEN",
+          "estado": "ACTIVE",
+          "creative": {
+            "title": "“Esta Navidad, regálate el hogar que tu familia merece”",
+            "body": "“Esta Navidad puedes dar el paso que cambiará tu vida.\nConoce Casa Esmeralda, un hogar diseñado para tu comodidad, con espacios perfectos para disfrutar momentos inolvidables con tu familia.\n\nEn diciembre tenemos, facilidades y apoyo para que puedas estrenar más fácil que nunca.\n¡Haz que el 2026 empiece con un nuevo hogar y una nueva historia!”\n\n📍Visitas al desarrollo\n📲 Agenda tu cita ya!!",
+            "image_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/592490317_2083003982532051_7349449250851228619_n.png?stp=dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=d5bd00&_nc_eui2=AeGfq9aJLzAK58qDlRCA5gSXTh3pZ6Tli1ROHelnpOWLVGldwOLpnegwzIOf1fNOyKRzQ9aoInNjZ1M44ecUkOkf&_nc_ohc=rHRuwHfKhFgQ7kNvwFYDCOd&_nc_oc=AdoWw0lvZJLqWlAQG7WU0kvS8QpCgRKwO53_gfrUeZNrjz_GYtULo_eDRfVvM_fmXIE&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=NLPqCjp8jWmUwc25yjD6cg&_nc_tpa=Q5bMBQH2lMbC2ng8coTPQLDOxme0s7S5m5Y_UzZ7GOfblnjN_lpm0bTrzKRa6JJllsDUFp15PZ7f5QNS&oh=00_AfxBrLN1EXXDdWRoIuDeuUwOCKo4TErlEwSIA6H_jqF3Sg&oe=69C282CC",
+            "thumbnail_url": "https://external-atl3-1.xx.fbcdn.net/emg1/v/t13/4959880903014332455?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQL6shYlGodf-tRPikMeU5xxmtPiKEcWUyh7_pAd0Lg3pX9p6HS1DBUx25EiqCoTy9q0aQcqwtvWNaJzNrXFoG9ZcKHyp1C6veRUgJN1u2VlNeAQMbtBUNpCug5uKCIqsiUqC7OXKcTp7VekcvLYWdbk&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&edm=ANIILHsEAAAA&_nc_gid=NLPqCjp8jWmUwc25yjD6cg&_nc_eui2=AeE5pAHgpJarBToYg5VxydEMi45eHSPH-LyLjl4dI8f4vGCO-JVmAssvKwM53ea-U0p9NH73oM15fJwRzm6_qw8Y&_nc_oc=Adp1iTXOdCv37THcnG5t2wLwmg-RNGlZocNAJ3r7stJW0BplGC9BEqjSfwo07Bp4RIM&ccb=13-1&oh=06_Q3-9Ac6wFzD98tCSil7Y9kxaBk1HjMpAUgiyFUNPDK2roX1G&oe=69BEAF75&_nc_sid=58080a",
+            "id": "880455687742996"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120237076426760263",
+      "nombre": "Jessica García/Citrino/interacción/2411",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-11-26T10:44:22-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120237076426750263",
+          "nombre": "Nuevo anuncio de Interacción",
+          "estado": "ACTIVE",
+          "creative": {
+            "title": "\"Tu nuevo hogar en Tecámac\"",
+            "body": "Tu familia merece un espacio donde crecer.\nCasa Citrino te ofrece comodidad, seguridad y un diseño perfecto para ti.\n🏠 3 recámaras\n🚗 1 estacionamiento\n🌳 Entorno natural para disfrutar\n💰 Precio desde $2,000,000",
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t15.5256-10/590298461_2079784872846684_8198656380579943925_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeEFwhtxKNfO9EvqS9fxSLZ_LIBnza-4XbgsgGfNr7hduDHTSaU_Q434-dWYMtYOL1Xp9WU_6cUbVmta0Y6nbbNI&_nc_ohc=C2Rr4DKnISgQ7kNvwFtL6A6&_nc_oc=AdqW90kqAa_PheP_4RYC7hY8tRhaDWOSwqJBMu15qBl-j_15NbOhJ-7ZvFb4SlbvI2I&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=wKCpEXabxSH_Bh0FyjxxNg&_nc_tpa=Q5bMBQFQrml_5u2GcKUO0c6UGLcH1BItyY8WcXWhe2jfCslCXaIe_o0Sq7NRdkXkJ8z9F8Ejy1Fd_BgE&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AfxYiCPYWXGr_ubmfINlKilEuAyIUU08KN5FWDQ7lTjIGQ&oe=69C2A6F2",
+            "id": "25185696611070345"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120237076754930263",
+          "nombre": "Citrino/imagen",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/584091530_2071614520337664_5216890815094058963_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeF4TVh-YAX1JgO9zPhc7meVadut636gYBJp263rfqBgEp7pFGFxe4zP8k_KB4RDGk-uI9Gxe5kuJDf-_eteey60&_nc_ohc=fZBGXAg-yfIQ7kNvwFy5uPC&_nc_oc=Ado681LGvdjsQfzB76twFYjWZhtB0RQjbuRKHGtmsn_j3J_jhvE-LOmLgTdo6HqpcpE&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=wKCpEXabxSH_Bh0FyjxxNg&_nc_tpa=Q5bMBQH828_wQ-rraUT6WRpEN_nGjb7NVkDQUfZAZjdnkFXyrzz95xOeIbpmBi0YiZC6BzS8v_UeUxtX&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afx0ivcH0Vuwu5Ee3nYaPuV6nDXY4Z8U5wpYNR8CKMCqZg&oe=69C2A1F6",
+            "id": "3256296527871581"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120237065299330263",
+      "nombre": "Jessica García/Pino video/interacción/2411",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-11-24T12:19:13-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120237066312230263",
+          "nombre": "Jessica García/PINO/Imagen - Copia",
+          "estado": "PAUSED",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t15.5256-10/588268641_823077260705166_4655021342403750356_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHrFmRJaXprsVE1Cj8z9c4wDH_tMoL03_QMf-0ygvTf9Eu-bGM4-SjFC8mvFPhIT3upnth1ZDZ9XUfUrB4yHdwM&_nc_ohc=PpliI0Ew8zUQ7kNvwF0YwmM&_nc_oc=AdqAf8qPYz-23D1ZKXT2rcmHtk68vVbdaMh56RhNSP17rwtg6YUwdnQFbVSe_fcqMig&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=KId9LSioNAA6HMtvYsS32A&_nc_tpa=Q5bMBQFYhX14f0BYxfi60PWO7eFnJQE28azwc0yx_5PaOt83Pz8cTNnqbKtOUvtt-HuF8EYEhz3ytZlE&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfzB0hefZs5oqQhiyDQ9zLBOUVujWc2HU6tBcS-eQzYSSA&oe=69C28F4B",
+            "id": "3316723748488789"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120236875031780263",
+      "nombre": "Jessica GARCÍA/Citrino/interacción/2011",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-11-21T13:51:48-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120236938309180263",
+          "nombre": "Citrino/imagenes/2111",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/584091530_2071614520337664_5216890815094058963_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeF4TVh-YAX1JgO9zPhc7meVadut636gYBJp263rfqBgEp7pFGFxe4zP8k_KB4RDGk-uI9Gxe5kuJDf-_eteey60&_nc_ohc=fZBGXAg-yfIQ7kNvwFy5uPC&_nc_oc=Ado681LGvdjsQfzB76twFYjWZhtB0RQjbuRKHGtmsn_j3J_jhvE-LOmLgTdo6HqpcpE&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=8eA8Zp-lNKrmgWeh0l9g7Q&_nc_tpa=Q5bMBQGYWdoQKwUzfkszo5daWJ6brVXjRr9W0-1Qq2FHu_PPO2gFcKDccwBivOqih3piDepFnctVaZdb&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afw3y52PesYlz4VwXhuqG8NqyGKXU8l7Q8EDmBk0j0HrPg&oe=69C2A1F6",
+            "id": "815968091224354"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120236872466220263",
+      "nombre": "Jessica García/Pino/interacción/2011",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-11-20T19:14:59-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120236873711130263",
+          "nombre": "Depa/pino/2011",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/584645161_2074235426742240_7048673997851270651_n.jpg?_nc_cat=101&ccb=1-7&_nc_eui2=AeFW23EQcGSM4JnmvRHg8GzpsDMwp8c9HviwMzCnxz0e-JCCyp3sYr3mZ3QSdRsoIk_Q9cJptCICi8xbDb6f2oOv&_nc_ohc=L2-AHxIf0dwQ7kNvwHUqnbj&_nc_oc=Ado8OQvQ4YfyGGXdR0kgKUpoMgkKUtuDkSBxbln4vMDAq96kZC2C_acxiAZt80rkpHE&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=vreIsI7-RB-GYjGtHtwZJw&_nc_tpa=Q5bMBQExlFvtTVfgBa5bbV_wbY437tb4kiPS18THibZRZe0JQJ2AtWzc_ItL5MLUUA_j36UmWnbSEt1_&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxiTchoBL1kCiAGYJoW39yp2HpAJVw0zEDy-fVSRhH8Dw&oe=69C2877F",
+            "id": "1757997314752657"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120236684962480263",
+      "nombre": "Jessica García/privadas del bosque Tecámac/CITRINO/interacción/1711",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-11-17T13:41:29-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120236685855030263",
+          "nombre": "Nuevo anuncio de Interacción - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/584091530_2071614520337664_5216890815094058963_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeF4TVh-YAX1JgO9zPhc7meVadut636gYBJp263rfqBgEp7pFGFxe4zP8k_KB4RDGk-uI9Gxe5kuJDf-_eteey60&_nc_ohc=fZBGXAg-yfIQ7kNvwFy5uPC&_nc_oc=Ado681LGvdjsQfzB76twFYjWZhtB0RQjbuRKHGtmsn_j3J_jhvE-LOmLgTdo6HqpcpE&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=DmCQQ7W80nFy0Aurut2aKw&_nc_tpa=Q5bMBQH1xoV1yIqmvt0JdKNU3m3L3LPv-dYTxRoNsjOZy1zRMojjPdTHzZsV1fW9lFQKVt2-jXQaZgl7&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afw-qXamnOHkUyahjkq3U9seUcDX3jtr7BTo04i0aqOtpA&oe=69C2A1F6",
+            "id": "1762128164275481"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120236684962490263",
+          "nombre": "Nuevo anuncio de Interacción",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/583272460_2071614367004346_6929763827478015934_n.jpg?_nc_cat=109&ccb=1-7&_nc_eui2=AeGP6T58K1iHjkS5nYwkDuYed3U9FbBlUYB3dT0VsGVRgOD7Mq0qcuO_F8LqDRrYlcLx8zbiLoxJ-MVbyyF73MGj&_nc_ohc=za9QSJF_nWAQ7kNvwFWtOyT&_nc_oc=Adq5rC6RkJtsFYpZ-BGblaeqBllbmpbMEeVX8meB7RChH4BxW33gp_6N9SbaP3lCZYo&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=DmCQQ7W80nFy0Aurut2aKw&_nc_tpa=Q5bMBQEFQA8-LBiekLHIb4Gth01N3OPoBaQAvGF1T7xwYbHE8iAtwPmme72Izf-0cdYM-Fo3-rOPJtbO&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyExNv2Wntc7CYIsegruPG5q22C6vJnqPNe_ILhV0OxjA&oe=69C275C0",
+            "id": "840331892286731"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120236685855040263",
+          "nombre": "Nuevo anuncio de Interacción - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/583809028_2071614677004315_6494002302349956268_n.jpg?_nc_cat=104&ccb=1-7&_nc_eui2=AeEYlgvOVSycIyGcqa8F-IomFg7_G97C1L0WDv8b3sLUvUzHu3Ozdnops_Ut9MZUULqChKCIQ9j5Es8V-QHBUps-&_nc_ohc=A1KYe4CVTdwQ7kNvwEJm_P6&_nc_oc=AdpFC3fvv1umqxj4DRqty6DJncP8G2hvlXLr-msAlLjrDyVkTgclJIUXlUnIdmMxIEE&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=DmCQQ7W80nFy0Aurut2aKw&_nc_tpa=Q5bMBQHOLMoY4umxjdYXgMGD0F-E5FBzzGSKxjRqTZOyrMMpk2XkoODezRPE-dr2ATdCIfLqaq0XM1JL&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyhkD_sZbuQsi0jsintYdgdtfsydtgNCkhJRwMkN6FvAw&oe=69C29861",
+            "id": "2342967446183957"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120236323745660263",
+      "nombre": "Jessica García/PINO al fin/interacción",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-11-11T12:40:27-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120236327075510263",
+          "nombre": "Nuevo anuncio de Interacción - Copia 2",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/580615164_2066550574177392_3700187012094923027_n.jpg?_nc_cat=101&ccb=1-7&_nc_eui2=AeH3HGOw4FgRPX3s3qn-60YaK0-ijTG33NArT6KNMbfc0BP4IACq_iIUN9ctzR6hlS4IEgHlg4MtR6Kw9KvTr-RQ&_nc_ohc=eJ5e0-BQYPQQ7kNvwH0-PJe&_nc_oc=AdqGzgBZV1SvlauvBw5hklPuhMFeu31c6vhGr-sd0iEyPNaSaFIuJ6oT1MRD8CrahM0&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=3-2QVzuaHhnsj1VY9n997A&_nc_tpa=Q5bMBQHV5jyjQlKDjtFbY7EPgJkRaZ2gC5Lo2qYUTzBBrBdQ4PQJ0OWL_Z9LpzzSZOyvw-Sq3sQFDJ82&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfysLSqjPOEEqMqMLT2CDrptD28RI-fnMuxeOac4COh5Cw&oe=69C29C3A",
+            "id": "767671179621991"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120235989511840263",
+      "nombre": "Jessica García/pino/interacción 5-11",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-11-05T20:28:39-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120235990391330263",
+          "nombre": "AIFA",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/575741329_2061265741372542_4207034785419610139_n.jpg?_nc_cat=109&ccb=1-7&_nc_eui2=AeEPfDlKdfd5mmVkWCAWOxh6oQr_TFUi7HmhCv9MVSLsecJJYM9za57KvNvrtM7SerIjSrpJIyQvCtabzeO0AOou&_nc_ohc=R9duRJIh1lsQ7kNvwFkwFWx&_nc_oc=AdqWs33-D8CLyOVlaat57n_GXJ41iKwwLKNntopxjYk865Msp6-M0G7Brqs7a9aQ59I&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=mtrfGMoViLMNybmd-QT8wg&_nc_tpa=Q5bMBQGMatQFIlCbOzMgD281w_-T60QQOX3cT4AiOVsRyUUcnF5zxsCI65Cg9gf9i4kxByAjRZpjyzLO&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxgpbA6toqgqmHJaiRFjr9Ic4bJpxGMxzMtCgIW4L94_g&oe=69C2AC27",
+            "id": "4097976743836084"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120235901881120263",
+      "nombre": "Jessica García/Video Pino/interacción",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-11-04T09:35:22-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120235901881110263",
+          "nombre": "Jessica García/Video Pino",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.5256-10/576459309_1311728054053986_162015236274917833_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeFIvjxWAaXvLTwYLEY9PhbvYV3H9oQk7aZhXcf2hCTtpqKAxhJ1WuD5oCxsypSOLtEBIb0VFPHJQ0OSBD1Dlv0R&_nc_ohc=tth8NBRmk7gQ7kNvwF_t561&_nc_oc=AdrkpSABrsbb04kH0WCd8dccWfklvl8HszIldiFuYCOPYZ3UcpxkiXi9Fd20mB8c2zM&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=2Deggin2lFoj67zTCoAMxQ&_nc_tpa=Q5bMBQGMPKMRnApY93ixrI4EFyBWQKY7xisbc20GmiuA9ld1jboLrHBMrIdXpLJL1WMnAYYSP3fu9n5m&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=4c1fc5&_nc_sid=58080a&oh=00_Afx94lVOUqn8KJRd0O8oqsV39Bz1jKMjxrUwJ7dGocO1SQ&oe=69C28CFD",
+            "id": "2176660946439768"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120235755921360263",
+      "nombre": "Jessica García/PINO/interacción 1-11",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-11-01T16:57:37-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120235756243480263",
+          "nombre": "Jessica García PINO/Interacción - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/570655816_2057321958433587_3863414967743428321_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeEP8ZetITkbCRIa57qEDcjY-qh5Rjquvqr6qHlGOq6-qoKl577rwAcDn8Y3JYIWNDKXKEBPmFum_hg41zOz4hzb&_nc_ohc=oz8Mbmz5c20Q7kNvwFq7gDG&_nc_oc=AdoEYd40fEqOv81mj6yWoIZEru8QkNSLjVkf6rio6h8Rs-t7Bdn8pwvcRCNrh-kgfCM&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=ZvSyB4JfrKyNyaGb_jNtxg&_nc_tpa=Q5bMBQENxHRmE0N1NXYqBLqAMni7AHIHAE2Ry3NiDeXMCbntEIr6_Ey54jVv1fjHIztQT-wy5d-d1AfK&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwVS51yGHmUk6y2Rz8gnNwcoNj6gS-T5BfyF8Zz-YKjhg&oe=69C27D1F",
+            "id": "2022509011898268"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120235742468620263",
+      "nombre": "Jessica García/Privadas del bosque Tecámac/CITRINO/interacción/messenger",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-11-01T09:12:55-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120235744725320263",
+          "nombre": "Jessica Garcia/citrino/interacción - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/571447072_2057028751796241_5218361742807387896_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeHovagyBdQzJPT4VYkm1Hx4tBzo88VTBZG0HOjzxVMFkfpO7ajxGgtxHKhWbXEg_TnuYKwshi92xBcdWKP-3kG8&_nc_ohc=TTUXzAX7bhYQ7kNvwGiBxBQ&_nc_oc=Adpm_VFwv3CMcNiYeoP4sRGRmKcpNhNCJG_scVRxm2X63KqeGRmKqQqlUKZOEiE9adQ&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=3SZYtagipwcAIJU3czO4bg&_nc_tpa=Q5bMBQGAE0Bu2iL74o4RR1ByxkNHsF20Ti-KyTlScND1BsqHKp1yaLeKGqqC9kVr_lTCVMEzF1-3fxXQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyerTCOgFhdYoqpgCOGLi2VO4g2fLjB2Z5YKZ_lN-u-Zg&oe=69C29B7F",
+            "id": "2232919610544994"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120235742468610263",
+          "nombre": "Jessica Garcia/citrino/interacción",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/570620249_2057024378463345_852276155893999000_n.jpg?_nc_cat=105&ccb=1-7&_nc_eui2=AeFT140uGCEPcf6tgXGIdwZevfREy3_Qql699ETLf9CqXgAlXodcTu2g_qNXJsBuqKhBRuTeVwfVnoxk-l5GQ-I8&_nc_ohc=Ok-KHjKzXBUQ7kNvwEbu-YG&_nc_oc=AdrSCDFWC1tyWGDdanI80T8TJxwRcjcP85Em7LFE3AmskP1Zy_77M6tal9xLD0Gzq1A&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=3SZYtagipwcAIJU3czO4bg&_nc_tpa=Q5bMBQGbiF9ma8aZ843QNA0v9NMM2kAA-Y329wzsu4MwVtg9iootNds9y5T6Kn3czP2I8JuTPYJVucv7&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyYu8WukBuPdLfwg0yaZJa0ikMB-DS-fIDezStuAmURPw&oe=69C27CD6",
+            "id": "670836306100349"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120235453809650263",
+      "nombre": "Jessica García/pino/formulario/27-10-15",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_LEADS",
+      "fecha_inicio": "2025-10-27T13:48:31-0600",
+      "presupuesto_diario": 100,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120235453809640263",
+          "nombre": "Jessica García/pino/formulario",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/567519801_2047125236119926_7616386858426439654_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeH660iIffPuFtGXqi5DTFTIJd6wO-7gZWwl3rA77uBlbKJgZHD-3hRYAGLNBuvNn3x-dcxWVfA9TsfGusPz9SzP&_nc_ohc=vT9IXzs21-0Q7kNvwERqlid&_nc_oc=AdpvNHmmAX4-9lg5SfkPxMUWNqZB7XFFK1Yue4ipkhOShBmcgWwzZVDwa_UIsUQSg0M&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=16WA3GeSfRLySLnnFYtdKA&_nc_tpa=Q5bMBQHid28I-5y9ba-duYHJZlrKqeyj96cmj_jvJTl7EPBNkIoSYJw2L89f8k-VeA7BiDoxjgYT3H9b&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxSQhh3WCrfo44sIGk9fMvfyW4JdNOr1-RJbPaMErmMoQ&oe=69C2A390",
+            "id": "696760532979299"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120235451642830263",
+      "nombre": "Jessica García/pino/interacción/27-10-15/messenger",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-10-27T13:53:47-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120235451642820263",
+          "nombre": "Nuevo anuncio de Interacción",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/567519801_2047125236119926_7616386858426439654_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeH660iIffPuFtGXqi5DTFTIJd6wO-7gZWwl3rA77uBlbKJgZHD-3hRYAGLNBuvNn3x-dcxWVfA9TsfGusPz9SzP&_nc_ohc=vT9IXzs21-0Q7kNvwERqlid&_nc_oc=AdpvNHmmAX4-9lg5SfkPxMUWNqZB7XFFK1Yue4ipkhOShBmcgWwzZVDwa_UIsUQSg0M&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=wk1X7uEGs7-CiWkiD1oIFQ&_nc_tpa=Q5bMBQFsBR_TfoHAYR8a50Ltofzz-DHgvIGAhRMZd0psebEfLdF6FzpGhg7UGSj_fbv3527rpn0poaNO&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afww0NsRPJn5XJ_FM3LxxxtpJ-hBxvsUT_TF5liHywmnaQ&oe=69C2A390",
+            "id": "1332704754482835"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120235184159650263",
+      "nombre": "Jessica García/Haciendas del bosque Tecámac/interacción/messenger",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-10-22T22:16:46-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120235185607150263",
+          "nombre": "Nuevo anuncio de Interacción - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/567433106_2047133966119053_161865880380893355_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeEutuCgAQPEGi7Dd_KvEIVX3YyV_ZWYXozdjJX9lZhejB3qheVBL3gsYYxXlc_8Bo9xc5-NZWWVY-y71xqW2mD9&_nc_ohc=53P1AJE0q-wQ7kNvwFFjZQd&_nc_oc=AdpnWeZj_c_yj36-zcWPiYR96fn9AtlbRTUDrr-6TAqDJdFP3RIalCwfhln1s0V308M&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=VeNCU7_IQcJP0w0BG_bUog&_nc_tpa=Q5bMBQFHJr1YenvAWYMuyhVZBeuMABWsBY6rDDsTDDCo2X5TusSymm6laHS63bqVOOL6kBfB19FGq0_B&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzkZuOM19tYaP3nV0cb0U5QyohfJ00HOhlqqZHpI5cH3A&oe=69C29A54",
+            "id": "1523306092040490"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120235184159640263",
+          "nombre": "Nuevo anuncio de Interacción",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/570668141_2048399025992547_1596291659071169114_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeEwKRn9EKFavjtqTD4QzbkMqlxdcYMPLQKqXF1xgw8tAmyCoWwC7Ng6NXGPICJsSCs5-PaDKdhNi7jIRoKZLKog&_nc_ohc=MniKbD1CMXsQ7kNvwFti1LX&_nc_oc=AdrEsOv_o8nf1brobxBz8kzhPg4RZ7vvpnK9BhIhdHg8hl8pwcTfV4r0grlm7LVVSRc&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=VeNCU7_IQcJP0w0BG_bUog&_nc_tpa=Q5bMBQGGngByfi7citoRMn_7gOSN6tu5DogCJ4mmM8wkhaD8gLnTwouDEKZ94AUzY9yMoECzC7p9H2Jp&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwLVeqpbkO4U-uQ_WyuntedrcHq86VVelBVYA4Bi8isug&oe=69C2A81F",
+            "id": "2012427569602230"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120235185607160263",
+          "nombre": "Nuevo anuncio de Interacción - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/567432702_2048403845992065_2141313199063887845_n.jpg?_nc_cat=107&ccb=1-7&_nc_eui2=AeFReR_Gv7K90ucQIb3pfh7BgyAPAMxsSFWDIA8AzGxIVXfbRD3l85EJLteK46jlkeDX0gOyYwyPrpY6DeUIo14I&_nc_ohc=uwAZ5zzKxREQ7kNvwE-ac7T&_nc_oc=AdqcxSlFSwWCSXjnBadjr6ajAH8jJa99L9B8M35GREPYN6KEnk_uQzelH6u9kVFBU4Y&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=VeNCU7_IQcJP0w0BG_bUog&_nc_tpa=Q5bMBQHzFvtgtb5FRZdkxOTVJRVYga-FW3sGLfRAvBgJRvoL6r__7hR9ePkPzj-gp1uitjxaYhox16er&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afyq8pGhlcCS_cW2hW9hGOJRPET2PFqc_8mP7390JnfUug&oe=69C29E58",
+            "id": "3262054037293309"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120235175487160263",
+      "nombre": "Jessica García/Haciendas del bosque Tecámac/interacción/messenger",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-10-23T06:49:39-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": []
+    },
+    {
+      "id": "120235077477750263",
+      "nombre": "Jessica García/Haciendas del bosque Tecámac/interacción/messenger",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-10-21T12:00:00-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120235077477740263",
+          "nombre": "Nuevo anuncio de Interacción",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/567431870_2047124999453283_202673575165503518_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeHmL-FMRLpclG7ObhiO1qNZkuxt7fch5oWS7G3t9yHmhYdCx4eiNQPfMyr2nB5dak-KnPgaE6IF_BGN3h8KzC26&_nc_ohc=R83acbocIE8Q7kNvwGk20r-&_nc_oc=Adr3ucPWB6kiD4hyFVU0G03MZjfRcolN3HCXaVJWP38eMw1R1e1m2UAGCcaadfZjf2g&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=ZVKFlElxy5UKANWgK5s3Lg&_nc_tpa=Q5bMBQFWUdiv1_QuQ-KcZ2l6_g4WJlF9bLTcsjhDtg1V3sjZRkmMOtun_f8I5aiePWSmLxP1m1J_nI-v&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzhJshCSZCSFY8hHWsSEeUuiwmdnwSihihF3M97UyEtYQ&oe=69C2A591",
+            "id": "1395329495354544"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120235078681580263",
+          "nombre": "Nuevo anuncio de Interacción - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/567519801_2047125236119926_7616386858426439654_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeH660iIffPuFtGXqi5DTFTIJd6wO-7gZWwl3rA77uBlbKJgZHD-3hRYAGLNBuvNn3x-dcxWVfA9TsfGusPz9SzP&_nc_ohc=vT9IXzs21-0Q7kNvwERqlid&_nc_oc=AdpvNHmmAX4-9lg5SfkPxMUWNqZB7XFFK1Yue4ipkhOShBmcgWwzZVDwa_UIsUQSg0M&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=ZVKFlElxy5UKANWgK5s3Lg&_nc_tpa=Q5bMBQHPL1Rsv76Gybw9769jk_uGDVd7P2mVM_os8IlRBiY-adFv09tHCUZK6pNyitInkEY_MfS3M3JN&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfynOy_awtZ9ggqqUh6Gk97x-DA0V_V1ZAKyBAgkbB-XRw&oe=69C2A390",
+            "id": "3825911491044668"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120235078760680263",
+          "nombre": "Nuevo anuncio de Interacción - Copia 2",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/567433106_2047133966119053_161865880380893355_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeEutuCgAQPEGi7Dd_KvEIVX3YyV_ZWYXozdjJX9lZhejB3qheVBL3gsYYxXlc_8Bo9xc5-NZWWVY-y71xqW2mD9&_nc_ohc=53P1AJE0q-wQ7kNvwFFjZQd&_nc_oc=AdpnWeZj_c_yj36-zcWPiYR96fn9AtlbRTUDrr-6TAqDJdFP3RIalCwfhln1s0V308M&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=ZVKFlElxy5UKANWgK5s3Lg&_nc_tpa=Q5bMBQGYkewl0geDb1ASLybPkl8IFHTbjHKP6xvhVhMO_SiLimGBxdAewUB5lqSe2lhIvHqq9uaWkpuM&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyfJnLa1qicmd-FxrXJZ3iEqPfyhol3bT0tOoHMZhoR5Q&oe=69C29A54",
+            "id": "778637765168061"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120234798841660263",
+      "nombre": "Daniela García/Haciendas del bosque Tecámac/interacción/messenger",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-10-17T00:00:00-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120234798841640263",
+          "nombre": "Copy,precio y distribución",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/567428805_2042615509904232_8863054688335720887_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeGm_qZnPaJVG7LAA-EAZ7fAg49xSO_rzUaDj3FI7-vNRq69D2FzobXPcldYn2huy7yaxg1sWeLkoO95Doc2kCtJ&_nc_ohc=9ATVljLYgfIQ7kNvwHebycE&_nc_oc=Adrx8OTo8NJqR-lgCDnz2QL9n5i1leqmbnTCJCI3PnvwvyDsFGq8lvBVVaIMwt-bz40&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=PTZRz48KSEaB-t1QgeWvJg&_nc_tpa=Q5bMBQHKKm1vY7HvYRB6mvGf85Hga0F4J58WzRJsV3jtv1H3k1cKVcAkXl6aZLZrzGnbnGOdWp5RhqgX&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfztVqwdhzofkqtMn1CA9KuiE1yMavn4J7XH6K9dGeljLg&oe=69C29EB4",
+            "id": "4226573030996619"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120234802062600263",
+          "nombre": "Copy,  precio y cta",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/567436752_2042615143237602_3528562841943181683_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeEqoVGMC5xF5jkzoiShVaYXtMA0CUrgPuG0wDQJSuA-4RD4JNplWiIYAXdppuPl_kO7EtUpHHdU8I9Kt7t5fbTg&_nc_ohc=MQLXFLlwrwEQ7kNvwFtgZFD&_nc_oc=AdpdTL0tY0nnLdAFF43oYWkSkORB0umDdrfoLtxMz0TL-g_h-PFE4i8pBfMvPm8xreo&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=PTZRz48KSEaB-t1QgeWvJg&_nc_tpa=Q5bMBQEeGR70o7Nu5jy81Wf4JOHs65hrVYq0qvWqSi_ziVZ0m0OTspgykci2NoAPLCf05pinIesgX5nB&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwFBUMdN8qVx5q26M262gOnXOgCAiJlRFyBd1v0TgaFbg&oe=69C2A742",
+            "id": "1921850188425448"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120233206607370263",
+      "nombre": "Campaña Esmeralda / 17 SEPT 2025 / IRENE MONTOYA",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-09-17T17:58:48-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120233206607380263",
+          "nombre": "Campaña Esmeralda / 17 SEPT 2025 / IRENE MONTOYA",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/545028791_24318308251183244_5010146655729101869_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeEJReM_jnwPPNhCqN2KMh52gQWwCPMj-TqBBbAI8yP5OjFviqBeOFYpKae_8VL16HOLfHq74KYPKgGIQovBcx2l&_nc_ohc=1vH9YW4v1q8Q7kNvwHOkM2Z&_nc_oc=AdoDXBE5H8IRlQWO0m2aYMPdgCjEMeLHr2FnflCZzfI9Rx5FF4BA8dekpE0F-wziNNQ&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=e_dU6CgepNjv-7I6BSzlpA&_nc_tpa=Q5bMBQHEEQ-k0VPn7QY6ila0PDhnmlw2b1PUh0IEpXskW4qLpfsnhV5aFYT1lQhQz-wjHu-zbEAUvUd9&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxYZfM1rot1iv520f0Bm8AjRkD1rrz-ZdXKz0jQviTPzQ&oe=69C28F9D",
+            "id": "1483457399641130"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120233206815230263",
+          "nombre": "Campaña Esmeralda / 17 SEPT 2025 / IRENE MONTOYA - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/545264578_24318309271183142_3014717277579802271_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeGmKeWCUPw4qk_xNCTeu4jMDFVB7uFW8f8MVUHu4Vbx_81xqjOm5sgfrEIvF5IYJxMPm5r6sf9et8ZBoLBCq017&_nc_ohc=4OUwfy-LVD0Q7kNvwHSvNsc&_nc_oc=AdpsHMp-9Wf64hJwWnWxYePl8nclZlCPQo2SWJOMWt_j8FnIbxbICql2ldlDszTSEkg&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=e_dU6CgepNjv-7I6BSzlpA&_nc_tpa=Q5bMBQHGvdUMJV4zZ1UiHjPb7MVV3tT01KW31p75uwSgcYOHwPnJdVRnIMV8cp5cKNwhAy_KAA8RPcne&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxkqR3iRU9I8hDQIfKOprL9LFlHJQG4owkpOxyDPoVyHg&oe=69C27EF0",
+            "id": "1120117433407263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120233207094930263",
+          "nombre": "Campaña Esmeralda / 17 SEPT 2025 / IRENE MONTOYA - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/543725679_24318310471183022_3952318277217336263_n.png?_nc_cat=104&ccb=1-7&_nc_eui2=AeG9LYkCOdns9YXPQkD7kqBrmL4qnWP5zyWYviqdY_nPJez4p65fPs6Rl-IKxHJUrcahcuh_O3ATk8zMDFPuFhDq&_nc_ohc=zUDzIeIyvNUQ7kNvwFNfW-F&_nc_oc=AdqezSlqz-eFizaFBsjLILUbTXpNchwdaDwa_L3Tm1jXnU-UzlUCIvwiVoynQqgFaec&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=e_dU6CgepNjv-7I6BSzlpA&_nc_tpa=Q5bMBQEOyAeXfD60GHQ43B8TuBKsNGoLkp7VngpcZ6wKh-3_vxFBgTCYjMBZv2PRw3wNk5IWx3fLA9Cb&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxAB0WCDYbe9y0cIZT7meZYBqougV2zMzw2IbU4HrEjww&oe=69C2A49D",
+            "id": "773402525418202"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120233204337000263",
+      "nombre": "Campaña Pino / 17 sept 25 / Irene Montoya",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-09-17T15:30:51-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120233205304290263",
+          "nombre": "Campaña Pino / 17 sept 25 / Irene Montoya - pino",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.13418-10/534377640_1733626514248039_838552536062622400_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGrHg6JpF8gcs43AiOY50MR_5fwKCmu7yf_l_AoKa7vJwwONqSksdRWxJRfEQGX3Z3Y7odQCU9I2O7kxicXQRxz&_nc_ohc=DXcKuYLCxmwQ7kNvwFUMa-U&_nc_oc=AdpdaosvG5MT82GP0vOpZGZGn__unhjaOxJLagdls6CMRVBmL70RkWVjA7Jjw8mkM6s&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=BnsrQcZjEKxiL56fA8Zg_Q&_nc_tpa=Q5bMBQEBqgZkNdzSgYhFiZ683YdD9vibB4Br_oQgWhP9aidvsjd0onoiL45LDpe66yL1luFnajJ-YbXy&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfyVhqBqcSwDnr1bRc6LFW6OTLSqZRuW43rWRee5NR_22Q&oe=69C28969",
+            "id": "808332608435056"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120233204336980263",
+          "nombre": "Campaña Pino / 17 sept 25 / Irene Montoya",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t15.5256-10/548532438_1135882078493970_1371359422588552898_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHvpQdI2Wa3EXojmBGv6y7XdbCDlp8ojwt1sIOWnyiPC9lTFZWqwpTq8ON8IttG-AOTqztoU7rCv3PUNZK4NZyK&_nc_ohc=HPF5DkEoEgoQ7kNvwFi-_76&_nc_oc=AdpMXcMuhM0jkuUpKoWktl9FMfkmIwkJaielcpQeMLDUEs3vp5sb0u_Tk-0TfMGm9SQ&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=BnsrQcZjEKxiL56fA8Zg_Q&_nc_tpa=Q5bMBQGjpoYDtoTyttNnaBOyXqYpv3rEA7fGnJ_z52HB3peH72pUd6L_pdbyln8NCrwQn4oDD9WfmYUA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=4c1fc5&_nc_sid=58080a&oh=00_AfzuCo2PDnuxhvRoWm-4haM-Cpos74IGBwS7sQRJ3AL6Fw&oe=69C28303",
+            "id": "812633604467862"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120233187472490263",
+      "nombre": "IRENE MONTOYA / 14 AGOSTO 2025 / ESMERALDA - Copia",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-09-17T06:59:41-0600",
+      "presupuesto_diario": 80,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120233187472510263",
+          "nombre": "NIRENE MONTOYA / 18 AGOSTO 2025 / ESMERALDA - Copia",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.5256-10/536483162_2886530104879818_5851022757716726365_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeF4J3dpvoRI2zyZhfBY9OpP9a1_s_eCLbX1rX-z94IttQmWgSmqv_-8otjBKu1SOku2dViGCIsQKwqU0h_QwzL-&_nc_ohc=DQOqJ5Laz5wQ7kNvwHZqA7F&_nc_oc=AdqS7z6O9_zhUYV0OpbmZbiufhdjML-54voMXhs_1mmHO_3BflINOkyKmJCrbj80ous&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=rx4QzxKOC7HFVnrj-_Vn9w&_nc_tpa=Q5bMBQF6dYNpZqiNQq_HXHVClloEeJ2QFSzTp6XWSHiNkq-sC4Q165HUVd9sCYnkMERnjwUodSHQey1K&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfxPs0XkH9M39SginAH4HNEsPKQ6FvtD2NRcR2No2C5aLQ&oe=69C27F23",
+            "id": "805728835442841"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120232786980330263",
+      "nombre": "Campaña Esmeralda Clientes Potenciales / 10 sept 2025 / Irene Montoya",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_LEADS",
+      "fecha_inicio": "2025-09-10T11:31:14-0600",
+      "presupuesto_diario": 250,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120232786980340263",
+          "nombre": "Campaña Esmeralda Clientes Potenciales / 10 sept 2025 / Irene Montoya",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/545264578_24318309271183142_3014717277579802271_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeGmKeWCUPw4qk_xNCTeu4jMDFVB7uFW8f8MVUHu4Vbx_81xqjOm5sgfrEIvF5IYJxMPm5r6sf9et8ZBoLBCq017&_nc_ohc=4OUwfy-LVD0Q7kNvwHSvNsc&_nc_oc=AdpsHMp-9Wf64hJwWnWxYePl8nclZlCPQo2SWJOMWt_j8FnIbxbICql2ldlDszTSEkg&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=wSZNSr0ccxrRghpIRRoAAQ&_nc_tpa=Q5bMBQEEhwOybNEyLbOsjtAejI48utrKQw2bjrNHZHHuFu7VU9EXwmmuPTSuGiWvbtQYdO92MELlyAhi&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwQpD3jh7QDdmt23TUb3g3l7Q7NzcO_IRkDDentmqiveA&oe=69C27EF0",
+            "id": "1135906418474362"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120232740489510263",
+      "nombre": "ESMERALDA / 09 SEPT 2025 / IRENE MONTOYA",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-09-09T22:44:03-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120232740489530263",
+          "nombre": "ESMERALDA / 09 SEPT 2025 / IRENE MONTOYA",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/544993478_24326612750352794_3213998197402386641_n.jpg?_nc_cat=108&ccb=1-7&_nc_eui2=AeGMnXvZ8702szhrCZIUxaKBx4iVS0MQIbvHiJVLQxAhu3KuTWU6dT8B_5grKL0BsmGnEc475WRb6rx6GYxy-_Uo&_nc_ohc=tcRbtzmvJdoQ7kNvwER9-hR&_nc_oc=AdoOgJx1e5NKlLUSZBvGF9K8rlVTWLSdZQgXYl0MzKskziZiwPqkV9YMqSbyaV-PLNw&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=wRp_bJ54FZxfwrTd3w_OnQ&_nc_tpa=Q5bMBQE6uD4wmKXpG8pVdYEhxTfUcNep_0xWcMSH6cuzSB-g6L1NaR4O1y39F-vXDbWp5baO-ccNyuXB&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyumWTy6CgBAmgcpS6f2_QnEBQY0d0bqxlElJsf3zbnFw&oe=69C27F98",
+            "id": "1369469594515268"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120232626509310263",
+      "nombre": "ESMERALDA / 07 SEPT 2025 / IRENE MONTOYA",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-09-08T22:25:16-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120232626509320263",
+          "nombre": "ESMERALDA / 07 SEPT 2025 / IRENE MONTOYA",
+          "estado": "PAUSED",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/545028791_24318308251183244_5010146655729101869_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeEJReM_jnwPPNhCqN2KMh52gQWwCPMj-TqBBbAI8yP5OjFviqBeOFYpKae_8VL16HOLfHq74KYPKgGIQovBcx2l&_nc_ohc=1vH9YW4v1q8Q7kNvwHOkM2Z&_nc_oc=AdoDXBE5H8IRlQWO0m2aYMPdgCjEMeLHr2FnflCZzfI9Rx5FF4BA8dekpE0F-wziNNQ&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=uVTKohx7xT0oTrEoa8QeYg&_nc_tpa=Q5bMBQE7OGqREYPWAFM4eODpIXoUtoIazhVogO2PqlewAWOvC6nUR5eU7gkZuRNVmaVqKykKztVD0Gkd&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afyka92PkNPtCobDU1fLStlFK8FZzz0Rr7P897OuTE9nZw&oe=69C28F9D",
+            "id": "781572830914250"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120232445966470263",
+      "nombre": "Campaña Esmeralda / 05 Septiembre 2025 / Irene Montoya",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-09-05T00:00:00-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120232445966650263",
+          "nombre": "Single Image",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/542007301_2247055942374323_4813065780750162678_n.jpg?_nc_cat=110&ccb=1-7&_nc_eui2=AeGK6kGASEOKkx0C_UmOrn4fr7AMwCc17R2vsAzAJzXtHYd9VvIBD1vgkVO20FbrEloyJy8yGG87DuqoxrE0yhVh&_nc_ohc=I83dgjlY7aMQ7kNvwFBmRyL&_nc_oc=AdqRsB7DOgp62_LrFu4N5bbOYJygI5uqvFsxq-1SIo6AtFisWyJGcFDDvIP20sjbIYE&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=mxaEDq8SB9SPNy8zmY1lUg&_nc_tpa=Q5bMBQGa4VHZagzfz5vfXgTP-TnVcs73PFGHx3WuxvVkM_wCa1RrACtTBn5CmSONkkbgGt8RN9hYKvWO&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzBs057IWJs2SFIpFKCB0q0rw01nQSc9ljsCboGKMsvow&oe=69C28B09",
+            "id": "1130099352352936"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120232458957870263",
+          "nombre": "Single Image - 02",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/543460947_2247080762371841_5831916171090580743_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeEuWZkgQWh26LPoYwkbo_-jU5jrYetktbFTmOth62S1sS9o1isijxnPepaAbMQHxA-ngU9Xexz8h2OkovMTaIJ8&_nc_ohc=CWS8hewYbsgQ7kNvwF42c7j&_nc_oc=Adr_Z-z14e5TKJADJc_XouzITEqxAYeCaueCB7RcB1ilGvskFkqt804cxyH_OxsnsOU&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=mxaEDq8SB9SPNy8zmY1lUg&_nc_tpa=Q5bMBQEEnLbiNIx6Sndvddy7fHzhdUuvpcLyU830R_dbRoqZ7cyVe683Q5KWh9Gu9tRAVTE_b0_bCPKG&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzltPgwyQkqyEf5LrYac-6HFgYGiEyGFoy-owAO8U5I8A&oe=69C29690",
+            "id": "758268383481518"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120232179123820263",
+      "nombre": "Campaña Esmeralda / 31 Agosto 2025 / Irene Montoya",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-09-01T14:27:55-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120232179123830263",
+          "nombre": "Campaña Esmeralda / 31 Agosto 2025 / Irene Montoya",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/540476103_24254312260916177_9049884276239150431_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeFDJCi0ONp5WITvg9yHUhjO5TcmG8uhwkflNyYby6HCR5s70D7KeDxQOMSx76kAZT3Ed2umqyTdE4nHszGuBvoS&_nc_ohc=KVU8ivO-WjwQ7kNvwFzl4_o&_nc_oc=AdrnJldb_Lgx7NejmYue_SkVcMNbIv0-xFWGCXWThhJBBxMpdwMEayitdeNxDNOweRU&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=ItfbiiUNzrVQSC2SVbIIDg&_nc_tpa=Q5bMBQFFHvTjUlvk85SrlpVumnWd-tRLnNH5iPYFzD9Q9YPaQB3USC1eOtjQODWeLP1p47U4yYwAMk7q&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwKqdFznimQCaq5WVwalI9x6OBb3TgPO4ETgdbMh2soRg&oe=69C2AA6F",
+            "id": "2475078219528573"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120231475104080263",
+      "nombre": "IRENE MONTOYA / 14 AGOSTO 2025 / ESMERALDA - Copia",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-08-18T22:42:23-0600",
+      "presupuesto_diario": 80,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120231475104090263",
+          "nombre": "IRENE MONTOYA / 18 AGOSTO 2025 / ESMERALDA",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/545264578_24318309271183142_3014717277579802271_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeGmKeWCUPw4qk_xNCTeu4jMDFVB7uFW8f8MVUHu4Vbx_81xqjOm5sgfrEIvF5IYJxMPm5r6sf9et8ZBoLBCq017&_nc_ohc=4OUwfy-LVD0Q7kNvwHSvNsc&_nc_oc=AdpsHMp-9Wf64hJwWnWxYePl8nclZlCPQo2SWJOMWt_j8FnIbxbICql2ldlDszTSEkg&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=A2_WGaIMbgq-wJkAg8DPPg&_nc_tpa=Q5bMBQEv5kcntJKxe0XXM1PjnVr3hjANVCZjfNuqWIn58gRrd8CX8EoGvml561l8jWh9KHFXFpCdk5rb&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afz_zWFASL4VexmMUUJLy8_N5_oAaV9ZPMQ4TTdwmpTLIw&oe=69C27EF0",
+            "id": "779192211705626"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120231284031310263",
+      "nombre": "IRENE MONTOYA / 14 AGOSTO 2025 / ESMERALDA",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-08-18T22:33:52-0600",
+      "presupuesto_diario": 80,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120231284031300263",
+          "nombre": "NIRENE MONTOYA / 18 AGOSTO 2025 / ESMERALDA",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.13418-10/534377640_1733626514248039_838552536062622400_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGrHg6JpF8gcs43AiOY50MR_5fwKCmu7yf_l_AoKa7vJwwONqSksdRWxJRfEQGX3Z3Y7odQCU9I2O7kxicXQRxz&_nc_ohc=DXcKuYLCxmwQ7kNvwFUMa-U&_nc_oc=AdpdaosvG5MT82GP0vOpZGZGn__unhjaOxJLagdls6CMRVBmL70RkWVjA7Jjw8mkM6s&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=2yFyBZMpUqDSMwsqIC7Flg&_nc_tpa=Q5bMBQFpWqNIZXJ1xrWCHIkda1u25Ydebyul1U_-rm6ml0J8QOXDt8m1ax3-s3tryh-rRqrfc198fK_h&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfwRlgEjxyP_7oUQY9hpK_-qh-5vEvQvV2ZSUCrPfpj2vA&oe=69C28969",
+            "id": "1274432211075514"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120231082925540263",
+      "nombre": "IRENE MONTOYA / 09 AGOSTO 2025 / PINO",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-08-09T21:58:46-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120231082925530263",
+          "nombre": "IRENE MONTOYA / 09 AGOSTO 2025 / PINO",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t15.5256-10/531253224_1123373959714215_8725640585579118829_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGYQAlDi9nsv_DOO-CGlHa_dpEn3kvKJ0p2kSfeS8onSmOQQik3r2tdOPXypgUID1Gug01PFiVL2MPII8s9lwK0&_nc_ohc=6BnvDKH6c38Q7kNvwF4KTtJ&_nc_oc=AdoHZXXjB3qvxBTKWTc5b_Xo6hiKgDQlsur_UdwG_TJN3leO9_E6I4PWaKIn3ugne0g&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=JUm21VHA9pmiSQIPP49n-g&_nc_tpa=Q5bMBQE6IY9B1wc28q1Gu3igl_vbtn_tUHX88sLSZCBwILP3PQEEupIvaXkBQd1BUPJfaYnFQwwynCd8&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfwtZxzjp7de5Kx9xzQP7pR3yGlen6urOY2v1YeBaYBSjg&oe=69C29BB5",
+            "id": "1066821968890688"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120230698564640263",
+      "nombre": "Campaña  3 agosto 25 pino Irene",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-08-04T00:31:36-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120230698564650263",
+          "nombre": "Pino Básico /",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/522220643_23927114390302634_8989776760661097000_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeFTNNlQ-JB4u21W079_vbvo1g3nUc2x9QXWDedRzbH1BSehARYtjPb86_t4Gsh3_Gs3b9DYoFa16w0PpfPb_YQ0&_nc_ohc=4-u1y8f9QHAQ7kNvwEEUUfm&_nc_oc=AdrluelgwPFXo80TEXEPh0CjjxHF-W24DsV4UTlkyizzlhxVnxYzZcgHBN--ueW8YJ8&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=gwzJxQavWnlpFoZHlAAIQg&_nc_tpa=Q5bMBQF6TvwcleQ0QiJTTuCj5cWAohPpAkCM5nQXYb_1790H8UWKZQ77WpQ4Ml-0HmmRp-s-TJkMjw6Z&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwsSBERgv9QY6Ji_qq02k6MrDLbhSX_fBn5r-m8WJ3KiQ&oe=69C297E7",
+            "id": "1487773662577687"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120229998527550263",
+      "nombre": "Nueva campaña de Interacción",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-08-26T02:46:26-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120229998527560263",
+          "nombre": "IRENE MONTOYA / 26 AGOSTO 2025 / ESMERALDA",
+          "estado": "PAUSED",
+          "creative": {
+            "title": "EN TECAMAC",
+            "body": "HOLA EN SEGUIDA TE CONTACTARÉ PARA DARTE A CONOCER LAS PROMOCIONES DEL MES!  ¡APARTA TU DEPARTAMENTO O CASA CON SÓLO $5,000",
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.13418-10/534377640_1733626514248039_838552536062622400_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGrHg6JpF8gcs43AiOY50MR_5fwKCmu7yf_l_AoKa7vJwwONqSksdRWxJRfEQGX3Z3Y7odQCU9I2O7kxicXQRxz&_nc_ohc=DXcKuYLCxmwQ7kNvwFUMa-U&_nc_oc=AdpdaosvG5MT82GP0vOpZGZGn__unhjaOxJLagdls6CMRVBmL70RkWVjA7Jjw8mkM6s&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=S2yHUbEY7_pCQEPkOaWteA&_nc_tpa=Q5bMBQGTyuNnlXhadGHZ3hJ45VfzbaU50ppTquhqGsP9V6_0_fdAJQRTxq72vG31DfFlU_E5FdUfI6EI&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AfwPTmNq9Qxna_4VIxPWxrtGOq8YHa9jkO90XKBOt0e7FA&oe=69C28969",
+            "id": "763382939994953"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120229643370950263",
+      "nombre": "Nueva campaña de Interacción",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-07-22T11:49:06-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120229670784600263",
+          "nombre": "Imagen/Fachada 01/17 julio",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/521770779_23927112626969477_1146237957057097913_n.png?_nc_cat=102&ccb=1-7&_nc_eui2=AeGlygf7fXSG4wY--AvSsMgwJlAl1kkefZkmUCXWSR59mR9_BjaalDSQuTUkv6qgMSsoDlbHM4LHvIrhdHglKCUE&_nc_ohc=tvk7pNylEpMQ7kNvwFqjlk_&_nc_oc=Adrk7WoLxnCz9g_BN_C8e6ZWksRle3uPEI7TvREDCY71l1JGlPrJZWt_13DAN7QgPf0&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=BNMGIwmmbFiBN8uh5-wqBw&_nc_tpa=Q5bMBQGQivUoZ7McZwxlk0vrJcvxqkDsgjEHJBJ3t7zR4jmYIaR8ccjd4D5MLkwBiKgQO9lkgsXXPnVs&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyLot15fv_bGk5KxRqKvrwAyd04v0CXTrYluBwMIbJO-A&oe=69C27B03",
+            "id": "603870852657372"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120229671749740263",
+          "nombre": "Imagen/Fachada 03/17 julio",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/522702552_23927116633635743_9221451792643238630_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeEOoEcBo02s6MNs0udk97DOhowGus5xxTGGjAa6znHFMWy740Xpz6rdp7nU0Cnx4Y1hoZnTweXg_BLbTj4aWgIn&_nc_ohc=vJIolMKIinIQ7kNvwEDwN46&_nc_oc=Adrao5WpKt5pMuS8NQr7IistxaS7aegvnjICb8c8o__FbOaebEnwKJ0duMXrcqgEKBI&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=BNMGIwmmbFiBN8uh5-wqBw&_nc_tpa=Q5bMBQF1UHmZ5ktOqw-BXPTYOQuq2lFxekfeLWY1Kb5TwTzmjMuGlEb1w9WpE5_18QIIodDOvbPGNK0m&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwYcADi9E4p7eKPaRXpaem0CPdAWrdJLUgIZR5KZtjdmQ&oe=69C2A791",
+            "id": "771057095872284"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120229671749730263",
+          "nombre": "Imagen/Fachada 02/17 julio",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/522220643_23927114390302634_8989776760661097000_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeFTNNlQ-JB4u21W079_vbvo1g3nUc2x9QXWDedRzbH1BSehARYtjPb86_t4Gsh3_Gs3b9DYoFa16w0PpfPb_YQ0&_nc_ohc=4-u1y8f9QHAQ7kNvwEEUUfm&_nc_oc=AdrluelgwPFXo80TEXEPh0CjjxHF-W24DsV4UTlkyizzlhxVnxYzZcgHBN--ueW8YJ8&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=BNMGIwmmbFiBN8uh5-wqBw&_nc_tpa=Q5bMBQHi-qNEi_pI4uY9euqVjCi8qVVMOOv7XQJSyoWtWAmbB7u0JxQTTlM6nfk5uigIdjnl7gyz3MIa&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzZjF2G40mNtbnEHgOED7gUec3G68ok8i3WkNLi9HA12g&oe=69C297E7",
+            "id": "1496997701318726"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120229560854520263",
+      "nombre": "IRENE HACIENDAS",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-07-20T12:01:00-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120229561101810263",
+          "nombre": "IMAGEN 2",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/521364435_23911882375159169_2845150197982430044_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeFH42X6JhopQ79WkaDOzSa2j-PSl_h4iXiP49KX-HiJeMHL_9BnuFNBjI30xtssKksXYXcJFKD1h20iEZ79WAol&_nc_ohc=DsbKbT2yH_8Q7kNvwG-xa3B&_nc_oc=AdpoO_9jeqhncYfBMxbdbLkWGidlzquqAK0xrmjd-fX3e0iy4n71gPHbF2HsbghV4Ic&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=jhaIZi6iYbTjNB5CHh2o8Q&_nc_tpa=Q5bMBQGi3QvXh8Nfoq8OMR-rGeuyQYFWOlyzT1zLQj1vPenV62Isu6ClMEh8pL5iJQi63JNdu9rL-Bzp&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afz_U8z85poYhQZXATJnFFJkgWowA540vHmgK6wulLbzqg&oe=69C296AF",
+            "id": "1307191647506265"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120229560854540263",
+          "nombre": "ANUNCIO 1",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.13418-10/521356193_520105424491961_2214172047417903959_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGoLcV_ToOVr3XvGGGZ_bhEvWhN4vZz8329aE3i9nPzfTiCx81qfsk3VIE53Qu-KIWcJsODnLb67dZT3ek61MFa&_nc_ohc=7FoYSV1qQO8Q7kNvwHUEFSf&_nc_oc=AdoEOHIAfCG9JnuYsTNUG0ygL6wlKa8SP37J7BTLwI6sbjywaPzDkpk1R9I1_h3NU5g&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=jhaIZi6iYbTjNB5CHh2o8Q&_nc_tpa=Q5bMBQE74MvOwqePfqkZZiU_q1j0cveMdcmaUzwhSYP4Sk9qsO6wefm_NjT1TFT7wqMBo8DF8Js5PogS&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_Afyhn5UU32o09ulnaNDBpxBmClYqmHRjxty2FOBRzTvvpg&oe=69C29C1B",
+            "id": "24020647277604872"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120229561628670263",
+          "nombre": "989",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/521339045_23912038688476871_3627790689230188540_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeGAXwjsVsxQ-q2COYsPpUIrhGterdySSQGEa16t3JJJATWwrWtBjonR57Qt07N-tPNE59-EY7mtBC9RlpLN1-7P&_nc_ohc=ILVQlIoJc3wQ7kNvwGEVlzD&_nc_oc=AdoEF3vqOBumSIIPRAXOci90F5uOBOjMvJ2B-oHbG9fiZF0LswnxvjOdISa-K7ET4Io&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=jhaIZi6iYbTjNB5CHh2o8Q&_nc_tpa=Q5bMBQF7fv2h3FRxRK7YHLcXXEPg4IRqWFpgtelZlEoR6w_MKcMXAZ5hvN-tRGrqw9ughD48Tz5Ibx99&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afx--QepznkpcLTUPwLRUkvsEWbLCmnXLrqciWS_Sd8ZEQ&oe=69C2998F",
+            "id": "1705726730076145"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120229496714280263",
+      "nombre": "IRENE/HaciendadeBosque/18072025",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-07-18T20:07:26-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": []
+    },
+    {
+      "id": "120229436864270263",
+      "nombre": "Irene Montoya/Haciendas Del Bosque/Interacción/Messenger",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-07-19T15:01:40-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": []
+    },
+    {
+      "id": "120228131206090263",
+      "nombre": "Interacción/27-06-25/Manual/Diario/VideoPame",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-06-27T15:00:20-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120228131206080263",
+          "nombre": "Nuevo anuncio de Interacción",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.13418-10/512684145_516087408222652_2413557272193955970_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeHuso_-v68nGLC-ycSFDP5AV5hmojjMKatXmGaiOMwpqwNTzis9gx804GV9hSQyFPwQVMzSwyqIMXDI3KfH5X9y&_nc_ohc=f5xMM_W0sa8Q7kNvwGkIGfY&_nc_oc=AdpJvAZ_ZesafEpeQe6yfS0MuDI440ysr1jQ1h2oRasYYhyarlvRsFOYfBMSns4K6w0&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=WmG8Qbk5V_3Wu6XaOL4yaw&_nc_tpa=Q5bMBQGOXyRU10d5DIhTaJ7_4ea5USDFddWJJTbMuVwXaSRUzuGBHaSIMh2-0L9Ve_G1vgiSQoHSrijy&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfwzneKzP0EZ-zE5AFS7RmqBZcsNijHyngxnVCITEqkSzA&oe=69C2A197",
+            "id": "8547184052072716"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120228115208470263",
+      "nombre": "INTERACCION+27/06/25+ADV+ABIERTA Campaña - Copia",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-06-27T10:13:26-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120228115208480263",
+          "nombre": "INTERACCION+27/06/25+ADV+ABIERTA Anuncio",
+          "estado": "PAUSED",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/513398306_570682616109269_498885279337691978_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeEQpeE6T7wzYMJF3fHqY3eFYTz87lpDX8phPPzuWkNfykmsFhXwHcQNmbmMmrkxJj0RqtBOWBvLxtZymJQ1DScv&_nc_ohc=sFZmBTy7mPoQ7kNvwHjV9X9&_nc_oc=AdowseG3FCoyyatCfbCR0vNUup-Su6dHkjkI4Dk6dBfbLveqZMVWMB-0exS4tUKcnE4&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=KQ-3_qzKn-qDlyOnCVbSzA&_nc_tpa=Q5bMBQEa2-HZf4llK9s094pSXHYKoEEJIOQTf7xvWetIIy89Hp0mxx4JdqWbia4TAffNYcqhvgi9-Zxb&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afy6hsAVwnVOhx1V61HzPbcKSbFWghSX2_G96qEdnvPCPw&oe=69C27E98",
+            "id": "2115132768996170"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120228058855790263",
+      "nombre": "INTERACCION+26/06/25+MANUAL+MENSUAL+INTERESCASA",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-06-26T13:30:22-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": []
+    },
+    {
+      "id": "120228056458250263",
+      "nombre": "INTERACCION+26/06/25+MANUAL+PAO",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-06-26T18:18:01-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": []
+    },
+    {
+      "id": "120227615841780263",
+      "nombre": "Pamela/Cosmopol/Interacción/Messenger",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-06-20T00:00:00-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120227620435970263",
+          "nombre": "Imagen/Fachada 03/20 junio",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/502736258_30302714732710513_6932640743807306724_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeE4yMws5s8YS0jFALZl9w9W8IockPzvWavwihyQ_O9Zq_xRhv8OgW7Pw7_QKoQ8aEWTlACwlTvwk5paFlFY0Yfj&_nc_ohc=d_A-S72_3h4Q7kNvwG-2CoK&_nc_oc=AdrUm9iYhUMvJVF-MVuIjzz8EmrXV4l9GlfwDHNSvljgjE6MFUWIj3e2uNpzuU4y_ps&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=NbZWKYf87RC3VtKHPgLNIg&_nc_tpa=Q5bMBQETZNB0pEDG70O_Lk-B6hcab9kURn6gPUGj4rjC43nMGdhoTD1nmCOXyNrxGf4LIskzE72qQnfm&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyY2orFSDi-UcKtcUzdntBbtfeFxm72fcoKXIc6D9UUOQ&oe=69C292C8",
+            "id": "1084485940462281"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120227615841770263",
+          "nombre": "Imagen/Fachada 01/20 junio",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/502736258_30302714732710513_6932640743807306724_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeE4yMws5s8YS0jFALZl9w9W8IockPzvWavwihyQ_O9Zq_xRhv8OgW7Pw7_QKoQ8aEWTlACwlTvwk5paFlFY0Yfj&_nc_ohc=d_A-S72_3h4Q7kNvwG-2CoK&_nc_oc=AdrUm9iYhUMvJVF-MVuIjzz8EmrXV4l9GlfwDHNSvljgjE6MFUWIj3e2uNpzuU4y_ps&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=NbZWKYf87RC3VtKHPgLNIg&_nc_tpa=Q5bMBQGj7teE2tNcoEjQ_1ERgjOyUc6fctvTj6cZi8_jgj8RAG2HvN4L4wMv6kallq_8fvhnSXn2GBSS&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyzfhG-NXu5ThLH1SB4pEN3ES522wmVkVqqCM3TaQYTWA&oe=69C292C8",
+            "id": "1201554788401293"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120227620435960263",
+          "nombre": "Imagen/Fachada 02/20 junio",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/502736258_30302714732710513_6932640743807306724_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeE4yMws5s8YS0jFALZl9w9W8IockPzvWavwihyQ_O9Zq_xRhv8OgW7Pw7_QKoQ8aEWTlACwlTvwk5paFlFY0Yfj&_nc_ohc=d_A-S72_3h4Q7kNvwG-2CoK&_nc_oc=AdrUm9iYhUMvJVF-MVuIjzz8EmrXV4l9GlfwDHNSvljgjE6MFUWIj3e2uNpzuU4y_ps&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=NbZWKYf87RC3VtKHPgLNIg&_nc_tpa=Q5bMBQHxol_zV6IhEV1vQ8ucfuxPyRnbp74_FsT3NkmQBVaQFzXh-XObl-CfyPnebA5HHvM28Goton0x&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwjU-GBVuzAaZU9HEb1vH4kx1fU4mdeXb3ULbZrR6EPVg&oe=69C292C8",
+            "id": "2183888658772773"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120225976453840263",
+      "nombre": "JONATHAN/COSMOPOL/INTERACCION/MESSENGER",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-05-30T00:00:00-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120225976453950263",
+          "nombre": "IMAGEN/FACHADA/30-5-25",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/501483546_10234722628742409_6114030986377066222_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeG5dVSxduk63Ino_tAL7mT5nsdImgODsQCex0iaA4OxALtmVv4wIKsZ11ajCXYcBmxAG6j3qYudA_sIi027cOyM&_nc_ohc=QNDOkeOJgk0Q7kNvwHV0EUe&_nc_oc=Adp0a850fY2Cpc385RbskNCL3F7ZcBa6kevwTlwW2Bi3KUgryXsV1KsSGh4VE1z-R4A&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=8eR8voDmlOgf1htm3ZAb0Q&_nc_tpa=Q5bMBQGf04PGkQRPBe955LlHdlGeP4GFDNTOEJtud4ZASkbEotlytqqpkO99VpZn2KAXwaTMOFAyjBD5&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzZa4x51Gtz9hbwyjWtbEGIJMwBXNfTZZ8a5fsapJq1AQ&oe=69C2ACB7",
+            "id": "758555887032713"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120222873636070263",
+      "nombre": "Adrianflores/cosmopol/interaccion/messenger",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-04-25T11:05:46-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120222873636220263",
+          "nombre": "Single Image",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/599437183_10240506296849984_5557601047875181783_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeGJvmYc986uIB8IYRQjQG4FQOsHZE1Ys2BA6wdkTVizYBNHpRJr_Un2ltq5bt8p-TpZUXN86HeiW6dFjcdwbEid&_nc_ohc=P_hTSl-7GEsQ7kNvwHGKMtb&_nc_oc=AdqczNfcKNaaZJIvn488nqGh82cdCs5uCNVHnYf3qOcZFPUTmdaA7lqgXL2LsaLzqTk&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=qnPoTKH9bUv26yxLB049vg&_nc_tpa=Q5bMBQFGSJY1SCfhZreDpP5mx5Jb8umI56X5goYrNQvav6NjucXMbwp_R5DvZlvEfWtdosoSZw_7cItP&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afx7P13R3UM_ShYKDrfxdDFhNelvI9Ih0moOm_UHEuK_Lw&oe=69C2ACD8",
+            "id": "10038873872879186"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120222910397490263",
+          "nombre": "IMAGEN/FACHADA/25abril",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/491885739_10237278056465992_6080416133929245298_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeGQJaSNRWyyOSkaYNymxyS38rs6-Kvsza3yuzr4q-zNrf_Ezq7zLtf4t7nGVp8t-0vPZqp1wqAqfyROJTnHK-vW&_nc_ohc=jKwRWhlpRfQQ7kNvwHKDqxn&_nc_oc=Adp4QHfNCdlg75e6J-gbdy3Omn9UPld3SS6gFNCE8D8GhpQF18w6UeN0XnZvzomqj_c&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=qnPoTKH9bUv26yxLB049vg&_nc_tpa=Q5bMBQH9Fy7luwQl0YKrYNCph33Zhl-dh4lrBdoF0r-mTbcVzGHgmE8ORi9ftC6Ird9uZ2UdxH4WfRDI&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyOO2uFY8Oi0ripM9ccXDJAgdEyyi2q5kCAvCxkSKL9jA&oe=69C281A0",
+            "id": "24200917632933543"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120222908798140263",
+          "nombre": "imagen/interior/25abril",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t45.1600-4/597990899_10240490449813818_1296121116223948769_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeHH4RbA3P268EHEhANDEzZ8TQKMiiESVaRNAoyKIRJVpP6SvgYUzSBelMI5HWdEt4hcCJak9NcfhJD9Hn48EhAF&_nc_ohc=ZjATF0ADR-sQ7kNvwFwM3wi&_nc_oc=AdrgsHYv2zjPnwgPDn7ogqIja1RDgEE9ecPeH1qDU1RGwIDNd22RuwaLuEBYvxhaNM0&_nc_zt=1&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=qnPoTKH9bUv26yxLB049vg&_nc_tpa=Q5bMBQFZI1TFPQOELu1yQjL0kvj9349Udu7HoAUaD4rAo4wRNIZT8nB4A_fYawXqsft2uYAgL17S538J&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwtpqZCOARHjCJTbuv0DmUsBSF6jGde_ugogAZYNU3svA&oe=69C287E6",
+            "id": "720818344288387"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120216227088330263",
+      "nombre": "INTERACCIÓN ESTILO DE VIDA 10/02/25",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-02-10T15:29:48-0600",
+      "presupuesto_diario": 80,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120216227088320263",
+          "nombre": "INTERACCION ESTILO DE VIDA",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t15.13418-10/476673056_1558779898116806_7210794317380905196_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeG-TrZzY8e_kj7QV9VA1vrsoWUhA6UkaMWhZSEDpSRoxUBknyNBqKj-ZFDNkOqNe1eahqk4UnaYk2WbI07PmwOa&_nc_ohc=Ydp4K-4vIdwQ7kNvwGq5bMG&_nc_oc=AdoVZoaxL1NPSdzWIJLsgdgiTndDDSBNrz09svyGxqZVS92cwqsmWEmcpzhKwQiyA8s&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=kQgOH_Z8_4BDchhYiTRXyQ&_nc_tpa=Q5bMBQEp6pESQuuU7KcrQ9sZNc6m-0NuHhSvkSGx7r_0QbdNPQhzP5eRD5QxxtsPNORelUnrc0gGjx7C&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_Afxhajh-PhzJN-ILI31xNEZqCEv_I_lJYVNmHAx--gN-2g&oe=69C28FC2",
+            "id": "9313485245411888"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120215033195040263",
+      "nombre": "VISTAS GENERALES 06/01/2025 Campaña",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2025-01-07T17:22:55-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120215033195030263",
+          "nombre": "VISTAS GENERALES 06/01/25",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.13418-10/472696885_2361522957546962_7981205763089392482_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeENTNVVwOX2xCQmymz5itGzNMl2vJ9GcFA0yXa8n0ZwUKpoHgJfmAaxegM4H8CGl_G-IJ9xRIuFZL4aGVrt4Ofp&_nc_ohc=ont7PJlgboQQ7kNvwH4PvOj&_nc_oc=AdrlR4TWwbdzafAI3_D0FsrpZ4-jXoNFAoWs1_yO9d4tiJl9KE3BGgUVXhLbiGkGAf8&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=TE_BbdxdspYwrkQPD4BNLQ&_nc_tpa=Q5bMBQESfjVIaAfNE6j5Y9LrV-hy4-qFnBLw9s2fn1VWOpw0iRmmHudF6Z8sA5fIzJiS5aMZVO5k7JAH&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_Afxa57zTYppzpVOtEdEKIcSIllDwZuZDkCrVE6fIMSBpFA&oe=69C2874B",
+            "id": "997785448908456"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120214965522160263",
+      "nombre": "RECONOCIMIENTO LIFESTYE",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_AWARENESS",
+      "fecha_inicio": "2025-01-02T15:56:53-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120214965522180263",
+          "nombre": "LIFESTYLE BUENA VIDA",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.13418-10/472246221_594788196824947_4641716758028069213_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeEgzVgLRpZGwiF5NS-sqdxNDFdCBXDER5cMV0IFcMRHl7utVBPxBTUW00E1g-3GsB9SqrEx3Vdjo7bF6J5H06Zu&_nc_ohc=9fWqidiNhE0Q7kNvwHnL0rl&_nc_oc=Ado2i-_fmx6z6xm58eT9tJ1sL-q2_DFkoi5om4fYXEAR8yu3R-W05oyirqNtL6syUZM&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=OCkFQBEgrGaFtUMbDjLdqg&_nc_tpa=Q5bMBQGEC2TZ0HWH0ENEcEj75AMl1wXq57uV2O4wshm3THKqFcW3RUjeSj2qUP6tYf0xXBny-8ZoUjAF&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfyQQJaey2TvHGnEdd8nRO32fxvsEnj3ZnZ7tDjfGgQKUw&oe=69C28AF3",
+            "id": "120214966602970263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120214709561600263",
+      "nombre": "FOTOVIDEO 2",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2024-12-20T22:23:30-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120215017350350263",
+          "nombre": "FOTOVIDEO 2",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t15.13418-10/470969799_450951281207307_8680250228727690719_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGzdeZunCbL6ucO6tDT6h_6SA55viYygGFIDnm-JjKAYSmaM0H75UcqvjJFPvBsh3rLevNW-cVlmL0gEM3JYGXe&_nc_ohc=0zrxBMxXz_IQ7kNvwFL-nYH&_nc_oc=Adr13sWtTjUKp2CXSAG7T_4mnPtHO9V0fINeW9ymdBt8RXs5ybcR5HFKARRLQq2plhI&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=aqfJnHUPUnE9AhAbHTs6HQ&_nc_tpa=Q5bMBQFuHuUs6iP83DMY9rYAGi-LUhiwzT-G8Onvib1jVVrv3p6bPOdoqVTvdG7c32cIjvJg51qoiSzG&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfzoumcepvKZdHhDZStrTxA5U0dj5l7JdX6mAOjmPVfRSg&oe=69C2925A",
+            "id": "120215240122910263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120215017344210263",
+          "nombre": "FOTOVIDEO 2",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t15.13418-10/470969799_450951281207307_8680250228727690719_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGzdeZunCbL6ucO6tDT6h_6SA55viYygGFIDnm-JjKAYSmaM0H75UcqvjJFPvBsh3rLevNW-cVlmL0gEM3JYGXe&_nc_ohc=0zrxBMxXz_IQ7kNvwFL-nYH&_nc_oc=Adr13sWtTjUKp2CXSAG7T_4mnPtHO9V0fINeW9ymdBt8RXs5ybcR5HFKARRLQq2plhI&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=aqfJnHUPUnE9AhAbHTs6HQ&_nc_tpa=Q5bMBQG33SDvP5vekdkWqBSNTSeqThdjTSiFsXGDBWiyzBosq7hKb3wjZQ2eFYPlyg-B4Vbt4vO_Avg6&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_Afy3YJMllYcHsqvDiBmbRNIt5OEKBQkk17aLgbDOeYRu-A&oe=69C2925A",
+            "id": "120215017448330263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120214709561590263",
+          "nombre": "FOTOVIDEO 2",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t15.13418-10/470969799_450951281207307_8680250228727690719_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGzdeZunCbL6ucO6tDT6h_6SA55viYygGFIDnm-JjKAYSmaM0H75UcqvjJFPvBsh3rLevNW-cVlmL0gEM3JYGXe&_nc_ohc=0zrxBMxXz_IQ7kNvwFL-nYH&_nc_oc=Adr13sWtTjUKp2CXSAG7T_4mnPtHO9V0fINeW9ymdBt8RXs5ybcR5HFKARRLQq2plhI&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=aqfJnHUPUnE9AhAbHTs6HQ&_nc_tpa=Q5bMBQGbQHHsIEi8JiTQdDyWNXGxNdfBwRubBMeJakVO-MBjLx7lrFU809QlDRQUdyGUI0IRo5C4Z1JB&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_Afy026qSqrvGRkTgk8naJY_evjHPwNeU6uyqaBhHL1aufA&oe=69C2925A",
+            "id": "120214833974730263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120214471771060263",
+      "nombre": "Nueva campaña de Reconocimiento",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_AWARENESS",
+      "fecha_inicio": "2024-12-11T17:32:09-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120214471771100263",
+          "nombre": "TOMAS AEREAS CON CANCION ELEGANTE",
+          "estado": "PAUSED",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.13418-10/469601642_1283587062793942_6593754547292647520_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeG79s5xMNX7rTxz6BKhjhnA-fqiQS5mX3b5-qJBLmZfdkxt0BDrfDVctswGwBhaCx63oWMGnpKN3ZVs567kptXR&_nc_ohc=AsPcRA2I7_IQ7kNvwHaGFYW&_nc_oc=AdrmTqkA8PoTxulvTsVSqGNO47Hwc0Soewjvdl0VhfUtK1gVee3Rkg0gW6m2rbzI9cw&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=9EkjUikvAoL91BAVcL_qHA&_nc_tpa=Q5bMBQFSTuXyzD2RQf1D96-fsFEUhzm5yK4fbOS9RPyxLSRCbEeQiumo-bChwKHnAJ2srw0VkOSb5DFU&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_Afy7ihrFUcIpmJZU2R4CXChNyXK9n_QVo3LQwuUXYebONQ&oe=69C27DF9",
+            "id": "120214471896430263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120214269111280263",
+      "nombre": "CAMPAÑA NAVIDEÑA",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2024-12-03T20:08:35-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120214424053130263",
+          "nombre": "NAVIDAD Y SANTA CLAUS",
+          "estado": "PAUSED",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.13418-10/470167221_3469640723331125_3338867668765247959_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeGHI5dRRGNjI867mNkhHv56tEC3JnGaY6q0QLcmcZpjqh8LDgqg05FDKUi1GJZiAt60mkNm-y_jLOYpxYToic-L&_nc_ohc=SAJz0xwlddsQ7kNvwH7zddk&_nc_oc=AdpyzDzvv4oeI0QlVh_yfK4d0swWZeDG7GDpO8U52g0VXL_MO0OdAhLow3X64VWJq5I&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=z-uxiJdpKQ9YUNIHwhwRhA&_nc_tpa=Q5bMBQE9T1VoPI3sCxzdrqT0XPIk5OA9d_Y70ZVS6lTRU34lcBleN53LuGRdoir70-tWkEKi3Xq2a-R_&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfyVx6oC0Nvww6vXY9wxQLsLIJuAE5BQmRSC0_azqArbwg&oe=69C2960F",
+            "id": "120214525131050263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120214269111320263",
+          "nombre": "NAVIDAD Y SANTA CLAUS",
+          "estado": "PAUSED",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t15.13418-10/469328314_8639785579430839_1061914623691382317_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeFF6B_2b9bcn0KMAkVZQohAKyPYMmfwKCMrI9gyZ_AoIwonUS0LAPBMroQ8G2ViA9nfFm179i4JelxAy6IOaTiJ&_nc_ohc=N4wI53TOzVUQ7kNvwF8ntiA&_nc_oc=AdriOkdfPtMfmOFnwMOSIR36ZWDabREHq-LpyD89B60BMVCiMuSlUvURc-mx3RTXxRg&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=z-uxiJdpKQ9YUNIHwhwRhA&_nc_tpa=Q5bMBQGA6Y91fbwWyqvr9-Tfmah68QI9x3dLZ5nuMG7ey5uqktObxxhtJj4wJUjSjYTwO4iaQ_21oX5s&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfyWeWkZ8DKewqAjrSzaGPfnnKZJdanc0ftl9_xJl002wQ&oe=69C294C8",
+            "id": "120214272875450263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        },
+        {
+          "id": "120214424054120263",
+          "nombre": "NAVIDAD Y SANTA CLAUS",
+          "estado": "PAUSED",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t15.13418-10/469328314_8639785579430839_1061914623691382317_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeFF6B_2b9bcn0KMAkVZQohAKyPYMmfwKCMrI9gyZ_AoIwonUS0LAPBMroQ8G2ViA9nfFm179i4JelxAy6IOaTiJ&_nc_ohc=N4wI53TOzVUQ7kNvwF8ntiA&_nc_oc=AdriOkdfPtMfmOFnwMOSIR36ZWDabREHq-LpyD89B60BMVCiMuSlUvURc-mx3RTXxRg&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=z-uxiJdpKQ9YUNIHwhwRhA&_nc_tpa=Q5bMBQHT8n5AF5aCa_6xAztFqMX9B2TkMuUvCoVBBvoiWz03eOf3_GIKi0G27CPx-CCdcQNpIy307LdH&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfyZh1F72EBEjdV-7jbqOJxagF8qSTV43lRbya0hR9w4Eg&oe=69C294C8",
+            "id": "120214447522630263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120214162509380263",
+      "nombre": "INTERCCION CON FOTOVIDEO",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2024-11-28T14:20:00-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120214162509410263",
+          "nombre": "FOTO VIDEO ORIGINAL",
+          "estado": "ACTIVE",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t45.1600-4/558740379_24798567306438613_200769764582517091_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeEB-jEoVnMFz7HGAToSmtkct1fH-RS9Fl-3V8f5FL0WXwXcD1OpZp5lPVVKAhsuuu_zNFVt8hwhLhJRgZGrM-QE&_nc_ohc=b-NcZiZAwVkQ7kNvwE8MnZl&_nc_oc=Adp9ZBTleMXXyxFIknxqwWTUSH8hElCY-vEsE5XZPofgmozsV-o_CK1-QWvAbvuQyJ8&_nc_zt=1&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=arBaAF_rA5yPu9X11AI5vA&_nc_tpa=Q5bMBQEdLcBK2Ac7UZpEno13AZeFWCKZpFcQxRsf8xfbFnQrWHKjL3rZ572LuywIDkjl-xGqsdS3Fz5j&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwuiNeY_CbGPnoIan9utnbwOJDN9RfPaDPUAfGILrjigw&oe=69C2871A",
+            "id": "1099309025210273"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120213981848230263",
+      "nombre": "RECONOCIMIENTO CON CREDITO",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_AWARENESS",
+      "fecha_inicio": "2024-11-21T16:06:55-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120213981848260263",
+          "nombre": "QUE ES UN CREDITO",
+          "estado": "PAUSED",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t15.13418-10/467826561_2859060677587440_7533778369436450309_n.jpg?_nc_cat=105&ccb=1-7&_nc_eui2=AeE5PWzYwQDFunMkD0fholSHOQ_4HiC8O-I5D_geILw74kbBaNjwhlMmaMtGrAoRdN4Ykr5JrmmmSIaXZ5tRCFON&_nc_ohc=iv4ltji1QiYQ7kNvwFPRf6P&_nc_oc=Adojjnd8ZL87FOczrcm6y_ks-XNQIl3zWt3ExWBv-F8HNbkPs2fw9cZEMT7OXlJTijE&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=4FG44wTxCxvv2hRRzbPsBA&_nc_tpa=Q5bMBQGAZzvlx_8M8u8M5yQSUKTCiJVlcUS2fRow6Vd_cJ67Biuqyx25DggAPc5cOmF2h4bn9wtSOZdZ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfyNETuG4FJT7bI0vp3gMFHz7KnfRBSIlxYMJEkLUjpKdg&oe=69C2A0E6",
+            "id": "120214423892540263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120213830141250263",
+      "nombre": "CAMPAÑA INVERSORES 15-11-24",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2024-11-15T15:21:20-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120213830141290263",
+          "nombre": "INVERSIÓN DRON 15-11-24",
+          "estado": "ACTIVE",
+          "creative": {
+            "title": "Info de tu inversión",
+            "body": "¡Este es el mejor momento para invertir! 😎\nCosmopol es el desarrollo más exclusivo del Estado de México por lo cual es de las mejores oportunidades que tendrás para invertir en este ¡BUEN MES! 🤯\n\n-0% DE ENGANCHE.\n-ÚLTIMOS DEPARTAMENTOS CON BONOS DE HASTA 276,000. ✅\n\nContamos con departamentos distribuidos para toda la familia las amenidades harán que sean atractivas a cualquier familia. 😄\n\nNo dejes pasar estas ofertas y ven a conocernos.\n\nRodrigo Guillen, para apoyarte",
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.13418-10/466857483_488964717499001_5423642616224090228_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeFQIVSSdcx-DNajE2cm2xmninj86bx4Ok2KePzpvHg6TceX6BBFBMxF7x1xnn0HwGwFF-MbC0Xqw-J3er5lNPfa&_nc_ohc=0u9ujTD6ZJUQ7kNvwFdcy1g&_nc_oc=AdpmQdm4OvFm5Xw-uO0Dnqerj152NO4hsX13WgI5jAXw4FTY7Yn0m_e_ngh9gp2rvww&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=ZrgX-De4OA95ga7ffCr8CA&_nc_tpa=Q5bMBQG0LuFkQDuIXQJr1UA1TcSB5XNLXF-qfH4AQnf8uBNOOrdEHaIk6BDYVARR_Q-u0rV9ArJEEa5P&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AfwfpDOjGbVkPtUJ3n8In9muIuyIDjmEaDa3lk0m92ToJg&oe=69C2A6F8",
+            "id": "120213982540160263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120213776316140263",
+      "nombre": "Prueba: CAMPAÑA VISTA GENERAL 11-11-24",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2024-11-13T17:46:00-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120213776316120263",
+          "nombre": "VISTAS GENERALES 1.0 /B",
+          "estado": "PAUSED",
+          "creative": {
+            "title": "El hogar ideal para ti y tu familia",
+            "body": "¿Imaginas despertar cada mañana con un sinfín de aventuras a tu alcance? 😀\n \nEn COSMOPOL, tu familia vivirá una experiencia única. ✅\n\nCon más de 20 amenidades que incluyen:\n-Cancha de tenis 🎾\n-Cancha de futbol ⚽\n-Cancha de básquet 🏀\n-Un increíble pet park 🐶\n-Zona de restaurantes 👨‍🍳\n\nTus hijos disfrutarán al máximo mientras tú te relajas en un entorno seguro y lleno de vida. 👨‍👩‍👦‍👦\n\n¿Listo para dar el siguiente paso y construir el futuro que siempre soñaste? 😁\nDepartamentos desde $1,999,000. ¡Tu nuevo hogar te espera! \nContactame y recibe asesoría personalizada.",
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t15.13418-10/466731872_549870757894642_1642415297301554595_n.jpg?_nc_cat=110&ccb=1-7&_nc_eui2=AeFzwjGj6aU2C3ODTtb28v_qsaORnS2jrdGxo5GdLaOt0W3Q7uyRCCsyAVkRhMpbHUfCrnCm8_WTaWDlclIISRGD&_nc_ohc=0iO42E5kyUUQ7kNvwGvT_CE&_nc_oc=AdoSqhxS7OCeg3WojduYcBVDvXWhqXdzPOs7Wo-Va-bLpJ9umM4Gjn7sn7ImICGijZM&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=ApFGmxThrg_KkPavaWBxMQ&_nc_tpa=Q5bMBQHqm047CL9mmeQsWOuZssEkYrLrm1Ee8Zbn6TGP6MQu27WUV9XjDHZvAFOd5aZe0r_C1etzea7O&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AfyvNeHg84Hhu-XWpFWLnqcd_RgR7QlmHqU51wY5eMJi4Q&oe=69C27890",
+            "id": "120213776725090263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120213717738000263",
+      "nombre": "CAMPAÑA VISTA GENERAL 11-11-24",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2024-11-12T15:48:00-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120213717738090263",
+          "nombre": "VISTAS GENERALES 1.0",
+          "estado": "ACTIVE",
+          "creative": {
+            "title": "El hogar ideal para ti y tu familia",
+            "body": "¿Buscas un hogar donde tus hijos puedan crecer felices y seguros? 🔐\n¡COSMOPOL] es el lugar perfecto!  ✅\n-Con un sinfín de áreas verdes 🌳\n-Espacios para tu mascota 🐶\n-Canchas deportivas ⚽🎾🏀\n-Alberca 🏊\n-Área de juegos exclusiva para niños. 👧👦\n\nTus pequeños tendrán todo lo necesario para divertirse y desarrollar sus habilidades. ⛹️‍♀️\nAdemás, tú podrás disfrutar de la tranquilidad de un hogar moderno y seguro. ✅\n\n ¡No esperes más para darle a tu familia el estilo de vida que se merece!\n\nDepartamentos desde $1,999,000.\n-TENEMOS OFERTAS YBONOS EXCLUSIVOS ESTE BUE MES. %%%\nContactame y agenda tu visita en tu nuevo hogar",
+            "thumbnail_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t15.13418-10/466991576_921408746128210_7706189391659775338_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHeR9IpsEepkfYGbZ6wTaGpL6Stq8lHe8MvpK2ryUd7wwbs18iBDUYjK_KeZMYzFLuRSzXSLz2tJ-lHUv95lcrZ&_nc_ohc=KFyaVpkDslMQ7kNvwH7r7F8&_nc_oc=AdoBtRMJdYx1UwU13qdQi6MK1p65HFvvYCwaytLUjkpj8T4F7OGnkucwgwZyLWTkTGk&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&edm=ANIILHsEAAAA&_nc_gid=ygm1b9eZHMwuuDRl9M9VRQ&_nc_tpa=Q5bMBQELudx33nQj9PahEhhFgpEZTjKI0nF1SAAoF0Uj6muN3-PLgFyqG0MFxvr_uF6SXchSrDpn9l5J&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AfzuNAgDI8DtwkQZ476CfeiMsRAhw5Hn_awu-1qc2LDKTA&oe=69C2911E",
+            "id": "120213888652390263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120213625111150263",
+      "nombre": "COSMOPOL, COACALCO 7-11-24",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2024-11-07T19:09:14-0600",
+      "presupuesto_diario": null,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120213625111280263",
+          "nombre": "ANUNCIO DE FACHADA (IMAGEN)",
+          "estado": "PAUSED",
+          "creative": {
+            "thumbnail_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t45.1600-4/566281595_24826494757007136_7590133016274707436_n.jpg?_nc_cat=104&ccb=1-7&_nc_eui2=AeExXkpU9VMk6Nnqc4YX5n_QDv1iG1T-t-4O_WIbVP637ldahWT8EjBMqYC70QKy0E0yVhQqYID6NaS10aBLQtmb&_nc_ohc=o0bFD11dL_oQ7kNvwEk6q2C&_nc_oc=AdrH769ZdTrcK8mbz0I4eWlB3fZfuLdOZ2TWEnFXvRVA8p_VPnAlzPc9kl9f8TYeC9Q&_nc_zt=1&_nc_ht=scontent-atl3-2.xx&edm=ANIILHsEAAAA&_nc_gid=YW5epFwsXIy5ty3fiatjcQ&_nc_tpa=Q5bMBQHnHgKKwPns9kfbAekgHmPLQ6nlt8k5hBIlKdFXbeVnHkf8BavZDyes-zRll34NUYwnutPCYzqT&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyT3etztMbZXX6blY_k233CVaxM2MdUS78VV4LDHKXWqw&oe=69C286B1",
+            "id": "120213625719170263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "120211870863580263",
+      "nombre": "campaña de Interacción c Marco",
+      "estado": "PAUSED",
+      "objetivo": "OUTCOME_ENGAGEMENT",
+      "fecha_inicio": "2024-08-21T23:26:28-0600",
+      "presupuesto_diario": 55,
+      "presupuesto_total": null,
+      "semaforo": "verde",
+      "metricas": {
+        "impresiones": 0,
+        "clics": 0,
+        "gasto": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "ctr": 0,
+        "alcance": 0,
+        "frecuencia": 0,
+        "leads": 0,
+        "mensajes": 0,
+        "link_clicks": 0,
+        "costo_por_resultado": 0
+      },
+      "anuncios": [
+        {
+          "id": "120211870863730263",
+          "nombre": "anuncio de Interacción c/ Marco",
+          "estado": "PAUSED",
+          "creative": {
+            "title": "Conoce nuestra casa muestra.✅✅✅",
+            "body": "🔴 Agenda tu visita  🚐🚐🚐 desde CDMX! Descubre tu futuro hogar en Nuestros desarrollos . \n¡Visita Tizayuca, Huehuetoca ó Zumpango! 🌳🏡\nSal de la rutina y conoce las hermosas casas y casas dúplex en nuestros desarrollos. Con nuestros tours guiados, saliendo desde CDMX, podrás experimentar la tranquilidad y el confort que siempre has soñado. Aprovecha la oportunidad de ver en persona todas las amenidades, áreas verdes y espacios pensados para ti y tu familia. ¡No esperes más y agenda tu visita ahora mismo! 🌟",
+            "thumbnail_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.13418-10/456208303_1571549100098708_486812846259251121_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeFd2LJDT3P-6-X9UKY49douqfUEFKHqPTGp9QQUoeo9MXnklhmuinDEtWH2bgbdixmQ6eMnC565nUUxvwJ-hsQB&_nc_ohc=3ZWMbqPbOwYQ7kNvwH7P9p6&_nc_oc=AdoWcFVxTjPQkAS6zQqT_syVJImrzg8dR5N9M5yhp4Lv8pDaBeHQ0KkhhPm1gl_wlB4&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=ANIILHsEAAAA&_nc_gid=kZeDN_VsGj3HoeAwc0bjqw&_nc_tpa=Q5bMBQGR2eOmbmNzOEd2P0ISgSPQDUd2EduiFERxXC3Tk87drmm87SSwNdQKOCKGE5dihuqcL4Tu7pMb&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_Afzk2OpM0NJM9iOPItrkPKMTD4lmn59hfQrlhvQhNs1ReQ&oe=69C29047",
+            "id": "120211871627320263"
+          },
+          "metricas": {
+            "impresiones": 0,
+            "clics": 0,
+            "gasto": 0,
+            "cpc": 0,
+            "cpm": 0,
+            "ctr": 0,
+            "alcance": 0,
+            "leads": 0,
+            "mensajes": 0,
+            "costo_por_resultado": 0
+          }
+        }
+      ]
+    }
+  ],
+  "analisis_ia": "Error al generar",
+  "taller_creativo": null
+}
