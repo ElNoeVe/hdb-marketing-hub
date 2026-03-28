@@ -1,15 +1,15 @@
 {
-  "fecha_generacion": "2026-03-28T03:34:23.103Z",
+  "fecha_generacion": "2026-03-28T13:48:26.617Z",
   "es_martes": false,
   "periodo": "Últimos 30 días",
   "total_campanas": 65,
   "total_anuncios": 94,
   "resumen": {
-    "gasto_total": 2499.33,
-    "impresiones_totales": 99798,
-    "clics_totales": 1471,
+    "gasto_total": 2364.3199999999997,
+    "impresiones_totales": 94768,
+    "clics_totales": 1376,
     "leads_totales": 1,
-    "mensajes_totales": 33
+    "mensajes_totales": 29
   },
   "campanas": [
     {
@@ -41,7 +41,7 @@
           "nombre": "Pino 3",
           "estado": "PAUSED",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/647574171_122124936921122721_2377271795189330482_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeHy_xLu9o1RA8_Sqj0qPHWPcByhYuz-bx1wHKFi7P5vHR_NckOMe0bUSl6nMZ5aEEBgg8hTsNPliKzyWHxzgNdX&_nc_ohc=llO-yg-j3JwQ7kNvwEKj4UC&_nc_oc=Adp96bw_Wum4SHQ8MiPYw9lDXTEBOoJk4FvOANrgzxSH79MwybL_iKxTfdYWLQR_KUY&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=WiOpLhVcYAITdZI5wT3gDw&_nc_tpa=Q5bMBQHjrkW1prAsBSgHSvNI8YqdjGrWeVvSrvpiCIBDt0eceSEIShDSEbiY7SwNtGh2gAujnAKjgXCY&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwWEbXJeV_iYxkuI6nPO0QrJ7p-QFcbdUgVbDCS-JfKnA&oe=69CD2EFC",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/647574171_122124936921122721_2377271795189330482_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeHy_xLu9o1RA8_Sqj0qPHWPcByhYuz-bx1wHKFi7P5vHR_NckOMe0bUSl6nMZ5aEEBgg8hTsNPliKzyWHxzgNdX&_nc_ohc=llO-yg-j3JwQ7kNvwGCxHOG&_nc_oc=AdqvXWZVa5fOVaMoreGOaBf69rv1nQ5XmC6E-u-HoDJaBfyyD41dCYDHzmzmGdB6Y5c&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=w7lS-jBj-Z-bbTLXMXDvxw&_nc_tpa=Q5bMBQE9aku2_23e0slZYTw93J65BjDqXNL0WDbIxREwc4GVuv1Slj3JxVcbFolGCxf-3a6kLm3h-Gnr&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwXM1HvfSHEcHC3MMfwhGXqXFK2ijZaPZImM9PVC7k3sA&oe=69CD9F7C",
             "id": "1613948306726449"
           },
           "metricas": {
@@ -62,7 +62,7 @@
           "nombre": "Pino 2",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/648141839_122124936333122721_3363259711356325118_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeG7O8iqbtwFQPRDV-3dulhAlwgIYKE1h6CXCAhgoTWHoHw8gTU8NSTvH2PzREzaiSVoDgKrDmvx9HDJU9ekG3tz&_nc_ohc=7cslXH6i3LoQ7kNvwGtLWvP&_nc_oc=AdqiKIAIigvDa_lN_naGKiQ9ijnxDQgnOlpbj0OGcujuSoI7Oc_kfZW_2KR3C3LYi5M&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=WiOpLhVcYAITdZI5wT3gDw&_nc_tpa=Q5bMBQF4zBE9IHjL3ugQCZO3ro35f6_BKTzuLzCyfFkU1t93EqnznG3PJznHjVQT8jelM2z7CPcVPKG2&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afy_W4joIvWcL_Vo0KZ3Rq00eWJpy64FnUMDAca3JJpm7A&oe=69CD26A8",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/648141839_122124936333122721_3363259711356325118_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeG7O8iqbtwFQPRDV-3dulhAlwgIYKE1h6CXCAhgoTWHoHw8gTU8NSTvH2PzREzaiSVoDgKrDmvx9HDJU9ekG3tz&_nc_ohc=7cslXH6i3LoQ7kNvwE6JwYF&_nc_oc=AdrkJw08vhIhZ2OXXKS7UiPyEDRDW8OOtnr9zSxghpCP1x-OMQtaFmjZhmFlxfBH7kE&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=w7lS-jBj-Z-bbTLXMXDvxw&_nc_tpa=Q5bMBQETmM0U7oAw0VFBvIDw9t54uDeDGyIor95S6nXsEK_d_SrRZJ_zkZOD11x_nJpzUXtKxa7u6zrJ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afw8cLTnM6mGNvHI3Dsoh25f5kEMT2uqroMYqTasFpqcuw&oe=69CD9728",
             "id": "1333294485491769"
           },
           "metricas": {
@@ -83,7 +83,7 @@
           "nombre": "CITRINO Espacios",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/645670688_122124939003122721_8377832804485985645_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeHM9qhRt9ZMOvOuMjdCUIMboBlgmZo3Z6igGWCZmjdnqNXHlVsjiVjF6s58VRcQCujef-h98yHaPnCS-QxCp2Oi&_nc_ohc=ftNsaQ1R7qoQ7kNvwG3koUS&_nc_oc=AdrNnzAvFWhuSGsU92pFN43jULAu08hVDLiBBu-AGILxdwftbsJfuCb5F4QDBXpnNQs&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=WiOpLhVcYAITdZI5wT3gDw&_nc_tpa=Q5bMBQEuFJDMke6pfB8WblC4Wd5Dbs_QXly-P5oUPTzd2VIhPhOZYwlgtDrOf0rfeNShAuC63NgC4DWW&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxMnZbQLAI5vK1le5tHhBWE9CY9dvamiYM5eM1IEv9GDg&oe=69CD0ACE",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/645670688_122124939003122721_8377832804485985645_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeHM9qhRt9ZMOvOuMjdCUIMboBlgmZo3Z6igGWCZmjdnqNXHlVsjiVjF6s58VRcQCujef-h98yHaPnCS-QxCp2Oi&_nc_ohc=ftNsaQ1R7qoQ7kNvwG7uWHs&_nc_oc=AdrZvK7UGZZa7MwseejZJdFMWRxxnyHqfTiAmUDEXtHiDWLVuQqJIxBvbTUw6tF4Eqc&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=w7lS-jBj-Z-bbTLXMXDvxw&_nc_tpa=Q5bMBQFzLsUe3CszJ0KppwP7rEZM5-iZe0XSaIejjKVKlgGsWdxVxXaQMeb79mdjxVOQ2vNt2NtANx3q&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afyp6MmSEbkglvCPnDxhW_-clF9GiNrBuJtIt5-qqhYjeg&oe=69CDB38E",
             "id": "1239190074967652"
           },
           "metricas": {
@@ -104,7 +104,7 @@
           "nombre": "Pino 1",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/647855004_122124935829122721_186809399939427649_n.png?_nc_cat=102&ccb=1-7&_nc_eui2=AeFd2IZPmDJd0pTlaEjhIy6iuUi1GfjMUd65SLUZ-MxR3gtv4Z3kPaiuaNSEEyYvnZDZTK6Lilsqz9mt8-olFAcR&_nc_ohc=u8Dd96Yx-jIQ7kNvwGTdObd&_nc_oc=AdqCqmqZEya73abu_cjMK6N7Zi5S_aECgnDeh01xy7_PRjh1Jh8_TC3j_efx9-5dLY0&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=WiOpLhVcYAITdZI5wT3gDw&_nc_tpa=Q5bMBQHXbS0sgEI5NBXpE84V_R3GnZWwCLicF465TMvDC7NdhYNuIZ4pCZ2e2EtIhFkFH5nzr793r3ZX&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxN9kVkP-npaW7-nFuTbH054vMYrTGN2p-d-P0soD-O_g&oe=69CD1729",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/647855004_122124935829122721_186809399939427649_n.png?_nc_cat=102&ccb=1-7&_nc_eui2=AeFd2IZPmDJd0pTlaEjhIy6iuUi1GfjMUd65SLUZ-MxR3gtv4Z3kPaiuaNSEEyYvnZDZTK6Lilsqz9mt8-olFAcR&_nc_ohc=u8Dd96Yx-jIQ7kNvwG-oI4g&_nc_oc=AdoEwcle-R4eGbcQBnRsobpfkfFJnvJcnenZ3rQ2z2PBqExJtJLEnh7T2XmnwpSdHZY&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=w7lS-jBj-Z-bbTLXMXDvxw&_nc_tpa=Q5bMBQE6lFcgu-BPBp2gk6q1b70XxDS1O-wHIQt5K1zmu9RKee8PEPiCS2uuT_xnBcGJ1ZDLYhVOE9UC&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzF3bQMi7IjBHJ_WuLjX__egtlQZOVKvH6nhPWEYXFKEA&oe=69CDBFE9",
             "id": "4450085188548152"
           },
           "metricas": {
@@ -151,7 +151,7 @@
           "nombre": "CITRINO BONO TEMPORAL",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/644456495_122124053889122721_4924174942112835684_n.png?_nc_cat=107&ccb=1-7&_nc_eui2=AeHv8MGKxN-U7g4HTYxlRUUXemFXZ5L9iNp6YVdnkv2I2j5R5IzZPEEwZthfvFHxEA1JhAmHkmu4xUwj1U5e8OY8&_nc_ohc=ZMOgRxd6iXMQ7kNvwH4SztC&_nc_oc=AdopIxwN7suW9TPIM2OpxnCRYaJFf3I43-cMMFRHOv6ZAvlIWEuKNEzkYTWjR_peC3A&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=Qz6OKhqb_M_PCscEkFZdNw&_nc_tpa=Q5bMBQFjU4jRLrR9fM97wNqubZlrupKqDszT8P4MtKkQckm7-mysnIUonHmeqRrOlUZggMzQSHP8bHhv&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afza6qFAe84Sa-ST0RavKTHzMrqpZvLsIFirrUfatMR9TA&oe=69CD05E8",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/644456495_122124053889122721_4924174942112835684_n.png?_nc_cat=107&ccb=1-7&_nc_eui2=AeHv8MGKxN-U7g4HTYxlRUUXemFXZ5L9iNp6YVdnkv2I2j5R5IzZPEEwZthfvFHxEA1JhAmHkmu4xUwj1U5e8OY8&_nc_ohc=ZMOgRxd6iXMQ7kNvwEL3Ai_&_nc_oc=AdoRWSmYoLCdYlNPRggc7Ts4T-rPRRgOTuOxCFZp4kbgi2IUhjCep_lm3azqRPUg_KM&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=0NMuxuWKATCr-u3UoL53_g&_nc_tpa=Q5bMBQEvNerei2PUbV-L4M2lCuQCjOiJsFG3BY14pIivIVxcxS_h479BFtBDcyIlsf34AB8xrmBFMN-O&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzCSLVXcithYqT-JeCHwi2OtR5LRpZWAFV2KurNSTXVOA&oe=69CDAEA8",
             "id": "1855630515826282"
           },
           "metricas": {
@@ -198,7 +198,7 @@
           "nombre": "CITRINO DESDE $1,790,000",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/644456495_122124053889122721_4924174942112835684_n.png?_nc_cat=107&ccb=1-7&_nc_eui2=AeHv8MGKxN-U7g4HTYxlRUUXemFXZ5L9iNp6YVdnkv2I2j5R5IzZPEEwZthfvFHxEA1JhAmHkmu4xUwj1U5e8OY8&_nc_ohc=ZMOgRxd6iXMQ7kNvwH4SztC&_nc_oc=AdopIxwN7suW9TPIM2OpxnCRYaJFf3I43-cMMFRHOv6ZAvlIWEuKNEzkYTWjR_peC3A&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=acFxGClO8CKkBP8n0qa1RQ&_nc_tpa=Q5bMBQHr7L41AtQh1To2lZ5JdHuRG-YERrdXrvgjI2ivGN4uB0EbYIIfzhzK1yXTpfZfuQk7WO0eOaHe&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzcsgInUlugnK0CRxM8QmtVaaRQ5awgGA7O16yaDkKu2g&oe=69CD05E8",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/644456495_122124053889122721_4924174942112835684_n.png?_nc_cat=107&ccb=1-7&_nc_eui2=AeHv8MGKxN-U7g4HTYxlRUUXemFXZ5L9iNp6YVdnkv2I2j5R5IzZPEEwZthfvFHxEA1JhAmHkmu4xUwj1U5e8OY8&_nc_ohc=ZMOgRxd6iXMQ7kNvwEL3Ai_&_nc_oc=AdoRWSmYoLCdYlNPRggc7Ts4T-rPRRgOTuOxCFZp4kbgi2IUhjCep_lm3azqRPUg_KM&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=DCRY-U6MhBf5Qm_jlOadNw&_nc_tpa=Q5bMBQEt_hdaJOv9-i4ngxplFzElRvP6nbzjXLfz0PajE2Ng2t12-T0AjYq4eH7W3tzQDCXlm5xMYxH3&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwZAgWRsufn09s-8IcRb9V48I02g7IaOyrGue-cdQtG6g&oe=69CDAEA8",
             "id": "1358435316049923"
           },
           "metricas": {
@@ -226,18 +226,18 @@
       "presupuesto_total": null,
       "semaforo": "amarillo",
       "metricas": {
-        "impresiones": 9129,
-        "clics": 128,
-        "gasto": 239.62,
-        "cpc": 1.872031,
-        "cpm": 26.24822,
-        "ctr": 1.402125,
-        "alcance": 4894,
-        "frecuencia": 1.865345,
+        "impresiones": 7496,
+        "clics": 105,
+        "gasto": 207.58,
+        "cpc": 1.976952,
+        "cpm": 27.692102,
+        "ctr": 1.400747,
+        "alcance": 3416,
+        "frecuencia": 2.194379,
         "leads": 0,
         "mensajes": 1,
-        "link_clicks": 95,
-        "costo_por_resultado": 239.62
+        "link_clicks": 80,
+        "costo_por_resultado": 207.58
       },
       "anuncios": [
         {
@@ -245,20 +245,20 @@
           "nombre": "FAMILIAS JOVENES",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/642715561_122123786409122721_6718613510066141858_n.png?_nc_cat=109&ccb=1-7&_nc_eui2=AeG6Z70ffmL9zfmHNpljW01r9UhbsUxT-uL1SFuxTFP64twDf3cvDqsgfOGZhSfqiqqsxcWkpPXm7Mhdy5hy7Cai&_nc_ohc=bOWlkrtojd8Q7kNvwFu9ERT&_nc_oc=Adqr_Dh-5muCQCPExGgOhxmVBM7JMNxIgyyhdtVyN4nUwkYkR5R1Pe2_T7KLSuSn1ng&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=nhgWAcNVCAKC1qsaGchIfQ&_nc_tpa=Q5bMBQGz95xRLkZwpoxofhfsA_En72yry44EIdvS28Kq5AreDDNP4hSSzJ8yRObKbp5bBb-FASiUsTn2&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwcY-ywIRe9NAMZmOe07QMl8yCuF9W5vXg89_kRIGRJpg&oe=69CD293B",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/642715561_122123786409122721_6718613510066141858_n.png?_nc_cat=109&ccb=1-7&_nc_eui2=AeG6Z70ffmL9zfmHNpljW01r9UhbsUxT-uL1SFuxTFP64twDf3cvDqsgfOGZhSfqiqqsxcWkpPXm7Mhdy5hy7Cai&_nc_ohc=bOWlkrtojd8Q7kNvwFRk-mp&_nc_oc=AdrmyS5B4vQ6BlI8uh7tjhCyvl8z3Dm9NeVoEP1Kh7NKUbRysTuYaGx0gpv7oObrUUs&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=YGq5FIZlG4OQNLkdSq2N9A&_nc_tpa=Q5bMBQEmynx49_IPblmrpxBTgTg5dpFFw-7TnwoO2S-QjY-foCf0qcnosH8lXGHN9KXgUAGUfaAoDwVX&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afx2i_uP63SGFp191xlUHLmufvdAIehF1LJIhX7g-gmPGQ&oe=69CD99BB",
             "id": "801108972360452"
           },
           "metricas": {
-            "impresiones": 9129,
-            "clics": 128,
-            "gasto": 239.62,
-            "cpc": 1.872031,
-            "cpm": 26.24822,
-            "ctr": 1.402125,
-            "alcance": 4894,
+            "impresiones": 7496,
+            "clics": 105,
+            "gasto": 207.58,
+            "cpc": 1.976952,
+            "cpm": 27.692102,
+            "ctr": 1.400747,
+            "alcance": 3416,
             "leads": 0,
             "mensajes": 1,
-            "costo_por_resultado": 239.62
+            "costo_por_resultado": 207.58
           }
         }
       ]
@@ -273,17 +273,17 @@
       "presupuesto_total": null,
       "semaforo": "amarillo",
       "metricas": {
-        "impresiones": 10039,
-        "clics": 144,
-        "gasto": 240.39,
-        "cpc": 1.669375,
-        "cpm": 23.945612,
-        "ctr": 1.434406,
-        "alcance": 6915,
-        "frecuencia": 1.451772,
+        "impresiones": 9531,
+        "clics": 127,
+        "gasto": 227.61,
+        "cpc": 1.792205,
+        "cpm": 23.88102,
+        "ctr": 1.332494,
+        "alcance": 6505,
+        "frecuencia": 1.465181,
         "leads": 0,
         "mensajes": 0,
-        "link_clicks": 96,
+        "link_clicks": 85,
         "costo_por_resultado": 0
       },
       "anuncios": [
@@ -292,17 +292,17 @@
           "nombre": "Segemento Z",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/638850173_122123775747122721_4529626426288134043_n.png?_nc_cat=107&ccb=1-7&_nc_eui2=AeEcdV_nJqN188mwny15vwge8nZ2jtn0owfydnaO2fSjB5oMUnX3wZkZHtPSWLtvjPh2o0eVUTIqEjodFQcg1KvG&_nc_ohc=DQMiR3i8KU4Q7kNvwGMgCs_&_nc_oc=AdqCqs6qDShsxIthJmWViG4mSxhnRz8s6eonfOqaUFB4fainp0qLRtGQasGTemg0jAM&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=__U4VVqEC1kDIY_jjHef1g&_nc_tpa=Q5bMBQFnJq1t5ptVIpsKtMYdomKwllwB0eC0JL8AqM08iAnfydA7-RxNvoZQsobZFo8_eCE5VQkhu3hy&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzQK7L3MA1GDkAk4AhZ4v88xHZa-nzwJBpRd7N8QEbHHA&oe=69CD1AEB",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/638850173_122123775747122721_4529626426288134043_n.png?_nc_cat=107&ccb=1-7&_nc_eui2=AeEcdV_nJqN188mwny15vwge8nZ2jtn0owfydnaO2fSjB5oMUnX3wZkZHtPSWLtvjPh2o0eVUTIqEjodFQcg1KvG&_nc_ohc=DQMiR3i8KU4Q7kNvwFvAkLo&_nc_oc=AdoU9-0iOIRR0PO1N0RnNg67xE1F3ClEYZuFZ2HOcvPjDaXAGkvfcoDs7UVYI85tRA4&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=A7c62D9pXYivbuKEDEQjqA&_nc_tpa=Q5bMBQFrayPenGMyVBVrPHegS6o7QQb0TDsWXK2gD3p4WTwo5Zm8Os55uSH2ueAqOfbWiB_dC8kQeUOb&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxxHu-LwJznCpJDaUJMs3VhLkn3Yldi1WyiD6jCcRWlzA&oe=69CDC3AB",
             "id": "2332411410579414"
           },
           "metricas": {
-            "impresiones": 10039,
-            "clics": 144,
-            "gasto": 240.39,
-            "cpc": 1.669375,
-            "cpm": 23.945612,
-            "ctr": 1.434406,
-            "alcance": 6915,
+            "impresiones": 9531,
+            "clics": 127,
+            "gasto": 227.61,
+            "cpc": 1.792205,
+            "cpm": 23.88102,
+            "ctr": 1.332494,
+            "alcance": 6505,
             "leads": 0,
             "mensajes": 0,
             "costo_por_resultado": 0
@@ -320,18 +320,18 @@
       "presupuesto_total": null,
       "semaforo": "verde",
       "metricas": {
-        "impresiones": 2007,
-        "clics": 60,
-        "gasto": 77.89,
-        "cpc": 1.298167,
-        "cpm": 38.809168,
-        "ctr": 2.989537,
-        "alcance": 1301,
-        "frecuencia": 1.542659,
+        "impresiones": 589,
+        "clics": 27,
+        "gasto": 30.97,
+        "cpc": 1.147037,
+        "cpm": 52.580645,
+        "ctr": 4.584041,
+        "alcance": 464,
+        "frecuencia": 1.269397,
         "leads": 0,
-        "mensajes": 3,
-        "link_clicks": 26,
-        "costo_por_resultado": 25.963333
+        "mensajes": 2,
+        "link_clicks": 11,
+        "costo_por_resultado": 15.485
       },
       "anuncios": [
         {
@@ -339,7 +339,7 @@
           "nombre": "VIDEO PINO",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/637106777_1803694816964489_7038914583275365536_n.jpg?_nc_cat=105&ccb=1-7&_nc_eui2=AeFeBvKKdswGOURQrYtwnnlwQLqhOi4WK7xAuqE6LhYrvK4lmb7zd3uphgC8uxQxAoaCQbetXvXGXr33w1VwmW3s&_nc_ohc=cDgHlqkPNsEQ7kNvwEbEHfF&_nc_oc=AdowN4-MABRKbY4ArKSoZfjk_WBMYzMou92Ib_jnM5xmRSgcV6iK5_uwoJ5NcPxHf54&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=UtNlkfuJEx2Y7rDA4lL2xg&_nc_tpa=Q5bMBQGs1Tj1DANpCBuz2K76znqaoihDWkFxfpL75uq8GRIQlQi0nSTqVg3lyegPUmTAjEeBulQwm9GY&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_Afy7uJxQW2lWQl4MrY9BscWYkU2hmZcIA1dbvB_0DRyYCw&oe=69CD0EBE",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.5256-10/637106777_1803694816964489_7038914583275365536_n.jpg?_nc_cat=105&ccb=1-7&_nc_eui2=AeFeBvKKdswGOURQrYtwnnlwQLqhOi4WK7xAuqE6LhYrvK4lmb7zd3uphgC8uxQxAoaCQbetXvXGXr33w1VwmW3s&_nc_ohc=cDgHlqkPNsEQ7kNvwHCyILw&_nc_oc=Adrx2Rpb8wUIpK_1xiPqxDX8nwH7SpTbpIpDAJxLqwfuEz9DLN21p8rIra8l_txhkow&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=VPLER5EB4RZMlPzd-jsHww&_nc_tpa=Q5bMBQFNq0hi8pFpFBqlNGn2rk0RkCSthrbmkSm_YfXpwnQiqrApLpBP3Df332F-idmzF3FNwTXXHIpa&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfztBLtJ0aoefseO8qgH_e_STdXLXOK8koSq72skzrhNjA&oe=69CDB77E",
             "id": "1618211595749554"
           },
           "metricas": {
@@ -360,20 +360,20 @@
           "nombre": "SENTIMIENTO",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/636405868_122122945419122721_5369877500307556741_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeHzo65xOi25AR8JoNmDoRqchmqfQhiOoR-Gap9CGI6hH56zNU1vTQ5LS5-YR8DGxYygacgewlvteDpgDOJyj2eA&_nc_ohc=BtloagipvcoQ7kNvwFLm09g&_nc_oc=AdodK3qiteAoQJJ7aDfm_m0aX4QdpAV5BmJ915MieSSrf2mRUtBm8cqSqRohhQFfaAY&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=UtNlkfuJEx2Y7rDA4lL2xg&_nc_tpa=Q5bMBQHVkVqzMLsFbOv1Chm-OK9Sws33BWMurgN8j4I15R8ZGFnBxLcjt6RYrCfmS5HG4Gm9IrCgXeEo&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyiFa3hVJ8Oo_v3Ypdw03LWhR_eyEmz9QRhju1nDx4mCA&oe=69CD0347",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/636405868_122122945419122721_5369877500307556741_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeHzo65xOi25AR8JoNmDoRqchmqfQhiOoR-Gap9CGI6hH56zNU1vTQ5LS5-YR8DGxYygacgewlvteDpgDOJyj2eA&_nc_ohc=BtloagipvcoQ7kNvwELTwHW&_nc_oc=AdpHoZmt6TQRACzc67B7LjbA2LN90qP5gXYvBgTzE64qrpRfH-qgcQkebtUyZcpjzIY&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=VPLER5EB4RZMlPzd-jsHww&_nc_tpa=Q5bMBQHjwRxED3ISUfI2tVmTTy-tZb4h-k0XHFb22d16rmATDiadlyVeHEA-1fjNCQhZ9VA8Vf1nICtZ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxMWN5KHT_413WPy_-VLHXpbnIhSW-wrIKV9I81SC44eQ&oe=69CDAC07",
             "id": "4283979881838152"
           },
           "metricas": {
-            "impresiones": 2005,
-            "clics": 60,
-            "gasto": 77.89,
-            "cpc": 1.298167,
-            "cpm": 38.84788,
-            "ctr": 2.992519,
-            "alcance": 1299,
+            "impresiones": 589,
+            "clics": 27,
+            "gasto": 30.97,
+            "cpc": 1.147037,
+            "cpm": 52.580645,
+            "ctr": 4.584041,
+            "alcance": 464,
             "leads": 0,
-            "mensajes": 3,
-            "costo_por_resultado": 25.963333
+            "mensajes": 2,
+            "costo_por_resultado": 15.485
           }
         },
         {
@@ -381,17 +381,17 @@
           "nombre": "TECNICO PINO",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/638407476_122122946727122721_6218732383460672263_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeGFdcbU_LqjkxSiFQjG1n4ARsrI-MxVoThGysj4zFWhOHaIFNa4k44INY0xdumACqRYA0VUE9GfaTcnW9UpjYEO&_nc_ohc=iwTnbBJoXXwQ7kNvwHw4l38&_nc_oc=AdpsDDO0fHHX4fLltqpfQRARmAX5prEyt-6zvv605OyT3mnOTfz4_wCEePh6A94hBCw&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=UtNlkfuJEx2Y7rDA4lL2xg&_nc_tpa=Q5bMBQFW7Pt5Qlas2MtlqJpwkyQTPRbBJ8weYmc4TKdX7yOCYt6-MYHT3jFRtNPtCdlJMZAF2mRefpV0&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxHqMVGLKV_lZ4Ld1UIjtsFS9vsenfrcvT4Pk8zoxfQYA&oe=69CD3876",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/638407476_122122946727122721_6218732383460672263_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeGFdcbU_LqjkxSiFQjG1n4ARsrI-MxVoThGysj4zFWhOHaIFNa4k44INY0xdumACqRYA0VUE9GfaTcnW9UpjYEO&_nc_ohc=iwTnbBJoXXwQ7kNvwHNc6uf&_nc_oc=Adr1g1Yhpfb54s4qO9HlGXriMFYlS8mhC3dUBkifrjQZQC0O7hbdlF-4Cw9-te8tqQA&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=VPLER5EB4RZMlPzd-jsHww&_nc_tpa=Q5bMBQEO6nsqtGbihC9Fc1nung49A3mJRfM-U5q2nbiOA49alC450Kdwk44FbXeq4b8TsQCoTOUnfn0_&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afyunn0GJtVR-m7JFgHJWrfK5d-R-nNH3LzmqcNlcIvvBw&oe=69CDA8F6",
             "id": "1990059344881271"
           },
           "metricas": {
-            "impresiones": 2,
+            "impresiones": 0,
             "clics": 0,
             "gasto": 0,
             "cpc": 0,
             "cpm": 0,
             "ctr": 0,
-            "alcance": 2,
+            "alcance": 0,
             "leads": 0,
             "mensajes": 0,
             "costo_por_resultado": 0
@@ -409,18 +409,18 @@
       "presupuesto_total": null,
       "semaforo": "amarillo",
       "metricas": {
-        "impresiones": 25334,
-        "clics": 275,
-        "gasto": 712.56,
-        "cpc": 2.591127,
-        "cpm": 28.126628,
-        "ctr": 1.085498,
-        "alcance": 15232,
-        "frecuencia": 1.663209,
+        "impresiones": 23863,
+        "clics": 253,
+        "gasto": 669.29,
+        "cpc": 2.645415,
+        "cpm": 28.047186,
+        "ctr": 1.060219,
+        "alcance": 14302,
+        "frecuencia": 1.668508,
         "leads": 1,
-        "mensajes": 25,
-        "link_clicks": 204,
-        "costo_por_resultado": 712.56
+        "mensajes": 22,
+        "link_clicks": 191,
+        "costo_por_resultado": 669.29
       },
       "anuncios": [
         {
@@ -428,20 +428,20 @@
           "nombre": "Fachada01",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/633318627_122121571803122721_7925372022172452642_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeHrHC5TfFOxB85M7oZzPEJAI3Kl4nUSP6cjcqXidRI_pw1m-lMyjPEZgo5hMsgjQZrgjjm82ahiB5EVbGEJCEef&_nc_ohc=wPs4oPml1MgQ7kNvwFrJvxn&_nc_oc=Adq3-28mPcR6nbghOJF_h8-XUumUzS6cgUgQ_oufF5C6MtPsnYsTL5iYsEahqLXPC4M&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=9eHTf5vlH_lLaY--z5jrbg&_nc_tpa=Q5bMBQEHZXyHjV5fo9tuTX1-pSTO24wClc4so9yXJ7iM4ypSFgnhCQknuMH4zXcIjaD5M-b47nkOZzwT&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afx494skQTzFtANDzUnis9oqnu5n06m2AQ8xEurrrwvwtg&oe=69CD154D",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/633318627_122121571803122721_7925372022172452642_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeHrHC5TfFOxB85M7oZzPEJAI3Kl4nUSP6cjcqXidRI_pw1m-lMyjPEZgo5hMsgjQZrgjjm82ahiB5EVbGEJCEef&_nc_ohc=wPs4oPml1MgQ7kNvwHtgRMG&_nc_oc=AdpLlyEXArRG9ze8O6zshGaGbhmv6vmKOBO_huMIY_oL_uQOgrSSMgm50LYqzN7oY1M&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=GeCRl8VIgJzBmdIcxVVPkQ&_nc_tpa=Q5bMBQE9QVVsYEttOdlaGsDzV32hqUMOnMvD9--Z3C6gYMoPdEIynAg4Glq10twiFuu7ID8a_YWiKc6H&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afz5XqDl2C6XSI1RnWBQFNhqChys6dW1B3dsuCJ0_lowQA&oe=69CDBE0D",
             "id": "1320387113285451"
           },
           "metricas": {
-            "impresiones": 7906,
-            "clics": 122,
-            "gasto": 340.43,
-            "cpc": 2.79041,
-            "cpm": 43.059701,
-            "ctr": 1.543132,
-            "alcance": 5363,
+            "impresiones": 6638,
+            "clics": 105,
+            "gasto": 302.36,
+            "cpc": 2.879619,
+            "cpm": 45.549864,
+            "ctr": 1.581802,
+            "alcance": 4561,
             "leads": 0,
-            "mensajes": 16,
-            "costo_por_resultado": 21.276875
+            "mensajes": 13,
+            "costo_por_resultado": 23.258462
           }
         },
         {
@@ -449,20 +449,20 @@
           "nombre": "Fachada02",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/628231340_122121571767122721_6825391092143567191_n.png?_nc_cat=109&ccb=1-7&_nc_eui2=AeEHrdUJrNAnpl27g7jkUxT0CMJvza2FeisIwm_NrYV6K3zsAkJ80uNMM1FUYiQ4vS8wm8T3fhTvm4sYJ3YFyvVF&_nc_ohc=OGUhbWWk3fgQ7kNvwGVLcgu&_nc_oc=AdpbtbfgnkRM2ZN9CP5C03vePuQ0U9ftwDMZn13xt19s2SatcpcFdbRaM_TGOmlu0JE&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=9eHTf5vlH_lLaY--z5jrbg&_nc_tpa=Q5bMBQHpFpUClzhEexwpWQSnu330jPPLpUtg9TFfr4Rujoy2jdrWHdGXtiL0wnAlBakEudM50ESxB8Ey&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwjNQEM3ID-nyReRFIUlV5XUACUKl45B_ET37CLqG5AZQ&oe=69CD1E0D",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/628231340_122121571767122721_6825391092143567191_n.png?_nc_cat=109&ccb=1-7&_nc_eui2=AeEHrdUJrNAnpl27g7jkUxT0CMJvza2FeisIwm_NrYV6K3zsAkJ80uNMM1FUYiQ4vS8wm8T3fhTvm4sYJ3YFyvVF&_nc_ohc=OGUhbWWk3fgQ7kNvwFmJdA_&_nc_oc=AdpAM42CGeVWrWD3fTPKFRP_P_6D1-UAShFQDNGfM29dQqBys2k91vinlDP7ItYpIB0&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=GeCRl8VIgJzBmdIcxVVPkQ&_nc_tpa=Q5bMBQHSQCWxh3hBWrT67vXPidGbbqx4bcH-_BcD5TfFyP1yYGbQEBL4e_3aP4iryQAk6DfyxzsDWXJp&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyA4PQkPxvry0AVBmGMzA1quSqaYtuV6y19adEk0EGzag&oe=69CDC6CD",
             "id": "929939432826886"
           },
           "metricas": {
-            "impresiones": 17237,
-            "clics": 153,
-            "gasto": 359.16,
-            "cpc": 2.347451,
-            "cpm": 20.836572,
-            "ctr": 0.887625,
-            "alcance": 10693,
+            "impresiones": 17034,
+            "clics": 148,
+            "gasto": 353.96,
+            "cpc": 2.391622,
+            "cpm": 20.779617,
+            "ctr": 0.868851,
+            "alcance": 10463,
             "leads": 1,
             "mensajes": 9,
-            "costo_por_resultado": 359.16
+            "costo_por_resultado": 353.96
           }
         },
         {
@@ -470,7 +470,7 @@
           "nombre": "Fachada03",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/631679265_122121571785122721_589904074778325805_n.png?_nc_cat=104&ccb=1-7&_nc_eui2=AeGeBGKzaRnnKThkQwZ4XECZ_nYZkRv5Mmj-dhmRG_kyaCWpkCKuqQazrVsipJ5IGJghdJckOlgS0txdP-BT6BoP&_nc_ohc=u0GfU-mWxOsQ7kNvwEwXDup&_nc_oc=Adob2jq9PMEtde4qc6scfL1CHz_IxdeoFekGlbZmpqX0KkdDB3FQQpAkAw-teMm7fWs&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=9eHTf5vlH_lLaY--z5jrbg&_nc_tpa=Q5bMBQEcwXuu4YwJkyFMHt6s9FAVl8EjZOBoImnAfHtNf6NPnENYPw9LCIt253PT-MRR_RKseNoPnzZY&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwogsQMXflcJ0x1BXsF2YAk2IKwNENLT7Qg_7eej60Ihg&oe=69CD1FAC",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/631679265_122121571785122721_589904074778325805_n.png?_nc_cat=104&ccb=1-7&_nc_eui2=AeGeBGKzaRnnKThkQwZ4XECZ_nYZkRv5Mmj-dhmRG_kyaCWpkCKuqQazrVsipJ5IGJghdJckOlgS0txdP-BT6BoP&_nc_ohc=u0GfU-mWxOsQ7kNvwG8KQX3&_nc_oc=AdrKpAD5z-lnK7eXu1xS2tYkfP4AlUXNAy0aKtF2a-NqK9nL7cCt03cT7GA8R-CPctw&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=GeCRl8VIgJzBmdIcxVVPkQ&_nc_tpa=Q5bMBQHuRDPCxyrlEuW3lStUSl5TuXGafzbzg-EQjrwkUx0tA7JzJxTD6EoaeNu-dW3a5fdSsxkYGcAT&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwL9HA4C1MVQNESNrztsxlv-Q6CBooYSCRJ7srVl8N4EQ&oe=69CDC86C",
             "id": "1590607885422598"
           },
           "metricas": {
@@ -518,7 +518,7 @@
           "estado": "ACTIVE",
           "creative": {
             "title": " ",
-            "thumbnail_url": "https://external-ams2-1.xx.fbcdn.net/emg1/v/t13/7210789227175194364?url=https%3A%2F%2Fwww.facebook.com%2Fimages%2Fshare_options%2Fshare_arrow.gif&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&edm=ANIILHsEAAAA&_nc_gid=0WJ2vwhfIKbI2THhtKOMSg&_nc_eui2=AeFkGG69G9rE-qDJwH8XT5_DcE2Oww6si2lwTY7DDqyLaX8hXg9C0sQVo7dEJICX9_nFhBljmybXIv-mNyCVJDa-&_nc_oc=AdqsCpDTgejvunHC0zRNJtH5ATV9RPF1cYauivJwRDzvQiDRDabtwy9Ec_s5E3PutsU&ccb=13-1&oh=06_Q3-9Aeb1nXQFzOIF9mOgPGRb7YGjQ-GLbTzLJS_dSaJ4yC-a&oe=69C92475&_nc_sid=58080a",
+            "thumbnail_url": "https://external-iad6-1.xx.fbcdn.net/emg1/v/t13/7210789227175194364?url=https%3A%2F%2Fwww.facebook.com%2Fimages%2Fshare_options%2Fshare_arrow.gif&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&edm=ANIILHsEAAAA&_nc_gid=YY5tgkO5guHbUMz1oM_fsA&_nc_eui2=AeFkGG69G9rE-qDJwH8XT5_DcE2Oww6si2lwTY7DDqyLaX8hXg9C0sQVo7dEJICX9_nFhBljmybXIv-mNyCVJDa-&_nc_oc=Adot0gOWNRpb7piRSOJ_tYvDTJ8583_T7xSg363iy1FSy9RpTRu8wRJtVAt4KadsCVI&ccb=13-1&oh=06_Q3-9AQ-9e5jL0Du6XFCH_pgm-W2UX8gOBruKraZnnAPGFpqk&oe=69C9CD35&_nc_sid=58080a",
             "id": "1858558645047840"
           },
           "metricas": {
@@ -539,7 +539,7 @@
           "nombre": "Nuevo anuncio de Clientes potenciales - Copia",
           "estado": "PAUSED",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/588268641_823077260705166_4655021342403750356_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHrFmRJaXprsVE1Cj8z9c4wDH_tMoL03_QMf-0ygvTf9Eu-bGM4-SjFC8mvFPhIT3upnth1ZDZ9XUfUrB4yHdwM&_nc_ohc=BRKHaRyENoEQ7kNvwEnH7A1&_nc_oc=AdrBdjjBsOfKd5OO9iu5BbiZGlrSo0Ufi0oBw2qUdu_D4h3TFyCYEZix7TYYfjsC9_c&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=0WJ2vwhfIKbI2THhtKOMSg&_nc_tpa=Q5bMBQFfyfNghFpZuKdIZETFnHpD1tVg-LWsbGkn8XeHZLsOFKRslssoRuh-P-RvT6y-nNQdpy-AFk0F&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfxVcqkRUIrkTnQgLQ6cxsS2o_p5A9Ddmpmt8F6dvF6rXQ&oe=69CD1B4B",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.5256-10/588268641_823077260705166_4655021342403750356_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHrFmRJaXprsVE1Cj8z9c4wDH_tMoL03_QMf-0ygvTf9Eu-bGM4-SjFC8mvFPhIT3upnth1ZDZ9XUfUrB4yHdwM&_nc_ohc=BRKHaRyENoEQ7kNvwEJGTie&_nc_oc=Adrd0NuoKGvLd5csNJsq2KXu4CfVPrEme7PHH27UDJ-SLSbTD2SbyjUH5McRW0oLZjo&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=YY5tgkO5guHbUMz1oM_fsA&_nc_tpa=Q5bMBQEcZr7vh8LEFPwqS3IoKfVToI2Grfs5hqf3aFmY6lY52RCpmOEbGHs9PWPsv-Qsos5EC6-ytY6V&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfznOHkvllm4gRurQ9ZQHDMFbFW_bzeERXICi-gE2TUD8g&oe=69CDC40B",
             "id": "892849753098380"
           },
           "metricas": {
@@ -586,7 +586,7 @@
           "nombre": "Nuevo anuncio de Clientes potenciales",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/599053477_2094091104756672_4554450131327301409_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeF2UbM3nYAlh2kY7Cc-IZ7wot76C_lOY6-i3voL-U5jr3cAm3h6ilNS_pZHzk9P-HqdVvdwaadYcRohHNlx3hR9&_nc_ohc=vM3JSVAW52cQ7kNvwF9QTG5&_nc_oc=AdrIINAYYLdKyMIlpVFqSYJNUnuXzM5RkS6jCm0O0rUexdPe8HXiK7kNnHNWgQFkbt4&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=wqRvoEDGlE0hWAOodpXAnA&_nc_tpa=Q5bMBQFnVgJMqigRyfs7qwSpBfXjxyHR6UXOHSIbu4rwvs9zpfDnN9ho6XWV2gQqRYsHQ-C1FuXGT2ft&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwiKexkdFGIghesCqVWDhYw7HvINn5g_me8uDUkTZFU3g&oe=69CD1C23",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/599053477_2094091104756672_4554450131327301409_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeF2UbM3nYAlh2kY7Cc-IZ7wot76C_lOY6-i3voL-U5jr3cAm3h6ilNS_pZHzk9P-HqdVvdwaadYcRohHNlx3hR9&_nc_ohc=vM3JSVAW52cQ7kNvwEF_W6C&_nc_oc=AdpLryEy8xak_sbVyvfPGANPx5bkc0LvOp6Toc4roQi9ju8irUAzSlCXLM8sC-1sBY4&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=28RLQscUkxow9ZlxMZuzXA&_nc_tpa=Q5bMBQGrmT3QNLl5FGCiH4Kz9CVtyjXvij-J0ntmUunc_GjBUlc_t-2JIGsIPhZttivK_h_IGR_yo9tX&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwibahzPPkRY6hb37_x8yEj7sV3rfzLis3lVYRi4fH-bA&oe=69CDC4E3",
             "id": "1512302339822463"
           },
           "metricas": {
@@ -635,8 +635,8 @@
           "creative": {
             "title": "Departamento desde $1,178,940",
             "body": "Estrena tu departamento en Tecámac desde $1,178,940.\nModelo Pino cuenta con 2 o 3 recámaras, 1 o 2 baños y una distribución inteligente que aprovecha cada espacio.\nAprovecha el bono especial en caso de diferencia.",
-            "image_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/597147157_2089476245218158_1629768350519533164_n.png?stp=dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=d5bd00&_nc_eui2=AeFGW4s8qj0whv0_1PAHRaxaM1FADtkdgxszUUAO2R2DGxgOW3lbqQqxG1VwTZBTqC4WevOB-xjRRS4JObBG_3qY&_nc_ohc=n-dtnUob7fEQ7kNvwGxsud_&_nc_oc=AdrS3YxTlJYNnumn0yegPHYZDwNFeQ55FodgkKkYJkwsD_jaZ7fvzMLonIcF676BwRU&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=A5Glq7vAAeeZJIV649toQg&_nc_tpa=Q5bMBQENFqbkNDXUAViZU8CoK0dUUECgCyQmgsc54q4Ox_u2XCuWNZFPw_YHJEoopNnXtpKLq5vzzejb&oh=00_AfwC6YUjh_lyts9Yd5Opx709F93VNXFb1Jr_AYzKLPczAQ&oe=69CD0C0A",
-            "thumbnail_url": "https://external-ams2-1.xx.fbcdn.net/emg1/v/t13/2156320495090837699?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQIvWN185h8c2PM6whEA-taeDS05g0IBOCYhV2bArnh7Tg1d_EIZKUqogYFYlg1ffp1xdQjejlCkXnzGWzAuccKnscnYGLq1012IopfIPYYfmFOMiSYU38aWz5w8RwCcc-94Z0bQzoiIb5ejRTB7xia7&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&edm=ANIILHsEAAAA&_nc_gid=A5Glq7vAAeeZJIV649toQg&_nc_eui2=AeGQ-hONzEO8U4n38uwc5atAXZdk5zJRFwtdl2TnMlEXC3SfLIJEw9QqydNWsjI7T2VtUxuZ_y8-haahvqmRSMe3&_nc_oc=AdofZ-d9hbFCj4G5WaJ99IMLImcPd1PyZ4tyqo9RwPHP24hheJGvg4yXKuTLlR8nz_A&ccb=13-1&oh=06_Q3-9ASumSWFacaNxuInHqBGBSvkyQq0D1tDM-7lmSJVOZZ4C&oe=69C92407&_nc_sid=58080a",
+            "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/597147157_2089476245218158_1629768350519533164_n.png?stp=dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=d5bd00&_nc_eui2=AeFGW4s8qj0whv0_1PAHRaxaM1FADtkdgxszUUAO2R2DGxgOW3lbqQqxG1VwTZBTqC4WevOB-xjRRS4JObBG_3qY&_nc_ohc=n-dtnUob7fEQ7kNvwFPLZeL&_nc_oc=AdpejW97vvyf1ryDVLW38EKqsE9veYqcE_gSxpnnoqPmL1tYFqJYxe5xBAx4PsOcFV4&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=j5cRdluSj5eS8EEL-b7Pxw&_nc_tpa=Q5bMBQFqTltAZDzv_sU-sDRrmoiovfVjDyoGi4vYAAlRN4KlLPAkz-NZtPzr5gGuaTg_cgB54lWNEYJ4&oh=00_AfyNXkrK3orL8AU8FqA1mkFpvlMyOxMz5jAUtKsm_u9Skw&oe=69CDB4CA",
+            "thumbnail_url": "https://external-iad6-1.xx.fbcdn.net/emg1/v/t13/2156320495090837699?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQIvWN185h8c2PM6whEA-taeDS05g0IBOCYhV2bArnh7Tg1d_EIZKUqogYFYlg1ffp1xdQjejlCkXnzGWzAuccKnscnYGLq1012IopfIPYYfmFOMiSYU38aWz5w8RwCcc-94Z0bQzoiIb5ejRTB7xia7&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&edm=ANIILHsEAAAA&_nc_gid=j5cRdluSj5eS8EEL-b7Pxw&_nc_eui2=AeGQ-hONzEO8U4n38uwc5atAXZdk5zJRFwtdl2TnMlEXC3SfLIJEw9QqydNWsjI7T2VtUxuZ_y8-haahvqmRSMe3&_nc_oc=AdqjEA7zIXB9Pn8a0ijCf7v943ighJxqTLQ5pKo_QY60_jYl-qMsfqS5967_tecpt_A&ccb=13-1&oh=06_Q3-9AYnb7EVvpUzDlMAjyFFRKOtnN3dp1D2RP9gYga7VMT4T&oe=69C9CCC7&_nc_sid=58080a",
             "id": "735446215724128"
           },
           "metricas": {
@@ -683,7 +683,7 @@
           "nombre": "Casa Citrino desde $2,074,000 - Copia",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/595009931_2088693048629811_3125739410412507073_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeF4NF1j-CDgG9nV8wZLfPifQpAvsE5319xCkC-wTnfX3FIU6FbSWCmmOn_OGt_mcNIn_eDgvwjsfMZ91_-QjTEi&_nc_ohc=qFBfi1HRFwwQ7kNvwFoj42f&_nc_oc=AdrA6aKEZw6RLCeYmxNOcMLlU6Bvlsj_rsHDIztNJHaAy6vjMOmaa2QV_K1E-uNPm_0&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=rgj00_8Ov-OEodqAoWQR2Q&_nc_tpa=Q5bMBQHkJC9jcLQjJavYkl6VElmNcK_AsmYCDXnQPSgQeRtzH85mAyZ_VHe7qMiEnvGxFZMR-AuCOy_U&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afwlxu6zAUQfpGS-M1rRY5zITGSsavhf_s6y8Upokd1UmA&oe=69CD1D14",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/595009931_2088693048629811_3125739410412507073_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeF4NF1j-CDgG9nV8wZLfPifQpAvsE5319xCkC-wTnfX3FIU6FbSWCmmOn_OGt_mcNIn_eDgvwjsfMZ91_-QjTEi&_nc_ohc=qFBfi1HRFwwQ7kNvwFkLKmR&_nc_oc=Ado2p9Vql6UvRSFiljLsqFNuGh9DiqfVPvQHBGkE1FFW9Tbr1ii_ZzNK9d4U4BIL7Bo&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=PNVIpah1ZCOH0mrAoth-ZA&_nc_tpa=Q5bMBQFkqxaNC9UZ__t_q7o7UAcaXaPtFjQoux73IMV-O-uhouHDNO2pkAwY14JqU2xf5Tj7xMaU7gg-&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzdDg70OCPBeDSrg99tvbZfXnj1-NyFwwTHmdC7D6bwKw&oe=69CDC5D4",
             "id": "876860248638026"
           },
           "metricas": {
@@ -730,7 +730,7 @@
           "nombre": "Esmeralda/interacción/video",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/593991279_2036588817108462_1906144184984041953_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeFExUdNRFY3XwxlWfPEC-g7joZ9xLgCRU2Ohn3EuAJFTZrrOBq24JqWE2vtsYOF7OvvWyG75vP1Bi1SWP8yzUm-&_nc_ohc=LMynvpNbOZ0Q7kNvwHR0ql4&_nc_oc=AdpeoD0CpysshDUwt9lcptlZnzx91YzyrFWBbYk_4ABejJYo-DFLrD58vc3Gvu2B8Dk&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=gZsJtxm6y7Q-Zrn2KG4gVQ&_nc_tpa=Q5bMBQHQ5amIfn0p0_cnxIblVmt7Cx_YTgCuMo-1HNtgnvGsgYZNk-vWRA0CrZjHxFJXQYC2T_G3F6fl&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfzFKWwJuCRa4cVzcn880aHoD1RHC_QbnSKt33QwO8fPsw&oe=69CD3093",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.5256-10/593991279_2036588817108462_1906144184984041953_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeFExUdNRFY3XwxlWfPEC-g7joZ9xLgCRU2Ohn3EuAJFTZrrOBq24JqWE2vtsYOF7OvvWyG75vP1Bi1SWP8yzUm-&_nc_ohc=LMynvpNbOZ0Q7kNvwFYlcID&_nc_oc=Ado8L3_KxJj-o8guxmbjN57pVfdK5HYP5noDfNsR5NkBIYHbfp6m9HKuOyoJGSiEcAw&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=n3S1uo6aHaKomFJrkhTOwg&_nc_tpa=Q5bMBQFN5mBEHzbZvDhqPqUbi4V2xQmQy5yRStjyCpvQVBN-_B6uiY0Og0PCVyXw2ny3XZDaZBKjKWLq&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfxqIujxnckyKyL-x1xhzMvs2uWr3biqwk_fXBwFsa9Jmw&oe=69CDA113",
             "id": "897367125952037"
           },
           "metricas": {
@@ -753,8 +753,8 @@
           "creative": {
             "title": "“Esta Navidad, regálate el hogar que tu familia merece”",
             "body": "“Esta Navidad puedes dar el paso que cambiará tu vida.\nConoce Casa Esmeralda, un hogar diseñado para tu comodidad, con espacios perfectos para disfrutar momentos inolvidables con tu familia.\n\nEn diciembre tenemos, facilidades y apoyo para que puedas estrenar más fácil que nunca.\n¡Haz que el 2026 empiece con un nuevo hogar y una nueva historia!”\n\n📍Visitas al desarrollo\n📲 Agenda tu cita ya!!",
-            "image_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/592490317_2083003982532051_7349449250851228619_n.png?stp=dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=d5bd00&_nc_eui2=AeGfq9aJLzAK58qDlRCA5gSXTh3pZ6Tli1ROHelnpOWLVGldwOLpnegwzIOf1fNOyKRzQ9aoInNjZ1M44ecUkOkf&_nc_ohc=hSJrKR1a684Q7kNvwECw3RL&_nc_oc=AdpmlN77GAfRR54ebgRvAe8-1FGPluUmuQwjTrre4j9EqHCvZlVgGL0-v38Kmm_LF1k&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=gZsJtxm6y7Q-Zrn2KG4gVQ&_nc_tpa=Q5bMBQEJ3fQvelgudveVEb6Y0Hq3nXGGV4dDe5q36Ez5ds4i5qPFl_A7tYP5XLVAwm4lAgdTBtZom50i&oh=00_Afw79ZCFvP0FCcxVAaeQPoTB1f3SDALCDlBOMKvYMKq2_A&oe=69CD0ECC",
-            "thumbnail_url": "https://external-ams2-1.xx.fbcdn.net/emg1/v/t13/4959880903014332455?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQL6shYlGodf-tRPikMeU5xxmtPiKEcWUyh7_pAd0Lg3pX9p6HS1DBUx25EiqCoTy9q0aQcqwtvWNaJzNrXFoG9ZcKHyp1C6veRUgJN1u2VlNeAQMbtBUNpCug5uKCIqsiUqC7OXKcTp7VekcvLYWdbk&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&edm=ANIILHsEAAAA&_nc_gid=gZsJtxm6y7Q-Zrn2KG4gVQ&_nc_eui2=AeE5pAHgpJarBToYg5VxydEMi45eHSPH-LyLjl4dI8f4vGCO-JVmAssvKwM53ea-U0p9NH73oM15fJwRzm6_qw8Y&_nc_oc=Ado1yRyDs5-ih_Zb3XUIjtG0hFAbhVA6Ib28hh0_Ob2W_L6x_fsmuzGdKjApoHl3ABc&ccb=13-1&oh=06_Q3-9AXLBrXfdL1IhFyORrNTzlfdElAwUSiT4se2Ynh706jKl&oe=69C93B75&_nc_sid=58080a",
+            "image_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/592490317_2083003982532051_7349449250851228619_n.png?stp=dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=d5bd00&_nc_eui2=AeGfq9aJLzAK58qDlRCA5gSXTh3pZ6Tli1ROHelnpOWLVGldwOLpnegwzIOf1fNOyKRzQ9aoInNjZ1M44ecUkOkf&_nc_ohc=hSJrKR1a684Q7kNvwFUZyP2&_nc_oc=AdrsIRVJ95KtPNnbx0QRd3KqXbcIyAtfQuU2F1klBoEcx9R7CA3TbRq3vH1PHQz5J8U&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=n3S1uo6aHaKomFJrkhTOwg&_nc_tpa=Q5bMBQEeYz_BUkVhWz_uXnF4x2SrAop7rRtQeVL22-LO2nTo_k9fygOqGS82-Jmag9DLGwDv0554i6iG&oh=00_AfzJPDEFXmQsT5lh9csT5oj8VLY7yKgS-M6IHFrfA8JaIg&oe=69CDB78C",
+            "thumbnail_url": "https://external-iad6-1.xx.fbcdn.net/emg1/v/t13/4959880903014332455?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQL6shYlGodf-tRPikMeU5xxmtPiKEcWUyh7_pAd0Lg3pX9p6HS1DBUx25EiqCoTy9q0aQcqwtvWNaJzNrXFoG9ZcKHyp1C6veRUgJN1u2VlNeAQMbtBUNpCug5uKCIqsiUqC7OXKcTp7VekcvLYWdbk&fb_obo=1&utld=facebook.com&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&edm=ANIILHsEAAAA&_nc_gid=n3S1uo6aHaKomFJrkhTOwg&_nc_eui2=AeE5pAHgpJarBToYg5VxydEMi45eHSPH-LyLjl4dI8f4vGCO-JVmAssvKwM53ea-U0p9NH73oM15fJwRzm6_qw8Y&_nc_oc=Adpn3wBMfy2OmJhi41YDsWpXikfqmINKeYBhYPCG2SmsatQ77Wrd7XKymtREcXSCl_g&ccb=13-1&oh=06_Q3-9Ac5cOfszIW7QQvxCQwzgvx1rqCjJcJMkFJRH743wfTes&oe=69C9ABF5&_nc_sid=58080a",
             "id": "880455687742996"
           },
           "metricas": {
@@ -803,7 +803,7 @@
           "creative": {
             "title": "\"Tu nuevo hogar en Tecámac\"",
             "body": "Tu familia merece un espacio donde crecer.\nCasa Citrino te ofrece comodidad, seguridad y un diseño perfecto para ti.\n🏠 3 recámaras\n🚗 1 estacionamiento\n🌳 Entorno natural para disfrutar\n💰 Precio desde $2,000,000",
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/590298461_2079784872846684_8198656380579943925_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeEFwhtxKNfO9EvqS9fxSLZ_LIBnza-4XbgsgGfNr7hduDHTSaU_Q434-dWYMtYOL1Xp9WU_6cUbVmta0Y6nbbNI&_nc_ohc=Vyhv2e5ForkQ7kNvwF7iAaI&_nc_oc=Adpcv_Er9bGgBM7qi5I5gMXbppGei7a2GARyB4dvXtNsWeefyuYaM16e5OOTCNIZZGw&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=cWUJYorbguntLayAvFSqKw&_nc_tpa=Q5bMBQHYxNiw0IhGx_uo_bjF9jRIZwR95hS3vPrzUIDEohPIRpsTUJ6hTBpnqCE2GvJCxD2zuo3kq-3T&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AfyX7WqM0k_yOMI5UoDqo__vkdgt1UUH65DKn3uVWSUHwA&oe=69CD32F2",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/590298461_2079784872846684_8198656380579943925_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeEFwhtxKNfO9EvqS9fxSLZ_LIBnza-4XbgsgGfNr7hduDHTSaU_Q434-dWYMtYOL1Xp9WU_6cUbVmta0Y6nbbNI&_nc_ohc=Vyhv2e5ForkQ7kNvwEUrfaL&_nc_oc=AdpTNt8V7AGHQP-1kfEGCKA7InHVlEfQIpX7DYqPe6MaoK5Ur0vRST6LcN6-TEybNPw&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=F_5301hhc935MnxdWxykiA&_nc_tpa=Q5bMBQFR7sedNGleVeTN1nmvLA4OkrKLshl6GcDRQuU3j37tA5eVm-6sC_mZUXj60Sf2t2Ew7PUQoppH&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AfwFtfowhJxwRnwmXfK6HGeMvrCBzEZVp05q_uwVJzHXCA&oe=69CDA372",
             "id": "25185696611070345"
           },
           "metricas": {
@@ -824,7 +824,7 @@
           "nombre": "Citrino/imagen",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/584091530_2071614520337664_5216890815094058963_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeF4TVh-YAX1JgO9zPhc7meVadut636gYBJp263rfqBgEp7pFGFxe4zP8k_KB4RDGk-uI9Gxe5kuJDf-_eteey60&_nc_ohc=vBhh7hgGNTwQ7kNvwFIzz7N&_nc_oc=AdqP6O6eVsHeUeoTgDAq_EjSqoCofuLosX6AzFesNgmVqpNYsulXneArgwFFDeAHREE&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=cWUJYorbguntLayAvFSqKw&_nc_tpa=Q5bMBQHAI5RLw1DUvH6HQqRg1YLaI5CX3zMGPLzb0ztLv_Mj8fkhcMOX2FjyxIFUSlo4j9Qds_Lhw0dn&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyY-krZtK3DAfr2QK18IUf9HpGluiyR7T6Z6uTO-kEzvA&oe=69CD2DF6",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/584091530_2071614520337664_5216890815094058963_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeF4TVh-YAX1JgO9zPhc7meVadut636gYBJp263rfqBgEp7pFGFxe4zP8k_KB4RDGk-uI9Gxe5kuJDf-_eteey60&_nc_ohc=vBhh7hgGNTwQ7kNvwFjLUcU&_nc_oc=Ado3BdtlKMbQKxvPSjIfBvQ1hMynwEa_9Zkh90EQTDPnM8eV_k-3iCUozzXp9GRlkUk&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=F_5301hhc935MnxdWxykiA&_nc_tpa=Q5bMBQHINTjqnuWBYgRF_hH7FRYXmTy6AzfV8CXagBuk6wk9EFR50qOjKI6qjFr6Ky9WfNYL2JRVJm9a&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwEtN6Uudik8APUiL4EtaVhVGlzJD8ne7-WRoCJU8l3TQ&oe=69CD9E76",
             "id": "3256296527871581"
           },
           "metricas": {
@@ -871,7 +871,7 @@
           "nombre": "Jessica García/PINO/Imagen - Copia",
           "estado": "PAUSED",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/588268641_823077260705166_4655021342403750356_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHrFmRJaXprsVE1Cj8z9c4wDH_tMoL03_QMf-0ygvTf9Eu-bGM4-SjFC8mvFPhIT3upnth1ZDZ9XUfUrB4yHdwM&_nc_ohc=BRKHaRyENoEQ7kNvwEnH7A1&_nc_oc=AdrBdjjBsOfKd5OO9iu5BbiZGlrSo0Ufi0oBw2qUdu_D4h3TFyCYEZix7TYYfjsC9_c&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=rwkWXBPvzBBlu68DqTL2mw&_nc_tpa=Q5bMBQF-4OodpeMDxacOs6dREJb07lTnPwed0kmUjB7VL7UcGGhyuhzlFAYJo9L9ARWFLRwcX5Xi2zfT&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfyeV0pEOSw74tMvseTKsZlUeYsyW71Navm5Q8ZwiP648g&oe=69CD1B4B",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.5256-10/588268641_823077260705166_4655021342403750356_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHrFmRJaXprsVE1Cj8z9c4wDH_tMoL03_QMf-0ygvTf9Eu-bGM4-SjFC8mvFPhIT3upnth1ZDZ9XUfUrB4yHdwM&_nc_ohc=BRKHaRyENoEQ7kNvwEJGTie&_nc_oc=Adrd0NuoKGvLd5csNJsq2KXu4CfVPrEme7PHH27UDJ-SLSbTD2SbyjUH5McRW0oLZjo&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=OlOAbCjVWKcOaNGZxruCnA&_nc_tpa=Q5bMBQHCcoJV36B-eWWgSfXhoUrOortFo0eM-XFrFbifn22SNYiraerLaQAcvGAaV7mJqeBzB76WPMhl&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfyEQP4byMY3kKsf2vSytkQ0J7YlduQDLr5oQpDz8PoosQ&oe=69CDC40B",
             "id": "3316723748488789"
           },
           "metricas": {
@@ -918,7 +918,7 @@
           "nombre": "Citrino/imagenes/2111",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/584091530_2071614520337664_5216890815094058963_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeF4TVh-YAX1JgO9zPhc7meVadut636gYBJp263rfqBgEp7pFGFxe4zP8k_KB4RDGk-uI9Gxe5kuJDf-_eteey60&_nc_ohc=vBhh7hgGNTwQ7kNvwFIzz7N&_nc_oc=AdqP6O6eVsHeUeoTgDAq_EjSqoCofuLosX6AzFesNgmVqpNYsulXneArgwFFDeAHREE&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=mLrK8lHUaYw5_DIGYZjQ7A&_nc_tpa=Q5bMBQF5RJ89n9BYbMgeozIT11GFJzeMr9jfNcXd_YwBtLbPOtHhuRCRVf6o7sDUBQtSKl-araVCRb45&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwDndHQRO6ZqshTEvLyTg-feo1qdNwGph--AolbCcO_9Q&oe=69CD2DF6",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/584091530_2071614520337664_5216890815094058963_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeF4TVh-YAX1JgO9zPhc7meVadut636gYBJp263rfqBgEp7pFGFxe4zP8k_KB4RDGk-uI9Gxe5kuJDf-_eteey60&_nc_ohc=vBhh7hgGNTwQ7kNvwFjLUcU&_nc_oc=Ado3BdtlKMbQKxvPSjIfBvQ1hMynwEa_9Zkh90EQTDPnM8eV_k-3iCUozzXp9GRlkUk&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=MATNIT5WPWqbGymhGPldEw&_nc_tpa=Q5bMBQHF2IT67eUPwvyotoRVfwpDaFRsDEGjN-f6U97m1MpHSnxkxtRNi5bJSBaSu5h4oaEYqowBglUS&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwcxvF46SYYHPK1a-5A6vGZqIe2Wp2a60eezbTEgV23Rw&oe=69CD9E76",
             "id": "815968091224354"
           },
           "metricas": {
@@ -965,7 +965,7 @@
           "nombre": "Depa/pino/2011",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/584645161_2074235426742240_7048673997851270651_n.jpg?_nc_cat=101&ccb=1-7&_nc_eui2=AeFW23EQcGSM4JnmvRHg8GzpsDMwp8c9HviwMzCnxz0e-JCCyp3sYr3mZ3QSdRsoIk_Q9cJptCICi8xbDb6f2oOv&_nc_ohc=4UgvJJFxVvwQ7kNvwEUe8oK&_nc_oc=AdqHxOU53oyEXhi6CGx-icCA4RJnKzENayAMOTUXyCxAST7YhPq2OZLvsXsb2cM9Slw&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=lEGUi2uJOZQXUxGiv0LoZg&_nc_tpa=Q5bMBQFlPlPSnmkI-bb2BtvPJ8vqlmy0nJkGf5O_3hD5YetAvKbu1ShptMoA1ZrjsdZAdV6HP-wX466b&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwI_k5ESPdnU75Z1KX69hHor9hMD5Lh9LMwjtuSKHcIWw&oe=69CD137F",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/584645161_2074235426742240_7048673997851270651_n.jpg?_nc_cat=101&ccb=1-7&_nc_eui2=AeFW23EQcGSM4JnmvRHg8GzpsDMwp8c9HviwMzCnxz0e-JCCyp3sYr3mZ3QSdRsoIk_Q9cJptCICi8xbDb6f2oOv&_nc_ohc=4UgvJJFxVvwQ7kNvwHL9cHY&_nc_oc=AdqOAWXL-J8lJAjMGGTvtA7VUJG3u5347rBUtnLk5wH_2HqutXS_nmxGBaibnb-tuWo&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=A4g9jsDe2xfc8kQNHSz1mg&_nc_tpa=Q5bMBQEcYEjf4HahqJ0dsxbjTMQzKuB-KM3Q-Ojaitywr4UO_oQjJdIbc6sxXWZp8MG2FWe1Cts2mhw-&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afyahc64kTszDvNfgyVOCp_Ej_9X7jgc0mTLvfAcbfMIHQ&oe=69CDBC3F",
             "id": "1757997314752657"
           },
           "metricas": {
@@ -1012,7 +1012,7 @@
           "nombre": "Nuevo anuncio de Interacción - Copia",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/584091530_2071614520337664_5216890815094058963_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeF4TVh-YAX1JgO9zPhc7meVadut636gYBJp263rfqBgEp7pFGFxe4zP8k_KB4RDGk-uI9Gxe5kuJDf-_eteey60&_nc_ohc=vBhh7hgGNTwQ7kNvwFIzz7N&_nc_oc=AdqP6O6eVsHeUeoTgDAq_EjSqoCofuLosX6AzFesNgmVqpNYsulXneArgwFFDeAHREE&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=QNYynzCg1oNRnIZL7Re8xw&_nc_tpa=Q5bMBQGD2qxJyyQrK02lq5YgnelDsiBq5cJZ_WB_wB-SNaa7flp--ASlJm1U3-OfZS3oAMF4InfjAm5k&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyNFJXZo_dLeSHxqhjmsPeDs9Y4XIFvPdArD6EB6FYSPg&oe=69CD2DF6",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/584091530_2071614520337664_5216890815094058963_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeF4TVh-YAX1JgO9zPhc7meVadut636gYBJp263rfqBgEp7pFGFxe4zP8k_KB4RDGk-uI9Gxe5kuJDf-_eteey60&_nc_ohc=vBhh7hgGNTwQ7kNvwFjLUcU&_nc_oc=Ado3BdtlKMbQKxvPSjIfBvQ1hMynwEa_9Zkh90EQTDPnM8eV_k-3iCUozzXp9GRlkUk&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=vp4kZawmjFUVsjP_mDOS7Q&_nc_tpa=Q5bMBQEdWIiwcKNTHuz6vC1wRp22VZliyEvjB-IG2RGi8jYHooDTrDXQuRYZo-lolzZAadiwR3hPRbaL&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfymNbeVhd4btkYZCRSI1QvMIc5e1T9jOatH5LPP3prEjw&oe=69CD9E76",
             "id": "1762128164275481"
           },
           "metricas": {
@@ -1033,7 +1033,7 @@
           "nombre": "Nuevo anuncio de Interacción",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/583272460_2071614367004346_6929763827478015934_n.jpg?_nc_cat=109&ccb=1-7&_nc_eui2=AeGP6T58K1iHjkS5nYwkDuYed3U9FbBlUYB3dT0VsGVRgOD7Mq0qcuO_F8LqDRrYlcLx8zbiLoxJ-MVbyyF73MGj&_nc_ohc=GOECLx8Ro04Q7kNvwEOgSr4&_nc_oc=AdptdKZuULLQmNy3SrtAT-EQzt3VSMoUdEVy-96KHx88fANrYklmZajubxP3rnOKp5k&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=QNYynzCg1oNRnIZL7Re8xw&_nc_tpa=Q5bMBQHENBIF4kb4w5vQ-ePhp9Q5I6JNSEjykwMxfkhUdrKNc7BDD4H7FpHlPEaKIeSKAwGPtWu5JLy6&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afwdm4e6Mt8eQrOYRX0IC0S_Oz8Jj8pCNfwZHIMDM7_YTg&oe=69CD3A00",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/583272460_2071614367004346_6929763827478015934_n.jpg?_nc_cat=109&ccb=1-7&_nc_eui2=AeGP6T58K1iHjkS5nYwkDuYed3U9FbBlUYB3dT0VsGVRgOD7Mq0qcuO_F8LqDRrYlcLx8zbiLoxJ-MVbyyF73MGj&_nc_ohc=GOECLx8Ro04Q7kNvwGgBdTK&_nc_oc=AdqYp0wzmie_u_TxTXWsd5WdyenCyYEYVWQvJ5sW9qgHPYAsXqxFh_NzYiF_ulxtaAE&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=vp4kZawmjFUVsjP_mDOS7Q&_nc_tpa=Q5bMBQECTb0ioKZIu9bUJQ1IRfFcHUstwdV4BmKmXrghY6o3IMWkRj0LeFVWGFeczdJRFs8q15lSK0mY&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwGjy9m0vJDYDAPdJSepSuOWq4cbUBTI8ueuH0_hvBSCw&oe=69CDAA80",
             "id": "840331892286731"
           },
           "metricas": {
@@ -1054,7 +1054,7 @@
           "nombre": "Nuevo anuncio de Interacción - Copia",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/583809028_2071614677004315_6494002302349956268_n.jpg?_nc_cat=104&ccb=1-7&_nc_eui2=AeEYlgvOVSycIyGcqa8F-IomFg7_G97C1L0WDv8b3sLUvUzHu3Ozdnops_Ut9MZUULqChKCIQ9j5Es8V-QHBUps-&_nc_ohc=LlBsR3gehg0Q7kNvwHtxoPK&_nc_oc=Adp75_Wi74oX4rbL0_owDigAthqWf0DSY4rFQoeSwblZA4_fu5XiwR8WMTXQPh99wDw&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=QNYynzCg1oNRnIZL7Re8xw&_nc_tpa=Q5bMBQGxqFJQaj57TdxBHLP1blQEbup_VRvPIFOiilR9-8Ws7tf6R3z1n8iNnjz-AxocNlsWTPps4uCE&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzoJTWUN0WbEZWqbzaLh9uwvbMxOwRlzkWCKFSkdDDyCA&oe=69CD2461",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/583809028_2071614677004315_6494002302349956268_n.jpg?_nc_cat=104&ccb=1-7&_nc_eui2=AeEYlgvOVSycIyGcqa8F-IomFg7_G97C1L0WDv8b3sLUvUzHu3Ozdnops_Ut9MZUULqChKCIQ9j5Es8V-QHBUps-&_nc_ohc=LlBsR3gehg0Q7kNvwHBc60n&_nc_oc=AdppNST3-mnS2KPVJexBo0qe_eCINzMlmwSUONOuVJ321LTgldQmqp3h6oJSS-Owops&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=vp4kZawmjFUVsjP_mDOS7Q&_nc_tpa=Q5bMBQG_jyT_pExVl1v6nMJTpLMVzmBGtIMJU7SOeB1zL3e5FDsaYCoY49YlUZto6EeNpeqEsac8mQWR&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyHwDEazc7wSbup6so_wJMYZWjqqfUiRUjiiFaoikimvg&oe=69CD94E1",
             "id": "2342967446183957"
           },
           "metricas": {
@@ -1101,7 +1101,7 @@
           "nombre": "Nuevo anuncio de Interacción - Copia 2",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/580615164_2066550574177392_3700187012094923027_n.jpg?_nc_cat=101&ccb=1-7&_nc_eui2=AeH3HGOw4FgRPX3s3qn-60YaK0-ijTG33NArT6KNMbfc0BP4IACq_iIUN9ctzR6hlS4IEgHlg4MtR6Kw9KvTr-RQ&_nc_ohc=3Z4jufUKmf4Q7kNvwH8txMK&_nc_oc=AdqMnxRbEJ_qNXo3VwD1AT78GUE6X5IWreNLj5rorCKPoaASVr_492Zj9A8axcLfhz8&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=WiQRIhXEHSio6bU8XMYhVA&_nc_tpa=Q5bMBQFGxIS5rgRddAZwbImiRyqX5gzJOy0XssbcwdMz35L_FWEsuaIoktB-80Ur_jR_8j9LbxQEDS6n&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzauuowKp5pkweX2-RyyxyAAmv-aNmGmIiDMqyOVG6ItA&oe=69CD283A",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/580615164_2066550574177392_3700187012094923027_n.jpg?_nc_cat=101&ccb=1-7&_nc_eui2=AeH3HGOw4FgRPX3s3qn-60YaK0-ijTG33NArT6KNMbfc0BP4IACq_iIUN9ctzR6hlS4IEgHlg4MtR6Kw9KvTr-RQ&_nc_ohc=3Z4jufUKmf4Q7kNvwHr8BY_&_nc_oc=AdoIL4mFJSDofdWJvmYws1ekmnz4ySFH46UHOTCCkFUkOSbc5goj7-EecCAo3V7Q6_E&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=GZKY3j4pslLbIIZps-QhOA&_nc_tpa=Q5bMBQEMvoHB_bJuIQcepUGH1ezgth_qLgpKaiFzlWQO_ZS-BWA0mDrXVWU_FVmN4aEVqg_GrzrW85h8&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwWWPoKX7ktCmrtRJmixMa4BJ1O10Sswq4IZoiLjQT7qA&oe=69CD98BA",
             "id": "767671179621991"
           },
           "metricas": {
@@ -1148,7 +1148,7 @@
           "nombre": "AIFA",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/575741329_2061265741372542_4207034785419610139_n.jpg?_nc_cat=109&ccb=1-7&_nc_eui2=AeEPfDlKdfd5mmVkWCAWOxh6oQr_TFUi7HmhCv9MVSLsecJJYM9za57KvNvrtM7SerIjSrpJIyQvCtabzeO0AOou&_nc_ohc=WNCGv9v1TZIQ7kNvwEORWyp&_nc_oc=AdrGmhTnon1TJDs8pC7u9fdpcVSoSC_j3p0i4jAfaYDTHKgJ4pRDgWrYhGOVB0KrLvQ&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=zpz5zqhAf2Y41FffwGMSaw&_nc_tpa=Q5bMBQFtiO370iHF73R3nL0eHvtr7Mcrt62t2G21NJANqprSIZ5FwPjdHBnLXUsXegTK8qb-j1sMn1XA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afwf2QWYD2zyJBhS0AHY0mfh0ryqpl3NbBQel2A0WCuT_w&oe=69CD3827",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/575741329_2061265741372542_4207034785419610139_n.jpg?_nc_cat=109&ccb=1-7&_nc_eui2=AeEPfDlKdfd5mmVkWCAWOxh6oQr_TFUi7HmhCv9MVSLsecJJYM9za57KvNvrtM7SerIjSrpJIyQvCtabzeO0AOou&_nc_ohc=WNCGv9v1TZIQ7kNvwGlEJ_i&_nc_oc=AdpMB38WUOkEBQAou3jQUISC0hUKiXGOe5tRx_Zq6X88I1SAX-DhTYcTuxBF7BecsS0&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=zgkRw_bjWteySLPq6Q2IeQ&_nc_tpa=Q5bMBQGmfQO2_iMJ08pCQsMfdh4XwvaTyererduOQv05nDhPTP8dHCNNEdLJG7qv1mEb-iqvDBOhrvOp&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyaNofcNAcjRHRJw50gu8qTVG0kwSlco9KvvA715lt3og&oe=69CDA8A7",
             "id": "4097976743836084"
           },
           "metricas": {
@@ -1195,7 +1195,7 @@
           "nombre": "Jessica García/Video Pino",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/576459309_1311728054053986_162015236274917833_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeFIvjxWAaXvLTwYLEY9PhbvYV3H9oQk7aZhXcf2hCTtpqKAxhJ1WuD5oCxsypSOLtEBIb0VFPHJQ0OSBD1Dlv0R&_nc_ohc=27wWLwIl11EQ7kNvwHOmSWc&_nc_oc=AdpZVpxQ8HZ2D6EN0moI3dcNL5t_Q0aJW8b7ekf70eXlif_HiX_PcDzwlRQyz1lqD8s&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=xp8S4Pe2_qXa-bPtY3xA1g&_nc_tpa=Q5bMBQE7jNlK9PUmVH1VDV6fBCE6GsnCGZ118qOnLfVeDLEVfnmflB9uIfOHXSVmH2z_JEk6j7LIKZaX&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=4c1fc5&_nc_sid=58080a&oh=00_Afx1ywH9GQFlI7u_3mSQ-FJb6Z4OKmQAKG12uimTtUS-OA&oe=69CD18FD",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/576459309_1311728054053986_162015236274917833_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeFIvjxWAaXvLTwYLEY9PhbvYV3H9oQk7aZhXcf2hCTtpqKAxhJ1WuD5oCxsypSOLtEBIb0VFPHJQ0OSBD1Dlv0R&_nc_ohc=27wWLwIl11EQ7kNvwHu-4ZD&_nc_oc=AdqQ64YMsQisozmsKd-lmLamq92k7hKNzLwHJ-z666-S814GrmWiwSjFkxXfzmoIFh4&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=sfSBSMfyiYyC_bgs6E5lgw&_nc_tpa=Q5bMBQEfU-SohriRArn1U7NGftzoZwOdeVevYqWSYzBgcaDxewZ8R01_vBUhpzXh7zdDkjiV8IPpwgJL&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=4c1fc5&_nc_sid=58080a&oh=00_AfyuKC7Ubvd7J6K3Y4n5qHL_7YbOZyoilmdBK9IAYGdqCQ&oe=69CDC1BD",
             "id": "2176660946439768"
           },
           "metricas": {
@@ -1242,7 +1242,7 @@
           "nombre": "Jessica García PINO/Interacción - Copia",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/570655816_2057321958433587_3863414967743428321_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeEP8ZetITkbCRIa57qEDcjY-qh5Rjquvqr6qHlGOq6-qoKl577rwAcDn8Y3JYIWNDKXKEBPmFum_hg41zOz4hzb&_nc_ohc=dJxfg7mw_W8Q7kNvwH_6XBC&_nc_oc=AdrIvHnv4EiS2EuqsMAQclpXEu2UMIo7XF1jBR8EJQwmQnb8ROc1QxWLhJpaIInYn_I&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=J6xeh67_VzH4DOn2i9fqAw&_nc_tpa=Q5bMBQGS5GQTrzoBoNf6j2wyMHfsfAweerie21i3sbdyDhWfmgNHQBWPfrerX6Pwm_zGwAuL7a4F4iYb&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzjoWq8VlIHfgq40C1shnwzgVgg8esDpt7of6-vjTAGbQ&oe=69CD091F",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/570655816_2057321958433587_3863414967743428321_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeEP8ZetITkbCRIa57qEDcjY-qh5Rjquvqr6qHlGOq6-qoKl577rwAcDn8Y3JYIWNDKXKEBPmFum_hg41zOz4hzb&_nc_ohc=dJxfg7mw_W8Q7kNvwGHGCIr&_nc_oc=AdpAbK_qMO5Hj0pZP_hDA42MvHQxWC_SxjW-yhmdr7vWqCaunb_JR1fXMdBnwQhEv98&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=NwSJVqi37VWfMvlYNk6MlA&_nc_tpa=Q5bMBQEvbLBIb4H-2XMdnY5-sCU8yLi5I8cYEhFNe4Z3xL_9wGZJYFqV0k37Zim84LcsOl52eSfAPI5I&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afxa7NNLqyffSAuE5pURFXqM4bSW2n7wtBm9yeS_iJMYkg&oe=69CDB1DF",
             "id": "2022509011898268"
           },
           "metricas": {
@@ -1289,7 +1289,7 @@
           "nombre": "Jessica Garcia/citrino/interacción - Copia",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/571447072_2057028751796241_5218361742807387896_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeHovagyBdQzJPT4VYkm1Hx4tBzo88VTBZG0HOjzxVMFkfpO7ajxGgtxHKhWbXEg_TnuYKwshi92xBcdWKP-3kG8&_nc_ohc=NFcYiULt9nAQ7kNvwGnd8un&_nc_oc=AdqLN8XbVHIhgPUim-OdDAw6ESTy-yHL2lYpP2vZAlhY2kjrzArIdBba2_lZiCLlRIU&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=vKQIsrJDA7l7nUnfNzELsA&_nc_tpa=Q5bMBQHQxnUqLyTptPE88TI2X3JgVkLHzIO00PTaNRic0H-80_7CxJaZfNomxTL6S0cbxl9N_CjXTyNY&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxCNlo1LhibRisyBM0e-olhlIC-reWunpxeu9MzqeuoGQ&oe=69CD277F",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/571447072_2057028751796241_5218361742807387896_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeHovagyBdQzJPT4VYkm1Hx4tBzo88VTBZG0HOjzxVMFkfpO7ajxGgtxHKhWbXEg_TnuYKwshi92xBcdWKP-3kG8&_nc_ohc=NFcYiULt9nAQ7kNvwEDJn1i&_nc_oc=Adr_sgELhKQmfOk1lV6Jb7UX5McH32plVr7hyWy2nX0Hkbxycv8rjRb6qHUTmEC4y4s&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=jpignamA7kd7hVa6dmtIEw&_nc_tpa=Q5bMBQHYDs7x58OpAHbENUgVK7LmmU4p0bcikUtexCNF6LmNI3czieI2TWS-IGKDeBV8of4WGQ0kEnC5&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwUi3FxEqL-swQcWjZzxPiKkBZmQs428H_sh08aOUdcpg&oe=69CD97FF",
             "id": "2232919610544994"
           },
           "metricas": {
@@ -1310,7 +1310,7 @@
           "nombre": "Jessica Garcia/citrino/interacción",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/570620249_2057024378463345_852276155893999000_n.jpg?_nc_cat=105&ccb=1-7&_nc_eui2=AeFT140uGCEPcf6tgXGIdwZevfREy3_Qql699ETLf9CqXgAlXodcTu2g_qNXJsBuqKhBRuTeVwfVnoxk-l5GQ-I8&_nc_ohc=lhvze4MV84IQ7kNvwHuZYkY&_nc_oc=AdoCRQhd4Izu-eRNGArRT2rB8pUpefkU58yXP1d-q2--dSJynQCFkWVzRY1369WIIYY&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=vKQIsrJDA7l7nUnfNzELsA&_nc_tpa=Q5bMBQHl1O7IRdxCtP4K3FRpaU6KPvIfVDH0qyilgODzqXpp4FaXMuHoVDdrfJbFoVWOvrY5vo-t0H4e&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwtA4PSweRkErluxkHReWIcIqmIV1iLwOOXOQA96THzKQ&oe=69CD08D6",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/570620249_2057024378463345_852276155893999000_n.jpg?_nc_cat=105&ccb=1-7&_nc_eui2=AeFT140uGCEPcf6tgXGIdwZevfREy3_Qql699ETLf9CqXgAlXodcTu2g_qNXJsBuqKhBRuTeVwfVnoxk-l5GQ-I8&_nc_ohc=lhvze4MV84IQ7kNvwFAN1KW&_nc_oc=Adp7luy7K1kuV0f5TV0hNVxKf6nqU-9_kHPBMSD7jXR8B-pHzPsM6MW79IvWhou2Puc&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=jpignamA7kd7hVa6dmtIEw&_nc_tpa=Q5bMBQFnMF8vd_qTlmtKLfmEH5P36XMaXVOG4jAFAn19pxeQdbC1IHAU-QyqvhTTOm9s4iZnTc-oh80c&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxGmdincU1O0qSaSqvZd1S1Rxhy29Fyj-XqJgzql8_wTg&oe=69CDB196",
             "id": "670836306100349"
           },
           "metricas": {
@@ -1357,7 +1357,7 @@
           "nombre": "Jessica García/pino/formulario",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/567519801_2047125236119926_7616386858426439654_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeH660iIffPuFtGXqi5DTFTIJd6wO-7gZWwl3rA77uBlbKJgZHD-3hRYAGLNBuvNn3x-dcxWVfA9TsfGusPz9SzP&_nc_ohc=T3GYFyhCbjwQ7kNvwEg2IG3&_nc_oc=AdqWA5eAAfNCV7R0H7BNulHB8Wbhsp4xqFCxF29GUWiUg3v73-FSSdOcN141q_aQ5Qk&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=LznmY9CYG8WFDfIPdqv3JQ&_nc_tpa=Q5bMBQGGhxB4QMkd4PI94x8zSDVwaArDThADPeRZIHJJgg9p6-ywKtE9OXb2fVvPwOjKQ3MHMPaRImPW&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzptwcSZEDKp4wyRC6raYS6hjK4Vf6Hed2KRRjTOWS6Bg&oe=69CD2F90",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/567519801_2047125236119926_7616386858426439654_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeH660iIffPuFtGXqi5DTFTIJd6wO-7gZWwl3rA77uBlbKJgZHD-3hRYAGLNBuvNn3x-dcxWVfA9TsfGusPz9SzP&_nc_ohc=T3GYFyhCbjwQ7kNvwHR-BWP&_nc_oc=Adqoj1TlHYf0NEn9J1NmuSzRN1uv4t-PujpjRHUCsMzRuF50yglnnx_x5IbA6Dh5d-I&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=G0btHMhSsM2Xx-ZaMkBwfA&_nc_tpa=Q5bMBQHlZYMbjHmCjYzz4dl7wZMEyZOFjpZcFbbOPPSIGDT5irFwgetmfjtPse4VJJdAXrDW5jf7p94l&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzRQEb0ZO8v1LE0NCOwR8WhyF4Bf8iaqaYxiXpsuXsHqg&oe=69CDA010",
             "id": "696760532979299"
           },
           "metricas": {
@@ -1404,7 +1404,7 @@
           "nombre": "Nuevo anuncio de Interacción",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/567519801_2047125236119926_7616386858426439654_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeH660iIffPuFtGXqi5DTFTIJd6wO-7gZWwl3rA77uBlbKJgZHD-3hRYAGLNBuvNn3x-dcxWVfA9TsfGusPz9SzP&_nc_ohc=T3GYFyhCbjwQ7kNvwEg2IG3&_nc_oc=AdqWA5eAAfNCV7R0H7BNulHB8Wbhsp4xqFCxF29GUWiUg3v73-FSSdOcN141q_aQ5Qk&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=SsM0gdf7k-1Wne-kcq4qPw&_nc_tpa=Q5bMBQEZ546WaRE9eHvjT7ANi3DAAU1x0Mzyj0FT7MhWlFBnF27d040IqthROMlmjXmKdvxya3yBNIIm&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxrxcCh_hIl43PVx9aFnW_ZPvBohkpaznoF01wLI9q9Kw&oe=69CD2F90",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/567519801_2047125236119926_7616386858426439654_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeH660iIffPuFtGXqi5DTFTIJd6wO-7gZWwl3rA77uBlbKJgZHD-3hRYAGLNBuvNn3x-dcxWVfA9TsfGusPz9SzP&_nc_ohc=T3GYFyhCbjwQ7kNvwHR-BWP&_nc_oc=Adqoj1TlHYf0NEn9J1NmuSzRN1uv4t-PujpjRHUCsMzRuF50yglnnx_x5IbA6Dh5d-I&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=PXH8cnsBTH9eVQmMZD1ziQ&_nc_tpa=Q5bMBQHELCUInWVAopxk5uI_eVX9K0xmi-gMP5CEv4ero8umXAZVdDpaR6CWHSfIWI44L0EBM1Sfl9W-&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxIBbcCTfxS5dgvFo9Hovme6HHLOmlv14jF4vQrApt8Ng&oe=69CDA010",
             "id": "1332704754482835"
           },
           "metricas": {
@@ -1451,7 +1451,7 @@
           "nombre": "Nuevo anuncio de Interacción - Copia",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/567433106_2047133966119053_161865880380893355_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeEutuCgAQPEGi7Dd_KvEIVX3YyV_ZWYXozdjJX9lZhejB3qheVBL3gsYYxXlc_8Bo9xc5-NZWWVY-y71xqW2mD9&_nc_ohc=McR99q1ehhIQ7kNvwF7viRD&_nc_oc=AdrWaePEsqBcAJupXaU0n9I5b879knK0L_XcXU6nz663ucbjrUzqOmqFnBAZFFb1I94&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=DgXyAuU4e4Q-EUcRCG_L0w&_nc_tpa=Q5bMBQGdsuMG-xSbBryU_GgGZkRr7s_qtt8YCV5LDT9nedFYNJ8qpISNs2KgMVdYs9Yt07GhH0kW5egr&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afyx7WzbPwmJtNZCGed1hi0ZyfqxiX5u8_lOU3_J43C6Sg&oe=69CD2654",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/567433106_2047133966119053_161865880380893355_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeEutuCgAQPEGi7Dd_KvEIVX3YyV_ZWYXozdjJX9lZhejB3qheVBL3gsYYxXlc_8Bo9xc5-NZWWVY-y71xqW2mD9&_nc_ohc=McR99q1ehhIQ7kNvwH_4D2M&_nc_oc=AdrFMgPqtfaFCg8S0nvKdwFzPPoaPxDgrmWNPRQFnowuh6yuUAMLNJku2Wyf2yWRVwQ&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=ZFbwSh4QgoCIOQG7ekpVKA&_nc_tpa=Q5bMBQFaemNhnHaX6-O9k4r0ZkuZWWYQ1u6sFzlUh3pnoD2zK41TeQC6F1SGOkLdyd6itjbP2bTVPx3h&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afx3LRQqE34Hr1bmjy9KE0WvAkKetdouefJ-JaMxnhP7Ow&oe=69CD96D4",
             "id": "1523306092040490"
           },
           "metricas": {
@@ -1472,7 +1472,7 @@
           "nombre": "Nuevo anuncio de Interacción",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/570668141_2048399025992547_1596291659071169114_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeEwKRn9EKFavjtqTD4QzbkMqlxdcYMPLQKqXF1xgw8tAmyCoWwC7Ng6NXGPICJsSCs5-PaDKdhNi7jIRoKZLKog&_nc_ohc=GZA01MnqGusQ7kNvwGEpI0C&_nc_oc=AdqvKX6ZGCEzbiV9Ku8s-a6PKEe5du7u0g8fb0to37N0KFwvWca-rSLLUdHOY8qJJhI&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=DgXyAuU4e4Q-EUcRCG_L0w&_nc_tpa=Q5bMBQHMqYYGc0lbmkpEdhF-sFun2xvzyLQ04X0ueHWLjswx4vleov1UNEknZhFrzzyN8wv5w7-Em0F0&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzzaPlmSN5VgjBo2vjMYaSJYV7SKd-M4WOeL5zjzoFEgQ&oe=69CD341F",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/570668141_2048399025992547_1596291659071169114_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeEwKRn9EKFavjtqTD4QzbkMqlxdcYMPLQKqXF1xgw8tAmyCoWwC7Ng6NXGPICJsSCs5-PaDKdhNi7jIRoKZLKog&_nc_ohc=GZA01MnqGusQ7kNvwF_kQGy&_nc_oc=AdrzC0at41khHe27l14UY3LzvHEQlOw3XzvqfFfxL6UoqrO6oBIlHCQlwOqSz058Ebo&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=ZFbwSh4QgoCIOQG7ekpVKA&_nc_tpa=Q5bMBQEBqvYKhhI_X3atbpJ6k5J8_ICtyu7nrXayTLkc6PzzCpaaUtc1Hw1yRAcZf0vRaTy9NMgWKWJy&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxzlPyqKKKELh7BlY6KkgVUrJuPxja10GY9VZPEz3llGA&oe=69CDA49F",
             "id": "2012427569602230"
           },
           "metricas": {
@@ -1493,7 +1493,7 @@
           "nombre": "Nuevo anuncio de Interacción - Copia",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/567432702_2048403845992065_2141313199063887845_n.jpg?_nc_cat=107&ccb=1-7&_nc_eui2=AeFReR_Gv7K90ucQIb3pfh7BgyAPAMxsSFWDIA8AzGxIVXfbRD3l85EJLteK46jlkeDX0gOyYwyPrpY6DeUIo14I&_nc_ohc=MiMyIVSM6HoQ7kNvwHcBkxh&_nc_oc=Adoup8U589nwXAeLmeymfQtHHiU_Ro8cxgTYvVn9gkY1krjLxj4-2FDsB9HtBAq-ZGg&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=DgXyAuU4e4Q-EUcRCG_L0w&_nc_tpa=Q5bMBQF_YYecr2adk9SbT7jVASV9iOl_NmrY72-f8VxNslno2eP4gtQdmAQRa-ceR3QtnKWi6WRcXKaF&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwdJKAGVdOYugbYBAIQLVqvaAVS7OjCz3EOa8kSYZVa3g&oe=69CD2A58",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/567432702_2048403845992065_2141313199063887845_n.jpg?_nc_cat=107&ccb=1-7&_nc_eui2=AeFReR_Gv7K90ucQIb3pfh7BgyAPAMxsSFWDIA8AzGxIVXfbRD3l85EJLteK46jlkeDX0gOyYwyPrpY6DeUIo14I&_nc_ohc=MiMyIVSM6HoQ7kNvwGLYW0O&_nc_oc=AdrkGOvt7rm_oAytO1OdADT7KDZS4qg5u7aWb_Z7nMNh9NjQPKExDARyJeK5l2H6XVQ&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=ZFbwSh4QgoCIOQG7ekpVKA&_nc_tpa=Q5bMBQEf001_DgfSiX_qjDUvLBYZ99u33umKlClooDiRBrNY14pKx8OvlctaxZuco3HK1yx6HWF2ZjbU&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxKy4Qf1r_TAluTOzMzB3gi3lXtjyxa5sfDUHYCu1Ufow&oe=69CD9AD8",
             "id": "3262054037293309"
           },
           "metricas": {
@@ -1565,7 +1565,7 @@
           "nombre": "Nuevo anuncio de Interacción",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/567431870_2047124999453283_202673575165503518_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeHmL-FMRLpclG7ObhiO1qNZkuxt7fch5oWS7G3t9yHmhYdCx4eiNQPfMyr2nB5dak-KnPgaE6IF_BGN3h8KzC26&_nc_ohc=V_T9COI14UoQ7kNvwF4-aXf&_nc_oc=AdqDPBV42Qtm0NwKToVR_6aScjhvxEO1k5DbN8YNn0ZJvlFNueLgWpamHXs5_DMNJfA&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=hL__-8t7ue64kB3Gl7xEeQ&_nc_tpa=Q5bMBQFLcFnxCqJtc9JHMwPVCmRpZfRKp3FCDEcf7o8LLukVQcky3mkLOJYF24DrbL9jCbCvbaksq9C7&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyywmDqNk6_9sfEDepYgUjD6HNfbE2eTPuWm_arOlFfVA&oe=69CD3191",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/567431870_2047124999453283_202673575165503518_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeHmL-FMRLpclG7ObhiO1qNZkuxt7fch5oWS7G3t9yHmhYdCx4eiNQPfMyr2nB5dak-KnPgaE6IF_BGN3h8KzC26&_nc_ohc=V_T9COI14UoQ7kNvwHenfCI&_nc_oc=Ado69ZhnG-5v43vJeO8w5BGzeTQqnysyfPCJkQHF4GvmT3NjbRSMfZe0Y3ff3wY99zQ&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=N9n2AeQ7t6L6mFpV7oj6oQ&_nc_tpa=Q5bMBQFjkx_9Uk4CpJjEhGCQg0CXFpMuRP98K35hWQOhM-WcxsIFh5QUHwEoRiKSiBs_H6tegIRM6M6T&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxZMVy59Xv5XxUbrpVXKPqyIoZ4r-2AR5x_BIIpAXl9mQ&oe=69CDA211",
             "id": "1395329495354544"
           },
           "metricas": {
@@ -1586,7 +1586,7 @@
           "nombre": "Nuevo anuncio de Interacción - Copia",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/567519801_2047125236119926_7616386858426439654_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeH660iIffPuFtGXqi5DTFTIJd6wO-7gZWwl3rA77uBlbKJgZHD-3hRYAGLNBuvNn3x-dcxWVfA9TsfGusPz9SzP&_nc_ohc=T3GYFyhCbjwQ7kNvwEg2IG3&_nc_oc=AdqWA5eAAfNCV7R0H7BNulHB8Wbhsp4xqFCxF29GUWiUg3v73-FSSdOcN141q_aQ5Qk&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=hL__-8t7ue64kB3Gl7xEeQ&_nc_tpa=Q5bMBQHkxpizjKqQrUL-Vd3oBU5evUrQsSjT5IqrLtYrqs-e2_yadbLocJkUMZt1kfsxVBuPts56y1BF&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afxb1yoVkT50ZXh2a1LScP9f6Vs2ak6--wUDKIZ6QlWb9A&oe=69CD2F90",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/567519801_2047125236119926_7616386858426439654_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeH660iIffPuFtGXqi5DTFTIJd6wO-7gZWwl3rA77uBlbKJgZHD-3hRYAGLNBuvNn3x-dcxWVfA9TsfGusPz9SzP&_nc_ohc=T3GYFyhCbjwQ7kNvwHR-BWP&_nc_oc=Adqoj1TlHYf0NEn9J1NmuSzRN1uv4t-PujpjRHUCsMzRuF50yglnnx_x5IbA6Dh5d-I&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=N9n2AeQ7t6L6mFpV7oj6oQ&_nc_tpa=Q5bMBQEgYWvG_ZFycfwe8D8JRttNdhB2ZEy5ZjnGz2XcCpLuk78Nea_Yigxs5_Z-J9JdY0B5wDS2vW0y&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzQZ_eai2HzNriA3_Mpn4SCK4gjex2uftSw8PXgm4bCmQ&oe=69CDA010",
             "id": "3825911491044668"
           },
           "metricas": {
@@ -1607,7 +1607,7 @@
           "nombre": "Nuevo anuncio de Interacción - Copia 2",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/567433106_2047133966119053_161865880380893355_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeEutuCgAQPEGi7Dd_KvEIVX3YyV_ZWYXozdjJX9lZhejB3qheVBL3gsYYxXlc_8Bo9xc5-NZWWVY-y71xqW2mD9&_nc_ohc=McR99q1ehhIQ7kNvwF7viRD&_nc_oc=AdrWaePEsqBcAJupXaU0n9I5b879knK0L_XcXU6nz663ucbjrUzqOmqFnBAZFFb1I94&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=hL__-8t7ue64kB3Gl7xEeQ&_nc_tpa=Q5bMBQFe9085LqPKURygN9NqFtTFH2LMSErbdzjjwhDg6-gKhJeZkE2ZZzFhZYWxjjT0VXUu6TKw0Ugo&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyjDAJ5_CUmtEBDBCjSyTt6osYn-x3AQgYtWU4IRWSHHA&oe=69CD2654",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/567433106_2047133966119053_161865880380893355_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeEutuCgAQPEGi7Dd_KvEIVX3YyV_ZWYXozdjJX9lZhejB3qheVBL3gsYYxXlc_8Bo9xc5-NZWWVY-y71xqW2mD9&_nc_ohc=McR99q1ehhIQ7kNvwH_4D2M&_nc_oc=AdrFMgPqtfaFCg8S0nvKdwFzPPoaPxDgrmWNPRQFnowuh6yuUAMLNJku2Wyf2yWRVwQ&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=N9n2AeQ7t6L6mFpV7oj6oQ&_nc_tpa=Q5bMBQEMQPTywddoSC2ef3nXGkT4AgDMOSbZiG-q5w94vxX_6BfyD-740sRv0gMx2Pwbx5hVMNx6mh6H&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afz-yM8QAiU_J5kOlGQCHfZjgLfHUNxKHNQjq-pqKOgGJA&oe=69CD96D4",
             "id": "778637765168061"
           },
           "metricas": {
@@ -1654,7 +1654,7 @@
           "nombre": "Copy,precio y distribución",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/567428805_2042615509904232_8863054688335720887_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeGm_qZnPaJVG7LAA-EAZ7fAg49xSO_rzUaDj3FI7-vNRq69D2FzobXPcldYn2huy7yaxg1sWeLkoO95Doc2kCtJ&_nc_ohc=jFWiRp2L2VAQ7kNvwFCxMzk&_nc_oc=AdpF4fg_uqtpTC152xdGQ_BFJWquYEgMQTgQ8K_h_0HObWqMvWoxZCdgDd4OOmUJJfQ&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=9pTtNjvmvOrkLODVaQIF0g&_nc_tpa=Q5bMBQFrFfzMmbvVXA5NEWDyXIpj6mM9nR9C64usHRzY0Sh5wlNjiPqPf-TndDbfhiDCDx93cOuRlRYE&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwcfcurE3fp8YToWzbCyVD8wOtf1vDwsOVwZj1RRolEQw&oe=69CD2AB4",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/567428805_2042615509904232_8863054688335720887_n.png?_nc_cat=105&ccb=1-7&_nc_eui2=AeGm_qZnPaJVG7LAA-EAZ7fAg49xSO_rzUaDj3FI7-vNRq69D2FzobXPcldYn2huy7yaxg1sWeLkoO95Doc2kCtJ&_nc_ohc=jFWiRp2L2VAQ7kNvwE_Cu7N&_nc_oc=AdqInlBJvERS0uYIZsqpJQW7mvvXfliQF-Tku4_h0BYVS08siyp__1YigZphqJkpD3w&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=iKW5U3mk85sI4HXkAqlDvQ&_nc_tpa=Q5bMBQFYwxbSIgtocV_ayJ3k_SJ68zxZifmZ5h99TB8krjx5IHX9WHeTaSdKFuXMJQ9OKdQFABwHvLtj&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxS2r3qLBCcWTHNgmH69pKYBO89yFXQzdeFdsqrebXWUQ&oe=69CD9B34",
             "id": "4226573030996619"
           },
           "metricas": {
@@ -1675,7 +1675,7 @@
           "nombre": "Copy,  precio y cta",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/567436752_2042615143237602_3528562841943181683_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeEqoVGMC5xF5jkzoiShVaYXtMA0CUrgPuG0wDQJSuA-4RD4JNplWiIYAXdppuPl_kO7EtUpHHdU8I9Kt7t5fbTg&_nc_ohc=nzuxE7MPlxsQ7kNvwF42zML&_nc_oc=Adr8-PU9FNNUoYAepkKyqA2UF4tkU7q8xBoJq6tsJoB8P8CcvdPQSagYASOW6ZxSW0I&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=9pTtNjvmvOrkLODVaQIF0g&_nc_tpa=Q5bMBQEhBmeL9IOGOygjxnbO3hyLDGKcipr_TGzyh-M3aRmv9tnmWLDG89kuISy97VmvlecZK3KjGGaP&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afz1Q64ihX7EPsL9kop2juHPYTwPxRm520ytbD7zJ8qh7A&oe=69CD3342",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/567436752_2042615143237602_3528562841943181683_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeEqoVGMC5xF5jkzoiShVaYXtMA0CUrgPuG0wDQJSuA-4RD4JNplWiIYAXdppuPl_kO7EtUpHHdU8I9Kt7t5fbTg&_nc_ohc=nzuxE7MPlxsQ7kNvwGCXbyO&_nc_oc=AdqymxOX3Nr-NWzynEMXuOAUN-tKsVna1iOKHQV-CZDwkAFfMByobhuEhi-3if0ezi0&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=iKW5U3mk85sI4HXkAqlDvQ&_nc_tpa=Q5bMBQGC927k6M6g-3KfiCRqkExL5a0J1jEiKklCmGe865WAXygdclb-5hRiraT1wpruFTHk6yzyNVbo&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afzo0cwU6S-XQq4AwHeUXb-N6S_Zhh4YfYqA-gFBLA5BRQ&oe=69CDA3C2",
             "id": "1921850188425448"
           },
           "metricas": {
@@ -1722,7 +1722,7 @@
           "nombre": "Campaña Esmeralda / 17 SEPT 2025 / IRENE MONTOYA",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/545028791_24318308251183244_5010146655729101869_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeEJReM_jnwPPNhCqN2KMh52gQWwCPMj-TqBBbAI8yP5OjFviqBeOFYpKae_8VL16HOLfHq74KYPKgGIQovBcx2l&_nc_ohc=I7uP-isEoZkQ7kNvwFwQEVO&_nc_oc=AdpLGmXBU5blIl66dp9rOL9VWzncVCTFCq_tPtgtk5zi_xV2h8u0YKfLwwooF5gqilY&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=7XtEiSK2vhiX8LJi2TcLmQ&_nc_tpa=Q5bMBQEExwGTt99Qshp4prpduguocQMHrKn1ICCaEo_CeBubNaBTY3LYc-a1UaDqari7AU3yW5EDgqDd&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afy13OyK7JEWYo5funGz69tbxX4uWuVijFwTEiLKRbliTw&oe=69CD1B9D",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/545028791_24318308251183244_5010146655729101869_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeEJReM_jnwPPNhCqN2KMh52gQWwCPMj-TqBBbAI8yP5OjFviqBeOFYpKae_8VL16HOLfHq74KYPKgGIQovBcx2l&_nc_ohc=I7uP-isEoZkQ7kNvwHt115K&_nc_oc=Adq7esHJvytUQsn3t_iBzPXYOycsK0M1dsCEpv9K0_2NWNbVkJ-na8UUl8LkMJxGSk4&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=RVrY5udc-ja1elLMJJsIVQ&_nc_tpa=Q5bMBQHfIlogJmeZ3GVdcStDCl37z3hNUvxIL7mhPaTgiBaAduWEvJToEwYoIwCbh-uTynNftU8IYhYJ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afzgjv5eE92FqXRtXKYdtfQiwHkpqoBhV-Y9sWhvea1T8w&oe=69CDC45D",
             "id": "1483457399641130"
           },
           "metricas": {
@@ -1743,7 +1743,7 @@
           "nombre": "Campaña Esmeralda / 17 SEPT 2025 / IRENE MONTOYA - Copia",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/545264578_24318309271183142_3014717277579802271_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeGmKeWCUPw4qk_xNCTeu4jMDFVB7uFW8f8MVUHu4Vbx_81xqjOm5sgfrEIvF5IYJxMPm5r6sf9et8ZBoLBCq017&_nc_ohc=tJcCDNuEd1EQ7kNvwHkL3V8&_nc_oc=Adr9R7FPKMBm1T3ve2qYssqcKt-HyAI_6QIKMKfORmOZP-e7IZWhdY5FooyWfWIfBQ8&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=7XtEiSK2vhiX8LJi2TcLmQ&_nc_tpa=Q5bMBQGFSXTT0SQOh0B2ODPawpHQKZcvM5B9yScXOOmBFlZ5JMvwNP4syAYCltHlwzVojFbGFLQyiWp6&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afz1TCzm8wlLzee5lp10eFRh8t1i6Y_wNYTRDFpnx_poVw&oe=69CD0AF0",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/545264578_24318309271183142_3014717277579802271_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeGmKeWCUPw4qk_xNCTeu4jMDFVB7uFW8f8MVUHu4Vbx_81xqjOm5sgfrEIvF5IYJxMPm5r6sf9et8ZBoLBCq017&_nc_ohc=tJcCDNuEd1EQ7kNvwG1bhj7&_nc_oc=AdovyErLcKhWC--U2sJ5Fs6ERhsVgWKteDn3MTGPxdEZGCixv6URaD4dlNCGgH0zutA&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=RVrY5udc-ja1elLMJJsIVQ&_nc_tpa=Q5bMBQFV2Hqh86ElYf9GWqKQRhd0gRreahvuhGALci2x3uwE71PqwDuuRsUzn03yzH5IHGxwbYSBy-aM&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwQyRd1OAksN8hUA1Ey5h4uhIpAoeaDoCeIOqNq8PQnjQ&oe=69CDB3B0",
             "id": "1120117433407263"
           },
           "metricas": {
@@ -1764,7 +1764,7 @@
           "nombre": "Campaña Esmeralda / 17 SEPT 2025 / IRENE MONTOYA - Copia",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/543725679_24318310471183022_3952318277217336263_n.png?_nc_cat=104&ccb=1-7&_nc_eui2=AeG9LYkCOdns9YXPQkD7kqBrmL4qnWP5zyWYviqdY_nPJez4p65fPs6Rl-IKxHJUrcahcuh_O3ATk8zMDFPuFhDq&_nc_ohc=6UPj9TYoM5EQ7kNvwF5QEJ9&_nc_oc=AdqmzQM3UPx-n_99AsDPYZ8ii-R4TcO5qPMjIdTnfxBVK-FJTAG5CVFTAFhEvfkhpSw&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=7XtEiSK2vhiX8LJi2TcLmQ&_nc_tpa=Q5bMBQEy4Kgi_PKXog762GinEdkH9TAA5DZXz1Bxs_xiG4aeTdlZhhLmdUoiiOmjOBeQ4rQ9C3nLSAjW&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwdJNrSkWvl1UigpaPIBXw9Ijspxhj4-d_9VuV3zZiEBA&oe=69CD309D",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/543725679_24318310471183022_3952318277217336263_n.png?_nc_cat=104&ccb=1-7&_nc_eui2=AeG9LYkCOdns9YXPQkD7kqBrmL4qnWP5zyWYviqdY_nPJez4p65fPs6Rl-IKxHJUrcahcuh_O3ATk8zMDFPuFhDq&_nc_ohc=6UPj9TYoM5EQ7kNvwHHycWW&_nc_oc=AdqedVYj3qIaYkd_sL_IrFXOppheao-Gr1yPW8Mz51oNY--n8JNW6kPdA1uGQYqiv_I&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=RVrY5udc-ja1elLMJJsIVQ&_nc_tpa=Q5bMBQGTD4eCQ-0M0cI-cpKWYGg_BzzV53Bzx-QppZDNWck76XHPiPl9A4Wk0bSVFOsQcuSHMBe-ry5Y&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzlswD8u-azjdYC_tKMr8ggiH46AdR5KuhoG_cYnQPKEA&oe=69CDA11D",
             "id": "773402525418202"
           },
           "metricas": {
@@ -1811,7 +1811,7 @@
           "nombre": "Campaña Pino / 17 sept 25 / Irene Montoya - pino",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/534377640_1733626514248039_838552536062622400_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGrHg6JpF8gcs43AiOY50MR_5fwKCmu7yf_l_AoKa7vJwwONqSksdRWxJRfEQGX3Z3Y7odQCU9I2O7kxicXQRxz&_nc_ohc=POHcM-hPfoAQ7kNvwGgzh0-&_nc_oc=AdoBVNvrbpodczkLnf6B8ZSUiuD9JV_bI-_RGpA2t7pJq3fm7k0OmpWzUulBMOCTmjc&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=oKFIaAW04U9EFb7doWpIiA&_nc_tpa=Q5bMBQG3uxeAWTrXKv9zfb-ciN2ioP5CgLVOxVxEvoNvMqycZMrG0JIT9Sw5PY_FpLN3ocBbXbmsijro&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfzAWcN-RuWVHfYPtIf9QyscolEt-uU0ot4gkRyJyodnBg&oe=69CD1569",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.13418-10/534377640_1733626514248039_838552536062622400_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGrHg6JpF8gcs43AiOY50MR_5fwKCmu7yf_l_AoKa7vJwwONqSksdRWxJRfEQGX3Z3Y7odQCU9I2O7kxicXQRxz&_nc_ohc=POHcM-hPfoAQ7kNvwEgqeSW&_nc_oc=AdouO9v7JPmQtA7TAcX8SvILco-LNOxHes8fRhJcKmdOzOpe_vMapQ3ghbDb0n5x8kc&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=rlirCCqIkCU3auPudd645w&_nc_tpa=Q5bMBQG9wxRtkJEwt9nfHmnW1lGXIYJdnaqbU1wNMPWWnPuJhGe8eapIn_N19ksSz27gj82beqBRtk18&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfxtZzsipgzRYO6TyB0qqrBj1MpYcvwM3lz1-1GtoJNUbw&oe=69CDBE29",
             "id": "808332608435056"
           },
           "metricas": {
@@ -1832,7 +1832,7 @@
           "nombre": "Campaña Pino / 17 sept 25 / Irene Montoya",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/548532438_1135882078493970_1371359422588552898_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHvpQdI2Wa3EXojmBGv6y7XdbCDlp8ojwt1sIOWnyiPC9lTFZWqwpTq8ON8IttG-AOTqztoU7rCv3PUNZK4NZyK&_nc_ohc=G5iwVVXMWk8Q7kNvwHqcz9v&_nc_oc=AdrdSyV0PjzM0z9CoPVAdgjyutekg48iMdnq7yLhYGE7MSIX7qIG5Vs2VCGhxwNT_hE&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=oKFIaAW04U9EFb7doWpIiA&_nc_tpa=Q5bMBQFHbB3pu09cS8Hhd2mSciDsk7dkboO5IyCbqoRE_JWHXDCI6v3wYCRk2DG9GOhnrycSnghObNoF&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=4c1fc5&_nc_sid=58080a&oh=00_Afx_Xyq6kyryHms2VooGwSZFPMC5HJIoftL8VmswRK_1jw&oe=69CD0F03",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.5256-10/548532438_1135882078493970_1371359422588552898_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHvpQdI2Wa3EXojmBGv6y7XdbCDlp8ojwt1sIOWnyiPC9lTFZWqwpTq8ON8IttG-AOTqztoU7rCv3PUNZK4NZyK&_nc_ohc=G5iwVVXMWk8Q7kNvwGBHjGf&_nc_oc=Adr6UKC53ef3R6wIXVS_yKZk1ne08II4WMZxjIcUnMbjjvSbM9Q2P1MGFOiUVEZQefQ&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=rlirCCqIkCU3auPudd645w&_nc_tpa=Q5bMBQGVLiOBiszHCa_I06Ml3NyNf1swIDdPQBBwr62eKxNN8kOLa2LKYM4h5thFKKUfArvQQfsfFAsu&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=4c1fc5&_nc_sid=58080a&oh=00_AfyNFIef8k7kvpG4tsq15GB8VoEacUNmUaQ0ZYLXuwOd3A&oe=69CDB7C3",
             "id": "812633604467862"
           },
           "metricas": {
@@ -1879,7 +1879,7 @@
           "nombre": "NIRENE MONTOYA / 18 AGOSTO 2025 / ESMERALDA - Copia",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/536483162_2886530104879818_5851022757716726365_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeF4J3dpvoRI2zyZhfBY9OpP9a1_s_eCLbX1rX-z94IttQmWgSmqv_-8otjBKu1SOku2dViGCIsQKwqU0h_QwzL-&_nc_ohc=ZUN6DPGVp5AQ7kNvwH-zu1J&_nc_oc=AdpCAH6x67YAiObFVa3J3BTBBZyzVzrPVwfprNzHrPSz_d1bMQGR23rIIJEagZ8XRms&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=IoRvLXAWgQF2OFTNDmP3fw&_nc_tpa=Q5bMBQFUA2AgzjNVLSoGTCbxqo8ploLP8KCTE_PfGKiUm847RobixUnhzQuoghEAdcNakOuYzyu4vlab&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfyMH9lwHjxhij_Y_MzZ1OqH5okl0wE1WLf2WoBsPZluww&oe=69CD0B23",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.5256-10/536483162_2886530104879818_5851022757716726365_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeF4J3dpvoRI2zyZhfBY9OpP9a1_s_eCLbX1rX-z94IttQmWgSmqv_-8otjBKu1SOku2dViGCIsQKwqU0h_QwzL-&_nc_ohc=ZUN6DPGVp5AQ7kNvwGBM0Ar&_nc_oc=AdqY4Tg77iSZcHsy5Gkl7tSE1W4yq38UTiLV2INGbQ8T86AMsxwIIYntOeJJ87HTds4&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=PGOSUaCYEVLYo1ABu-QlUQ&_nc_tpa=Q5bMBQHPxf1u8FOiyOq7J4EMErzuqIkyX7PMTc3qKX1YT_ncA1-K0-L-ExOMYsKK56MqEUhTI_n9rlA5&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfxO9zi_MPDBmxFFHJn_fax-ipx7EjoaC3lOoEotCgPfMQ&oe=69CDB3E3",
             "id": "805728835442841"
           },
           "metricas": {
@@ -1926,7 +1926,7 @@
           "nombre": "Campaña Esmeralda Clientes Potenciales / 10 sept 2025 / Irene Montoya",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/545264578_24318309271183142_3014717277579802271_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeGmKeWCUPw4qk_xNCTeu4jMDFVB7uFW8f8MVUHu4Vbx_81xqjOm5sgfrEIvF5IYJxMPm5r6sf9et8ZBoLBCq017&_nc_ohc=tJcCDNuEd1EQ7kNvwHkL3V8&_nc_oc=Adr9R7FPKMBm1T3ve2qYssqcKt-HyAI_6QIKMKfORmOZP-e7IZWhdY5FooyWfWIfBQ8&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=XYBdSLIKoEpeFl_v9KpVGw&_nc_tpa=Q5bMBQGdu6GTrmhfsc82MusiSmduA0vW52PAxJOuSW2JHn23YDvu4aTmFMX-Y0-bqafpuIMqhY1IC38P&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxY3wNhRKhfB91w0eFk83a6KyftON5P7bcEcnO4bd6meQ&oe=69CD0AF0",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/545264578_24318309271183142_3014717277579802271_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeGmKeWCUPw4qk_xNCTeu4jMDFVB7uFW8f8MVUHu4Vbx_81xqjOm5sgfrEIvF5IYJxMPm5r6sf9et8ZBoLBCq017&_nc_ohc=tJcCDNuEd1EQ7kNvwG1bhj7&_nc_oc=AdovyErLcKhWC--U2sJ5Fs6ERhsVgWKteDn3MTGPxdEZGCixv6URaD4dlNCGgH0zutA&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=5PP1r_zisu7dakP4a5Rdqg&_nc_tpa=Q5bMBQFAsL2xj3LkgNbYKpg08u8N_OPPVtDLwXpq-NnjDJ_RRnz3IzQMZzexj2f9MHHYQ8hq8tT7oenf&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afw1c55OJl8oWSEVR0vgKMQ1Rd89oaogYXLRLKDilI7agQ&oe=69CDB3B0",
             "id": "1135906418474362"
           },
           "metricas": {
@@ -1973,7 +1973,7 @@
           "nombre": "ESMERALDA / 09 SEPT 2025 / IRENE MONTOYA",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/544993478_24326612750352794_3213998197402386641_n.jpg?_nc_cat=108&ccb=1-7&_nc_eui2=AeGMnXvZ8702szhrCZIUxaKBx4iVS0MQIbvHiJVLQxAhu3KuTWU6dT8B_5grKL0BsmGnEc475WRb6rx6GYxy-_Uo&_nc_ohc=7Kf-cKcJ_3IQ7kNvwGVVS5e&_nc_oc=AdrfWZw5K8ryxCDET1lRdjgwpRLUjpuKNfXzHT9rNBaRiGamCOYIMIwzW--PLrI5mCk&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=IEqMwJigCvMCZzkrSFOAKw&_nc_tpa=Q5bMBQFMeyXmX85dUlREHP0paVPWTugZc6nNTgNT9p89-ggFg1LttvebG9GIR9oU3gQ1h6mRdYYclLPx&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxbvoW2kHJCYKwsBp8IapbnWNfAplghw3gyyoJA2Fd5yA&oe=69CD0B98",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/544993478_24326612750352794_3213998197402386641_n.jpg?_nc_cat=108&ccb=1-7&_nc_eui2=AeGMnXvZ8702szhrCZIUxaKBx4iVS0MQIbvHiJVLQxAhu3KuTWU6dT8B_5grKL0BsmGnEc475WRb6rx6GYxy-_Uo&_nc_ohc=7Kf-cKcJ_3IQ7kNvwHAfCja&_nc_oc=Adp_KBCNzQmqOlbLzWVgAoaaW1A7c5gd79nFLCwZxW92x5cE1MBlEYqmQDnQXItRS9M&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=JTjzfUKgJOggV58qko84Uw&_nc_tpa=Q5bMBQEqfeIGJa8SnVun393efvbPRduwrjSWt8lPtZHzCclKE_GkOAt1U33EMugGlpROrn5QlZ_tyl6S&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwgdbcYxe8fw1zFBlau4l3qrivp6eVT61VxBdUspnBieg&oe=69CDB458",
             "id": "1369469594515268"
           },
           "metricas": {
@@ -2020,7 +2020,7 @@
           "nombre": "ESMERALDA / 07 SEPT 2025 / IRENE MONTOYA",
           "estado": "PAUSED",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/545028791_24318308251183244_5010146655729101869_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeEJReM_jnwPPNhCqN2KMh52gQWwCPMj-TqBBbAI8yP5OjFviqBeOFYpKae_8VL16HOLfHq74KYPKgGIQovBcx2l&_nc_ohc=I7uP-isEoZkQ7kNvwFwQEVO&_nc_oc=AdpLGmXBU5blIl66dp9rOL9VWzncVCTFCq_tPtgtk5zi_xV2h8u0YKfLwwooF5gqilY&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=nydsVoEu8VPuZUIPZJ7hHg&_nc_tpa=Q5bMBQFfyb7ownMG4BDUi9Q8IXDpVcF12ZkPiu5s46qmugMzvd23uL67CRhkOTyS_-fP5XkGt2R09dxE&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwHvRIQz_Q3Pys7R96LimLP201Q5lmqmjY8RNvC7fU9DA&oe=69CD1B9D",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/545028791_24318308251183244_5010146655729101869_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeEJReM_jnwPPNhCqN2KMh52gQWwCPMj-TqBBbAI8yP5OjFviqBeOFYpKae_8VL16HOLfHq74KYPKgGIQovBcx2l&_nc_ohc=I7uP-isEoZkQ7kNvwHt115K&_nc_oc=Adq7esHJvytUQsn3t_iBzPXYOycsK0M1dsCEpv9K0_2NWNbVkJ-na8UUl8LkMJxGSk4&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=iyOIU1DKNaacVBTtFTowGQ&_nc_tpa=Q5bMBQG9cZy2su-a8izAEolEX07FD2mgCPZBfWQ2jKlOMK7SWkcsU3w8WdMaOl4DMcZaMtwq_DkfIR22&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyQt7ynz5w4mc-Cqe0vA1BP8DZ5VAZGWcKHz_8gZQ9DcQ&oe=69CDC45D",
             "id": "781572830914250"
           },
           "metricas": {
@@ -2067,7 +2067,7 @@
           "nombre": "Single Image",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/542007301_2247055942374323_4813065780750162678_n.jpg?_nc_cat=110&ccb=1-7&_nc_eui2=AeGK6kGASEOKkx0C_UmOrn4fr7AMwCc17R2vsAzAJzXtHYd9VvIBD1vgkVO20FbrEloyJy8yGG87DuqoxrE0yhVh&_nc_ohc=fdlQRwCvtBoQ7kNvwGp35ZX&_nc_oc=AdqaSskaZwMQ9VOvOANCguIQ81WuXePq7zeoXwhmnebygR30tgy9BOYbpQDZ6nyT_a8&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=PU8mhLPpy2I6ko5m_339jA&_nc_tpa=Q5bMBQHyl1oCWtUafCqgSk8JH5zzb5ubtO79b6NfePH2-rieEbXq3UV_IqIQ3xYFpYhVt2CkllWB3APN&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwV_R0C_Abm7kViSM8QXnXhSUf4_j1oRQh1PyOedtP8Xw&oe=69CD1709",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/542007301_2247055942374323_4813065780750162678_n.jpg?_nc_cat=110&ccb=1-7&_nc_eui2=AeGK6kGASEOKkx0C_UmOrn4fr7AMwCc17R2vsAzAJzXtHYd9VvIBD1vgkVO20FbrEloyJy8yGG87DuqoxrE0yhVh&_nc_ohc=fdlQRwCvtBoQ7kNvwFlpOLL&_nc_oc=AdpXS6kzXtg-k0K_t_fTABB0LRsc-RPpSMtFKw7Tzqxtp__3Tlmv5VxquoEooWazp_g&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=IeiBSf0UV2Fo1eoRik0hCQ&_nc_tpa=Q5bMBQEQnASngqbHQg-cJFCjRMGgUuNnqP1qpgfcn5lIIus5_Wq10tAi7Dm6SWSuNFTcxuwuyJF9LPT-&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxnbBPJy7L4okUgH_QCjX1JAr6MGt66PMchbiXMm97oaw&oe=69CDBFC9",
             "id": "1130099352352936"
           },
           "metricas": {
@@ -2088,7 +2088,7 @@
           "nombre": "Single Image - 02",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/543460947_2247080762371841_5831916171090580743_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeEuWZkgQWh26LPoYwkbo_-jU5jrYetktbFTmOth62S1sS9o1isijxnPepaAbMQHxA-ngU9Xexz8h2OkovMTaIJ8&_nc_ohc=hlJSpVH6PtAQ7kNvwFzF4ec&_nc_oc=Adqq7Q0bN8LqqISozlmeoXEvxiEP5NNlkGHFZCoNJgtQSzFhASvItOxM0cnUvue0dGA&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=PU8mhLPpy2I6ko5m_339jA&_nc_tpa=Q5bMBQFivWwPXsxhFQViJco3McUmVMGVtiLlaPPBNrFa8-9k6XxIp2Zc4JdF4ZXDNQqkduzhX6tK76Ds&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afz8s8mEzXBYTr2LNoHuJCWr63sUWTXBk7bv3-CoML5QNQ&oe=69CD2290",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/543460947_2247080762371841_5831916171090580743_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeEuWZkgQWh26LPoYwkbo_-jU5jrYetktbFTmOth62S1sS9o1isijxnPepaAbMQHxA-ngU9Xexz8h2OkovMTaIJ8&_nc_ohc=hlJSpVH6PtAQ7kNvwEr1RH1&_nc_oc=AdoyYntScqwHpzd2Yj1jtRGEGXucrHWzYLeQZWJG9M-ZjUcawewBtwBa147Vdgr-yqI&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=IeiBSf0UV2Fo1eoRik0hCQ&_nc_tpa=Q5bMBQEymlIgh4exO0iU0Ix-3PLOWFZ-oTLbGt87DoGW9EvBWcUeZ7GE62hVFO5wDl_54nGIndSqfD79&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afx2Lv6zuXwYF77Vm6XCHi53qnxvNPWuzDiPe6sj8bX39w&oe=69CD9310",
             "id": "758268383481518"
           },
           "metricas": {
@@ -2135,7 +2135,7 @@
           "nombre": "Campaña Esmeralda / 31 Agosto 2025 / Irene Montoya",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/540476103_24254312260916177_9049884276239150431_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeFDJCi0ONp5WITvg9yHUhjO5TcmG8uhwkflNyYby6HCR5s70D7KeDxQOMSx76kAZT3Ed2umqyTdE4nHszGuBvoS&_nc_ohc=caoeS-OSIvwQ7kNvwEVFXY3&_nc_oc=AdqJZ7coe6sqA1D7wKiqYMQsTCoQc2_Ev00iEEa3yS5yHNa80BHnVwqIcEUCa2sxJp0&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=is8UYAGRBUZHu-dC22YrSQ&_nc_tpa=Q5bMBQF5-J7SW4rR6eRJqJ2qIs0y7PgbESGrC-q8zxJKkA0xHEkNAQzll93MpMkm3tP_6Dfvhc-roHBN&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afz6hbJ2104qFLquUSjSFykzaNSr_VUWQZ99oZEMRHbh0A&oe=69CD366F",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/540476103_24254312260916177_9049884276239150431_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeFDJCi0ONp5WITvg9yHUhjO5TcmG8uhwkflNyYby6HCR5s70D7KeDxQOMSx76kAZT3Ed2umqyTdE4nHszGuBvoS&_nc_ohc=caoeS-OSIvwQ7kNvwEx3Reo&_nc_oc=Adrr7Crj3jIjXynPTl6HjvfdfuBTbOR4DrjzEWLxcI1MZfkBUee2MMJz9UOR5z6QsQk&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=Yjb3xlYi2uP44DEjnf1POA&_nc_tpa=Q5bMBQGaShKmbVY9Ta9MCfllzmlFj2RUVcOtfjJqNvocmL1gQwBS8KIWNsfASS53JQ8ZfrzExqR-zUp3&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxYqv108fWF06fMfCflmQEIiE4iqV4bqcBu9bLGepDZDQ&oe=69CDA6EF",
             "id": "2475078219528573"
           },
           "metricas": {
@@ -2182,7 +2182,7 @@
           "nombre": "IRENE MONTOYA / 18 AGOSTO 2025 / ESMERALDA",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/545264578_24318309271183142_3014717277579802271_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeGmKeWCUPw4qk_xNCTeu4jMDFVB7uFW8f8MVUHu4Vbx_81xqjOm5sgfrEIvF5IYJxMPm5r6sf9et8ZBoLBCq017&_nc_ohc=tJcCDNuEd1EQ7kNvwHkL3V8&_nc_oc=Adr9R7FPKMBm1T3ve2qYssqcKt-HyAI_6QIKMKfORmOZP-e7IZWhdY5FooyWfWIfBQ8&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=9a_dUUbXKvRx7DKGk2WHcQ&_nc_tpa=Q5bMBQEeyvShVYki_q6wZIqxsSK0Cm5NIiGqn_gtiGCaImQ7iigVUnXWhjtBhLQOmbtNwOgQDwHmd1Jj&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyjFpKlVuHsZBTVFIjDqemkfDNCD-X3sx8m6jilNTcb6Q&oe=69CD0AF0",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/545264578_24318309271183142_3014717277579802271_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeGmKeWCUPw4qk_xNCTeu4jMDFVB7uFW8f8MVUHu4Vbx_81xqjOm5sgfrEIvF5IYJxMPm5r6sf9et8ZBoLBCq017&_nc_ohc=tJcCDNuEd1EQ7kNvwG1bhj7&_nc_oc=AdovyErLcKhWC--U2sJ5Fs6ERhsVgWKteDn3MTGPxdEZGCixv6URaD4dlNCGgH0zutA&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=185TjrURNhhtGNyq8wTwSQ&_nc_tpa=Q5bMBQHkxeW3k-MOXUH5KEZkcDRYIKmRk9v1XFl1zUnRY6h8FUBAhDwoQvYvVguRjzRMkuPDWevPhUBo&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxZ79rQ5YgEzpN3_N-nAcXGTyuzeKW2sdRe1sgc948w0g&oe=69CDB3B0",
             "id": "779192211705626"
           },
           "metricas": {
@@ -2229,7 +2229,7 @@
           "nombre": "NIRENE MONTOYA / 18 AGOSTO 2025 / ESMERALDA",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/534377640_1733626514248039_838552536062622400_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGrHg6JpF8gcs43AiOY50MR_5fwKCmu7yf_l_AoKa7vJwwONqSksdRWxJRfEQGX3Z3Y7odQCU9I2O7kxicXQRxz&_nc_ohc=POHcM-hPfoAQ7kNvwGgzh0-&_nc_oc=AdoBVNvrbpodczkLnf6B8ZSUiuD9JV_bI-_RGpA2t7pJq3fm7k0OmpWzUulBMOCTmjc&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=uKFPg-BrQK00HdwoUwR17Q&_nc_tpa=Q5bMBQHejD_QWQH_C0Ht8EQOOcc-BjHc58CVq9GLY45MKUb9X_Tr3ed9HT2nSyJKQMZQEiwnDhXiisRF&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfylvrPXgqXzXzqvQL1rTbVjYyBLPm4ik94C3TgZotVlCw&oe=69CD1569",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.13418-10/534377640_1733626514248039_838552536062622400_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGrHg6JpF8gcs43AiOY50MR_5fwKCmu7yf_l_AoKa7vJwwONqSksdRWxJRfEQGX3Z3Y7odQCU9I2O7kxicXQRxz&_nc_ohc=POHcM-hPfoAQ7kNvwEgqeSW&_nc_oc=AdouO9v7JPmQtA7TAcX8SvILco-LNOxHes8fRhJcKmdOzOpe_vMapQ3ghbDb0n5x8kc&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=grn1whKh9COYSRc5eOrWmw&_nc_tpa=Q5bMBQHvgt52jeBOFrWBTpPVwTo72NVxkjR6eiKnU296KgbNqQko99V4tudNTGHlzSy2Qa99WVdvgk8U&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfyoH65B4pdOYYFTZiYqoAXyXlCkum0PTYauvdzSIB6iyA&oe=69CDBE29",
             "id": "1274432211075514"
           },
           "metricas": {
@@ -2276,7 +2276,7 @@
           "nombre": "IRENE MONTOYA / 09 AGOSTO 2025 / PINO",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/531253224_1123373959714215_8725640585579118829_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGYQAlDi9nsv_DOO-CGlHa_dpEn3kvKJ0p2kSfeS8onSmOQQik3r2tdOPXypgUID1Gug01PFiVL2MPII8s9lwK0&_nc_ohc=xTA5mhF6hrQQ7kNvwG_4STv&_nc_oc=AdonQpVtxK7g-VNMAuNh0jj4aKJxdyZw2sM0sc7WsUm4lo5qLBEy7e--MIypCgXJVog&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=D3Yb_GgpICF-hj8Q-5vT8Q&_nc_tpa=Q5bMBQGo3ai77RS9fw-vTgxbFugA9IxuVvk4u5GxHdlZYj476sS7ZBM8rg4xb2VmYxEUO5be7EmXiFMt&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfysbkI34WktT5_ZrG8B6phBjEoMZoQlPCLDNABCzNd1Lw&oe=69CD27B5",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/531253224_1123373959714215_8725640585579118829_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGYQAlDi9nsv_DOO-CGlHa_dpEn3kvKJ0p2kSfeS8onSmOQQik3r2tdOPXypgUID1Gug01PFiVL2MPII8s9lwK0&_nc_ohc=xTA5mhF6hrQQ7kNvwFMYRS9&_nc_oc=AdpxNSgXM7J1f-HioihAIe5PqoT8Sl66TyYXHLYLEetuf7GqGLcMQu4aRb9FFJ-4gCk&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=XCHhHGtW4nVP0jh353fXWg&_nc_tpa=Q5bMBQHngZHvE3lVwZTZMQOFhSXXJwjxDL7aKX8IVmtOT5ELnWAopCcP-IgekWmEoHk6sMT-EKiuR3X5&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=b696e2&_nc_sid=58080a&oh=00_AfzEhioR3s0Sq_O5hCKaR5MtQyj95l3uW5kk_p82BWAMyg&oe=69CD9835",
             "id": "1066821968890688"
           },
           "metricas": {
@@ -2323,7 +2323,7 @@
           "nombre": "Pino Básico /",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/522220643_23927114390302634_8989776760661097000_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeFTNNlQ-JB4u21W079_vbvo1g3nUc2x9QXWDedRzbH1BSehARYtjPb86_t4Gsh3_Gs3b9DYoFa16w0PpfPb_YQ0&_nc_ohc=g6nlKfnTEsUQ7kNvwFcrp0w&_nc_oc=AdrmtDtAehGQcmgpW_C8xqUArYjOtI7AreeOhDtmUE6-nWLguTIacODstSJuyU70xFk&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=hB4byPOi-vpQuro4V_5wMA&_nc_tpa=Q5bMBQF4w05Tr2BTqel10qob1FgALnT77azGQ1a-Gg8XrGd72UWicnhJuqWKBT6giHNjDHkGfIqiM-x4&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzdItIWIDuWbs0jmc1Wpe55xSvC0FIKdo0AoKSANOTa8Q&oe=69CD23E7",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/522220643_23927114390302634_8989776760661097000_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeFTNNlQ-JB4u21W079_vbvo1g3nUc2x9QXWDedRzbH1BSehARYtjPb86_t4Gsh3_Gs3b9DYoFa16w0PpfPb_YQ0&_nc_ohc=g6nlKfnTEsUQ7kNvwEnZQMe&_nc_oc=Adq_1FQR_ckVevPskv6-bMTqPK7uKx8IY2W8ZEY0-SfiQAvIMIYcjSu0Sa2VhUyrGQ8&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=ZalVvbcqxqoBCjbYlU4OJA&_nc_tpa=Q5bMBQHvAaDs9A-343YBiNF-kXIxq7tsY5ak56vZBrsqVIfu4oJ2W4NsxhyeN7WbEr9eljlKrtp4-yeD&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwytvClVZBctCh0DKmuRqoXgav5Z1O5VhNPy0FQIv3grA&oe=69CD9467",
             "id": "1487773662577687"
           },
           "metricas": {
@@ -2372,7 +2372,7 @@
           "creative": {
             "title": "EN TECAMAC",
             "body": "HOLA EN SEGUIDA TE CONTACTARÉ PARA DARTE A CONOCER LAS PROMOCIONES DEL MES!  ¡APARTA TU DEPARTAMENTO O CASA CON SÓLO $5,000",
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/534377640_1733626514248039_838552536062622400_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGrHg6JpF8gcs43AiOY50MR_5fwKCmu7yf_l_AoKa7vJwwONqSksdRWxJRfEQGX3Z3Y7odQCU9I2O7kxicXQRxz&_nc_ohc=POHcM-hPfoAQ7kNvwGgzh0-&_nc_oc=AdoBVNvrbpodczkLnf6B8ZSUiuD9JV_bI-_RGpA2t7pJq3fm7k0OmpWzUulBMOCTmjc&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=27xjE46mxTr11_Qzqr6JAQ&_nc_tpa=Q5bMBQF0hKqNXXyxJzUlusqC_LOA03jAQN3-7gZwSsnjpXJpEY8LrDDMoJlTd08NaUa10Jn5C60T61ZP&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AfxkwXdZLjY9C3gj9OUFhIufLCJTSSdEYBFhu5ipvj1Sqw&oe=69CD1569",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.13418-10/534377640_1733626514248039_838552536062622400_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGrHg6JpF8gcs43AiOY50MR_5fwKCmu7yf_l_AoKa7vJwwONqSksdRWxJRfEQGX3Z3Y7odQCU9I2O7kxicXQRxz&_nc_ohc=POHcM-hPfoAQ7kNvwEgqeSW&_nc_oc=AdouO9v7JPmQtA7TAcX8SvILco-LNOxHes8fRhJcKmdOzOpe_vMapQ3ghbDb0n5x8kc&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=CL2v8Bh-8fof-5lUdU4Auw&_nc_tpa=Q5bMBQFbpl2YSPS__4irEjYFw21QTd9QzZytEa7QhzeIVeazsvnYM7-4euRrr5okEwbn9nVOEzIC0-qW&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AfzToS_qK26F6pjxa5SoW7djhSqL1QkGaFZFbnTWy4FQJQ&oe=69CDBE29",
             "id": "763382939994953"
           },
           "metricas": {
@@ -2419,7 +2419,7 @@
           "nombre": "Imagen/Fachada 01/17 julio",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/521770779_23927112626969477_1146237957057097913_n.png?_nc_cat=102&ccb=1-7&_nc_eui2=AeGlygf7fXSG4wY--AvSsMgwJlAl1kkefZkmUCXWSR59mR9_BjaalDSQuTUkv6qgMSsoDlbHM4LHvIrhdHglKCUE&_nc_ohc=xA9QQtjroToQ7kNvwGR8V8w&_nc_oc=AdpI0cB59pMPyNHyaKWyxj5mLsoY1yc3j_GL3lr7Q8JxWNZhrc5ZHUCIq766h_FlBM8&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=Ir0xZN0ndMdvpXhVIUiGaw&_nc_tpa=Q5bMBQE-uPs3esXf-8IuIDPMarpvK8-uDrhMyJy0Gjqc8-n1wDcb8PHv8ACUZ34N5ZYLqK_GvGLCGTCO&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwL8Dx0lCuwfoE56diVpioH6qj86VWhyvcIfBTzGnd3TA&oe=69CD0703",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/521770779_23927112626969477_1146237957057097913_n.png?_nc_cat=102&ccb=1-7&_nc_eui2=AeGlygf7fXSG4wY--AvSsMgwJlAl1kkefZkmUCXWSR59mR9_BjaalDSQuTUkv6qgMSsoDlbHM4LHvIrhdHglKCUE&_nc_ohc=xA9QQtjroToQ7kNvwE-8QGa&_nc_oc=AdqjDvj2Bs22HM8Ty1lJFv_N3pXQ3HVy-aVXZl8jTzr7XkIbcv9d7oLLABE0RvUKk60&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=TGKA2fC0bczJo2yFrZJ__w&_nc_tpa=Q5bMBQHiwR4krik9-vcEPoJolV0CCG3cldd0x0tAF67C-twoLvw3Z9eZgjNlPRVwKFV0TVMmgdekOdt6&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzMJIQ2IjjmdJFmYTLwN2iMwCNrFEtNOUT6fXnXa58AZw&oe=69CDAFC3",
             "id": "603870852657372"
           },
           "metricas": {
@@ -2440,7 +2440,7 @@
           "nombre": "Imagen/Fachada 03/17 julio",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/522702552_23927116633635743_9221451792643238630_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeEOoEcBo02s6MNs0udk97DOhowGus5xxTGGjAa6znHFMWy740Xpz6rdp7nU0Cnx4Y1hoZnTweXg_BLbTj4aWgIn&_nc_ohc=PcmUzGbPaWEQ7kNvwHe1siC&_nc_oc=AdphSlVwINu7Fb4llznh-dWMDsT0i5Ys7woRQb4rDYHZDwnT1HRClpDKhCaYvdG_sYU&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=Ir0xZN0ndMdvpXhVIUiGaw&_nc_tpa=Q5bMBQGkra9-a8V8TisMkfsQppbpSvI6UCCtxnD6-dIh0XVCZtn4SdJuU93MJr4BrCfwt118iGsbx69E&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfxW3eBS6hL9zzob9UrxVEUYRweupCKYNOzdAHmg_QE96A&oe=69CD3391",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/522702552_23927116633635743_9221451792643238630_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeEOoEcBo02s6MNs0udk97DOhowGus5xxTGGjAa6znHFMWy740Xpz6rdp7nU0Cnx4Y1hoZnTweXg_BLbTj4aWgIn&_nc_ohc=PcmUzGbPaWEQ7kNvwFbHaX1&_nc_oc=AdrKaS3c_L0xTscG1m1jvdrtWGvXZ9Y9DQqXn82gQIb4sKYO9BO-iP3BA1oj_WHJ1PQ&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=TGKA2fC0bczJo2yFrZJ__w&_nc_tpa=Q5bMBQGz_nwUcNTHNzw2_1TNXp_3VgB43Ax4N3L3-bxh5n8V37GRSBuBe2w7A2o72Lr4LadHulCxcyyE&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwcI3q6zrAryESpPLW6Ry4uwrW1-u6YpxaTwYSdu1uMnw&oe=69CDA411",
             "id": "771057095872284"
           },
           "metricas": {
@@ -2461,7 +2461,7 @@
           "nombre": "Imagen/Fachada 02/17 julio",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/522220643_23927114390302634_8989776760661097000_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeFTNNlQ-JB4u21W079_vbvo1g3nUc2x9QXWDedRzbH1BSehARYtjPb86_t4Gsh3_Gs3b9DYoFa16w0PpfPb_YQ0&_nc_ohc=g6nlKfnTEsUQ7kNvwFcrp0w&_nc_oc=AdrmtDtAehGQcmgpW_C8xqUArYjOtI7AreeOhDtmUE6-nWLguTIacODstSJuyU70xFk&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=Ir0xZN0ndMdvpXhVIUiGaw&_nc_tpa=Q5bMBQGaGzSYOnmi9QOI-o6kegnXGVXIIoDIS8m0sbtsssaVWrcT_pN4GiZbQNGFJ-pWHGKXGUzWdqLU&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afw2zM3H6VB1_7-mCoDdpjGb9SA1IGC3yG4GnLJwt_t0eQ&oe=69CD23E7",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/522220643_23927114390302634_8989776760661097000_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeFTNNlQ-JB4u21W079_vbvo1g3nUc2x9QXWDedRzbH1BSehARYtjPb86_t4Gsh3_Gs3b9DYoFa16w0PpfPb_YQ0&_nc_ohc=g6nlKfnTEsUQ7kNvwEnZQMe&_nc_oc=Adq_1FQR_ckVevPskv6-bMTqPK7uKx8IY2W8ZEY0-SfiQAvIMIYcjSu0Sa2VhUyrGQ8&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=TGKA2fC0bczJo2yFrZJ__w&_nc_tpa=Q5bMBQHExBnWf3UCl02_UIe6GR10-zAL4wy9RE5PMlYpQuIEe1sPk0t6DSy2kar3tNHKXexFkT1r4rJr&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwCq9WJ3GVjP3m861_SNtBX4PNLox_pIp7XvdIqB4FHzw&oe=69CD9467",
             "id": "1496997701318726"
           },
           "metricas": {
@@ -2508,7 +2508,7 @@
           "nombre": "IMAGEN 2",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/521364435_23911882375159169_2845150197982430044_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeFH42X6JhopQ79WkaDOzSa2j-PSl_h4iXiP49KX-HiJeMHL_9BnuFNBjI30xtssKksXYXcJFKD1h20iEZ79WAol&_nc_ohc=fN8XnwfqnZoQ7kNvwECjYco&_nc_oc=AdoRXnGd8GDeicUC2zNdvtDeCrMeGbJuMbliVVDEF1F0_3gVEa8RCBzZjVVB1Hwbq9w&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=d9wRXKgqqYS5rrXfPLyilA&_nc_tpa=Q5bMBQHc5r9H7xdDyWVtRNkT_uEBWXwV3m6PD1YrI9yUMU5INTFPQc6GSYL2lqlPwa3_MaPmPkAzrjoH&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzSQFKDV6K_OeHthoe2FBIvKGZc43_5yfJDt64pJKJBUg&oe=69CD22AF",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/521364435_23911882375159169_2845150197982430044_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeFH42X6JhopQ79WkaDOzSa2j-PSl_h4iXiP49KX-HiJeMHL_9BnuFNBjI30xtssKksXYXcJFKD1h20iEZ79WAol&_nc_ohc=fN8XnwfqnZoQ7kNvwG4iEw0&_nc_oc=Adp3HcY-7om15F_rIoNUzfWCLtmVS_bRJ9Rs-anxhlrq7s6H3iAVuP1v6tqYijgsEgY&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=Kjaf5FPVswUUgIl4a4u-sw&_nc_tpa=Q5bMBQHRArnsUuSpNpJgz_y4juKLfZY71_DD3eNjMkx18ugUoBBw_OgYiqnZVYWSpfQL9Ynq9SRfWkZI&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afy81u46oiiO0Q8BljfskdcymIrWliCqaxR1vSGhiB-MOw&oe=69CD932F",
             "id": "1307191647506265"
           },
           "metricas": {
@@ -2529,7 +2529,7 @@
           "nombre": "ANUNCIO 1",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/521356193_520105424491961_2214172047417903959_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGoLcV_ToOVr3XvGGGZ_bhEvWhN4vZz8329aE3i9nPzfTiCx81qfsk3VIE53Qu-KIWcJsODnLb67dZT3ek61MFa&_nc_ohc=vR7ZmzEGPZ4Q7kNvwHsLh4Y&_nc_oc=AdoJACqYPCLQeNuZGi0gVXkUGF_WSDzbr9sZV_xadQUCmX25HF-xra2cbPzndkjvi0I&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=d9wRXKgqqYS5rrXfPLyilA&_nc_tpa=Q5bMBQGyMK8NpjNb4zaGWNOHH41Yn3cBZBgvszhTQKDMDKYJLDhAsh2OYIrTn8W-5klVsXI0ncIXN50D&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfyeXoefXqCR1_9zLQgQpHbCzWzqohmFp5XJsd-5_dGsdg&oe=69CD281B",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.13418-10/521356193_520105424491961_2214172047417903959_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeGoLcV_ToOVr3XvGGGZ_bhEvWhN4vZz8329aE3i9nPzfTiCx81qfsk3VIE53Qu-KIWcJsODnLb67dZT3ek61MFa&_nc_ohc=vR7ZmzEGPZ4Q7kNvwH0eNca&_nc_oc=AdrWH8b2zsj-UH86ZBUE4TnuNcXlFICnOgqpG67DhmGfL6s-zjxk7ObIlwxvWCw9NLY&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=Kjaf5FPVswUUgIl4a4u-sw&_nc_tpa=Q5bMBQEjng8avc9wGotiUtFPDD3tANp9C59QH2d6vBdJZ4mK5MMLS2I4yRLKTE4WlYbWrT7UBxDIQSxx&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfxMLPwYkyWb0NkYrd9hTMs4-FGrtY9tKHWFcDihZ2kE-Q&oe=69CD989B",
             "id": "24020647277604872"
           },
           "metricas": {
@@ -2550,7 +2550,7 @@
           "nombre": "989",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/521339045_23912038688476871_3627790689230188540_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeGAXwjsVsxQ-q2COYsPpUIrhGterdySSQGEa16t3JJJATWwrWtBjonR57Qt07N-tPNE59-EY7mtBC9RlpLN1-7P&_nc_ohc=qit4eINAQJgQ7kNvwHTl2BA&_nc_oc=Adqdo5M1zfCJrHTPipECvh-4JcywFR3AFs52aoMDpMbgncXlNoY105oDJJ34gkcxYrU&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=d9wRXKgqqYS5rrXfPLyilA&_nc_tpa=Q5bMBQG-ormNJDEiiwV6EjWm5rGQxILa8eP8REslUZP81RurzDGS2Pd9HeDogtXSgvz1tv0KfUHkwkrr&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afw8AnNVDWCvcbVOGQClB38IkL8_hegtHwcBG7swfHi3wA&oe=69CD258F",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/521339045_23912038688476871_3627790689230188540_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeGAXwjsVsxQ-q2COYsPpUIrhGterdySSQGEa16t3JJJATWwrWtBjonR57Qt07N-tPNE59-EY7mtBC9RlpLN1-7P&_nc_ohc=8oAdpPf0BQ8Q7kNvwHOejxP&_nc_oc=AdrnlMvXhTsV_vrUQYMbP4BvOl_oIDMKPigAGIV_2Ih4cC3WS4FMVoGzbjHbhcp0F94&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=Kjaf5FPVswUUgIl4a4u-sw&_nc_tpa=Q5bMBQGbkxk4sTh96gca5uI7VC0wTfuktHsKhoMGZdcLygIxDKYDOaxFv2sU0Cfkx4cnIaBANsSjv_BV&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyF2c_qpwgaQhmN_6rhlT1vX2U34h-lDXcbtTLpN8PMXg&oe=69CD960F",
             "id": "1705726730076145"
           },
           "metricas": {
@@ -2647,7 +2647,7 @@
           "nombre": "Nuevo anuncio de Interacción",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/512684145_516087408222652_2413557272193955970_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeHuso_-v68nGLC-ycSFDP5AV5hmojjMKatXmGaiOMwpqwNTzis9gx804GV9hSQyFPwQVMzSwyqIMXDI3KfH5X9y&_nc_ohc=zDNcxvY2e0IQ7kNvwGYq2dI&_nc_oc=AdqFB5r_CEwuu_E6hMqPZ7VRABj8nEhqMtI0WFegWOIdyY52OIxryChhS1gng-xRLII&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=h_sFThgMVRLvqUt3Yn94Ug&_nc_tpa=Q5bMBQGxj95fj0kAoFIaiCNQ_Ua-m7t-7-rAHl6bByiidmQj6YWLISMHq2zU48xmdomoV_WhblE1Al9J&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_Afysy7Wt3Nr9_y48ce2MPEOrG1qpEkU-c8XynjtccXjbOg&oe=69CD2D97",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.13418-10/512684145_516087408222652_2413557272193955970_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeHuso_-v68nGLC-ycSFDP5AV5hmojjMKatXmGaiOMwpqwNTzis9gx804GV9hSQyFPwQVMzSwyqIMXDI3KfH5X9y&_nc_ohc=zDNcxvY2e0IQ7kNvwG057WB&_nc_oc=AdqZXeYEtAB4yAzdtQS-PR9uVRvzD-651E9pR8UUSuvgF-kjxqwrTqbbQ1zakW3WMXI&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=UdH7Er4uzc_ommI-siuk1Q&_nc_tpa=Q5bMBQGQmFewdH0KSF7kllnnLaTK7q8rtEUpWCyPKvnrMW3aqt-0UDLm4PzXpdranzbTgLO-K677L5dA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfxMz_gSZa8UavS3VBVxpQVSPh2Ck9qF-opl0ckCYKOwjg&oe=69CD9E17",
             "id": "8547184052072716"
           },
           "metricas": {
@@ -2694,7 +2694,7 @@
           "nombre": "INTERACCION+27/06/25+ADV+ABIERTA Anuncio",
           "estado": "PAUSED",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/513398306_570682616109269_498885279337691978_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeEQpeE6T7wzYMJF3fHqY3eFYTz87lpDX8phPPzuWkNfykmsFhXwHcQNmbmMmrkxJj0RqtBOWBvLxtZymJQ1DScv&_nc_ohc=dxji3_0Z2MUQ7kNvwFQg2qS&_nc_oc=AdqlNDhOifmTGt1f184_dMYTZFWoZPpnZNlCFxzTzULucZpV8BkhuKAs4-YzYx-1Ebk&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=7UTzBI26KQ1Fr8PfjUYfbQ&_nc_tpa=Q5bMBQFUkSWSfDoO9jujbYKWoM9hr8wTlG6URzvUntK9wSvyS2HZd3pwpg9yOb71F0Mxov61DYwZLfaF&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afw3FhDZ1XLd4UMeQDdsfviDDUDfMaxi0kQGYVeEacX34A&oe=69CD0A98",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/513398306_570682616109269_498885279337691978_n.png?_nc_cat=101&ccb=1-7&_nc_eui2=AeEQpeE6T7wzYMJF3fHqY3eFYTz87lpDX8phPPzuWkNfykmsFhXwHcQNmbmMmrkxJj0RqtBOWBvLxtZymJQ1DScv&_nc_ohc=70ywjRMo4xoQ7kNvwHsqczJ&_nc_oc=AdpHWbQzUQt6o4C9J1Y6m-iH6jYOmeDP9YmVscJTZxRqDN5weH68kMFF3V1L0cynFUI&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=He9BT4Mg4wcW0NSjCYP2tQ&_nc_tpa=Q5bMBQElGqO0n-s4KdbfytuLcPO22sbFApewrBoiqg1QQW5toVp3RdlO8JbE454ejEtQUOPM0kxjHwTO&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyyySeTlOyzthI1XbNG6sH-Fjk36SQMGFINdyEpbMfJEA&oe=69CDB358",
             "id": "2115132768996170"
           },
           "metricas": {
@@ -2791,7 +2791,7 @@
           "nombre": "Imagen/Fachada 03/20 junio",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/502736258_30302714732710513_6932640743807306724_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeE4yMws5s8YS0jFALZl9w9W8IockPzvWavwihyQ_O9Zq_xRhv8OgW7Pw7_QKoQ8aEWTlACwlTvwk5paFlFY0Yfj&_nc_ohc=s8K0eYuWqb0Q7kNvwHg38D9&_nc_oc=Ado3OELYqgrLh8KeoSBFDugCdNbStFIcXTHFvufj85jYQkRSe7R8TqoitsOlVV44Guw&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=zjexGZC1cAhO4T8AiT3j6Q&_nc_tpa=Q5bMBQGZ8XNV3xPrNib_W3Lk93emNH_lFsYtJsXq6-OKR5H6mzyZqw-9L7U5X9dMS_B0huC_kJ9PJJzj&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzgVRQ-HH1GaneOGzlzAQRUoW4C9bberos41Uh5wUaCYQ&oe=69CD1EC8",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/502736258_30302714732710513_6932640743807306724_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeE4yMws5s8YS0jFALZl9w9W8IockPzvWavwihyQ_O9Zq_xRhv8OgW7Pw7_QKoQ8aEWTlACwlTvwk5paFlFY0Yfj&_nc_ohc=s8K0eYuWqb0Q7kNvwFejl9E&_nc_oc=Adq4Rxyfya2ikANDNRk5qdF1IPkPKiacyI7bQxYIwUmOfYGum3zgJmp1hrgJxd-hui8&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=xuAdbq_ZiCg8I3QgfT5eYQ&_nc_tpa=Q5bMBQGlAK36popJWYvut4bBzUvDR94zZ4IsMCeEIVf4I-canMN7baUkNwVtpEwwsxGn2DmqnUuHYLUH&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyTZwrt2MdsScWRUXbVAITMswbMFtUmhQ_W7uaD4cWkTg&oe=69CDC788",
             "id": "1084485940462281"
           },
           "metricas": {
@@ -2812,7 +2812,7 @@
           "nombre": "Imagen/Fachada 01/20 junio",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/502736258_30302714732710513_6932640743807306724_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeE4yMws5s8YS0jFALZl9w9W8IockPzvWavwihyQ_O9Zq_xRhv8OgW7Pw7_QKoQ8aEWTlACwlTvwk5paFlFY0Yfj&_nc_ohc=s8K0eYuWqb0Q7kNvwHg38D9&_nc_oc=Ado3OELYqgrLh8KeoSBFDugCdNbStFIcXTHFvufj85jYQkRSe7R8TqoitsOlVV44Guw&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=zjexGZC1cAhO4T8AiT3j6Q&_nc_tpa=Q5bMBQHT5QdAFYigauZKzfr-WP9_qlFdSM7Q0qKbnkC2AGvMoriXWTk2_33rFssuszC-0P-rQqAIWsKP&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afyo50rZTUOjLd48vXxJF_VuDKoY7ZoBnKoB2HXyR53BBg&oe=69CD1EC8",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/502736258_30302714732710513_6932640743807306724_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeE4yMws5s8YS0jFALZl9w9W8IockPzvWavwihyQ_O9Zq_xRhv8OgW7Pw7_QKoQ8aEWTlACwlTvwk5paFlFY0Yfj&_nc_ohc=s8K0eYuWqb0Q7kNvwFejl9E&_nc_oc=Adq4Rxyfya2ikANDNRk5qdF1IPkPKiacyI7bQxYIwUmOfYGum3zgJmp1hrgJxd-hui8&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=xuAdbq_ZiCg8I3QgfT5eYQ&_nc_tpa=Q5bMBQEQXFGknCQwPpsDLv0scaEXUC3VgY4RHiTk-NzrUKV0Zj8PdGZ8szY3wV2gaNrsVUYmszwhxLGD&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwSXsheVEiygb6sV1Q_eXjhJYrmxQ-G2GfIpARKr48y3A&oe=69CDC788",
             "id": "1201554788401293"
           },
           "metricas": {
@@ -2833,7 +2833,7 @@
           "nombre": "Imagen/Fachada 02/20 junio",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/502736258_30302714732710513_6932640743807306724_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeE4yMws5s8YS0jFALZl9w9W8IockPzvWavwihyQ_O9Zq_xRhv8OgW7Pw7_QKoQ8aEWTlACwlTvwk5paFlFY0Yfj&_nc_ohc=s8K0eYuWqb0Q7kNvwHg38D9&_nc_oc=Ado3OELYqgrLh8KeoSBFDugCdNbStFIcXTHFvufj85jYQkRSe7R8TqoitsOlVV44Guw&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=zjexGZC1cAhO4T8AiT3j6Q&_nc_tpa=Q5bMBQFdCvSn92KZtTziC-PHSODPZTmtC4VWx54pffY0jkgZ8FsPgoFlrS-ZdCZrd2b-gK8W3dLBdHnn&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfyL8HQAR4QmTr9hTp3jTn8HxgQhaqgDrtSj8mF4ocaaIw&oe=69CD1EC8",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/502736258_30302714732710513_6932640743807306724_n.png?_nc_cat=108&ccb=1-7&_nc_eui2=AeE4yMws5s8YS0jFALZl9w9W8IockPzvWavwihyQ_O9Zq_xRhv8OgW7Pw7_QKoQ8aEWTlACwlTvwk5paFlFY0Yfj&_nc_ohc=s8K0eYuWqb0Q7kNvwFejl9E&_nc_oc=Adq4Rxyfya2ikANDNRk5qdF1IPkPKiacyI7bQxYIwUmOfYGum3zgJmp1hrgJxd-hui8&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=xuAdbq_ZiCg8I3QgfT5eYQ&_nc_tpa=Q5bMBQGYKfEAaXE50Hi0CJ4u4v1rfDbqA7hEY85mTHIjVmCMxyeRZVhfLbZtdtEZGz1g3RHL292h9exS&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzG1mA54ydEewvfETpMBbyx6hGIg_W0dE6vj772yrMq2w&oe=69CDC788",
             "id": "2183888658772773"
           },
           "metricas": {
@@ -2880,7 +2880,7 @@
           "nombre": "IMAGEN/FACHADA/30-5-25",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/501483546_10234722628742409_6114030986377066222_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeG5dVSxduk63Ino_tAL7mT5nsdImgODsQCex0iaA4OxALtmVv4wIKsZ11ajCXYcBmxAG6j3qYudA_sIi027cOyM&_nc_ohc=mFBq3ebvi0AQ7kNvwEadr-U&_nc_oc=AdpoLFjPHIraHIWUWrodV7pJr5JsEPwAYlqg1C-uuDiopijdkT68FTBXvhd_JSO9JoM&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=nx0Uwlj2yq9vk9QxYKQZPQ&_nc_tpa=Q5bMBQHaeIiFyKGAfmJDUYt9BagnWFvoxnn5gKg_jXt_2G1nQ0wACRA_HdoNS0mn8JZD9QPS88WjUjaq&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afw0aqDjlG-0El_LDsPA0sIxb12rja2QzO8QDzQWyG9DSA&oe=69CD38B7",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/501483546_10234722628742409_6114030986377066222_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeG5dVSxduk63Ino_tAL7mT5nsdImgODsQCex0iaA4OxALtmVv4wIKsZ11ajCXYcBmxAG6j3qYudA_sIi027cOyM&_nc_ohc=mFBq3ebvi0AQ7kNvwHQ0p5V&_nc_oc=AdrRi8RqVLDdQ7rLSXxWtZpOvhlmq3ShaV4FmI7pRGwg3tcOcr85h69Qb8Ll1IdbvVY&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=gKyT6pxu_-z5rkkWaiR_qg&_nc_tpa=Q5bMBQHfOEuZw6nAJ4847h15iqmm7G5zL5i1-vfIAFWHVA-YFIXrYigxTDCSj5e6RoMVb-HTcMafFJ_J&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afxzqz2PD6WbemF8oHuazGXgD9c3RojWqJ8XNQJ4CRuFuw&oe=69CDA937",
             "id": "758555887032713"
           },
           "metricas": {
@@ -2927,7 +2927,7 @@
           "nombre": "Single Image",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/599437183_10240506296849984_5557601047875181783_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeGJvmYc986uIB8IYRQjQG4FQOsHZE1Ys2BA6wdkTVizYBNHpRJr_Un2ltq5bt8p-TpZUXN86HeiW6dFjcdwbEid&_nc_ohc=cHv3kyk16S8Q7kNvwHbsMIP&_nc_oc=Adqkdp9Jsa767BpqcH77sW2uzNasLHE3zlU1_KKV9Y1pctdSsV8Dsks0-PsyTqWCEbE&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=1VZuIjxAenF9NVynv1A7NA&_nc_tpa=Q5bMBQHI90EKVxxWJArVaJ8Ngfyr5MXEPQBpCf4yRpw4WiBwRXj1GOkUkCpd7euoukuNbc_Z0N5f88cB&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afzg4lj2e2jOg_jt7Xz6UtRvGoFwa9EAmPKBGvxf-NgEKg&oe=69CD38D8",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/599437183_10240506296849984_5557601047875181783_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeGJvmYc986uIB8IYRQjQG4FQOsHZE1Ys2BA6wdkTVizYBNHpRJr_Un2ltq5bt8p-TpZUXN86HeiW6dFjcdwbEid&_nc_ohc=cHv3kyk16S8Q7kNvwFMZwUA&_nc_oc=AdrZ_yCiDckz0C8RmHaM5HuPho6lm1oJZH6VguYP1_D12SRY9rr0G5wYvdEQJno7-O8&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=5DOUvX_vCBTiyqUuqMb42g&_nc_tpa=Q5bMBQH4oeT5ooisTHVPyKz8tTGeeKndFgaVAx6FqiynMPm2_fSGGqtlkHoko0JyQ2g7nIejEHWSbLMc&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfwqymmnSm2ocL7Qt2en-E1hgt2XMmlmJfXk3CQbNvN3AA&oe=69CDA958",
             "id": "10038873872879186"
           },
           "metricas": {
@@ -2948,7 +2948,7 @@
           "nombre": "IMAGEN/FACHADA/25abril",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/491885739_10237278056465992_6080416133929245298_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeGQJaSNRWyyOSkaYNymxyS38rs6-Kvsza3yuzr4q-zNrf_Ezq7zLtf4t7nGVp8t-0vPZqp1wqAqfyROJTnHK-vW&_nc_ohc=TW9f6pB6Mu8Q7kNvwGh44ow&_nc_oc=Ado4nMKuTCwS7tj0CsIXUFclRAaTLSF_VfhEIVT6q6GbDLHY2te1Z2pRy6RVMyRDxCE&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=1VZuIjxAenF9NVynv1A7NA&_nc_tpa=Q5bMBQFWg_tkICkF7UQMlVZvVuCGELu7M0nRQSuFN9h8Ya-SCE7INIQjAGpj_xbE8HVi7YMgZSm-PDMA&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afz4HBUzMRPbNDRNMl6fasMp2fURHq4bbx1hHng5sNyHuQ&oe=69CD0DA0",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/491885739_10237278056465992_6080416133929245298_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeGQJaSNRWyyOSkaYNymxyS38rs6-Kvsza3yuzr4q-zNrf_Ezq7zLtf4t7nGVp8t-0vPZqp1wqAqfyROJTnHK-vW&_nc_ohc=TW9f6pB6Mu8Q7kNvwEtZxDw&_nc_oc=AdqmIRgVjgm_B99Qs3oi3hFEIV4AwQXu8aMwoznltu2QJzyVEvMn7czYGhamxByLRBM&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=5DOUvX_vCBTiyqUuqMb42g&_nc_tpa=Q5bMBQETQHuozqDfL1_Clh7LoQSwKJ0cDFxpuyFyZ4GFnL_QlLT6rWw1hZ5SyOgN21ZpOO6WcYaLFn--&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfykWkx2tb6xLeEvlkNmnveQNjOJjTSr_iZtSQeXhBcnew&oe=69CDB660",
             "id": "24200917632933543"
           },
           "metricas": {
@@ -2969,7 +2969,7 @@
           "nombre": "imagen/interior/25abril",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/597990899_10240490449813818_1296121116223948769_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeHH4RbA3P268EHEhANDEzZ8TQKMiiESVaRNAoyKIRJVpP6SvgYUzSBelMI5HWdEt4hcCJak9NcfhJD9Hn48EhAF&_nc_ohc=K3HN9XxGoV0Q7kNvwEzcoFR&_nc_oc=Adrp4Wrh5Amrz1d7OECH2Q-fUxUt-76Sa-XGCSl78B8xWo-wVI5yqhgCYCO3w_nDiCY&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=1VZuIjxAenF9NVynv1A7NA&_nc_tpa=Q5bMBQE_yzSM3GpNrZ99e4UgiK3K86tES8u1kA__1d8M-He4MbEmMdoGOWB5g754qIUhxJbo_tJEG1ib&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfznClFj8DW8aDy0rKOBrW8eNMxlZbkTRQQiKdjDkJaEmA&oe=69CD13E6",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t45.1600-4/597990899_10240490449813818_1296121116223948769_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeHH4RbA3P268EHEhANDEzZ8TQKMiiESVaRNAoyKIRJVpP6SvgYUzSBelMI5HWdEt4hcCJak9NcfhJD9Hn48EhAF&_nc_ohc=LHFXn4_NfC8Q7kNvwGhiV83&_nc_oc=Adp-flQfnWKD_UoU_bK-0tH9E2-gZ3sjvKu8LL1hpEnQMZykBi1Da04z1H1E3aOdyPs&_nc_zt=1&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=5DOUvX_vCBTiyqUuqMb42g&_nc_tpa=Q5bMBQFTTS6JoNO1-ClgFL-c6pz2dqJdqgqsjsivuWAPrrOxyV6MQEaPjDN0Afl8vOld1TlemtpIOfap&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzX_l250xOPZr8VoPbXaRaIfWLrZ6NZftycIER4VjHoCg&oe=69CDBCA6",
             "id": "720818344288387"
           },
           "metricas": {
@@ -3016,7 +3016,7 @@
           "nombre": "INTERACCION ESTILO DE VIDA",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/476673056_1558779898116806_7210794317380905196_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeG-TrZzY8e_kj7QV9VA1vrsoWUhA6UkaMWhZSEDpSRoxUBknyNBqKj-ZFDNkOqNe1eahqk4UnaYk2WbI07PmwOa&_nc_ohc=gk5wKEXfenkQ7kNvwFRtgFr&_nc_oc=AdoTnZKeIfoLqgWPtNiwzAhMO1z1RqjpnG9fUG_qwG0z9x41lq6510Bp_Y6aquzKB2M&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=eqWmtCNzT5AkftsrvvoLFg&_nc_tpa=Q5bMBQGFCJgDdtvFfT3zUfTGfPacPgph9QuNra2ZazhSLDSGSDoDZh3BaK325xit1bXt9xV7CyeNNebf&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfwKGxbQvxA8ITjpgVAPJaBjVKCWEy03d33l5390DQXGTg&oe=69CD1BC2",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.13418-10/476673056_1558779898116806_7210794317380905196_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeG-TrZzY8e_kj7QV9VA1vrsoWUhA6UkaMWhZSEDpSRoxUBknyNBqKj-ZFDNkOqNe1eahqk4UnaYk2WbI07PmwOa&_nc_ohc=gk5wKEXfenkQ7kNvwGGJO2l&_nc_oc=AdrwE1U5E936OgOkFsvMmMWU7V9sgMfhUDAaClX3idFXhE3LojHmY0yGfryXy8TiZ5s&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=ZIuRbkb2lFG_hRLYBPG8qQ&_nc_tpa=Q5bMBQHbJVFwlNgHwo16T92jZRGebkdDZTEr4gUNMg9__VHjhytQqllUmb_4NH6a8eYmU0J54ZOa8HXr&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_Afx80Q3A_9a_nb6oZ81J7DOphPyRHjJ9ZwcPL1OGujjWeg&oe=69CDC482",
             "id": "9313485245411888"
           },
           "metricas": {
@@ -3063,7 +3063,7 @@
           "nombre": "VISTAS GENERALES 06/01/25",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/472696885_2361522957546962_7981205763089392482_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeENTNVVwOX2xCQmymz5itGzNMl2vJ9GcFA0yXa8n0ZwUKpoHgJfmAaxegM4H8CGl_G-IJ9xRIuFZL4aGVrt4Ofp&_nc_ohc=yasV98vJPUkQ7kNvwEfghlF&_nc_oc=AdqRpE-kCmfCp-N1vMtL9q68v_fX-_UUUthk3R4hcQnVlNQgDe7e7LWdSVRA18cWDes&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=vO2Gi2bgD4YtZ1hO4zj_IQ&_nc_tpa=Q5bMBQEb_arrqnD_5XJ8HoeKYTeH6gvNwN9XIUtjz0fF7KXujdb1_7vWNN7MidUNmTndTQNAIRDf7ewy&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfywacLRGhPiJwjkrZxib7nTK-34CyvhBakPGYQ4R919_g&oe=69CD134B",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.13418-10/472696885_2361522957546962_7981205763089392482_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeENTNVVwOX2xCQmymz5itGzNMl2vJ9GcFA0yXa8n0ZwUKpoHgJfmAaxegM4H8CGl_G-IJ9xRIuFZL4aGVrt4Ofp&_nc_ohc=yasV98vJPUkQ7kNvwFTFb55&_nc_oc=AdpACUNpIfx_AxiQdv0Zk61gWd1uo25Z9TUn3uzxr3T2nGHdLRL3dwcWcySI5P4NS2A&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=Js7dBBLVy0pv1zDnM694HQ&_nc_tpa=Q5bMBQGVSqampLXE4pwIdt6feallgVfRB8DuHcVRQZkhlKdbvynPWvvSl7XV2k2jy0jH7at5xujR4u8M&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_Afyh3e1TmM0RuOtxCml5TVjErOKHf6GeQCDigRo2pyDfdw&oe=69CDBC0B",
             "id": "997785448908456"
           },
           "metricas": {
@@ -3110,7 +3110,7 @@
           "nombre": "LIFESTYLE BUENA VIDA",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/472246221_594788196824947_4641716758028069213_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeEgzVgLRpZGwiF5NS-sqdxNDFdCBXDER5cMV0IFcMRHl7utVBPxBTUW00E1g-3GsB9SqrEx3Vdjo7bF6J5H06Zu&_nc_ohc=XGRFO9UMB0wQ7kNvwGoNNyz&_nc_oc=AdrIAXayl8w0e1JTks3JNWuDi256MYH4YL2q6QYVgjla6sgGgD2qf5w4NTnqvreiOw8&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=3BmxqmEKwCzaIbw_X_yUzQ&_nc_tpa=Q5bMBQGbWIArG4RUXHui6kWYtX_xVosd82avtNffY2ZEicA3NKp84ijIoY_vibnWaqzw7YVVV-U0xNgF&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfxypP8oPGg8K7kt_MXby8o84RrqCwSqmAPUKBjHxGc_wQ&oe=69CD16F3",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.13418-10/472246221_594788196824947_4641716758028069213_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeEgzVgLRpZGwiF5NS-sqdxNDFdCBXDER5cMV0IFcMRHl7utVBPxBTUW00E1g-3GsB9SqrEx3Vdjo7bF6J5H06Zu&_nc_ohc=XGRFO9UMB0wQ7kNvwFxy4dA&_nc_oc=AdqGoPB1EhCZR_BXS9cOZprLW4bA2oeHOScWCcdyY-bA_I7KVjw-pA1u7F2PZh-yFoA&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=CTf8mpsFJKIBJfMxlwWgLg&_nc_tpa=Q5bMBQECZ4D3m3fXueEzGNyfmDIQIMtW-wqPin4AB00Gi2R5DFvps_koGkyptZ8q49gBP-7QwdYwdc51&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_Afwwb99r3qtvYBWE3LpIFqkBrYGXl4u1xd8a1i3kBW_RjQ&oe=69CDBFB3",
             "id": "120214966602970263"
           },
           "metricas": {
@@ -3157,7 +3157,7 @@
           "nombre": "FOTOVIDEO 2",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/470969799_450951281207307_8680250228727690719_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGzdeZunCbL6ucO6tDT6h_6SA55viYygGFIDnm-JjKAYSmaM0H75UcqvjJFPvBsh3rLevNW-cVlmL0gEM3JYGXe&_nc_ohc=1ILqL3G5D7QQ7kNvwHZRZSJ&_nc_oc=Adq3lHCVleAigdOof-_kaLzcdXqRnS-6Gn47DdvJYkYtrTfkcgdL-r_xMT0feJn4J90&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=sUfd2pUjJm6kXVg4gTwb_Q&_nc_tpa=Q5bMBQHXrIfMunAqUtfbFVTXbtcQpwTWyPozCB3XiPHGCqO0y1rNb0r9Ou_96hBro_WYHly2AF9IzQD9&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfwfpvUOJeKU2FpMpvzSLPpyLtUw4WARvuOulhApSrVoDw&oe=69CD1E5A",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.13418-10/470969799_450951281207307_8680250228727690719_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGzdeZunCbL6ucO6tDT6h_6SA55viYygGFIDnm-JjKAYSmaM0H75UcqvjJFPvBsh3rLevNW-cVlmL0gEM3JYGXe&_nc_ohc=1ILqL3G5D7QQ7kNvwHtx-1Y&_nc_oc=AdrfNexWMNN0ZbF9zXNfisjKkNZro3MUbMwcWmFajCAppuN6_Gw-apTQIIR423sezTo&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=3wYn73N0LD1-WfKxG1u4QA&_nc_tpa=Q5bMBQFamY4R-QRhoNkMYWMr9TRR3gOxHujfx5k_FlldhUUT_szv88l_tjMUYPnehapGF1K40s2_6OpY&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_Afz2v1S4WZ7BnXL-G1dOBR1vR7nKxaIdi1K6gA3F7s52gA&oe=69CDC71A",
             "id": "120215240122910263"
           },
           "metricas": {
@@ -3178,7 +3178,7 @@
           "nombre": "FOTOVIDEO 2",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/470969799_450951281207307_8680250228727690719_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGzdeZunCbL6ucO6tDT6h_6SA55viYygGFIDnm-JjKAYSmaM0H75UcqvjJFPvBsh3rLevNW-cVlmL0gEM3JYGXe&_nc_ohc=1ILqL3G5D7QQ7kNvwHZRZSJ&_nc_oc=Adq3lHCVleAigdOof-_kaLzcdXqRnS-6Gn47DdvJYkYtrTfkcgdL-r_xMT0feJn4J90&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=sUfd2pUjJm6kXVg4gTwb_Q&_nc_tpa=Q5bMBQGBKy4BuHTUVZiTIqHUN-gyUr6D_-bO85OOGlK59z82EnL4kMosy4t3aokWjx-Alr1QLz3VJqgF&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_Afyr1-0TNIb3NnKRfYLXIbYJnuTUg3XbPN9ujFv-2okrZg&oe=69CD1E5A",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.13418-10/470969799_450951281207307_8680250228727690719_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGzdeZunCbL6ucO6tDT6h_6SA55viYygGFIDnm-JjKAYSmaM0H75UcqvjJFPvBsh3rLevNW-cVlmL0gEM3JYGXe&_nc_ohc=1ILqL3G5D7QQ7kNvwHtx-1Y&_nc_oc=AdrfNexWMNN0ZbF9zXNfisjKkNZro3MUbMwcWmFajCAppuN6_Gw-apTQIIR423sezTo&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=3wYn73N0LD1-WfKxG1u4QA&_nc_tpa=Q5bMBQFykDSYCSgN1d8w9NNB_rXyn-C1mLalANJymfA6myBVCypIKcALEaQp5rkZWPpz3hjZ5Z5XuMUY&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfxllKrdxDnApIHIgJBpyJqujboZfLZ8PmV3FzrudUszyQ&oe=69CDC71A",
             "id": "120215017448330263"
           },
           "metricas": {
@@ -3199,7 +3199,7 @@
           "nombre": "FOTOVIDEO 2",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/470969799_450951281207307_8680250228727690719_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGzdeZunCbL6ucO6tDT6h_6SA55viYygGFIDnm-JjKAYSmaM0H75UcqvjJFPvBsh3rLevNW-cVlmL0gEM3JYGXe&_nc_ohc=1ILqL3G5D7QQ7kNvwHZRZSJ&_nc_oc=Adq3lHCVleAigdOof-_kaLzcdXqRnS-6Gn47DdvJYkYtrTfkcgdL-r_xMT0feJn4J90&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=sUfd2pUjJm6kXVg4gTwb_Q&_nc_tpa=Q5bMBQFQMMeGTLT0pWbasa17xSEcrhcTxr2jwipciWCinSUN31JJNxc0jj1K8ZyDX5v_BLoFM6bwhWBx&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfwDxYC19CEU1crMl-22JBkRv89Y6SIFJjKkPotQeKNCkw&oe=69CD1E5A",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.13418-10/470969799_450951281207307_8680250228727690719_n.jpg?_nc_cat=102&ccb=1-7&_nc_eui2=AeGzdeZunCbL6ucO6tDT6h_6SA55viYygGFIDnm-JjKAYSmaM0H75UcqvjJFPvBsh3rLevNW-cVlmL0gEM3JYGXe&_nc_ohc=1ILqL3G5D7QQ7kNvwHtx-1Y&_nc_oc=AdrfNexWMNN0ZbF9zXNfisjKkNZro3MUbMwcWmFajCAppuN6_Gw-apTQIIR423sezTo&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=3wYn73N0LD1-WfKxG1u4QA&_nc_tpa=Q5bMBQHBGM_-mgGkk1FwfMPwejONNYQk114XiivHwJXKHu87hTZBzBCoWX7OMW0zdYfmE8cE6sL_JGuQ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfxsUmWnwWdZ9G-BcxNm_Wjachm4ob0zuc_e8IYKRkISgQ&oe=69CDC71A",
             "id": "120214833974730263"
           },
           "metricas": {
@@ -3246,7 +3246,7 @@
           "nombre": "TOMAS AEREAS CON CANCION ELEGANTE",
           "estado": "PAUSED",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/469601642_1283587062793942_6593754547292647520_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeG79s5xMNX7rTxz6BKhjhnA-fqiQS5mX3b5-qJBLmZfdkxt0BDrfDVctswGwBhaCx63oWMGnpKN3ZVs567kptXR&_nc_ohc=PfcrJiI_SucQ7kNvwEv_3T6&_nc_oc=AdrXE_0Ivkzmg10UPdmXfiqE1wVdG83r5gRwupwctNJDyP2QW7js_upZzDzigdfS0Vk&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=HMwgsau_KPzLnUqbmMZLkQ&_nc_tpa=Q5bMBQHa6I2dCcoMeII6tg_g_h1qo5EKLdUXkFApJRW_2jAzHJqiVxQDLKKxcn-ScH6Yh5oDe4g48VWJ&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfybKfSQiNQVj1DqMcO0goKy59aqMaoaUoFx39y7cFXumQ&oe=69CD09F9",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.13418-10/469601642_1283587062793942_6593754547292647520_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeG79s5xMNX7rTxz6BKhjhnA-fqiQS5mX3b5-qJBLmZfdkxt0BDrfDVctswGwBhaCx63oWMGnpKN3ZVs567kptXR&_nc_ohc=PfcrJiI_SucQ7kNvwHv8IIT&_nc_oc=AdoIOwKxSJV1524H3cluwdfeXsZAtPBcLV2GITCnugXni_qNbjf1MP1_FPS5JeyvsKg&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=1ywLM8mNOb1IcidnLOaiZA&_nc_tpa=Q5bMBQFiat0bpHcdWdLR7IWnf30fKlEQzKW4naQv21aEIzP-8s4wghou0qKRyTfJFGmt-Kc8_owZY02K&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfxYr-uFLik4pdRyvI4Q6S7C04i_R-jxQrFs37O1FaPMHg&oe=69CDB2B9",
             "id": "120214471896430263"
           },
           "metricas": {
@@ -3293,7 +3293,7 @@
           "nombre": "NAVIDAD Y SANTA CLAUS",
           "estado": "PAUSED",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/470167221_3469640723331125_3338867668765247959_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeGHI5dRRGNjI867mNkhHv56tEC3JnGaY6q0QLcmcZpjqh8LDgqg05FDKUi1GJZiAt60mkNm-y_jLOYpxYToic-L&_nc_ohc=32GypDvz8tIQ7kNvwGNDXzb&_nc_oc=Adq893ZbKwBEV2SxEU6WOW8N26kd3h_F6We3B2ROzbl8k5QFjWfQW2SoNJFv3w1kpts&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=XD17YL80bJxoybBg7i8Miw&_nc_tpa=Q5bMBQEOsi40f7fuxARURpgdi73X1b-rMuqmFHhcUNFETbj26BBgB4FbV_fsopIf4cylF4fpZMDa5gH4&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfxeV8FdaEd_ff6DInmOL-1tBNgetpdWnleOYqJ69SC8uw&oe=69CD220F",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.13418-10/470167221_3469640723331125_3338867668765247959_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeGHI5dRRGNjI867mNkhHv56tEC3JnGaY6q0QLcmcZpjqh8LDgqg05FDKUi1GJZiAt60mkNm-y_jLOYpxYToic-L&_nc_ohc=32GypDvz8tIQ7kNvwHsL2Ww&_nc_oc=AdoSM2JIZnRAFJoPpwhPZb9BY-zCjJIRmeGc69YtAuM15RCDplQmsCYQxrMeTlIYz-c&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=pOuXWpVOc3TsQUZE0069OA&_nc_tpa=Q5bMBQFNo2jVv9Ey4Msx00ly7nwhXw8K5_Y0zS6dxzsn4AaCVtHAepGkOIlASFGcyRJ5ATcFLRucScnM&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=c3b633&_nc_sid=58080a&oh=00_AfxXkUNdQXV4OvRurj2RVHxknmDnSb_n96763cT-3UF9ww&oe=69CDCACF",
             "id": "120214525131050263"
           },
           "metricas": {
@@ -3314,7 +3314,7 @@
           "nombre": "NAVIDAD Y SANTA CLAUS",
           "estado": "PAUSED",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/469328314_8639785579430839_1061914623691382317_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeFF6B_2b9bcn0KMAkVZQohAKyPYMmfwKCMrI9gyZ_AoIwonUS0LAPBMroQ8G2ViA9nfFm179i4JelxAy6IOaTiJ&_nc_ohc=wBCjfeTxK3wQ7kNvwEFHLIV&_nc_oc=Adqa_NC-ni_Ui6xlu5iC_CY97JvYNJNHwgetTaeuSA3FSXvTTBwpkOCyApVsCMa2Yyw&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=XD17YL80bJxoybBg7i8Miw&_nc_tpa=Q5bMBQHXwdGJOscxov94HHpXbj-qKvmEplfEeUUlMLKAvrVnlIzogqARsQNIi_TZkoahXo8b8zY3C3_L&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfzYBiX8LcWLxFXaywVlZDDln6IJWI8WAp0xGXYCFiWX-g&oe=69CD20C8",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.13418-10/469328314_8639785579430839_1061914623691382317_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeFF6B_2b9bcn0KMAkVZQohAKyPYMmfwKCMrI9gyZ_AoIwonUS0LAPBMroQ8G2ViA9nfFm179i4JelxAy6IOaTiJ&_nc_ohc=wBCjfeTxK3wQ7kNvwFo37D0&_nc_oc=AdpBx0WuRG56DY4xP3jfUV6F5UgngKuFNuTZ0b7TcgpSD6HgtSbtNT6nrym0WlyeN48&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=pOuXWpVOc3TsQUZE0069OA&_nc_tpa=Q5bMBQFMmPxI5dIf8-up60TgB10o4NYDUWiJQepcJiVLOOzIbMRzQAUOVZZkFACW7JokKYyraOwbK3Lh&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfxIhtV7EJoJcd5ETKrWFVWKn6QJFYsL2M9GNTKlWWZLtw&oe=69CDC988",
             "id": "120214272875450263"
           },
           "metricas": {
@@ -3335,7 +3335,7 @@
           "nombre": "NAVIDAD Y SANTA CLAUS",
           "estado": "PAUSED",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/469328314_8639785579430839_1061914623691382317_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeFF6B_2b9bcn0KMAkVZQohAKyPYMmfwKCMrI9gyZ_AoIwonUS0LAPBMroQ8G2ViA9nfFm179i4JelxAy6IOaTiJ&_nc_ohc=wBCjfeTxK3wQ7kNvwEFHLIV&_nc_oc=Adqa_NC-ni_Ui6xlu5iC_CY97JvYNJNHwgetTaeuSA3FSXvTTBwpkOCyApVsCMa2Yyw&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=XD17YL80bJxoybBg7i8Miw&_nc_tpa=Q5bMBQGpe7TNGIjZrzTMYWORfkOX9EsjGOEtzrgc_T3RwRW3SGjc-cofL0KygiwpAK8rG6p4ak0Lu885&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfwD_7FczJgUmivyAxPAXIG-NnzBaH1WaHdcfD-sM50xTA&oe=69CD20C8",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.13418-10/469328314_8639785579430839_1061914623691382317_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeFF6B_2b9bcn0KMAkVZQohAKyPYMmfwKCMrI9gyZ_AoIwonUS0LAPBMroQ8G2ViA9nfFm179i4JelxAy6IOaTiJ&_nc_ohc=wBCjfeTxK3wQ7kNvwFo37D0&_nc_oc=AdpBx0WuRG56DY4xP3jfUV6F5UgngKuFNuTZ0b7TcgpSD6HgtSbtNT6nrym0WlyeN48&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=pOuXWpVOc3TsQUZE0069OA&_nc_tpa=Q5bMBQENNiUBEm_je8wFFV3ZoWCQ12nxhPZ9XrANTyCnDDakJdC33YxIuzORLenSfkKxxDA2odZ-GkL9&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_Afyi1Mrj8FLrO0CrZmVG6L9WDNPoLbT5be81SpOmHwuHIA&oe=69CDC988",
             "id": "120214447522630263"
           },
           "metricas": {
@@ -3382,7 +3382,7 @@
           "nombre": "FOTO VIDEO ORIGINAL",
           "estado": "ACTIVE",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/558740379_24798567306438613_200769764582517091_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeEB-jEoVnMFz7HGAToSmtkct1fH-RS9Fl-3V8f5FL0WXwXcD1OpZp5lPVVKAhsuuu_zNFVt8hwhLhJRgZGrM-QE&_nc_ohc=uWd1cirASyIQ7kNvwFUuRqc&_nc_oc=AdoZtDFLXjs8ywMp0SiXr1HfOHFD8-36hVRi1MGLyYYzhKSJG44SQg7Ji1ibRFFuKoE&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=Mv-dJqrcjCPEQKtYwkD7dw&_nc_tpa=Q5bMBQFyvgRKybUXu9SuzHCgVqzHYOCrKsrD5_TneCDJtRBF-_1UbHFtBEB_dzwlUuUIObvaFkS6Ko3f&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzuZabl6_0ok64U6aX9_M1IBv_nxUAoN3vUTRa90GQQvA&oe=69CD131A",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.1600-4/558740379_24798567306438613_200769764582517091_n.png?_nc_cat=111&ccb=1-7&_nc_eui2=AeEB-jEoVnMFz7HGAToSmtkct1fH-RS9Fl-3V8f5FL0WXwXcD1OpZp5lPVVKAhsuuu_zNFVt8hwhLhJRgZGrM-QE&_nc_ohc=2GRBI-7stKsQ7kNvwGPKWcR&_nc_oc=AdofDJKSNb9-6pipsijQwKETG-ZcanNPSU5M1KJtYIFJhYZNlbnoc0uh0RWd2GZiK9s&_nc_zt=1&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=R6ppEYWFrQ4wYphc6Nl2KA&_nc_tpa=Q5bMBQEPBXuct7r8MWkVQdhu5UdIQUukGD5Gy97u0UthOwtu-OU5LlQl5wIVi6HceorBWFoWEgmKc6-j&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AfzafxlUiFTXgJkjErWWflPuW3Fnphv4lTpJ98Z_LdBlUA&oe=69CDBBDA",
             "id": "1099309025210273"
           },
           "metricas": {
@@ -3429,7 +3429,7 @@
           "nombre": "QUE ES UN CREDITO",
           "estado": "PAUSED",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/467826561_2859060677587440_7533778369436450309_n.jpg?_nc_cat=105&ccb=1-7&_nc_eui2=AeE5PWzYwQDFunMkD0fholSHOQ_4HiC8O-I5D_geILw74kbBaNjwhlMmaMtGrAoRdN4Ykr5JrmmmSIaXZ5tRCFON&_nc_ohc=4MBf90rWhcYQ7kNvwGttnVD&_nc_oc=Adr1nabC7cEV0dduES4KXcgmKz-xM6m0XZV5WpYNG8UGEEGG61L3zCeanrqZBqIv3X4&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=XghJLJeo5EuWiaSB6o0oiQ&_nc_tpa=Q5bMBQEREBbLgw0fu-hE1hzAPbPJ9SvSp-D5cGxUp3tXETuYLj9lD-Tq_KA28xUlWG2eV2GI_ZbmlxLI&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfyGJttl7rm4_ThBpfWQIPn2vFz9I9sfi7dIoy5ZwWlrgQ&oe=69CD2CE6",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.13418-10/467826561_2859060677587440_7533778369436450309_n.jpg?_nc_cat=105&ccb=1-7&_nc_eui2=AeE5PWzYwQDFunMkD0fholSHOQ_4HiC8O-I5D_geILw74kbBaNjwhlMmaMtGrAoRdN4Ykr5JrmmmSIaXZ5tRCFON&_nc_ohc=4MBf90rWhcYQ7kNvwGddX_t&_nc_oc=AdrzIhM_ueZv0HfZlgUlvlrWELZxu1q7kYUSaNaiBr3VIIWtNPFiYLZBpBOPWMGPBAA&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=HNS0inm9mrf3NJmSpcYTvw&_nc_tpa=Q5bMBQHUh6jDuzVNE6x78pelt_-nWIBwxz5FKScMdOQu0M_GZ2RtwR9V52laRVmW2KD4gaEjhVOEgmHm&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=1d8b3b&_nc_sid=58080a&oh=00_AfwR-CvD7FwjSGe9s0PTtJR48-gd71wF_EB-P3wLqcyvXQ&oe=69CD9D66",
             "id": "120214423892540263"
           },
           "metricas": {
@@ -3478,7 +3478,7 @@
           "creative": {
             "title": "Info de tu inversión",
             "body": "¡Este es el mejor momento para invertir! 😎\nCosmopol es el desarrollo más exclusivo del Estado de México por lo cual es de las mejores oportunidades que tendrás para invertir en este ¡BUEN MES! 🤯\n\n-0% DE ENGANCHE.\n-ÚLTIMOS DEPARTAMENTOS CON BONOS DE HASTA 276,000. ✅\n\nContamos con departamentos distribuidos para toda la familia las amenidades harán que sean atractivas a cualquier familia. 😄\n\nNo dejes pasar estas ofertas y ven a conocernos.\n\nRodrigo Guillen, para apoyarte",
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/466857483_488964717499001_5423642616224090228_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeFQIVSSdcx-DNajE2cm2xmninj86bx4Ok2KePzpvHg6TceX6BBFBMxF7x1xnn0HwGwFF-MbC0Xqw-J3er5lNPfa&_nc_ohc=5v_lE6zzTQoQ7kNvwGV9Qk3&_nc_oc=AdoynchRCrjg6Uq2zVbcDs4ZpTlAoi4BTNehuo1EeiveAtFmUQhAdj5PQJdknEfA2ek&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=dkFMLQq_gcycLq3Hy--6QQ&_nc_tpa=Q5bMBQGRYX8gMF61lR094kkIV-nuv-b6mbsLUX6-dVx57rX4c8Ozuu3rWLASO_eaerh55sqAkpSTZ7Ex&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AfzdiCcHfHJiG19KoSUKU19Fx50GZJLCVi0U1u0UWzVx9g&oe=69CD32F8",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.13418-10/466857483_488964717499001_5423642616224090228_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeFQIVSSdcx-DNajE2cm2xmninj86bx4Ok2KePzpvHg6TceX6BBFBMxF7x1xnn0HwGwFF-MbC0Xqw-J3er5lNPfa&_nc_ohc=5v_lE6zzTQoQ7kNvwGYK8qK&_nc_oc=AdrNTGtSNGsKJxGmPSpjDveUN56JhADf0OtlGdKRLFctu7bObtltYvFow__0tGpVTf8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=ArH4euEUG3RtmBu4i2rCVw&_nc_tpa=Q5bMBQG0LF8Hs7TH9ayM3usDK0HUpeEn9pijQgA5ZAuCDIEa2eoPEMI0k8hia9zL6dOZkImOxFpLPKi6&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_Afw3RY0uLVe18Ov-4Tb5KfnqhMb97Yy59fHL4zXAeQLkjg&oe=69CDA378",
             "id": "120213982540160263"
           },
           "metricas": {
@@ -3527,7 +3527,7 @@
           "creative": {
             "title": "El hogar ideal para ti y tu familia",
             "body": "¿Imaginas despertar cada mañana con un sinfín de aventuras a tu alcance? 😀\n \nEn COSMOPOL, tu familia vivirá una experiencia única. ✅\n\nCon más de 20 amenidades que incluyen:\n-Cancha de tenis 🎾\n-Cancha de futbol ⚽\n-Cancha de básquet 🏀\n-Un increíble pet park 🐶\n-Zona de restaurantes 👨‍🍳\n\nTus hijos disfrutarán al máximo mientras tú te relajas en un entorno seguro y lleno de vida. 👨‍👩‍👦‍👦\n\n¿Listo para dar el siguiente paso y construir el futuro que siempre soñaste? 😁\nDepartamentos desde $1,999,000. ¡Tu nuevo hogar te espera! \nContactame y recibe asesoría personalizada.",
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/466731872_549870757894642_1642415297301554595_n.jpg?_nc_cat=110&ccb=1-7&_nc_eui2=AeFzwjGj6aU2C3ODTtb28v_qsaORnS2jrdGxo5GdLaOt0W3Q7uyRCCsyAVkRhMpbHUfCrnCm8_WTaWDlclIISRGD&_nc_ohc=mnT12FAn6fsQ7kNvwGIOvhw&_nc_oc=AdpC-EOIN8wOamrAZsgif1Z4DsFgBMWpRwHUVD-svpdCUVQNw2uJfasDhuhE18DcRmM&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=x3QAEqkHmoWhzkFF7QnKyQ&_nc_tpa=Q5bMBQHufkKpUi5TQ9k4NfAypE5Ub8Js5apPnn0bFFpMwd5OTzgaHnMpDwxOaV__VAwhAt2cBqIoCYv5&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AfxeKbX8KmvUDeqlYy1ITAHy7kFACxJ8uKWpF7fMgzyPQQ&oe=69CD0490",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t15.13418-10/466731872_549870757894642_1642415297301554595_n.jpg?_nc_cat=110&ccb=1-7&_nc_eui2=AeFzwjGj6aU2C3ODTtb28v_qsaORnS2jrdGxo5GdLaOt0W3Q7uyRCCsyAVkRhMpbHUfCrnCm8_WTaWDlclIISRGD&_nc_ohc=mnT12FAn6fsQ7kNvwFIDqTU&_nc_oc=AdrTgUfUEMUQBVpjLslfSXP3IBCfu6nWZ5R-QUDPgER8exSIbSclcnvgga9WUvpxO9w&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=Gi1In8bZ7nJAxMSFS9DKOQ&_nc_tpa=Q5bMBQH29Hrq92PndCwRIBbMVZnfZbxKFSesmWWNUMxlKOAtRzpxsV5MReKQk4WE5w9xMitxzKNVTCpi&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_Afx4-m2oJhewsJEdXCkm9FdJifrucDhCtfJOZ6_1KgjBiQ&oe=69CDAD50",
             "id": "120213776725090263"
           },
           "metricas": {
@@ -3576,7 +3576,7 @@
           "creative": {
             "title": "El hogar ideal para ti y tu familia",
             "body": "¿Buscas un hogar donde tus hijos puedan crecer felices y seguros? 🔐\n¡COSMOPOL] es el lugar perfecto!  ✅\n-Con un sinfín de áreas verdes 🌳\n-Espacios para tu mascota 🐶\n-Canchas deportivas ⚽🎾🏀\n-Alberca 🏊\n-Área de juegos exclusiva para niños. 👧👦\n\nTus pequeños tendrán todo lo necesario para divertirse y desarrollar sus habilidades. ⛹️‍♀️\nAdemás, tú podrás disfrutar de la tranquilidad de un hogar moderno y seguro. ✅\n\n ¡No esperes más para darle a tu familia el estilo de vida que se merece!\n\nDepartamentos desde $1,999,000.\n-TENEMOS OFERTAS YBONOS EXCLUSIVOS ESTE BUE MES. %%%\nContactame y agenda tu visita en tu nuevo hogar",
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/466991576_921408746128210_7706189391659775338_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHeR9IpsEepkfYGbZ6wTaGpL6Stq8lHe8MvpK2ryUd7wwbs18iBDUYjK_KeZMYzFLuRSzXSLz2tJ-lHUv95lcrZ&_nc_ohc=H43ZptGtgFYQ7kNvwEKT3Ou&_nc_oc=AdqaCXfz7x37ECyzMhqYxJhtFaUKsaxu2c-kvPv_j69xUQNPvm2rsVCd0itZlfxQkro&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=gwqLv54K4mV8k5tcr0jvew&_nc_tpa=Q5bMBQEVFkOPyObyMArvgmN4fU-lmfkX6GTysojp0CrVtxE0iUsCPc0mc1T22GfWhwh6oTEtkqxqFevw&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AfxZ-cNoSJgd-CNbJBLiRjiocS7MaCB6T5sSTTchp6sKhA&oe=69CD1D1E",
+            "thumbnail_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t15.13418-10/466991576_921408746128210_7706189391659775338_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeHeR9IpsEepkfYGbZ6wTaGpL6Stq8lHe8MvpK2ryUd7wwbs18iBDUYjK_KeZMYzFLuRSzXSLz2tJ-lHUv95lcrZ&_nc_ohc=H43ZptGtgFYQ7kNvwE_EJx1&_nc_oc=AdomFrRvrf2Wp4W3sUAxsvleIVr2T1P7D5nZHIZnNllsmVS7d5JKYEs6uNp1Vlbb-WY&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=ANIILHsEAAAA&_nc_gid=gZgc6iJ_Lgk6k5kmsR_zrg&_nc_tpa=Q5bMBQFveYF6QBnoEbW10Tv_WYa19OSqS-lFEonMtd49Ztd80r0Vemkq5PCPwO3NnEvim_qN69SbKDTu&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_Afz2zgxAttsIiK2hBJotV2eSLyuMtsU3NgeGO_HCozHKqQ&oe=69CDC5DE",
             "id": "120213888652390263"
           },
           "metricas": {
@@ -3623,7 +3623,7 @@
           "nombre": "ANUNCIO DE FACHADA (IMAGEN)",
           "estado": "PAUSED",
           "creative": {
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t45.1600-4/566281595_24826494757007136_7590133016274707436_n.jpg?_nc_cat=104&ccb=1-7&_nc_eui2=AeExXkpU9VMk6Nnqc4YX5n_QDv1iG1T-t-4O_WIbVP637ldahWT8EjBMqYC70QKy0E0yVhQqYID6NaS10aBLQtmb&_nc_ohc=8gecXDwiEukQ7kNvwHDhh4r&_nc_oc=AdrWGDYw7TvknTquFHKHH15uHZkFqDrAqNSmEryA8D66ZfS2M8UzVMtl-qtLj7aQcRQ&_nc_zt=1&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=L7fccerz8QKkwFhdo_VnCg&_nc_tpa=Q5bMBQEWuFBELJTkHnu7D2-AS40si-jTKZHk9ItymW7P3TTjCz_0MtN1QAuMzk-NkFeV48SYAokhJWAg&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afzw-f3Uk_vtUPMIlEtBzK78j3UI0xiuo0_zCZScdHqsJw&oe=69CD12B1",
+            "thumbnail_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t45.1600-4/566281595_24826494757007136_7590133016274707436_n.jpg?_nc_cat=104&ccb=1-7&_nc_eui2=AeExXkpU9VMk6Nnqc4YX5n_QDv1iG1T-t-4O_WIbVP637ldahWT8EjBMqYC70QKy0E0yVhQqYID6NaS10aBLQtmb&_nc_ohc=8gecXDwiEukQ7kNvwFJuclQ&_nc_oc=AdrQjSdWGEpq6lUKfCuuh_1AU2gwSCJ65JMoe6w3h4r67UJRmkEJKif-2fyJcBDSMDM&_nc_zt=1&_nc_ht=scontent-iad3-1.xx&edm=ANIILHsEAAAA&_nc_gid=LiOz3EriO06mYy7HHJoSnA&_nc_tpa=Q5bMBQG39oZ_j8reoLNEjqxQsiORKdUZHLuN8CHeSz1TgDbnyYyQOiX1cmwwAT32cx8bz707DhjLv_zn&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_Afx9AUedgWIFAvb-b7OKIMmf_5YqEHiVISbwEmyZjpamkw&oe=69CDBB71",
             "id": "120213625719170263"
           },
           "metricas": {
@@ -3672,7 +3672,7 @@
           "creative": {
             "title": "Conoce nuestra casa muestra.✅✅✅",
             "body": "🔴 Agenda tu visita  🚐🚐🚐 desde CDMX! Descubre tu futuro hogar en Nuestros desarrollos . \n¡Visita Tizayuca, Huehuetoca ó Zumpango! 🌳🏡\nSal de la rutina y conoce las hermosas casas y casas dúplex en nuestros desarrollos. Con nuestros tours guiados, saliendo desde CDMX, podrás experimentar la tranquilidad y el confort que siempre has soñado. Aprovecha la oportunidad de ver en persona todas las amenidades, áreas verdes y espacios pensados para ti y tu familia. ¡No esperes más y agenda tu visita ahora mismo! 🌟",
-            "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.13418-10/456208303_1571549100098708_486812846259251121_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeFd2LJDT3P-6-X9UKY49douqfUEFKHqPTGp9QQUoeo9MXnklhmuinDEtWH2bgbdixmQ6eMnC565nUUxvwJ-hsQB&_nc_ohc=SI46SeJVDlkQ7kNvwGq0umW&_nc_oc=Adqh2XhPd_apztvNu8Df_fn6_zFLoP_RhTaJPw0qJNYtXYCe7KhLQebKb6b6cNmIenY&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=ANIILHsEAAAA&_nc_gid=FNGw2WwWOtUWMl3QZ870FA&_nc_tpa=Q5bMBQE8CqIM_nB_Bd4FeHEnY6sIBfwtA5sVuZm78e9SiUEooRAqPdg2vzBuVDC5bWxJ0hjCuLhTaPtc&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_Afz1dDSGXN82z0jKiimOC6ayio29nUs3_bEmHf0kWC-xlg&oe=69CD1C47",
+            "thumbnail_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.13418-10/456208303_1571549100098708_486812846259251121_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeFd2LJDT3P-6-X9UKY49douqfUEFKHqPTGp9QQUoeo9MXnklhmuinDEtWH2bgbdixmQ6eMnC565nUUxvwJ-hsQB&_nc_ohc=uhGFCMGirX8Q7kNvwFtl4qA&_nc_oc=Adpzwm5Q_wPzc8SPq6U-3IYCov27akYBTPXWagHT6BG6KiszR9qcKSO-uzZRBoNE-4M&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=ANIILHsEAAAA&_nc_gid=uLPcJ7lm9mHnlSoAAfVx1w&_nc_tpa=Q5bMBQE0vcOzCASGSIkHsiMfpkoJmhSYngtBVhCvPDQnOCI-OCN1CE2_Ss1mewvIT6atpCvjqxk3COkn&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AfxFPnIzMcDGYtCY7w0VVlhSVaBTbufeFEA0MPvTnu-hhg&oe=69CDC507",
             "id": "120211871627320263"
           },
           "metricas": {
