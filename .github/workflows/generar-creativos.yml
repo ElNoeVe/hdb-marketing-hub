@@ -3,8 +3,8 @@ name: Generar Creativos Semanales
 on:
   schedule:
     # Lunes 7:00 AM, Jueves 7:00 AM y 1:00 PM CST (13:00 y 19:00 UTC)
-    - cron: '0 13 * * 1,4'
-    - cron: '0 19 * * 4'
+    # - cron: '0 13 * * 1,4'
+    # - cron: '0 19 * * 4'
   workflow_dispatch: # Permite ejecución manual
 
 permissions:
